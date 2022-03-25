@@ -34,12 +34,12 @@ public class Mirar : MonoBehaviour
           
           
         }  
-        else{
+        
+      else{
           camaraSecundaria.gameObject.SetActive(false);
           camaraPrincipal.gameObject.SetActive(true);
           
         }
-          
     }
    
        
