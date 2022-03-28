@@ -9,18 +9,15 @@ public class SalidaCliente : MonoBehaviour
 
     NavMeshAgent agent;
 
-    MaquinaFSM maquina;
-    EntradaCliente entrada;
-    FSMPedido fsm;
-
     public GameObject parentObject;
+
+    public GameObject cliente;
+    public Transform puntoSpawn;
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         agent.SetDestination(destino.position);
-        fsm = GetComponent<FSMPedido>();
-        entrada = GetComponent<EntradaCliente>();
     }
 
     // Update is called once per frame
@@ -28,13 +25,16 @@ public class SalidaCliente : MonoBehaviour
     {
         if (agent.remainingDistance == 0)
         {
+            GameObject NuevoCliente = Instantiate(parentObject);
             Destroy(parentObject);
             
         }
+
     }
 
     private void OnEnable()
     {
         agent.SetDestination(destino.position);
     }
+
 }
