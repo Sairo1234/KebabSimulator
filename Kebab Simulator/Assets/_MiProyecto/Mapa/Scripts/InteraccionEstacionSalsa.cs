@@ -1,9 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class InteraccionEstacionSalsa : MonoBehaviour
 {
+    //MOVIMIENTO A LA COCINA
+    public Transform destino;
+    public NavMeshAgent jugador;
+    public GameObject cocinaSalsa;
+    public bool estaPreparandoKebab = false;
+
     //SPAWN DEL KEBAB
     public GameObject modeloKebab;
     public Transform puntoSpawn;
@@ -11,10 +18,19 @@ public class InteraccionEstacionSalsa : MonoBehaviour
     //GAMEOBJECT KEBAB
     public GameObject kebabEnPreparacion;
 
+    private void Update()
+    {
+        if (estaPreparandoKebab == true)
+        {
+            comprobarDistaciaCocinaSalsa();
+        }
+
+    }
+
     void OnMouseDown()
     {
-        asignarKebab();
-        anyadirIngredienteKebab();
+        jugador.SetDestination(destino.position);
+        estaPreparandoKebab = true;
     }
 
     public void asignarKebab()
@@ -50,4 +66,15 @@ public class InteraccionEstacionSalsa : MonoBehaviour
             Debug.Log("El Kebab ya tiene salsa");
         }
     }
+    private void comprobarDistaciaCocinaSalsa()
+    {
+        if (jugador.remainingDistance == 0)
+        {
+            jugador.transform.LookAt(cocinaSalsa.transform);
+            estaPreparandoKebab = false;
+            asignarKebab();
+            anyadirIngredienteKebab();
+        }
+    }
 }
+

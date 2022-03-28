@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44146174, g: 0.49030465, b: 0.5703288, a: 1}
+  m_IndirectSpecularColor: {r: 0.44146162, g: 0.49030435, b: 0.5703283, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -563,7 +563,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &470223645
 GameObject:
@@ -782,6 +782,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97adb5d21b55ea14e8f923ebf5a1540b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destino: {fileID: 1899998705}
+  jugador: {fileID: 1440286350}
+  cocinaVerdura: {fileID: 547584117}
+  estaPreparandoKebab: 0
   modeloKebab: {fileID: 811135289909184618, guid: 4e8aebb8f516b20409898919946c6f91, type: 3}
   puntoSpawn: {fileID: 1221212012}
   kebabEnPreparacion: {fileID: 0}
@@ -989,6 +993,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d975bd59c7d119142a4f1f3570ee55f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destino: {fileID: 497195285}
+  jugador: {fileID: 1440286350}
+  cocinaSalsa: {fileID: 639041343}
+  estaPreparandoKebab: 0
   modeloKebab: {fileID: 811135289909184618, guid: 4e8aebb8f516b20409898919946c6f91, type: 3}
   puntoSpawn: {fileID: 1221212012}
   kebabEnPreparacion: {fileID: 0}
@@ -1180,6 +1188,36 @@ Transform:
   m_Father: {fileID: 1226895022}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &716787258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 716787259}
+  m_Layer: 0
+  m_Name: PosicionBasura
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &716787259
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716787258}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.71, y: 0, z: -2.43}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &754798380
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,7 +1282,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &763903185
 GameObject:
@@ -1488,7 +1526,7 @@ Transform:
   m_Children:
   - {fileID: 766103500}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &786870264
 GameObject:
@@ -1885,6 +1923,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c0ae7754fa52d645bb6d1cb92f49492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destino: {fileID: 716787259}
+  jugador: {fileID: 1440286350}
+  papelera: {fileID: 830899094}
+  estaPreparandoKebab: 0
   kebabParaTirar: {fileID: 0}
   LocalizacionKebab: {fileID: 1221212012}
 --- !u!1 &879934896
@@ -2065,7 +2107,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
@@ -2604,7 +2646,7 @@ RectTransform:
   m_Children:
   - {fileID: 2116440880}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2623,6 +2665,7 @@ GameObject:
   - component: {fileID: 1413109949}
   - component: {fileID: 1413109948}
   - component: {fileID: 1413109947}
+  - component: {fileID: 1413109951}
   m_Layer: 0
   m_Name: Cliente
   m_TagString: Untagged
@@ -2641,8 +2684,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.4621341, y: 1.0433401, z: 1.9092274}
+  m_Center: {x: -0.059483647, y: 0.021670459, z: 0.08321603}
 --- !u!23 &1413109948
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2707,6 +2750,24 @@ Transform:
   m_Father: {fileID: 1754501468}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1413109951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413109946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ae5ea3bbe76e0b44a97954e655d1118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jugador: {fileID: 1440286350}
+  cliente: {fileID: 1754501467}
+  destino: {fileID: 447911920}
+  estaAtendiendoCliente: 0
+  estaMirando: 0
+  VirtualCameraBarra: {fileID: 773190961}
 --- !u!1 &1440286347
 GameObject:
   m_ObjectHideFlags: 0
@@ -2967,7 +3028,7 @@ Transform:
   m_Children:
   - {fileID: 829337310}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 36.991, y: -113.9, z: -0.002}
 --- !u!1 &1602911665
 GameObject:
@@ -3095,8 +3156,6 @@ GameObject:
   - component: {fileID: 1754501471}
   - component: {fileID: 1754501470}
   - component: {fileID: 1754501469}
-  - component: {fileID: 1754501474}
-  - component: {fileID: 1754501473}
   m_Layer: 0
   m_Name: Cliente
   m_TagString: Untagged
@@ -3180,32 +3239,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1754501473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754501467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f20efca9e81c10549b2d5bac648596a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  VirtualCameraBarra: {fileID: 773190961}
---- !u!65 &1754501474
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754501467}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 2.279911, z: 0.37506104}
-  m_Center: {x: 0, y: 0.63995564, z: 0.04563999}
 --- !u!1 &1832576087
 GameObject:
   m_ObjectHideFlags: 0
@@ -3779,6 +3812,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f16fb82fef5631439a417702a62c939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destino: {fileID: 1016190599}
+  jugador: {fileID: 1440286350}
+  cocinaCarne: {fileID: 2066415381}
+  estaPreparandoKebab: 0
   modeloKebab: {fileID: 811135289909184618, guid: 4e8aebb8f516b20409898919946c6f91, type: 3}
   puntoSpawn: {fileID: 1221212012}
   kebabEnPreparacion: {fileID: 0}

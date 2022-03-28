@@ -2,51 +2,107 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Cinemachine;
 
 public class atenderCliente : MonoBehaviour
 {
-    public Transform destino;
+    //GAMEOBJECTS
     public NavMeshAgent jugador;
     public GameObject cliente;
-    public GameObject vista;
-    public Camera camaraPrincipal;
-    public Camera camaraSecundaria;
+    //public GameObject vista;
 
-    private void Start()
-    {
-        vista.SetActive(false);
-        camaraSecundaria.gameObject.SetActive(false);
-    }
+    //Llegar Destino
+    public Transform destino;
+    public bool estaAtendiendoCliente = false;
+    public bool estaMirando = false;
 
-    private void LateUpdate()
+    //Cinemachine
+    public CinemachineVirtualCamera VirtualCameraBarra;
+    private int counter = 0;
+
+    private void Update()
     {
-        if (jugador.remainingDistance >= 0.001 && jugador.remainingDistance <= 0.2)
+        //if(!agent.pathPending && agent.remainDistance == 0)
+        if(estaAtendiendoCliente == true)
         {
-            vista.SetActive(true);
-
-            Ray ray = camaraPrincipal.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
-            {
-                Debug.Log(cliente.name + " " + hit.transform.name);
-
-                //Select stage    
-                if (hit.transform.name == cliente.name)
-                {
-                    camaraSecundaria.gameObject.SetActive(true);
-                    camaraPrincipal.gameObject.SetActive(false);
-                }
-                else
-                {
-                    camaraSecundaria.gameObject.SetActive(false);
-                    camaraPrincipal.gameObject.SetActive(true);
-                }
-            }
+            comprobarDistaciaBarra();
         }
+        
     }
 
     private void OnMouseDown()
     {
-        jugador.SetDestination(destino.position);
+        if(estaAtendiendoCliente == false && estaMirando == false )
+        {
+            jugador.SetDestination(destino.position);
+            estaAtendiendoCliente = true;
+        }
+        /*else if(counter == 1 && estaMirando == false)
+        {
+            //cambioCamaraBarraMain();
+            estaAtendiendoCliente = false;
+            estaMirando = true;
+        }*/
+        else
+        {
+            cambioCamaraBarraMain();
+            estaAtendiendoCliente = false;
+            estaMirando = false;
+        }
     }
+
+    private void comprobarDistaciaBarra()
+    {
+        if (jugador.remainingDistance == 0 )
+        {
+            
+            jugador.transform.LookAt(cliente.transform);
+            estaAtendiendoCliente = false;
+            estaMirando = true;
+            cambioCamaraMainBarra();
+        }
+    }
+
+    private void cambioCamaraMainBarra()
+    {
+        
+            VirtualCameraBarra.Priority = 2;
+            Camera.main.orthographic = false;
+            counter++;
+            Debug.Log("hola");
+    }
+
+    private void cambioCamaraBarraMain()
+    {
+        VirtualCameraBarra.Priority = 0;
+        StartCoroutine(Ortografico());
+        counter--;
+        Debug.Log("adios");
+        estaMirando = false;
+    }
+
+    IEnumerator Ortografico()
+    {
+        yield return new WaitForSeconds(2);
+        Camera.main.orthographic = true;
+    }
+
+    /*private void cambioCamaraMainBarra()
+    {
+        if (counter == 0)
+        {
+            VirtualCameraBarra.Priority = 2;
+            Camera.main.orthographic = false;
+
+            counter++;
+            Debug.Log("hola");
+        }
+        else
+        {
+            VirtualCameraBarra.Priority = 0;
+            StartCoroutine(Ortografico());
+            counter--;
+            Debug.Log("adios");
+        }
+    }*/
 }

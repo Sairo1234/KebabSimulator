@@ -1,14 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
+
 
 public class EliminarKebab : MonoBehaviour
 {
+    //MOVIMIENTO A LA COCINA
+    public Transform destino;
+    public NavMeshAgent jugador;
+    public GameObject papelera;
+    public bool estaPreparandoKebab = false;
+
+    //TIRAR KEBAB
     public GameObject kebabParaTirar;
     public Transform LocalizacionKebab;
+
+    private void Update()
+    {
+        if (estaPreparandoKebab == true)
+        {
+            comprobarDistaciaPapelera();
+        }
+
+    }
     private void OnMouseDown()
     {
-        eliminarKebab();
+        jugador.SetDestination(destino.position);
+        estaPreparandoKebab = true;
     }
 
     public void eliminarKebab()
@@ -24,5 +43,17 @@ public class EliminarKebab : MonoBehaviour
             Debug.Log("No hay ningun kebab para tirar");
         }
     }
+
+    private void comprobarDistaciaPapelera()
+    {
+        if (jugador.remainingDistance == 0)
+        {
+            jugador.transform.LookAt(papelera.transform);
+            estaPreparandoKebab = false;
+            eliminarKebab();
+        }
+    }
 }
+
+
 
