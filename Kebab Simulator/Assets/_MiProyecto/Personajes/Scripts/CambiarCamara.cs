@@ -35,5 +35,6 @@ public class CambiarCamara : MonoBehaviour
 
         yield return new WaitForSeconds(2);
         Camera.main.orthographic = true;
+
     }
 }
