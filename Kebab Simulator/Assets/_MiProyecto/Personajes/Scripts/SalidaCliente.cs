@@ -11,8 +11,6 @@ public class SalidaCliente : MonoBehaviour
 
     public GameObject parentObject;
 
-    public GameObject cliente;
-    public Transform puntoSpawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +23,7 @@ public class SalidaCliente : MonoBehaviour
     {
         if (agent.remainingDistance == 0)
         {
-            GameObject NuevoCliente = Instantiate(parentObject);
+            Instantiate(parentObject);
             Destroy(parentObject);
             
         }
@@ -34,7 +32,13 @@ public class SalidaCliente : MonoBehaviour
 
     private void OnEnable()
     {
+        try { 
         agent.SetDestination(destino.position);
+        }
+        catch
+        {
+            Debug.Log("Se va");
+        }
     }
 
 }

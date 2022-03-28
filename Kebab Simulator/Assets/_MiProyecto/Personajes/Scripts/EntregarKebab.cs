@@ -31,18 +31,30 @@ public class EntregarKebab : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        kebabParaEntregar = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
+        if (this.enabled)
+        {
+            try
+            {
+                kebabParaEntregar = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
 
-        if (kebabParaEntregar.GetComponent<Kebab>().contieneCarne() == true && kebabParaEntregar.GetComponent<Kebab>().contieneVerdura() == true && kebabParaEntregar.GetComponent<Kebab>().contieneSalsa() == true)
-        {
-            jugador.SetDestination(destino.position);
-            estaEntregandoKebab = true;
-            Debug.Log("Perfe mister");
-            StartCoroutine(SeVa());
-        }
-        else
-        {
-            Debug.Log("El kebab no está completo");
+                if (kebabParaEntregar.GetComponent<Kebab>().contieneCarne() == true && kebabParaEntregar.GetComponent<Kebab>().contieneVerdura() == true && kebabParaEntregar.GetComponent<Kebab>().contieneSalsa() == true)
+                {
+
+                    jugador.SetDestination(destino.position);
+                    estaEntregandoKebab = true;
+                    Debug.Log("Perfe mister");
+                    StartCoroutine(SeVa());
+                }
+                
+                else
+                {
+                    Debug.Log("El kebab no está completo");
+                }
+            }
+            catch
+            {
+                Debug.Log("No hay kebab");
+            }
         }
 
     }
