@@ -24,6 +24,7 @@ public class atenderCliente : MonoBehaviour
     //Cuadro de diálogo
     public CanvasRenderer dialogoCliente;
 
+    public bool acabado = false;
     private void Update()
     {
         //if(!agent.pathPending && agent.remainDistance == 0)
@@ -36,11 +37,12 @@ public class atenderCliente : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(estaAtendiendoCliente == false && estaMirando == false )
+        if(estaAtendiendoCliente == false && estaMirando == false && this.enabled)
         {
             jugador.SetDestination(destino.position);
             estaAtendiendoCliente = true;
             StartCoroutine(Dialogo());
+            
         }
         else
         {
@@ -79,6 +81,7 @@ public class atenderCliente : MonoBehaviour
         counter--;
         Debug.Log("adios");
         estaMirando = false;
+        acabado = true;
     }
 
     IEnumerator Ortografico()
@@ -93,22 +96,5 @@ public class atenderCliente : MonoBehaviour
         dialogoCliente.gameObject.SetActive(true);
     }
 
-    /*private void cambioCamaraMainBarra()
-    {
-        if (counter == 0)
-        {
-            VirtualCameraBarra.Priority = 2;
-            Camera.main.orthographic = false;
-
-            counter++;
-            Debug.Log("hola");
-        }
-        else
-        {
-            VirtualCameraBarra.Priority = 0;
-            StartCoroutine(Ortografico());
-            counter--;
-            Debug.Log("adios");
-        }
-    }*/
+    
 }

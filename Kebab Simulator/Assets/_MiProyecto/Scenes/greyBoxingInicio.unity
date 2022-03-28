@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44146162, g: 0.49030435, b: 0.5703283, a: 1}
+  m_IndirectSpecularColor: {r: 0.44146204, g: 0.49030507, b: 0.5703292, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -339,7 +339,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302762089}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.75, y: 0, z: 5.3}
+  m_LocalPosition: {x: 0.75, y: 0, z: 10.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1715,8 +1715,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801928069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.25}
-  m_LocalScale: {x: 0.6, y: 1, z: 0.64798063}
+  m_LocalPosition: {x: 0, y: 0, z: 6.61}
+  m_LocalScale: {x: 0.6, y: 1, z: 1.5129699}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -2766,6 +2766,11 @@ GameObject:
   - component: {fileID: 1413109948}
   - component: {fileID: 1413109947}
   - component: {fileID: 1413109951}
+  - component: {fileID: 1413109952}
+  - component: {fileID: 1413109953}
+  - component: {fileID: 1413109955}
+  - component: {fileID: 1413109954}
+  - component: {fileID: 1413109956}
   m_Layer: 0
   m_Name: Cliente
   m_TagString: Untagged
@@ -2869,6 +2874,87 @@ MonoBehaviour:
   estaMirando: 0
   VirtualCameraBarra: {fileID: 773190961}
   dialogoCliente: {fileID: 2108587278}
+  acabado: 0
+--- !u!114 &1413109952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413109946}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03018229af3bdf4da62f423e0ab34f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destino: {fileID: 447911920}
+  jugador: {fileID: 1440286350}
+  cliente: {fileID: 1413109946}
+  estaEntregandoKebab: 0
+  kebabParaEntregar: {fileID: 0}
+  LocalizacionKebab: {fileID: 1221212012}
+--- !u!114 &1413109953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413109946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5056f6bd787618a4886f25630cc73793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1413109954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413109946}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72bbd2d56d54cab48b52dbf95c0b2e1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destino: {fileID: 302762090}
+  parentObject: {fileID: 1754501467}
+--- !u!114 &1413109955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413109946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aaf882552f89a449867d68cfcf966b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntos:
+  - {fileID: 1510614034}
+--- !u!195 &1413109956
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413109946}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.99999994
+  m_BaseOffset: 0.49999997
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1440286347
 GameObject:
   m_ObjectHideFlags: 0
@@ -3336,6 +3422,7 @@ GameObject:
   - component: {fileID: 1754501471}
   - component: {fileID: 1754501470}
   - component: {fileID: 1754501469}
+  - component: {fileID: 1754501473}
   m_Layer: 0
   m_Name: Cliente
   m_TagString: Untagged
@@ -3351,7 +3438,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754501467}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.75, y: 0, z: 5.3}
+  m_LocalPosition: {x: 0.75, y: 0, z: 11.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1413109950}
@@ -3365,7 +3452,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754501467}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef20e8a355869174c942ef5173345e57, type: 3}
   m_Name: 
@@ -3383,6 +3470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destino: {fileID: 302762090}
+  parentObject: {fileID: 0}
 --- !u!114 &1754501471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3390,7 +3478,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754501467}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3aaf882552f89a449867d68cfcf966b9, type: 3}
   m_Name: 
@@ -3419,6 +3507,18 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1754501473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754501467}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5056f6bd787618a4886f25630cc73793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1832576087
 GameObject:
   m_ObjectHideFlags: 0
