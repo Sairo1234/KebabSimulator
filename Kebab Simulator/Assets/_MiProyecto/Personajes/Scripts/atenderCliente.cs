@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using Cinemachine;
+using UnityEngine.UI;
 
 public class atenderCliente : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class atenderCliente : MonoBehaviour
     public CinemachineVirtualCamera VirtualCameraBarra;
     private int counter = 0;
 
+    //Cuadro de diálogo
+    public CanvasRenderer dialogoCliente;
+
     private void Update()
     {
         //if(!agent.pathPending && agent.remainDistance == 0)
@@ -36,18 +40,14 @@ public class atenderCliente : MonoBehaviour
         {
             jugador.SetDestination(destino.position);
             estaAtendiendoCliente = true;
+            StartCoroutine(Dialogo());
         }
-        /*else if(counter == 1 && estaMirando == false)
-        {
-            //cambioCamaraBarraMain();
-            estaAtendiendoCliente = false;
-            estaMirando = true;
-        }*/
         else
         {
             cambioCamaraBarraMain();
             estaAtendiendoCliente = false;
             estaMirando = false;
+            dialogoCliente.gameObject.SetActive(false);
         }
     }
 
@@ -85,6 +85,12 @@ public class atenderCliente : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         Camera.main.orthographic = true;
+    }
+
+    IEnumerator Dialogo()
+    {
+        yield return new WaitForSeconds(3);
+        dialogoCliente.gameObject.SetActive(true);
     }
 
     /*private void cambioCamaraMainBarra()
