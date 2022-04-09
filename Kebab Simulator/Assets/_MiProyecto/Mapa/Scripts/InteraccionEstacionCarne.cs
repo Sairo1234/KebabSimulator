@@ -6,19 +6,30 @@ using UnityEngine.AI;
 public class InteraccionEstacionCarne : MonoBehaviour
 {
 
-    //MOVIMIENTO A LA COCINA
+    //----------------------------------------------------------------------------------------//
+    //--------------------------------------- ATRIBUTOS -------------------------------------//
+
+    //DESPLAZAMIENTO A LA COCINA
+    [Header("Desplazamiento")]
     public Transform destino;
     public NavMeshAgent jugador;
     public GameObject cocinaCarne;
-    public bool estaPreparandoKebab = false;
+    private bool estaPreparandoKebab = false;
 
     //SPAWN DEL KEBAB
+    [Header("Spawn Kebab")]
     public GameObject modeloKebab;
     public Transform puntoSpawn;
 
-    //REFERENCIA AL GAMEOBJECT KEBAB 
-    public GameObject kebabEnPreparacion;
+    //REFERENCIA AL GAMEOBJECT KEBAB DEL JUGADOR
+    private GameObject kebabEnPreparacion;
 
+    //CANTIDAD DE INGREDIENTES
+    [Header("Cantidad de Carne")]
+    public int cantidadCarne = 5;
+
+    //----------------------------------------------------------------------------------------//
+    //----------------------------------------- MÉTODOS --------------------------------------//
 
     private void Update()
     {
@@ -28,12 +39,15 @@ public class InteraccionEstacionCarne : MonoBehaviour
         }
 
     }
+
     void OnMouseDown()
     {
         jugador.SetDestination(destino.position);
         estaPreparandoKebab = true;
     }
 
+    //--------------------------------------------------------------------------//
+    //----------------------------- PREPARAR KEBAB -----------------------------//
     public void asignarKebab()
     {
         if (puntoSpawn.childCount == 0)
@@ -60,6 +74,7 @@ public class InteraccionEstacionCarne : MonoBehaviour
         if (kebabEnPreparacion.GetComponent<Kebab>().contieneCarne() == false)
         {
             kebabEnPreparacion.GetComponent<Kebab>().anyadirCarne("Carne");
+            cantidadCarne--;
             Debug.Log("Se ha añadido carne al Kebab");
         }
         else
@@ -68,14 +83,29 @@ public class InteraccionEstacionCarne : MonoBehaviour
         }
     }
 
+    //--------------------------------------------------------------------------//
+    //------------------------- DESPLAZAMIENTO COCINA --------------------------//
+
     private void comprobarDistaciaCocinaCarne()
     {
         if (jugador.remainingDistance == 0)
         {
             jugador.transform.LookAt(cocinaCarne.transform);
             estaPreparandoKebab = false;
-            asignarKebab();
-            anyadirIngredienteKebab();
+
+            if(cantidadCarne != 0)
+            {
+                asignarKebab();
+                anyadirIngredienteKebab();
+            }
+            else
+            {
+                Debug.Log("No hay carne en la estación!");
+            }
+            
         }
     }
+
+    //----------------------------------------------------------------------------------------//
+    //----------------------------------------------------------------------------------------//
 }

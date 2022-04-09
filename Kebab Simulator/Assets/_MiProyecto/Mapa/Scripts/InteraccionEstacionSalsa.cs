@@ -5,18 +5,30 @@ using UnityEngine.AI;
 
 public class InteraccionEstacionSalsa : MonoBehaviour
 {
-    //MOVIMIENTO A LA COCINA
+    //----------------------------------------------------------------------------------------//
+    //--------------------------------------- ATRIBUTOS -------------------------------------//
+
+    //DESPLAZAMIENTO A LA COCINA
+    [Header("Desplazamiento")]
     public Transform destino;
     public NavMeshAgent jugador;
     public GameObject cocinaSalsa;
-    public bool estaPreparandoKebab = false;
+    private bool estaPreparandoKebab = false;
 
     //SPAWN DEL KEBAB
+    [Header("Spawn Kebab")]
     public GameObject modeloKebab;
     public Transform puntoSpawn;
 
-    //GAMEOBJECT KEBAB
-    public GameObject kebabEnPreparacion;
+    //REFERENCIA AL GAMEOBJECT KEBAB DEL JUGADOR
+    private GameObject kebabEnPreparacion;
+
+    //CANTIDAD DE INGREDIENTES
+    [Header("Cantidad de Salsa")]
+    public int cantidadSalsa = 5;
+
+    //----------------------------------------------------------------------------------------//
+    //----------------------------------------- MÉTODOS --------------------------------------//
 
     private void Update()
     {
@@ -33,6 +45,9 @@ public class InteraccionEstacionSalsa : MonoBehaviour
         estaPreparandoKebab = true;
     }
 
+    //--------------------------------------------------------------------------//
+    //----------------------------- PREPARAR KEBAB -----------------------------//
+
     public void asignarKebab()
     {
         if (puntoSpawn.childCount == 0)
@@ -42,6 +57,7 @@ public class InteraccionEstacionSalsa : MonoBehaviour
         else
         {
             kebabEnPreparacion = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
+            cantidadSalsa--;
             Debug.Log("Ya hay un kebab");
         }
     }
@@ -66,15 +82,30 @@ public class InteraccionEstacionSalsa : MonoBehaviour
             Debug.Log("El Kebab ya tiene salsa");
         }
     }
+
+    //--------------------------------------------------------------------------//
+    //------------------------- DESPLAZAMIENTO COCINA --------------------------//
+
     private void comprobarDistaciaCocinaSalsa()
     {
         if (jugador.remainingDistance == 0)
         {
             jugador.transform.LookAt(cocinaSalsa.transform);
             estaPreparandoKebab = false;
-            asignarKebab();
-            anyadirIngredienteKebab();
+
+            if (cantidadSalsa != 0)
+            {
+                asignarKebab();
+                anyadirIngredienteKebab();
+            }
+            else
+            {
+                Debug.Log("No hay salsa en la estación!");
+            }
         }
     }
+
+    //----------------------------------------------------------------------------------------//
+    //----------------------------------------------------------------------------------------//
 }
 
