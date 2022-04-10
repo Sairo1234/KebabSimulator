@@ -35,6 +35,7 @@ public class CogerKebab : MonoBehaviour
             KebabEnJugador.tag = "KebabEnPreparacion";
             KebabEnJugador.GetComponent<OutlineDeObjeto>().enabled = true;
             KebabEnJugador.GetComponent<CogerKebab>().enabled = false;
+            KebabEnJugador.GetComponent<MostrarIngredientesKebab>().enabled = true;
         }
         else
         {

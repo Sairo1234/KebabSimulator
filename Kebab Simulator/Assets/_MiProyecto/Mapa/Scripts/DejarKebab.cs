@@ -57,6 +57,7 @@ public class DejarKebab : MonoBehaviour
                 KebabEnMesa.tag = "KebabEnMesa";
                 KebabEnMesa.GetComponent<OutlineDeObjeto>().enabled = true;
                 KebabEnMesa.GetComponent<CogerKebab>().enabled = true;
+                KebabEnMesa.GetComponent<MostrarIngredientesKebab>().enabled = true;
                 kebabParaDejar = null;
             }
         }
