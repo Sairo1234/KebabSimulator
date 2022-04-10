@@ -20,7 +20,6 @@ public class Reabactecimiento : MonoBehaviour
     public GameObject modeloEstacionVerdura;
     public GameObject modeloEstacionSalsa;
 
-    //INGREDIENTES ALMACEN
 
     ///----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//

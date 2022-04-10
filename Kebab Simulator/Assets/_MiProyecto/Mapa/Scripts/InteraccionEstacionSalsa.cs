@@ -57,7 +57,6 @@ public class InteraccionEstacionSalsa : MonoBehaviour
         else
         {
             kebabEnPreparacion = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
-            cantidadSalsa--;
             Debug.Log("Ya hay un kebab");
         }
     }
@@ -75,6 +74,7 @@ public class InteraccionEstacionSalsa : MonoBehaviour
         if (kebabEnPreparacion.GetComponent<Kebab>().contieneSalsa() == false)
         {
             kebabEnPreparacion.GetComponent<Kebab>().anyadirSalsa("Salsa");
+            cantidadSalsa--;
             Debug.Log("Se ha añadido salsa al Kebab");
         }
         else

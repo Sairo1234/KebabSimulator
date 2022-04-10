@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 78579969897672877}
   m_LocalRotation: {x: -0.72244847, y: -0, z: -0, w: 0.6914248}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.77, y: 0.07, z: 1.97}
+  m_LocalScale: {x: 0.501998, y: 0.043651998, z: 0.512911}
   m_Children: []
   m_Father: {fileID: 3388855651809547268}
   m_RootOrder: 1
@@ -104,7 +104,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3388855651809547268}
+  - component: {fileID: 2995272188437792733}
   - component: {fileID: 4757764578744390185}
+  - component: {fileID: 8989498121457619549}
+  - component: {fileID: 3544831036511607603}
+  - component: {fileID: -964967195492227875}
   m_Layer: 0
   m_Name: Kebab
   m_TagString: Untagged
@@ -128,6 +132,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 92.51401, y: 0, z: 0}
+--- !u!135 &2995272188437792733
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811135289909184618}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.26010904
+  m_Center: {x: 0, y: 4.0105912e-13, z: 0.00017297268}
 --- !u!114 &4757764578744390185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,6 +160,48 @@ MonoBehaviour:
   Carne: '-'
   Verdura: '-'
   Salsa: '-'
+--- !u!114 &8989498121457619549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811135289909184618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5efa2383f4694947a0df88b29b07929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3544831036511607603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811135289909184618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &-964967195492227875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811135289909184618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b9a94d999a2f242a61ebf394802b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2090298534528240308
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,8 +229,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090298534528240308}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.012, z: -0.263}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: -0.008, y: -0.004, z: -0.077}
+  m_LocalScale: {x: 0.15899713, y: 0.15899713, z: 0.15899713}
   m_Children: []
   m_Father: {fileID: 3388855651809547268}
   m_RootOrder: 0
