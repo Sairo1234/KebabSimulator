@@ -2,23 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using System.Linq;
 
 public class EntradaCliente : MonoBehaviour
 {
-
-    public Transform[] puntos;
+    public List<Transform> transformsCola = new List<Transform>();
+    public GameObject[] gameObjectsCola;
 
     NavMeshAgent agent;
-    // Start is called before the first frame update
+
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        agent.SetDestination(puntos[0].position);
+
+        //Busqueda de los Transform Cola
+        gameObjectsCola = GameObject.FindGameObjectsWithTag("Cola").OrderBy(go => go.name).ToArray();
+
+        for (int i = 0; i < gameObjectsCola.Length; i++)
+        {
+            transformsCola.Insert(i, gameObjectsCola[i].transform);
+
+        }
+
+        consultarCola();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        agent.SetDestination(puntos[0].position);
+        consultarCola();
     }
+
+    public void consultarCola()
+    {
+        for (int i = transformsCola.Count; i >0 ; i--)
+        {
+            if (transformsCola[i-1].childCount == 0)
+            {
+                agent.SetDestination(transformsCola[i-1].position);
+                this.gameObject.transform.SetParent(transformsCola[i-1]);
+            }
+        }
+    }
+
 }

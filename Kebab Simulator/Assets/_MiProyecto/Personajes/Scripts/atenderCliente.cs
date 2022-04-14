@@ -5,6 +5,7 @@ using UnityEngine.AI;
 using Cinemachine;
 using UnityEngine.UI;
 
+
 public class atenderCliente : MonoBehaviour
 {
     //GAMEOBJECTS
@@ -22,9 +23,22 @@ public class atenderCliente : MonoBehaviour
     private int counter = 0;
 
     //Cuadro de diálogo
-    public CanvasRenderer dialogoCliente;
+    public GameObject dialogoClienteCanvas;
 
     public bool acabado = false;
+
+    private void Start()
+    {
+        GameObject GameObjectdestino = GameObject.FindGameObjectWithTag("PosicionAtender");
+        destino = GameObjectdestino.transform;
+
+        VirtualCameraBarra = GameObject.FindGameObjectWithTag("CamaraBarra").GetComponent<CinemachineVirtualCamera>();
+        dialogoClienteCanvas = GameObject.FindGameObjectWithTag("cuadro");
+        jugador = GameObject.FindGameObjectWithTag("Player").GetComponent<NavMeshAgent>();
+       
+
+    }
+
     private void Update()
     {
         //if(!agent.pathPending && agent.remainDistance == 0)
@@ -39,8 +53,8 @@ public class atenderCliente : MonoBehaviour
     {
         if(estaAtendiendoCliente == false && estaMirando == false && this.enabled)
         {
-            jugador.SetDestination(destino.position);
             estaAtendiendoCliente = true;
+            jugador.SetDestination(destino.position);
             StartCoroutine(Dialogo());
             
         }
@@ -49,7 +63,7 @@ public class atenderCliente : MonoBehaviour
             cambioCamaraBarraMain();
             estaAtendiendoCliente = false;
             estaMirando = false;
-            dialogoCliente.gameObject.SetActive(false);
+            dialogoClienteCanvas.transform.GetChild(0).gameObject.SetActive(false);
         }
     }
 
@@ -86,14 +100,14 @@ public class atenderCliente : MonoBehaviour
 
     IEnumerator Ortografico()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         Camera.main.orthographic = true;
     }
 
     IEnumerator Dialogo()
     {
-        yield return new WaitForSeconds(3);
-        dialogoCliente.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2);
+        dialogoClienteCanvas.transform.GetChild(0).gameObject.SetActive(true);
     }
 
     

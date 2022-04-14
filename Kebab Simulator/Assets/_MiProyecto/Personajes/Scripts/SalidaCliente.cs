@@ -5,7 +5,9 @@ using UnityEngine.AI;
 public class SalidaCliente : MonoBehaviour
 {
 
-    public Transform destino;
+    [Header("Transforms salida")]
+    public Transform TransformSalida;
+    public GameObject gameObjectSalida;
 
     NavMeshAgent agent;
 
@@ -15,7 +17,11 @@ public class SalidaCliente : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        agent.SetDestination(destino.position);
+
+        gameObjectSalida = GameObject.FindGameObjectWithTag("Salida");
+        TransformSalida = gameObjectSalida.transform;
+
+        agent.SetDestination(TransformSalida.position);
     }
 
     // Update is called once per frame
@@ -23,22 +29,10 @@ public class SalidaCliente : MonoBehaviour
     {
         if (agent.remainingDistance == 0)
         {
-            Instantiate(parentObject);
             Destroy(parentObject);
-            
+
         }
 
-    }
-
-    private void OnEnable()
-    {
-        try { 
-        agent.SetDestination(destino.position);
-        }
-        catch
-        {
-            Debug.Log("Se va");
-        }
     }
 
 }

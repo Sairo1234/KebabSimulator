@@ -9,16 +9,22 @@ public class EntregarKebab : MonoBehaviour
     public Transform destino;
     public NavMeshAgent jugador;
     public GameObject cliente;
-    public bool estaEntregandoKebab = false;
+    private bool estaEntregandoKebab = false;
 
     //ENTREGAR KEBAB
-    public GameObject kebabParaEntregar;
-    public Transform LocalizacionKebab;
-
+    private GameObject kebabParaEntregar;
+    
     SalidaCliente salida;
+
+
     private void Start()
     {
         salida = GetComponent<SalidaCliente>();
+
+        GameObject GameObjectdestino = GameObject.FindGameObjectWithTag("PosicionAtender");
+        destino = GameObjectdestino.transform;
+        jugador = GameObject.FindGameObjectWithTag("Player").GetComponent<NavMeshAgent>();
+
     }
     private void Update()
     {
