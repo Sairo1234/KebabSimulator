@@ -33,7 +33,7 @@ public class atenderCliente : MonoBehaviour
         destino = GameObjectdestino.transform;
 
         VirtualCameraBarra = GameObject.FindGameObjectWithTag("CamaraBarra").GetComponent<CinemachineVirtualCamera>();
-        dialogoClienteCanvas = GameObject.FindGameObjectWithTag("cuadro");
+        //dialogoClienteCanvas = GameObject.FindGameObjectWithTag("cuadro");
         jugador = GameObject.FindGameObjectWithTag("Player").GetComponent<NavMeshAgent>();
        
 
@@ -63,7 +63,7 @@ public class atenderCliente : MonoBehaviour
             cambioCamaraBarraMain();
             estaAtendiendoCliente = false;
             estaMirando = false;
-            dialogoClienteCanvas.transform.GetChild(0).gameObject.SetActive(false);
+            dialogoClienteCanvas.SetActive(false);
         }
     }
 
@@ -88,7 +88,7 @@ public class atenderCliente : MonoBehaviour
             Debug.Log("hola");
     }
 
-    private void cambioCamaraBarraMain()
+    public void cambioCamaraBarraMain()
     {
         VirtualCameraBarra.Priority = 0;
         StartCoroutine(Ortografico());
@@ -107,8 +107,12 @@ public class atenderCliente : MonoBehaviour
     IEnumerator Dialogo()
     {
         yield return new WaitForSeconds(2);
-        dialogoClienteCanvas.transform.GetChild(0).gameObject.SetActive(true);
+        dialogoClienteCanvas.SetActive(true);
     }
 
+    public void ocultarDialogo()
+    {
+        dialogoClienteCanvas.SetActive(false);
+    }
     
 }

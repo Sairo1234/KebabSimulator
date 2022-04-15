@@ -15,10 +15,20 @@ public class OutlineDeObjeto : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        outline.enabled = true;
+        if (this.enabled)
+        {
+            outline.enabled = true;
+        }
     }
 
     private void OnMouseExit()
+    {
+        if (this.enabled)
+        {
+            outline.enabled = false;
+        }
+    }
+    private void OnDisable()
     {
         outline.enabled = false;
     }

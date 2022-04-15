@@ -11,6 +11,7 @@ public class EntradaCliente : MonoBehaviour
 
     NavMeshAgent agent;
 
+    private bool yaEsPrimero = true;
 
     void Start()
     {
@@ -31,17 +32,27 @@ public class EntradaCliente : MonoBehaviour
     private void Update()
     {
         consultarCola();
+        //Debug.Log(Vector3.Distance(this.gameObject.transform.position, GameObject.Find("Cola1").transform.position));
+
     }
 
     public void consultarCola()
     {
-        for (int i = transformsCola.Count; i >0 ; i--)
+        for (int i = transformsCola.Count; i > 0; i--)
         {
-            if (transformsCola[i-1].childCount == 0)
+            if (transformsCola[i - 1].childCount == 0)
             {
-                agent.SetDestination(transformsCola[i-1].position);
-                this.gameObject.transform.SetParent(transformsCola[i-1]);
+                agent.SetDestination(transformsCola[i - 1].position);
+                this.gameObject.transform.SetParent(transformsCola[i - 1]);
             }
+
+
+        }
+        if (Vector3.Distance(this.gameObject.transform.position, GameObject.Find("Cola1").transform.position) < 1 && yaEsPrimero)
+        {
+            this.gameObject.GetComponent<DesplazamientoPunto>().enabled = true;
+            this.gameObject.GetComponent<OutlineDeObjeto>().enabled = true;
+            yaEsPrimero = false;
         }
     }
 
