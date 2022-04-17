@@ -8,6 +8,9 @@ public class SpawnClientes : MonoBehaviour
     public GameObject cliente;
     private GameObject[] getCount;
 
+    //public Transform puntoSpawnCliente;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +24,7 @@ public class SpawnClientes : MonoBehaviour
         if (Time.time > next_spawn_time && getCount.Length<5)
         {
             //do stuff here (like instantiate)
-            Instantiate(cliente);
+            Instantiate(cliente, this.gameObject.transform);
 
          //increment next_spawn_time
             next_spawn_time += 5.0f;

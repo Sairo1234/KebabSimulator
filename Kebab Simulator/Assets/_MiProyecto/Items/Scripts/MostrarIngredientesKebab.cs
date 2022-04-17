@@ -56,8 +56,45 @@ public class MostrarIngredientesKebab : MonoBehaviour
 
     public void rellenarPanelIngredientes()
     {
-        texto_carne.text = kebab.GetComponent<Kebab>().Carne;
-        texto_verdura.text = kebab.GetComponent<Kebab>().Verdura;
-        texto_salsa.text = kebab.GetComponent<Kebab>().Salsa;
+        comprobarCarne();
+        comprobarVerdura();
+        comprobarSalsa();
+    }
+
+
+    private void comprobarCarne()
+    {
+        try
+        {
+            texto_carne.text = kebab.GetComponent<Kebab>().carne.nombre;
+        }
+        catch
+        {
+            texto_carne.text = "-";
+        }
+    }
+
+    private void comprobarVerdura()
+    {
+        try
+        {
+            texto_verdura.text = kebab.GetComponent<Kebab>().verdura.nombre;
+        }
+        catch
+        {
+            texto_verdura.text = "-";
+        }
+    }
+
+    private void comprobarSalsa()
+    {
+        try
+        {
+            texto_salsa.text = kebab.GetComponent<Kebab>().salsa.nombre;
+        }
+        catch
+        {
+            texto_salsa.text = "-";
+        }
     }
 }

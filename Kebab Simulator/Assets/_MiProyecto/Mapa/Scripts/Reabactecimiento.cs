@@ -43,17 +43,17 @@ public class Reabactecimiento : MonoBehaviour
 
     public void reabastecerCarne()
     {
-        modeloEstacionCarne.GetComponent<InteraccionEstacionCarne>().cantidadCarne = 5;
+        modeloEstacionCarne.GetComponent<AñadirCarne>().cantidad = 10;
     }
 
     public void reabastecerVerdura()
     {
-        modeloEstacionVerdura.GetComponent<InteraccionEstacionVerdura>().cantidadVerdura = 5;
+        modeloEstacionVerdura.GetComponent<AñadirVerdura>().cantidad = 10;
     }
 
     public void reabastecerSalsa()
     {
-        modeloEstacionSalsa.GetComponent<InteraccionEstacionSalsa>().cantidadSalsa = 5;
+        modeloEstacionSalsa.GetComponent<AñadirSalsa>().cantidad = 10;
     }
 
 

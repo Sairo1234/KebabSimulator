@@ -5,37 +5,9 @@ using UnityEngine;
 public class Kebab : MonoBehaviour
 {
     //KebabInfo
-
-    public string Carne;
-    public string Verdura;
-    public string Salsa;
-
-
-    //----------------------------------------------------//
-    //------------------- AnyadirCarne -------------------//
-
-    public void anyadirCarne(string carne)
-    {
-        this.Carne = carne;
-    }
-
-
-    //----------------------------------------------------//
-    //------------------- AnyadirVerdura -----------------//
-
-    public void anyadirVerdura(string verdura)
-    {
-        this.Verdura = verdura;
-    }
-
-
-    //----------------------------------------------------//
-    //------------------- AnyadirSalsa -------------------//
-
-    public void anyadirSalsa(string salsa)
-    {
-        this.Salsa = salsa;
-    }
+    public Carne carne;
+    public Verdura verdura;
+    public Salsa salsa;
 
 
     //----------------------------------------------------//
@@ -44,7 +16,7 @@ public class Kebab : MonoBehaviour
 
     public bool contieneCarne()
     {
-        if (this.Carne == "-")
+        if (this.carne == null)
         {
             return false;
         }
@@ -57,7 +29,7 @@ public class Kebab : MonoBehaviour
 
     public bool contieneVerdura()
     {
-        if (this.Verdura == "-")
+        if (this.verdura == null)
         {
             return false;
         }
@@ -70,11 +42,11 @@ public class Kebab : MonoBehaviour
 
     public bool contieneSalsa()
     {
-        if (this.Salsa == "-")
+        if (this.salsa == null)
         {
             return false;
         }
         return true;
     }
-
+    
 }
