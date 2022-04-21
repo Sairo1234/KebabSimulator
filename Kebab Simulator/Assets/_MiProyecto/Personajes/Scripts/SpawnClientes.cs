@@ -21,7 +21,7 @@ public class SpawnClientes : MonoBehaviour
     void Update()
     {
         getCount = GameObject.FindGameObjectsWithTag("Cliente");
-        if (Time.time > next_spawn_time && getCount.Length<5)
+        if (Time.time > next_spawn_time && getCount.Length<15)
         {
             //do stuff here (like instantiate)
             Instantiate(cliente, this.gameObject.transform);
