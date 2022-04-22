@@ -15,14 +15,17 @@ public class Reabactecimiento : MonoBehaviour
     public GameObject puertaAlmacen;
     private bool estaReabasteciendo = false;
 
-    [Header("Estaciones")]
-    public GameObject modeloEstacionCarne;
-    public GameObject modeloEstacionVerdura;
-    public GameObject modeloEstacionSalsa;
+    [Header("Ingredientes")]
+    public GameObject[] ingredientes;
 
 
     ///----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
+
+    private void Start()
+    {
+        ingredientes = GameObject.FindGameObjectsWithTag("Ingrediente");
+    }
 
     private void Update()
     {
@@ -41,19 +44,14 @@ public class Reabactecimiento : MonoBehaviour
     //--------------------------------------------------------------------------//
     //------------------------------- REABASTECER ------------------------------//
 
-    public void reabastecerCarne()
+    public void reabastecerIngredientes()
     {
-        modeloEstacionCarne.GetComponent<AñadirCarne>().cantidad = 10;
-    }
-
-    public void reabastecerVerdura()
-    {
-        modeloEstacionVerdura.GetComponent<AñadirVerdura>().cantidad = 10;
-    }
-
-    public void reabastecerSalsa()
-    {
-        modeloEstacionSalsa.GetComponent<AñadirSalsa>().cantidad = 10;
+        for(int i=0; i<= ingredientes.Length-1; i++)
+        {
+            if (ingredientes[i].GetComponent<AñadirCarne>()) ingredientes[i].GetComponent<AñadirCarne>().cantidad = 10;
+            else if (ingredientes[i].GetComponent<AñadirVerdura>()) ingredientes[i].GetComponent<AñadirVerdura>().cantidad = 10;
+            else if (ingredientes[i].GetComponent<AñadirSalsa>()) ingredientes[i].GetComponent<AñadirSalsa>().cantidad = 10;
+        }
     }
 
 
@@ -66,9 +64,7 @@ public class Reabactecimiento : MonoBehaviour
         {
             jugador.transform.LookAt(puertaAlmacen.transform);
             estaReabasteciendo = false;
-            reabastecerCarne();
-            reabastecerSalsa();
-            reabastecerVerdura();
+            reabastecerIngredientes();
         }
     }
 
