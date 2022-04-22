@@ -37,7 +37,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 250, y: 30}
-  m_SizeDelta: {x: 120, y: 120}
+  m_SizeDelta: {x: 90, y: 90}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &3619466556203337850
 CanvasRenderer:
@@ -311,6 +311,7 @@ GameObject:
   - component: {fileID: 4347029603602926045}
   - component: {fileID: 1402884280921104597}
   - component: {fileID: 1402884280921104603}
+  - component: {fileID: 5603496587600881446}
   - component: {fileID: 1402884280921104599}
   - component: {fileID: 5766092248570923868}
   - component: {fileID: 7673077961336977750}
@@ -379,6 +380,41 @@ CapsuleCollider:
   m_Height: 2.1437223
   m_Direction: 1
   m_Center: {x: 0.000017851591, y: 0.838884, z: 0.0011134148}
+--- !u!114 &5603496587600881446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402884280921104595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5070c667b6ac324099a81e4a0d60e26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientesCarne:
+  - {fileID: 11400000, guid: 5e845d63393e61f42add624dc637209a, type: 2}
+  - {fileID: 11400000, guid: e0f0862cb13ea984893d071ccd0729ec, type: 2}
+  - {fileID: 11400000, guid: fe013a53fa0c2f748ae5f62fbb93d3aa, type: 2}
+  - {fileID: 11400000, guid: 5939c01dbcb36c24288b6306c9aa6d65, type: 2}
+  - {fileID: 11400000, guid: 8ba2a9b9540f4c24dadeab3816740e8e, type: 2}
+  ingredientesVerdura:
+  - {fileID: 11400000, guid: 6653136d4c133e54187c9aafc575812b, type: 2}
+  - {fileID: 11400000, guid: 70a08b8bb6cc0924aadf985652c2e33f, type: 2}
+  - {fileID: 11400000, guid: d8037eb35ec3b2b488fa74227950a839, type: 2}
+  - {fileID: 11400000, guid: 047ba5343d9c4134982b4ddd0d044c63, type: 2}
+  - {fileID: 11400000, guid: 34df3ec7650327c4094d5b55079b6345, type: 2}
+  - {fileID: 11400000, guid: 067b104a2fb93c441bbdc84fe65ff3c1, type: 2}
+  - {fileID: 11400000, guid: 8ba48fa93caf86148a9000662adabb99, type: 2}
+  ingredientesSalsa:
+  - {fileID: 11400000, guid: ad65d7d1e0a62884da1b51cc584d7593, type: 2}
+  - {fileID: 11400000, guid: 50bf4d1b949d2764aa8fd343ccd44f18, type: 2}
+  - {fileID: 11400000, guid: 2811773e6f167e349accad7150d02d6f, type: 2}
+  - {fileID: 11400000, guid: 8d8c9ddadf2157e469dc064c9ad17850, type: 2}
+  carnePedido: {fileID: 0}
+  verduraPedido: {fileID: 0}
+  salsaPedido: {fileID: 0}
+  texto_dialogo: {fileID: 754088137465376783}
 --- !u!114 &1402884280921104599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -695,9 +731,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 40, y: -40}
-  m_SizeDelta: {x: 650, y: 100}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 31.049988, y: -21}
+  m_SizeDelta: {x: -62.099976, y: 128.2}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &501755883135946433
 CanvasRenderer:
@@ -729,18 +765,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 200
+    m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 0
-    m_MaxSize: 200
+    m_MaxSize: 100
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hola, quiero un kebab.
+  m_Text: '-'
 --- !u!1 &6179836569538007858
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,7 +910,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -250, y: 30}
-  m_SizeDelta: {x: 120, y: 120}
+  m_SizeDelta: {x: 90, y: 90}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &7869962131078538846
 CanvasRenderer:
