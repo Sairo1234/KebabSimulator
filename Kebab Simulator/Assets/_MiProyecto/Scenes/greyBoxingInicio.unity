@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44390503, g: 0.49328196, b: 0.57277185, a: 1}
+  m_IndirectSpecularColor: {r: 0.4439052, g: 0.49328214, b: 0.5727726, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2572,6 +2572,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349937446}
   m_CullTransparentMesh: 1
+--- !u!1 &359276328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 359276329}
+  m_Layer: 0
+  m_Name: PosicionEntrgarCliente
+  m_TagString: EntregaC
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &359276329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359276328}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2, y: 0, z: 6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1653982820}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &387848892 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 825325851852497833, guid: 5810b7457eb21dc4c9a0e438904a1a64, type: 3}
@@ -8773,11 +8803,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33fcb9e1306631e40bfbfbb629134b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destino: {fileID: 1894641446}
-  jugador: {fileID: 1440286350}
-  puertaAlmacen: {fileID: 191850442}
-  estaReabasteciendo: 0
-  ingredientes: []
 --- !u!65 &1365288174
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9762,11 +9787,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33fcb9e1306631e40bfbfbb629134b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destino: {fileID: 837389655}
-  jugador: {fileID: 1440286350}
-  puertaAlmacen: {fileID: 92314224}
-  estaReabasteciendo: 0
-  ingredientes: []
 --- !u!65 &1458420962
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10033,6 +10053,36 @@ Transform:
   - {fileID: 1093695587}
   m_Father: {fileID: 1590392730}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1501580124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1501580125}
+  m_Layer: 0
+  m_Name: PosicionEntrgarJugador
+  m_TagString: EntregaJ
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1501580125
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501580124}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2, y: 0, z: 3.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1653982820}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1510614033
 GameObject:
@@ -11702,6 +11752,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 447911920}
+  - {fileID: 1501580125}
+  - {fileID: 359276329}
   m_Father: {fileID: 1514971993}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

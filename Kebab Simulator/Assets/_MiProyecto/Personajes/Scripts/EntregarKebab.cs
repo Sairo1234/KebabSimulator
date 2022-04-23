@@ -6,31 +6,36 @@ using UnityEngine.AI;
 public class EntregarKebab : MonoBehaviour
 {
     //MOVIMIENTO A LA COCINA
-    public Transform destino;
-    public NavMeshAgent jugador;
+
+
+    public Transform destinoCliente;
+    public Transform destinoJugador;
+
     public GameObject cliente;
-    private bool estaEntregandoKebab = false;
+    public GameObject jugador;
+
+    private bool estanDesplazandose = false;
 
     //ENTREGAR KEBAB
     private GameObject kebabParaEntregar;
-    
-    SalidaCliente salida;
 
 
     private void Start()
     {
-        salida = GetComponent<SalidaCliente>();
+        cliente = this.gameObject;
+        jugador = GameObject.FindGameObjectWithTag("Player");
 
-        GameObject GameObjectdestino = GameObject.FindGameObjectWithTag("PosicionAtender");
-        destino = GameObjectdestino.transform;
-        jugador = GameObject.FindGameObjectWithTag("Player").GetComponent<NavMeshAgent>();
+        destinoCliente = GameObject.FindGameObjectWithTag("EntregaC").transform;
+        destinoJugador = GameObject.FindGameObjectWithTag("EntregaJ").transform;
+
+
 
     }
     private void Update()
     {
-        if (estaEntregandoKebab == true)
+        if (estanDesplazandose)
         {
-            comprobarDistaciaCliente();
+            comprobarDistacia();
         }
 
 
@@ -39,29 +44,9 @@ public class EntregarKebab : MonoBehaviour
     {
         if (this.enabled)
         {
-            try
-            {
-                kebabParaEntregar = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
-
-                if (kebabParaEntregar.GetComponent<Kebab>().contieneCarne() == true && kebabParaEntregar.GetComponent<Kebab>().contieneVerdura() == true && kebabParaEntregar.GetComponent<Kebab>().contieneSalsa() == true)
-                {
-
-                    jugador.SetDestination(destino.position);
-                    estaEntregandoKebab = true;
-                    Debug.Log("Perfe mister");
-                    StartCoroutine(SeVa());
-                }
-                
-                else
-                {
-                    Debug.Log("El kebab no está completo");
-                }
-            }
-            catch
-            {
-                Debug.Log("No hay kebab");
-            }
+            comprobarPedido();
         }
+
 
     }
 
@@ -72,21 +57,47 @@ public class EntregarKebab : MonoBehaviour
 
     }
 
-    private void comprobarDistaciaCliente()
+    private void comprobarDistacia()
     {
-        if (jugador.remainingDistance == 0)
+        if (jugador.GetComponent<NavMeshAgent>().remainingDistance == 0 && cliente.GetComponent<NavMeshAgent>().remainingDistance == 0)
         {
             jugador.transform.LookAt(cliente.transform);
-            estaEntregandoKebab = false;
+            cliente.transform.LookAt(jugador.transform);
+            estanDesplazandose = false;
             entregarKebab();
+            jugador.GetComponent<ReputacionDinero>().TakeReputacion(20);
+            jugador.GetComponent<ReputacionDinero>().TakeDinero(5);
+            cliente.GetComponent<SalidaCliente>().salir();
         }
 
-
     }
-    IEnumerator SeVa()
+
+    private void asignarKebab()
     {
-        yield return new WaitForSeconds(1);
-        salida.enabled = true;
+        try
+        {
+            kebabParaEntregar = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
+        }
+        catch
+        {
+            Debug.Log("No hay kebab");
+        }
     }
 
+    private void comprobarPedido()
+    {
+        Pedido pedidoCliente = cliente.GetComponent<Pedido>();
+        asignarKebab();
+
+        if (kebabParaEntregar.GetComponent<Kebab>().carne == pedidoCliente.carnePedido &&
+            kebabParaEntregar.GetComponent<Kebab>().verdura == pedidoCliente.verduraPedido &&
+            kebabParaEntregar.GetComponent<Kebab>().salsa == pedidoCliente.salsaPedido)
+        {
+            jugador.GetComponent<NavMeshAgent>().SetDestination(destinoJugador.position);
+            cliente.GetComponent<NavMeshAgent>().SetDestination(destinoCliente.position);
+            estanDesplazandose = true;
+
+            
+        }
+    }
 }

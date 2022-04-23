@@ -24,18 +24,19 @@ public class SalidaCliente : MonoBehaviour
 
     public void salir()
     {
-        float penalizacionRechazar = -25;
-        jugador.GetComponent<ReputacionDinero>().TakeReputacion(penalizacionRechazar);
-
         this.transform.parent.gameObject.transform.DetachChildren();
         this.gameObject.GetComponent<EntradaCliente>().enabled = false;
         cliente.SetDestination(TransformSalida.position);
         estaDesplazandose = true;
 
-        
+
     }
 
-    
+    public void rechazoPedido()
+    {
+        jugador.GetComponent<ReputacionDinero>().TakeReputacion(-25);
+    }
+
 
     private void Update()
     {
