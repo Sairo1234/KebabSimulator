@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AñadirSalsa : MonoBehaviour
+public class AnyadirSalsa : MonoBehaviour
 {
     //----------------------------------------------------------------------------------------//
     //--------------------------------------- ATRIBUTOS -------------------------------------//
