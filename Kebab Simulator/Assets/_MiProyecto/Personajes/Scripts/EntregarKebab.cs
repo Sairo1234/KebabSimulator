@@ -65,6 +65,7 @@ public class EntregarKebab : MonoBehaviour
             cliente.transform.LookAt(jugador.transform);
             estanDesplazandose = false;
             entregarKebab();
+            cliente.GetComponent<PacienciaEspera>().enabled = false;
             jugador.GetComponent<ReputacionDinero>().TakeReputacion(20);
             jugador.GetComponent<ReputacionDinero>().TakeDinero(5);
             cliente.GetComponent<SalidaCliente>().salir();
@@ -74,30 +75,33 @@ public class EntregarKebab : MonoBehaviour
 
     private void asignarKebab()
     {
-        try
-        {
-            kebabParaEntregar = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
-        }
-        catch
-        {
-            Debug.Log("No hay kebab");
-        }
+
+        kebabParaEntregar = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
+
+
     }
 
     private void comprobarPedido()
     {
         Pedido pedidoCliente = cliente.GetComponent<Pedido>();
         asignarKebab();
-
-        if (kebabParaEntregar.GetComponent<Kebab>().carne == pedidoCliente.carnePedido &&
-            kebabParaEntregar.GetComponent<Kebab>().verdura == pedidoCliente.verduraPedido &&
-            kebabParaEntregar.GetComponent<Kebab>().salsa == pedidoCliente.salsaPedido)
+        try
         {
-            jugador.GetComponent<NavMeshAgent>().SetDestination(destinoJugador.position);
-            cliente.GetComponent<NavMeshAgent>().SetDestination(destinoCliente.position);
-            estanDesplazandose = true;
+            if (kebabParaEntregar.GetComponent<Kebab>().carne == pedidoCliente.carnePedido &&
+                kebabParaEntregar.GetComponent<Kebab>().verdura == pedidoCliente.verduraPedido &&
+                kebabParaEntregar.GetComponent<Kebab>().salsa == pedidoCliente.salsaPedido)
+            {
+                jugador.GetComponent<NavMeshAgent>().SetDestination(destinoJugador.position);
+                cliente.GetComponent<NavMeshAgent>().SetDestination(destinoCliente.position);
+                estanDesplazandose = true;
 
-            
+
+            }
         }
+        catch
+        {
+            Debug.Log("Mal kebab");
+        }
+
     }
 }

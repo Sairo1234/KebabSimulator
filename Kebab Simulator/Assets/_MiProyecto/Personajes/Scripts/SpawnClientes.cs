@@ -14,7 +14,7 @@ public class SpawnClientes : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        next_spawn_time = Time.time + 5.0f;
+        next_spawn_time = Time.time + 3.0f;
     }
 
     // Update is called once per frame
@@ -27,7 +27,7 @@ public class SpawnClientes : MonoBehaviour
             Instantiate(cliente, this.gameObject.transform);
 
          //increment next_spawn_time
-            next_spawn_time += 5.0f;
+            next_spawn_time += 15.0f;
         }
     }
 }

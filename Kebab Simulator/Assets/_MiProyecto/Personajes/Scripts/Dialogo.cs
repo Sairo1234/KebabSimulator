@@ -7,9 +7,10 @@ public class Dialogo : MonoBehaviour
 {
     //Cuadro de diálogo
     public GameObject PanelDialogo;
-
+   
     public void mostrarDialogo()
     {
+        this.gameObject.GetComponent<PacienciaCola>().enabled = false;
         StartCoroutine(timerDialogo());
        
     }
