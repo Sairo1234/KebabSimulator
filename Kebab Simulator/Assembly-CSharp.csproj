@@ -67,6 +67,7 @@
     <Compile Include="Assets\_MiProyecto\Personajes\Scripts\DespawnCliente.cs" />
     <Compile Include="Assets\_MiProyecto\Mapa\Scripts\DejarKebab.cs" />
     <Compile Include="Assets\_MiProyecto\Items\Scripts\DataObjects\Salsas\Salsa.cs" />
+    <Compile Include="Assets\_MiProyecto\Personajes\Scripts\PacienciaCola.cs" />
     <Compile Include="Assets\_MiProyecto\Items\Scripts\DataObjects\Carne\Carne.cs" />
     <Compile Include="Assets\_MiProyecto\Personajes\Scripts\EsperaCliente.cs" />
     <Compile Include="Assets\_MiProyecto\Personajes\Scripts\Dialogo.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="Assets\_MiProyecto\Personajes\Scripts\Player_Mov.cs" />
     <Compile Include="Assets\_MiProyecto\Items\Scripts\AñadirSalsa.cs" />
     <Compile Include="Assets\_MiProyecto\Personajes\Scripts\Pedido.cs" />
+    <Compile Include="Assets\_MiProyecto\Personajes\Scripts\PacienciaEspera.cs" />
     <Compile Include="Assets\_MiProyecto\Personajes\Scripts\EntregarKebab.cs" />
     <Compile Include="Assets\_MiProyecto\UI\Scripts\HUDControllerAlmacen.cs" />
     <Compile Include="Assets\_MiProyecto\Mapa\Scripts\ReabastecerCarne.cs" />
@@ -87,8 +89,7 @@
     <Compile Include="Assets\_MiProyecto\Mapa\Scripts\ReabastecerVerdura.cs" />
     <Compile Include="Assets\_MiProyecto\Mapa\Scripts\OutlineDeObjeto.cs" />
     <Compile Include="Assets\_MiProyecto\Mapa\Scripts\CogerKebab.cs" />
-    <Compile Include="Assets\_MiProyecto\Personajes\Scripts\PacienciaCola.cs" />
-    <Compile Include="Assets\_MiProyecto\Personajes\Scripts\PacienciaEspera.cs" />
+    <Compile Include="Assets\_MiProyecto\Scenes\Menu Inicio\MenuScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AssetsDeTerceros\QuickOutline\Resources\Shaders\OutlineMask.shader" />
@@ -672,6 +673,9 @@
     <Reference Include="com.unity.cinemachine.editor">
       <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -686,6 +690,9 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
