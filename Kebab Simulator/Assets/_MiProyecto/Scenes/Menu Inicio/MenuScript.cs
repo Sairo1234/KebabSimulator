@@ -8,6 +8,7 @@ public class MenuScript : MonoBehaviour
     public void escenaJuego()
     {
         SceneManager.LoadScene("greyBoxingInicio");
+        Time.timeScale = 1;
     }
 
     public void salir()
