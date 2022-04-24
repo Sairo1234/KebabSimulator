@@ -29,6 +29,7 @@ public class DesplazamientoPunto : MonoBehaviour
         gameObjectAsignado = this.gameObject;
         GameObject GameObjectdestino = GameObject.FindGameObjectWithTag(tagGameObject);
         destino = GameObjectdestino.transform;
+        
     }
 
     private void Update()
@@ -43,6 +44,7 @@ public class DesplazamientoPunto : MonoBehaviour
     {
         if (this.enabled)
         {
+            jugador.GetComponent<Player_Mov>().enabled = false;
             jugador.SetDestination(destino.position);
             estaDesplazandose = true;
         }
@@ -56,6 +58,7 @@ public class DesplazamientoPunto : MonoBehaviour
             estaDesplazandose = false;
 
             gameObjectAsignado.SendMessage(funcionScript, null);
+            jugador.GetComponent<Player_Mov>().enabled = true;
         }
     }
 }

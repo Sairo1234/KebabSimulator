@@ -18,21 +18,6 @@ public class DejarKebab : MonoBehaviour
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
 
-    void OnMouseDown()
-    {
-        if(maximaCapacidadMesa() == false)
-        {
-            buscarKebabParaDejar();
-            if (kebabParaDejar != null)
-            {
-                colocarKebabEnMesa();
-            }
-        }
-        else
-        {
-            Debug.Log("La mesa esta llena");
-        }
-    }
 
     //--------------------------------------------------------------------------//
     //------------------------------- DEJAR KEBAB ------------------------------//
@@ -77,5 +62,21 @@ public class DejarKebab : MonoBehaviour
             }
         }
         return true;
+    }
+
+    public void dejarKebab()
+    {
+        if (maximaCapacidadMesa() == false)
+        {
+            buscarKebabParaDejar();
+            if (kebabParaDejar != null)
+            {
+                colocarKebabEnMesa();
+            }
+        }
+        else
+        {
+            Debug.Log("La mesa esta llena");
+        }
     }
 }
