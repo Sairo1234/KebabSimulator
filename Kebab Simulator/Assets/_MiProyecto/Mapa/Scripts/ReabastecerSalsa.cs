@@ -12,6 +12,6 @@ public class ReabastecerSalsa : MonoBehaviour
 
     public void reabastecerIngredienteSalsa()
     {
-        ingredienteSalsaAlmacen.GetComponent<AñadirSalsa>().cantidad = 10;
+        ingredienteSalsaAlmacen.GetComponent<AñadirSalsa>().cantidad = 5;
     }
 }

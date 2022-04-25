@@ -12,6 +12,6 @@ public class ReabastecerVerdura : MonoBehaviour
 
     public void reabastecerIngredienteVerdura()
     {
-        ingredienteVerduraAlmacen.GetComponent<AñadirVerdura>().cantidad = 10;
+        ingredienteVerduraAlmacen.GetComponent<AñadirVerdura>().cantidad = 5;
     }
 }

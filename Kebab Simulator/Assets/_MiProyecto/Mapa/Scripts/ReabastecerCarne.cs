@@ -12,7 +12,7 @@ public class ReabastecerCarne : MonoBehaviour
 
     public void reabastecerIngredienteCarne()
     {
-        ingredienteCarneAlmacen.GetComponent<AñadirCarne>().cantidad = 10;
+        ingredienteCarneAlmacen.GetComponent<AñadirCarne>().cantidad = 5;
     }
 
 }
