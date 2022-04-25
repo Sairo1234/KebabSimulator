@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class CogerKebab : MonoBehaviour
 {
@@ -13,13 +14,55 @@ public class CogerKebab : MonoBehaviour
     //Kebab que se va a coger
     private GameObject kebabParaCoger;
 
+    //MOVIMIENTO A LA MESA
+    public Transform destinoMesa;
+    private NavMeshAgent jugador;
+    private GameObject kebab;
+    private bool estaDesplazandose = false;
+
+
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
 
-    private void OnMouseDown()
+    private void Start()
     {
-        kebabParaCoger = this.gameObject;
-        colocarKebabEnJugador();
+        kebab = this.gameObject;
+        jugador = GameObject.FindGameObjectWithTag("Player").GetComponent<NavMeshAgent>();
+        destinoMesa = GameObject.FindGameObjectWithTag("MesaPunto").transform;
+
+    }
+
+    void OnMouseDown()
+    {
+        if (this.enabled)
+        {
+            jugador.GetComponent<Player_Mov>().enabled = false;
+            jugador.SetDestination(destinoMesa.position);
+            estaDesplazandose = true;
+        }
+    }
+
+
+    //--------------------------------------------------------------------------//
+    //----------------------------- DESPLAZAR A MESA ---------------------------//
+
+    private void Update()
+    {
+        if (estaDesplazandose == true)
+        {
+            comprobarDistaciaMesa();
+        }
+    }
+
+    private void comprobarDistaciaMesa()
+    {
+        if (jugador.remainingDistance == 0)
+        {
+            jugador.transform.LookAt(kebab.transform);
+            estaDesplazandose = false;
+            colocarKebabEnJugador();
+            jugador.GetComponent<Player_Mov>().enabled = true;
+        }
     }
 
     //--------------------------------------------------------------------------//
@@ -27,6 +70,7 @@ public class CogerKebab : MonoBehaviour
 
     public void colocarKebabEnJugador()
     {
+        kebabParaCoger = this.gameObject;
         buscarSpawnKebab();
         if (puntoSpawnKebab.childCount == 0)
         {
