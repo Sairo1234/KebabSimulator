@@ -29,6 +29,14 @@ public class HUDControllerAlmacen : MonoBehaviour
         jugador = GameObject.FindGameObjectWithTag("Player");
     }
 
+    private void Update()
+    {
+       if(HUDAlmacen.active)
+        {
+            jugador.GetComponent<Player_Mov>().enabled = false;
+        }
+    }
+
     //--------------------------------------------------------------------------//
     //------------------------------ HUD Principal -----------------------------//
 
@@ -37,7 +45,7 @@ public class HUDControllerAlmacen : MonoBehaviour
         HUDPrincipal.SetActive(false);
         HUDAlmacen.SetActive(true);
         
-        jugador.GetComponent<Player_Mov>().enabled = false;
+        //jugador.GetComponent<Player_Mov>().enabled = false;
     }
 
     public void ocultarAlmacenHUD()
