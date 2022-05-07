@@ -15,11 +15,11 @@ C:/Users/maria/OneDrive/Documentos/GitHub/KebabSimulator/Kebab Simulator
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58810
+64029
 Successfully changed project path to: C:/Users/maria/OneDrive/Documentos/GitHub/KebabSimulator/Kebab Simulator
 C:/Users/maria/OneDrive/Documentos/GitHub/KebabSimulator/Kebab Simulator
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 30.77 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 40.46 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
@@ -35,92 +35,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56432
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56600
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002448 seconds.
+Registered in 0.003267 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 33.52 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 40.14 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.556 seconds
+- Completed reload, in  0.664 seconds
 Domain Reload Profiling:
-	ReloadAssembly (556ms)
-		BeginReloadAssembly (68ms)
+	ReloadAssembly (664ms)
+		BeginReloadAssembly (78ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (420ms)
-			LoadAssemblies (66ms)
+		EndReloadAssembly (496ms)
+			LoadAssemblies (76ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (137ms)
+			SetupTypeCache (157ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (155ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (190ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (34ms)
-				BeforeProcessingInitializeOnLoad (16ms)
-				ProcessInitializeOnLoadAttributes (75ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
+				RefreshPlugins (40ms)
+				BeforeProcessingInitializeOnLoad (17ms)
+				ProcessInitializeOnLoadAttributes (95ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002802 seconds.
+Registered in 0.003871 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.929 seconds
+- Completed reload, in  1.158 seconds
 Domain Reload Profiling:
-	ReloadAssembly (930ms)
-		BeginReloadAssembly (137ms)
+	ReloadAssembly (1159ms)
+		BeginReloadAssembly (176ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (739ms)
-			LoadAssemblies (88ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (913ms)
+			LoadAssemblies (98ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (232ms)
+			SetupTypeCache (281ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (298ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (380ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (201ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (256ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1809 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 83.5 MB.
-System memory in use after: 83.6 MB.
+System memory in use before: 84.0 MB.
+System memory in use after: 84.0 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2245.
-Total: 2.560900 ms (FindLiveObjects: 0.158800 ms CreateObjectMapping: 0.105200 ms MarkObjects: 2.256200 ms  DeleteObjects: 0.040200 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2246.
+Total: 3.404400 ms (FindLiveObjects: 0.137100 ms CreateObjectMapping: 0.072200 ms MarkObjects: 3.114700 ms  DeleteObjects: 0.079200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,115 +134,109 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/lechuga.png
-  artifactKey: Guid(6519473238afa3649a4481588c12f16c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/lechuga.png using Guid(6519473238afa3649a4481588c12f16c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0536cd2065b26128a191e50fde0a0b2') in 0.079103 seconds 
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Salsas
+  artifactKey: Guid(d0798b6355c2a104bae7e66ed8c37371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Salsas using Guid(d0798b6355c2a104bae7e66ed8c37371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71b756f61f1919249d5a37cbc518a908') in 0.010567 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.771454 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/lechuga.fbx
-  artifactKey: Guid(31fca40b6ce460b4d9025c381cc09688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/lechuga.fbx using Guid(31fca40b6ce460b4d9025c381cc09688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '295a41204279a9cf14863643ad7df52c') in 0.108616 seconds 
+  Time since last request: 0.000327 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Salsas/Curry.prefab
+  artifactKey: Guid(01c6c256fae1d5b4796528d034d05ab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Salsas/Curry.prefab using Guid(01c6c256fae1d5b4796528d034d05ab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a6e83c3449852331ad04435137e4ce8') in 0.154216 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 28.058286 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/lechuga.fbx
-  artifactKey: Guid(31fca40b6ce460b4d9025c381cc09688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/lechuga.fbx using Guid(31fca40b6ce460b4d9025c381cc09688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f059419f28431271cdd252ef41b01a6') in 0.026701 seconds 
+  Time since last request: 0.000254 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Salsas/Deluxe.prefab
+  artifactKey: Guid(a8d3a8af5c641eb4da81e757474b8dfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Salsas/Deluxe.prefab using Guid(a8d3a8af5c641eb4da81e757474b8dfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e08663065de1a45d37442b97348f3fd9') in 0.028115 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 28.520378 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials
-  artifactKey: Guid(03c2a57e9f0d7984bb433d284b4eb640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials using Guid(03c2a57e9f0d7984bb433d284b4eb640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '202fdb8670daffcc0309ef6ee7d74e83') in 0.005773 seconds 
+  Time since last request: 0.000302 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Salsas/Yogurt.prefab
+  artifactKey: Guid(df2afeca7c8cf9846a42c73fccfe1009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Salsas/Yogurt.prefab using Guid(df2afeca7c8cf9846a42c73fccfe1009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2b330b418bdb2c24ab7443ad9546044') in 0.027561 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.028779 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/01 - Default.mat
-  artifactKey: Guid(8136be7fe95f59d46ba3d71616382079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/01 - Default.mat using Guid(8136be7fe95f59d46ba3d71616382079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9756ed7447c41dfbc779a9f3f5d4a253') in 0.016058 seconds 
+  Time since last request: 0.000373 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Salsas/Picante.prefab
+  artifactKey: Guid(952027db8c50b3746ab2321336f2de2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Salsas/Picante.prefab using Guid(952027db8c50b3746ab2321336f2de2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3369e175e91e73b3ff4c7877d3883cbf') in 0.034019 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 84128.967134 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/bandejaVerdura (1).fbx
-  artifactKey: Guid(89c508e55d283a24485aeb0782fb1d23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/bandejaVerdura (1).fbx using Guid(89c508e55d283a24485aeb0782fb1d23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '603ed2e394fe70826ca15a608792699c') in 0.185618 seconds 
+  Time since last request: 46.435966 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Brocoli/Brocoli.mat
+  artifactKey: Guid(c660d15cde9f5e847888e2fbd5a0f455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Brocoli/Brocoli.mat using Guid(c660d15cde9f5e847888e2fbd5a0f455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a63551511e6d1e480c59500f3d6d244') in 0.035473 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 60.313550 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/bandejaVerdura (1) 1.fbx
-  artifactKey: Guid(32235c95d944b5b499908b2f57c495bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/bandejaVerdura (1) 1.fbx using Guid(32235c95d944b5b499908b2f57c495bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1ffc53015415b3692e03a09e4ee1756') in 0.029686 seconds 
+  Time since last request: 48.443261 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Lechuga.prefab
+  artifactKey: Guid(4fa0b118601a73b408f7dd43384bd15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Lechuga.prefab using Guid(4fa0b118601a73b408f7dd43384bd15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1515bab4a87334056d3945359ea2f372') in 0.017104 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 22.461270 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/BandejaLechuga.fbx
-  artifactKey: Guid(f6cfd5cb993b7ce478a9b9bd252c05ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/BandejaLechuga.fbx using Guid(f6cfd5cb993b7ce478a9b9bd252c05ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28cbceff4f6b6ceee7e445f268fe4de9') in 0.575148 seconds 
+  Time since last request: 5.390534 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Pimiento.prefab
+  artifactKey: Guid(b317c7abba3a2cf42b7a1ccd0cac10e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Pimiento.prefab using Guid(b317c7abba3a2cf42b7a1ccd0cac10e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cb0b46398b8332489fc24d4d3fc6099') in 0.034793 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 112.926581 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/lechuga.fbx
-  artifactKey: Guid(f218fa1ea13ee6148a8f28a318536a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/lechuga.fbx using Guid(f218fa1ea13ee6148a8f28a318536a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9200c48fee521b88634b97611f36f90f') in 0.053335 seconds 
+  Time since last request: 3.148239 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Pimiento.prefab
+  artifactKey: Guid(b317c7abba3a2cf42b7a1ccd0cac10e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Pimiento.prefab using Guid(b317c7abba3a2cf42b7a1ccd0cac10e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8492b30d3002a2da64a35391d5259c37') in 0.016790 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.005278 seconds.
-  path: Assets/_MiProyecto/Scenes/Menu Inicio/Mona Shark.otf
-  artifactKey: Guid(9dab068c3a3c44140a6b73889ea74522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Scenes/Menu Inicio/Mona Shark.otf using Guid(9dab068c3a3c44140a6b73889ea74522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f96eee0ebaf7be7484b502b9735af1c') in 0.074704 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.964430 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/lechuga.fbx
-  artifactKey: Guid(f218fa1ea13ee6148a8f28a318536a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/lechuga.fbx using Guid(f218fa1ea13ee6148a8f28a318536a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f24817e631c4acd70b4e33d53f7101a7') in 0.037028 seconds 
+  Time since last request: 149.397615 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/MesaCocina.fbx
+  artifactKey: Guid(98b6b5b59764adf489e61a7460ad4f8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/MesaCocina.fbx using Guid(98b6b5b59764adf489e61a7460ad4f8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2020258721dae62c2bd6837a6632c0d') in 0.078885 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.038807 seconds.
+Registered in 0.003209 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.333 seconds
+- Completed reload, in  1.183 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1334ms)
-		BeginReloadAssembly (209ms)
+	ReloadAssembly (1183ms)
+		BeginReloadAssembly (146ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (75ms)
-		EndReloadAssembly (1043ms)
-			LoadAssemblies (129ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (955ms)
+			LoadAssemblies (122ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (311ms)
+			SetupTypeCache (330ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (448ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (370ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (94ms)
-				ProcessInitializeOnLoadAttributes (318ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (14ms)
-				EditorAssembliesLoaded (1ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (255ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1772 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 84.3 MB.
-System memory in use after: 84.4 MB.
+System memory in use before: 84.4 MB.
+System memory in use after: 84.5 MB.
 
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2296.
-Total: 3.275600 ms (FindLiveObjects: 0.141900 ms CreateObjectMapping: 0.060900 ms MarkObjects: 3.020200 ms  DeleteObjects: 0.051200 ms)
+Total: 2.475200 ms (FindLiveObjects: 0.127900 ms CreateObjectMapping: 0.065800 ms MarkObjects: 2.260300 ms  DeleteObjects: 0.020600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
