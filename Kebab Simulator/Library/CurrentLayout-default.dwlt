@@ -120,10 +120,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 709, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
+  m_MinSize: {x: 708, y: 492}
+  m_MaxSize: {x: 18003, y: 14042}
   vertical: 0
-  controlID: 14562
+  controlID: 6640
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_MinSize: {x: 231, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 14480
+  controlID: 6659
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -223,12 +223,12 @@ MonoBehaviour:
     height: 947
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 11}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
   - {fileID: 11}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -311,10 +311,10 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 1
+    m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -373,9 +373,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 50640000
-      m_LastClickedID: 25680
-      m_ExpandedIDs: eecdffff20d6ffffbcf5ffff42fbffff646000004a620000366300006c6300009a640000ae650000
+      m_SelectedIDs: bad6ffff
+      m_LastClickedID: -10566
+      m_ExpandedIDs: bad6ffff98e0ffff42fbffff66420000ca430000ac440000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -462,22 +462,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_MiProyecto/UI/Scripts
+    - Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/_MiProyecto/UI/Scripts
+  - Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\KebabSimulator\Kebab Simulator
+  m_LastProjectPath: C:\Users\maria\OneDrive\Documentos\GitHub\KebabSimulator\Kebab
+    Simulator
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 10}
-    m_SelectedIDs: 124d0000
-    m_LastClickedID: 19730
-    m_ExpandedIDs: 00000000d44c0000d64c0000d84c0000da4c0000dc4c0000de4c0000e04c0000e24c0000e44c0000e64c0000e84c0000ea4c0000ec4c0000ee4c000000ca9a3b
+    scrollPos: {x: 0, y: 90}
+    m_SelectedIDs: be4d0000
+    m_LastClickedID: 19902
+    m_ExpandedIDs: 000000003a4d00003c4d00003e4d0000404d0000424d0000444d0000464d0000484d00004a4d00004c4d00004e4d0000504d0000524d0000544d0000564d0000584d0000664d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -505,7 +506,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d44c0000d64c0000d84c0000da4c0000dc4c0000de4c0000e04c0000e24c0000e44c0000e64c0000e84c0000ea4c0000ec4c0000ee4c000000ca9a3b
+    m_ExpandedIDs: 000000003a4d00003c4d00003e4d0000404d0000424d0000444d0000464d0000484d00004a4d00004c4d00004e4d0000504d0000524d0000544d0000564d0000584d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -597,9 +598,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -7.368244, y: -3.6300154, z: -1.7968302}
+    m_Target: {x: 12.979402, y: -17.194445, z: 15.450035}
     speed: 2
-    m_Value: {x: -7.368244, y: -3.6300154, z: -1.7968302}
+    m_Value: {x: 12.979402, y: -17.194445, z: 15.450035}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -646,13 +647,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.15622263, y: -0.82597065, z: 0.27617303, w: 0.46662495}
+    m_Target: {x: 0.3589997, y: 0.3927731, z: -0.16986181, w: 0.82986677}
     speed: 2
-    m_Value: {x: -0.1561724, y: 0.82570505, z: -0.2760842, w: -0.46647492}
+    m_Value: {x: 0.3589997, y: 0.3927731, z: -0.16986181, w: 0.8298667}
   m_Size:
-    m_Target: 11.811211
+    m_Target: 12.826804
     speed: 2
-    m_Value: 11.811211
+    m_Value: 12.826804
   m_Ortho:
     m_Target: 0
     speed: 2
