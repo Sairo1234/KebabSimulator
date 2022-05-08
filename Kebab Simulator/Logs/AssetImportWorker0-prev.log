@@ -15,11 +15,11 @@ C:/Users/maria/OneDrive/Documentos/GitHub/KebabSimulator/Kebab Simulator
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62370
+51354
 Successfully changed project path to: C:/Users/maria/OneDrive/Documentos/GitHub/KebabSimulator/Kebab Simulator
 C:/Users/maria/OneDrive/Documentos/GitHub/KebabSimulator/Kebab Simulator
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 31.34 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 35.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
@@ -35,39 +35,39 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56344
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56140
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002522 seconds.
+Registered in 0.002669 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 31.55 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 32.58 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.553 seconds
+- Completed reload, in  0.550 seconds
 Domain Reload Profiling:
-	ReloadAssembly (553ms)
-		BeginReloadAssembly (66ms)
+	ReloadAssembly (550ms)
+		BeginReloadAssembly (63ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (415ms)
-			LoadAssemblies (64ms)
+		EndReloadAssembly (419ms)
+			LoadAssemblies (61ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (135ms)
+			SetupTypeCache (136ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (157ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (155ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (32ms)
+				RefreshPlugins (33ms)
 				BeforeProcessingInitializeOnLoad (16ms)
-				ProcessInitializeOnLoadAttributes (79ms)
+				ProcessInitializeOnLoadAttributes (76ms)
 				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -75,36 +75,36 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002816 seconds.
+Registered in 0.002848 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.968 seconds
+- Completed reload, in  0.976 seconds
 Domain Reload Profiling:
-	ReloadAssembly (968ms)
-		BeginReloadAssembly (139ms)
+	ReloadAssembly (977ms)
+		BeginReloadAssembly (142ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (765ms)
-			LoadAssemblies (86ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (778ms)
+			LoadAssemblies (92ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (236ms)
+			SetupTypeCache (245ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (313ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (317ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (83ms)
-				ProcessInitializeOnLoadAttributes (209ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (213ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -112,15 +112,15 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
 Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1809 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 84.1 MB.
-System memory in use after: 84.2 MB.
+System memory in use before: 84.0 MB.
+System memory in use after: 84.1 MB.
 
 Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2246.
-Total: 2.249800 ms (FindLiveObjects: 0.128800 ms CreateObjectMapping: 0.066000 ms MarkObjects: 1.999500 ms  DeleteObjects: 0.054700 ms)
+Total: 2.292500 ms (FindLiveObjects: 0.120700 ms CreateObjectMapping: 0.062800 ms MarkObjects: 2.039000 ms  DeleteObjects: 0.069300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,232 +134,427 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/_MiProyecto/Items/Prefabs/estacionVerduraSinVitrina (1).fbx
-  artifactKey: Guid(ee1c33a05ca075e428f8188b804f79c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/estacionVerduraSinVitrina (1).fbx using Guid(ee1c33a05ca075e428f8188b804f79c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ad1c598ed2302fe0edd8ab70f4bce40') in 0.133121 seconds 
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/RolloCarne.fbx
+  artifactKey: Guid(fd85b023b176fec4d90eead4c127167c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/RolloCarne.fbx using Guid(fd85b023b176fec4d90eead4c127167c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '718005a6ac433d7d716b20c04b105c29') in 0.137855 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/bandejaVerdura (1).fbx
-  artifactKey: Guid(6ca4aaef9330f614ea8b9e974e6263ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/bandejaVerdura (1).fbx using Guid(6ca4aaef9330f614ea8b9e974e6263ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f7157c6437a3794cff40372ff43fba2') in 0.018250 seconds 
+  Time since last request: 0.743802 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/lado2carneCordero.fbx
+  artifactKey: Guid(33e1c8916e00314448fdf116fbe39d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/lado2carneCordero.fbx using Guid(33e1c8916e00314448fdf116fbe39d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'defa11bf44df7ef938b479bba41679ce') in 0.017932 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000340 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/MesaCocina.fbx
-  artifactKey: Guid(98b6b5b59764adf489e61a7460ad4f8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/MesaCocina.fbx using Guid(98b6b5b59764adf489e61a7460ad4f8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b310a27bbb909a0ac81fb1754471efa') in 0.022437 seconds 
+  Time since last request: 3.795349 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/lado1carneCordero.fbx
+  artifactKey: Guid(120c8aad95ed5ab4a988c93d257249b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/lado1carneCordero.fbx using Guid(120c8aad95ed5ab4a988c93d257249b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5b08d98f382d10d1a59fee8879fbe83') in 0.017106 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000505 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/vitrinaVerdura (1).fbx
-  artifactKey: Guid(e071c70dc093e5d4e882e6f85ccc242d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/vitrinaVerdura (1).fbx using Guid(e071c70dc093e5d4e882e6f85ccc242d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3261a71c9adb003c26d0ffeaf3f419d') in 0.016417 seconds 
+  Time since last request: 75.948721 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c16ee0baf64c8eb3fa466ca37d7fe057') in 0.033215 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.016504 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/estacion_Carne.fbx
-  artifactKey: Guid(131583180cd6a7b4ab10ba6b70dc1059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/estacion_Carne.fbx using Guid(131583180cd6a7b4ab10ba6b70dc1059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61193280e88e1a20b4c0280bfd3eb79e') in 0.066900 seconds 
+  Time since last request: 3.379555 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c8ed792117d522d79130feeafd88aed') in 0.014219 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.382713 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/estacion_salsa.fbx
-  artifactKey: Guid(c10fe00511a20c448ad7564155904e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/estacion_salsa.fbx using Guid(c10fe00511a20c448ad7564155904e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0386bb4e732c1ea9060de40e4442c39f') in 0.029878 seconds 
+  Time since last request: 6.790338 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdb3d1c4974ed074408790d0a7bf2f59') in 0.013357 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 78.917962 seconds.
-  path: Assets/_MiProyecto/Items/Materiales/Cristal.mat
-  artifactKey: Guid(dba66fa0fa5504141a71af28a03fed0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Materiales/Cristal.mat using Guid(dba66fa0fa5504141a71af28a03fed0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b7885c202469ce901ffd212ecbed222') in 0.017748 seconds 
+  Time since last request: 12.895013 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '933bf51847daa98dbeb0c57713acd0c5') in 0.012447 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.675413 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Brocoli.prefab
-  artifactKey: Guid(7db507bf71487ae4190ab3f456ecb12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Brocoli.prefab using Guid(7db507bf71487ae4190ab3f456ecb12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1ab3f451f10bfbf762e114999b59e1b') in 0.035821 seconds 
+  Time since last request: 2.210041 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbc4c670ba87225374317ed352eb2319') in 0.019484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.799072 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d560ae87bcbd24b6909eadaa9fd8d7a') in 0.020039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.803352 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6021a7497e0368058ea1661f206bc62') in 0.014204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.841114 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed280066a4c3c8168338d01676439d4c') in 0.013706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.401452 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c881708102131686d36bc30c520ecf75') in 0.018576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.827707 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '587234f9ad12be65c96c7e4642c04408') in 0.014103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.631649 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f567fa18d8b8137ac14198ffce97418') in 0.013231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.397937 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7912fe96331fd73fb06602b446e42cbf') in 0.017391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.838633 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8699f73bc957eff4f3d8c8da130b180f') in 0.017016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.804029 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75959e5abe6abc65576bfbc55e43fd0b') in 0.016902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.399916 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8063383a155808697b4dc23f414de89c') in 0.015872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.465226 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd263424233e2003e4d3a9b5e9e521aba') in 0.013558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.004858 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec2e1bb9e46e22ee3a857631851f1ddf') in 0.014366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.806868 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e344911c4c91ab4f557ce12b67dbacb') in 0.014704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.454795 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaecf1563395917f98d5aaf5eb002527') in 0.018026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 169.549185 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Falfel.mat
+  artifactKey: Guid(f41ac3fc9d4ab6742ab19bffc9232215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Falfel.mat using Guid(f41ac3fc9d4ab6742ab19bffc9232215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa14c232641300e9d9c136d6079169ed') in 0.027569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.098164 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Falafel.mat
+  artifactKey: Guid(f41ac3fc9d4ab6742ab19bffc9232215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Falafel.mat using Guid(f41ac3fc9d4ab6742ab19bffc9232215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f79e15d14f324e0ec9c33f6ce4b2824f') in 0.014897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 280.502166 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/RolloUV.fbx
+  artifactKey: Guid(dfe225a8ccb06a04a857731db0ce7d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/RolloUV.fbx using Guid(dfe225a8ccb06a04a857731db0ce7d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d603a8ae795861634436d262366646') in 0.025973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 56.725079 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fff6e79d6ae3d1805492bac293c9e6a') in 0.018685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.203785 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d82dc2a1aa4e33ac590fd19467dac3c') in 0.012169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.991908 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05477e190d51700dffe7540f67974b47') in 0.012208 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 54.397950 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e62c5fab33ece59459dbc218f8bb965') in 0.015619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.125779 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57cb2cca374375d1710525694754e65a') in 0.016642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.401532 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5e1b91446a9a8a29e22a329f53077ec') in 0.013277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.599521 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '324dae9f302465a47b7cf40d47d31d38') in 0.019060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.595995 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b3d4ac27263acb76f4db1f73627623e') in 0.011563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.595096 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aaa8efa88fb6bf6627562be04e72571') in 0.011830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.061762 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c243a073d038467f44058f1837f02b9') in 0.017671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.590616 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c82c12222473f6e11bcd06cb7db18d37') in 0.012861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.292709 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Brocoli/Brocoli.png
+  artifactKey: Guid(ca527e14f0b73fc4a8542d8db3e14225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Brocoli/Brocoli.png using Guid(ca527e14f0b73fc4a8542d8db3e14225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34a7d2aa0b35a9b64b11d3bd1b31fc4d') in 0.029299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Col/col.png
+  artifactKey: Guid(bf0dc9bec25ceda41a3949d55cdfd8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Col/col.png using Guid(bf0dc9bec25ceda41a3949d55cdfd8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '044ba2616bf6ddb3c4fbf2a9a007b212') in 0.018485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Cebolla/cebolla_blanca.png
+  artifactKey: Guid(c800814e6791d674abcc8d902e26b80d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Cebolla/cebolla_blanca.png using Guid(c800814e6791d674abcc8d902e26b80d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acf905791d1711779d3080606499782b') in 0.012295 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000152 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Cebolla Blanca.prefab
-  artifactKey: Guid(682e32b52ab8f3f42b8ae141ab72c474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Cebolla Blanca.prefab using Guid(682e32b52ab8f3f42b8ae141ab72c474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd008c98bbeb2768bfa249b49d4c818c') in 0.017903 seconds 
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Salsas/Deluxe/Captura 1.PNG
+  artifactKey: Guid(6bb0f86165804514da2f431073ee4d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Salsas/Deluxe/Captura 1.PNG using Guid(6bb0f86165804514da2f431073ee4d18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1800c9c67decbf17cb11ca4d7e21b1a7') in 0.014315 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/lechuga.fbx
-  artifactKey: Guid(31fca40b6ce460b4d9025c381cc09688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/lechuga.fbx using Guid(31fca40b6ce460b4d9025c381cc09688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd405ca222100be9678740b9facdd84f8') in 0.018969 seconds 
+  Time since last request: 1.100268 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Lechuga/lechuga.png
+  artifactKey: Guid(166d23037b8c6574abddc9d9014c4c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Lechuga/lechuga.png using Guid(166d23037b8c6574abddc9d9014c4c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c24c48b193d9460eb2e4c27d83123103') in 0.010587 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Col.prefab
-  artifactKey: Guid(9ffe737c6d98a49439ecdf9d1a94edfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Col.prefab using Guid(9ffe737c6d98a49439ecdf9d1a94edfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9360919348388c41fd7087ad9a19debf') in 0.015090 seconds 
+  Time since last request: 0.000251 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Maiz/Maiz.png
+  artifactKey: Guid(9de2c80f3c121264e9f8f01a2da3256d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Maiz/Maiz.png using Guid(9de2c80f3c121264e9f8f01a2da3256d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80bb76c0245bfdbea0de178428620e6a') in 0.011621 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Pepino.prefab
-  artifactKey: Guid(c6a9f7ac28f95aa418707782de25d2d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Pepino.prefab using Guid(c6a9f7ac28f95aa418707782de25d2d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b960c7437b4e2232002ec52c09172de5') in 0.020345 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Lechuga.prefab
-  artifactKey: Guid(4fa0b118601a73b408f7dd43384bd15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Lechuga.prefab using Guid(4fa0b118601a73b408f7dd43384bd15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdaf61d1fac403ce3093bb5298ebadbd') in 0.014079 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/estacionVerdura.fbx
-  artifactKey: Guid(7ec9ed18fcc9850478a5787f2e4ebc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/estacionVerdura.fbx using Guid(7ec9ed18fcc9850478a5787f2e4ebc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '091194834825b27e25fb885ff266d5f9') in 0.026101 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.311601 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Pimiento.prefab
-  artifactKey: Guid(b317c7abba3a2cf42b7a1ccd0cac10e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Pimiento.prefab using Guid(b317c7abba3a2cf42b7a1ccd0cac10e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8f706a9e997732ea721b5b2b49b818e') in 0.015487 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.032615 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Tomate.prefab
-  artifactKey: Guid(dea3d768664205d4cb758337649a444e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Tomate.prefab using Guid(dea3d768664205d4cb758337649a444e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '725d13717a6d96f63723a7da7aeefbf9') in 0.020468 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.577684 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials
-  artifactKey: Guid(03c2a57e9f0d7984bb433d284b4eb640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials using Guid(03c2a57e9f0d7984bb433d284b4eb640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '202fdb8670daffcc0309ef6ee7d74e83') in 0.003405 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.864008 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/01 - Default.mat
-  artifactKey: Guid(3daaa768c56958d4d87c9da5325e2cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/01 - Default.mat using Guid(3daaa768c56958d4d87c9da5325e2cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2a11a36139725ec99d36b219a7c0f4c') in 0.009268 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.271960 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Bandeja.fbx
-  artifactKey: Guid(38078ca02a85a9347a9329dd0598cbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Bandeja.fbx using Guid(38078ca02a85a9347a9329dd0598cbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f3fee32bd5ae7485b1f819ed882b603') in 0.015776 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/estacionVerduraSinVitrina (1).fbx
-  artifactKey: Guid(8eabe34381f4316458fab0473e1cfe09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/estacionVerduraSinVitrina (1).fbx using Guid(8eabe34381f4316458fab0473e1cfe09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3399608c159af5726e0b70149be1d8e') in 0.013516 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000152 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Metallic.mat
-  artifactKey: Guid(476441ca46b449b41a7c4f01af4a157d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Metallic.mat using Guid(476441ca46b449b41a7c4f01af4a157d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab032b7c9eb00b2fd787c28ccdd48e43') in 0.011941 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000450 seconds.
+  Time since last request: 0.113797 seconds.
   path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Mtalic.png
   artifactKey: Guid(10d4daab0a0dfc0449a9c54aa30e6029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Mtalic.png using Guid(10d4daab0a0dfc0449a9c54aa30e6029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa2f6caef9bcf405efdcf956a7ff103') in 0.027464 seconds 
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Mtalic.png using Guid(10d4daab0a0dfc0449a9c54aa30e6029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa2f6caef9bcf405efdcf956a7ff103') in 0.007758 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/vitrinaVerdura (1).fbx
-  artifactKey: Guid(dace8f67aa92e6f4a964b026177b057d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/vitrinaVerdura (1).fbx using Guid(dace8f67aa92e6f4a964b026177b057d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ebe98f103bc41b35a37dd006bce3926') in 0.016346 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003116 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.927 seconds
-Domain Reload Profiling:
-	ReloadAssembly (927ms)
-		BeginReloadAssembly (111ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (759ms)
-			LoadAssemblies (87ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (238ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (312ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (79ms)
-				ProcessInitializeOnLoadAttributes (211ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1772 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 84.6 MB.
-System memory in use after: 84.7 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2297.
-Total: 2.248200 ms (FindLiveObjects: 0.139200 ms CreateObjectMapping: 0.066900 ms MarkObjects: 1.997200 ms  DeleteObjects: 0.021300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 12.177307 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Pepino/pepino.png
+  artifactKey: Guid(e686684de45691f4987ad74b11406cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Pepino/pepino.png using Guid(e686684de45691f4987ad74b11406cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a1e3f8043c845792c06dc7d8061d0f1') in 0.012597 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 314.093363 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/estacion_Carne 1.fbx
-  artifactKey: Guid(6ffcd9ef49299df4aba63359bf815dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/estacion_Carne 1.fbx using Guid(6ffcd9ef49299df4aba63359bf815dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd76cae9ea5e1c0c13d685850a748da3f') in 0.110730 seconds 
+  Time since last request: 0.000145 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Pepino/Pepoino.JPG
+  artifactKey: Guid(ce94b9c7c0faeda4eb1a826ca843faca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Pepino/Pepoino.JPG using Guid(ce94b9c7c0faeda4eb1a826ca843faca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2afafc459c3485424d8afd400c5a0540') in 0.011028 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 250.164751 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Rejilla.mat
-  artifactKey: Guid(84a46d5e681c09340bdc6d29c9c70bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Rejilla.mat using Guid(84a46d5e681c09340bdc6d29c9c70bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5bc0d98f6fe39028b98c144925fd8fe') in 0.013454 seconds 
+  Time since last request: 0.140525 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Pimiento/PimientoA.png
+  artifactKey: Guid(d869262a2926ac9438402d8f7e88ddf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Pimiento/PimientoA.png using Guid(d869262a2926ac9438402d8f7e88ddf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5790e245786516795bd8c3cf229d1c89') in 0.010545 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.790791 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Rejilla.jpg
-  artifactKey: Guid(42279280a56a8804b9dc9de68841a4cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Rejilla.jpg using Guid(42279280a56a8804b9dc9de68841a4cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce1f2ddba4858f7462ef23df40e139a3') in 0.015719 seconds 
+  Time since last request: 0.000190 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Pimiento/PimientoRojo.png
+  artifactKey: Guid(3116fbd763546f14892db85f33286c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Pimiento/PimientoRojo.png using Guid(3116fbd763546f14892db85f33286c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d23b4b64f199019edb02aaf305d26b7') in 0.011681 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 109.944588 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/RejillaFuego.jpg
-  artifactKey: Guid(b30b8243630b6c64f8a267d280210aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/RejillaFuego.jpg using Guid(b30b8243630b6c64f8a267d280210aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5436b0199a30fe42083023e21eff3fbf') in 0.013500 seconds 
+  Time since last request: 0.413163 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Pimiento/PimientoV.PNG
+  artifactKey: Guid(9c19568baaa8d1e428c3441d33011cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Pimiento/PimientoV.PNG using Guid(9c19568baaa8d1e428c3441d33011cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c85f1b22f0ebfdc3e49a66b919dda81') in 0.013045 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 26.069888 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Fuego.mat
-  artifactKey: Guid(f04e4b0f96e8ac944ba84e7bab886ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Fuego.mat using Guid(f04e4b0f96e8ac944ba84e7bab886ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc8a179e5766dcabd1f4aad1249402c7') in 0.011794 seconds 
+  Time since last request: 0.059640 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/tomate/tomate.png
+  artifactKey: Guid(607adf465d6f407439c162157b5e6789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/tomate/tomate.png using Guid(607adf465d6f407439c162157b5e6789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e88968485c5019f8cd765048323c75d') in 0.010358 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 258.747015 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/RejillaR.JPG
-  artifactKey: Guid(b66959daac37dc547be41c0631a3896c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/RejillaR.JPG using Guid(b66959daac37dc547be41c0631a3896c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1127397fe5fc5c31cef16bbfe9ec27c9') in 0.019305 seconds 
+  Time since last request: 13.155963 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/tex kebab normal.jpg
+  artifactKey: Guid(d9a39a38a5ca505469a1797c84ee9886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/tex kebab normal.jpg using Guid(d9a39a38a5ca505469a1797c84ee9886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17392ba0ce247d9f4e0a17b435cc8d07') in 0.013721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.208872 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6fda8efb9f59f224f689d98739ace2b') in 0.015897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.677317 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '049f9a24de24455b17cb64310a939f16') in 0.013640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.207891 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa878629955242456dbe6e37acdde344') in 0.017189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.845241 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb0af5cee8f8b9630144f53a68f2cd4a') in 0.017142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.991243 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '554f7c718a208547ff46fcd67fae5a94') in 0.014766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.995941 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac63c09f53c79378a845cd97fa603e2e') in 0.013431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.996944 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '407c98b5c0053b7846a4200d02cf0867') in 0.015554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.407403 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13cfe25268a5b947ded58fbd82636c61') in 0.018281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.829217 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44d60697d0439cf490b072eb02efd35f') in 0.015517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.616844 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47322c10d7f42e2c4bc3ced5fd8f56e1') in 0.018423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.525284 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e255d8e54b16513c57df8cb587187e93') in 0.014660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.507948 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61f1be88f5c66bbdd040e1e0485c0bac') in 0.015557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.021850 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60015b7e9bdb09bbe533b595bdcd51e4') in 0.019037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 350.255293 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Falafel.png
+  artifactKey: Guid(7636aa630155ac94cbcb8246e2d9537c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Falafel.png using Guid(7636aa630155ac94cbcb8246e2d9537c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cd097154ef3dd1c04b89b82c9fbea42') in 0.013058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 525.245057 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/rollocarne 1.fbx
+  artifactKey: Guid(377803a0b8d977b44b8c853117479ccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/rollocarne 1.fbx using Guid(377803a0b8d977b44b8c853117479ccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faf6303ce75b06bf0b75e79633efa73d') in 0.020058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.835376 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18ac5e70ca32a53f735e9c45a82f07cc') in 0.015211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.278874 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '592eb434ecdeaaadb5721d1e6ba08873') in 0.018056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.887592 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca2398894e04c7b8e1e63a8adbab9ac0') in 0.015905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.934180 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02cda48f18c0cce29ac3684f45e3412c') in 0.013988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.917336 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dbb88991fccc1d5aae2369ee38b3b7c') in 0.018255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.702076 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
+  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2975a1da14396ae5f072c2957df9df8') in 0.011985 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
