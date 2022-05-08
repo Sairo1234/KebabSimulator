@@ -110,7 +110,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2432693100316199424}
-  - {fileID: 1655887075017284149}
+  - {fileID: 3846181396577675362}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -538,101 +538,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: '-'
---- !u!1 &3764941774687226740
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1655887075017284149}
-  - component: {fileID: 3779079176590891244}
-  - component: {fileID: 6618472847710921153}
-  - component: {fileID: 1785998052870773193}
-  m_Layer: 0
-  m_Name: Modelo Brocoli
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1655887075017284149
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3764941774687226740}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3833073, y: 0.051654533, z: 0.8188941}
-  m_Children: []
-  m_Father: {fileID: 2937619879324476080}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3779079176590891244
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3764941774687226740}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &6618472847710921153
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3764941774687226740}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 699dec4af53803a4aae256c07082d8a6, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1785998052870773193
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3764941774687226740}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.1644245, y: 1.3191776, z: 1.0579231}
-  m_Center: {x: 0.008194114, y: 0.15958968, z: 0.028961543}
 --- !u!1 &9186127096373156724
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,3 +617,582 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Unid.
+--- !u!1001 &212698609291499865
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3846181396577675362}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.010026872
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.1970678
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.24804604
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.005007947
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0000000013969838
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000008940696
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.9999875
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180.574
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_Name
+      value: Brocoli (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+--- !u!1001 &3183171977442029844
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3846181396577675362}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.138
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.013
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.248
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_Name
+      value: Brocoli (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+--- !u!1001 &3668983334471929737
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2937619879324476080}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 38078ca02a85a9347a9329dd0598cbcd, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38078ca02a85a9347a9329dd0598cbcd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38078ca02a85a9347a9329dd0598cbcd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38078ca02a85a9347a9329dd0598cbcd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38078ca02a85a9347a9329dd0598cbcd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38078ca02a85a9347a9329dd0598cbcd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38078ca02a85a9347a9329dd0598cbcd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38078ca02a85a9347a9329dd0598cbcd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38078ca02a85a9347a9329dd0598cbcd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38078ca02a85a9347a9329dd0598cbcd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38078ca02a85a9347a9329dd0598cbcd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 38078ca02a85a9347a9329dd0598cbcd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 476441ca46b449b41a7c4f01af4a157d, type: 2}
+    - target: {fileID: 919132149155446097, guid: 38078ca02a85a9347a9329dd0598cbcd, type: 3}
+      propertyPath: m_Name
+      value: BandejaBrocoli
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 38078ca02a85a9347a9329dd0598cbcd, type: 3}
+--- !u!4 &3846181396577675362 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 38078ca02a85a9347a9329dd0598cbcd, type: 3}
+  m_PrefabInstance: {fileID: 3668983334471929737}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4091457792514515088
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3846181396577675362}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.116
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.182
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.248
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9869694
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.00000002235174
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.16090845
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -18.519
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_Name
+      value: Brocoli (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+--- !u!1001 &4608189179688659948
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3846181396577675362}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.147
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.197
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.248
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_Name
+      value: Brocoli (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+--- !u!1001 &5338359453377425646
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3846181396577675362}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.118
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.181
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.248
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9921621
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.00000001117587
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.124957085
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -14.357
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_Name
+      value: Brocoli
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+--- !u!1001 &5685200717859577384
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3846181396577675362}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.003
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.013
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.248
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_Name
+      value: Brocoli (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+--- !u!1001 &6237861689981140009
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3846181396577675362}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.14698309
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0130134225
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.24803048
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.05742053
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000011920926
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.99835014
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 186.584
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_Name
+      value: Brocoli (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+--- !u!1001 &8187877637972037038
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3846181396577675362}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.17400023
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.24800003
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_Name
+      value: Brocoli (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+--- !u!1001 &8939636235240085285
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3846181396577675362}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.13512403
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.17400119
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.24807823
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.061964683
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0000000037252899
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0000001490116
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.99807835
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -172.895
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+      propertyPath: m_Name
+      value: Brocoli (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52f41f691111133409be9440f03ce06f, type: 3}
