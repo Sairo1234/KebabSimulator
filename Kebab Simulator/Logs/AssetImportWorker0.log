@@ -1,126 +1,123 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.30f1 (1fb1bf06830e) revision 2077119'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'es' Physical Memory: 16205 MB
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'es' Physical Memory: 16327 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Unity.exe
+E:\Unity\2020.3.30f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/maria/OneDrive/Documentos/GitHub/KebabSimulator/Kebab Simulator
+C:/Users/minel/KebabSimulator/KebabSimulator/Kebab Simulator
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62370
-Successfully changed project path to: C:/Users/maria/OneDrive/Documentos/GitHub/KebabSimulator/Kebab Simulator
-C:/Users/maria/OneDrive/Documentos/GitHub/KebabSimulator/Kebab Simulator
+52271
+Successfully changed project path to: C:/Users/minel/KebabSimulator/KebabSimulator/Kebab Simulator
+C:/Users/minel/KebabSimulator/KebabSimulator/Kebab Simulator
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 31.34 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 33.84 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/maria/OneDrive/Documentos/GitHub/KebabSimulator/Kebab Simulator/Assets
+[Subsystems] Discovering subsystems at path E:/Unity/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/minel/KebabSimulator/KebabSimulator/Kebab Simulator/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3070 Laptop GPU (ID=0x249d)
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
     Vendor:   
-    VRAM:     8044 MB
-    Driver:   30.0.14.9717
+    VRAM:     8088 MB
+    Driver:   30.0.15.1179
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56344
+Mono path[0] = 'E:/Unity/2020.3.30f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Unity/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/Unity/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56356
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002522 seconds.
+Register platform support module: E:/Unity/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001034 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 31.55 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 31.63 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.553 seconds
+- Completed reload, in  0.551 seconds
 Domain Reload Profiling:
-	ReloadAssembly (553ms)
-		BeginReloadAssembly (66ms)
+	ReloadAssembly (552ms)
+		BeginReloadAssembly (85ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (415ms)
-			LoadAssemblies (64ms)
+		EndReloadAssembly (405ms)
+			LoadAssemblies (84ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (135ms)
+			SetupTypeCache (152ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (157ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (143ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (32ms)
-				BeforeProcessingInitializeOnLoad (16ms)
-				ProcessInitializeOnLoadAttributes (79ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (69ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002816 seconds.
+Registered in 0.006714 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.968 seconds
+- Completed reload, in  1.303 seconds
 Domain Reload Profiling:
-	ReloadAssembly (968ms)
-		BeginReloadAssembly (139ms)
+	ReloadAssembly (1304ms)
+		BeginReloadAssembly (127ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (765ms)
-			LoadAssemblies (86ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (1097ms)
+			LoadAssemblies (117ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (236ms)
+			SetupTypeCache (324ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (313ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (475ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (83ms)
-				ProcessInitializeOnLoadAttributes (209ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (366ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1809 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 84.1 MB.
-System memory in use after: 84.2 MB.
+System memory in use before: 84.0 MB.
+System memory in use after: 84.1 MB.
 
 Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2246.
-Total: 2.249800 ms (FindLiveObjects: 0.128800 ms CreateObjectMapping: 0.066000 ms MarkObjects: 1.999500 ms  DeleteObjects: 0.054700 ms)
+Total: 2.288000 ms (FindLiveObjects: 0.123300 ms CreateObjectMapping: 0.056600 ms MarkObjects: 2.050300 ms  DeleteObjects: 0.057100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,187 +131,234 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/_MiProyecto/Items/Prefabs/estacionVerduraSinVitrina (1).fbx
-  artifactKey: Guid(ee1c33a05ca075e428f8188b804f79c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/estacionVerduraSinVitrina (1).fbx using Guid(ee1c33a05ca075e428f8188b804f79c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ad1c598ed2302fe0edd8ab70f4bce40') in 0.133121 seconds 
+  path: Assets/_MiProyecto/Mapa/Materiales/puerta.fbx
+  artifactKey: Guid(8edc5073363fae94bb4bc2b7cc269cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Mapa/Materiales/puerta.fbx using Guid(8edc5073363fae94bb4bc2b7cc269cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9184132ac17330115df71ee434e6da0') in 0.109915 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/bandejaVerdura (1).fbx
-  artifactKey: Guid(6ca4aaef9330f614ea8b9e974e6263ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/bandejaVerdura (1).fbx using Guid(6ca4aaef9330f614ea8b9e974e6263ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f7157c6437a3794cff40372ff43fba2') in 0.018250 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000340 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/MesaCocina.fbx
-  artifactKey: Guid(98b6b5b59764adf489e61a7460ad4f8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/MesaCocina.fbx using Guid(98b6b5b59764adf489e61a7460ad4f8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b310a27bbb909a0ac81fb1754471efa') in 0.022437 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000505 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/vitrinaVerdura (1).fbx
-  artifactKey: Guid(e071c70dc093e5d4e882e6f85ccc242d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/vitrinaVerdura (1).fbx using Guid(e071c70dc093e5d4e882e6f85ccc242d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3261a71c9adb003c26d0ffeaf3f419d') in 0.016417 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.016504 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/estacion_Carne.fbx
-  artifactKey: Guid(131583180cd6a7b4ab10ba6b70dc1059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/estacion_Carne.fbx using Guid(131583180cd6a7b4ab10ba6b70dc1059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61193280e88e1a20b4c0280bfd3eb79e') in 0.066900 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.382713 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/estacion_salsa.fbx
-  artifactKey: Guid(c10fe00511a20c448ad7564155904e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/estacion_salsa.fbx using Guid(c10fe00511a20c448ad7564155904e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0386bb4e732c1ea9060de40e4442c39f') in 0.029878 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 78.917962 seconds.
-  path: Assets/_MiProyecto/Items/Materiales/Cristal.mat
-  artifactKey: Guid(dba66fa0fa5504141a71af28a03fed0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Materiales/Cristal.mat using Guid(dba66fa0fa5504141a71af28a03fed0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b7885c202469ce901ffd212ecbed222') in 0.017748 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.675413 seconds.
+  Time since last request: 0.938554 seconds.
   path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Brocoli.prefab
   artifactKey: Guid(7db507bf71487ae4190ab3f456ecb12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Brocoli.prefab using Guid(7db507bf71487ae4190ab3f456ecb12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1ab3f451f10bfbf762e114999b59e1b') in 0.035821 seconds 
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Brocoli.prefab using Guid(7db507bf71487ae4190ab3f456ecb12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '815905521e16de68dceab627ff50224e') in 0.029965 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000152 seconds.
   path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Cebolla Blanca.prefab
   artifactKey: Guid(682e32b52ab8f3f42b8ae141ab72c474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Cebolla Blanca.prefab using Guid(682e32b52ab8f3f42b8ae141ab72c474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd008c98bbeb2768bfa249b49d4c818c') in 0.017903 seconds 
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Cebolla Blanca.prefab using Guid(682e32b52ab8f3f42b8ae141ab72c474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '632facc1a46fa462396f3f7876b719e6') in 0.014330 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000235 seconds.
+  Time since last request: 0.000168 seconds.
   path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/lechuga.fbx
   artifactKey: Guid(31fca40b6ce460b4d9025c381cc09688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/lechuga.fbx using Guid(31fca40b6ce460b4d9025c381cc09688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd405ca222100be9678740b9facdd84f8') in 0.018969 seconds 
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/lechuga.fbx using Guid(31fca40b6ce460b4d9025c381cc09688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fa9ac5830250ce95ad3df5b5c29cb93') in 0.011288 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Col.prefab
-  artifactKey: Guid(9ffe737c6d98a49439ecdf9d1a94edfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Col.prefab using Guid(9ffe737c6d98a49439ecdf9d1a94edfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9360919348388c41fd7087ad9a19debf') in 0.015090 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Pepino.prefab
-  artifactKey: Guid(c6a9f7ac28f95aa418707782de25d2d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Pepino.prefab using Guid(c6a9f7ac28f95aa418707782de25d2d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b960c7437b4e2232002ec52c09172de5') in 0.020345 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Lechuga.prefab
-  artifactKey: Guid(4fa0b118601a73b408f7dd43384bd15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Lechuga.prefab using Guid(4fa0b118601a73b408f7dd43384bd15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdaf61d1fac403ce3093bb5298ebadbd') in 0.014079 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/estacionVerdura.fbx
-  artifactKey: Guid(7ec9ed18fcc9850478a5787f2e4ebc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/estacionVerdura.fbx using Guid(7ec9ed18fcc9850478a5787f2e4ebc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '091194834825b27e25fb885ff266d5f9') in 0.026101 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.311601 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Pimiento.prefab
-  artifactKey: Guid(b317c7abba3a2cf42b7a1ccd0cac10e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Pimiento.prefab using Guid(b317c7abba3a2cf42b7a1ccd0cac10e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8f706a9e997732ea721b5b2b49b818e') in 0.015487 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.032615 seconds.
+  Time since last request: 0.000131 seconds.
   path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Tomate.prefab
   artifactKey: Guid(dea3d768664205d4cb758337649a444e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Tomate.prefab using Guid(dea3d768664205d4cb758337649a444e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '725d13717a6d96f63723a7da7aeefbf9') in 0.020468 seconds 
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Tomate.prefab using Guid(dea3d768664205d4cb758337649a444e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11ad05f6889df742c4631caba47f2b01') in 0.011093 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.577684 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials
-  artifactKey: Guid(03c2a57e9f0d7984bb433d284b4eb640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials using Guid(03c2a57e9f0d7984bb433d284b4eb640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '202fdb8670daffcc0309ef6ee7d74e83') in 0.003405 seconds 
+  Time since last request: 0.000133 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Col.prefab
+  artifactKey: Guid(9ffe737c6d98a49439ecdf9d1a94edfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Col.prefab using Guid(9ffe737c6d98a49439ecdf9d1a94edfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f2661e18dce4c4ef1d52a5a003f26b4') in 0.011348 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.864008 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/01 - Default.mat
-  artifactKey: Guid(3daaa768c56958d4d87c9da5325e2cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/01 - Default.mat using Guid(3daaa768c56958d4d87c9da5325e2cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2a11a36139725ec99d36b219a7c0f4c') in 0.009268 seconds 
+  Time since last request: 0.000289 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Pepino.prefab
+  artifactKey: Guid(c6a9f7ac28f95aa418707782de25d2d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Pepino.prefab using Guid(c6a9f7ac28f95aa418707782de25d2d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2300d2f42e08029765aefdda1a6f09a') in 0.013274 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.271960 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Bandeja.fbx
-  artifactKey: Guid(38078ca02a85a9347a9329dd0598cbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Bandeja.fbx using Guid(38078ca02a85a9347a9329dd0598cbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f3fee32bd5ae7485b1f819ed882b603') in 0.015776 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/estacionVerduraSinVitrina (1).fbx
-  artifactKey: Guid(8eabe34381f4316458fab0473e1cfe09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/estacionVerduraSinVitrina (1).fbx using Guid(8eabe34381f4316458fab0473e1cfe09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3399608c159af5726e0b70149be1d8e') in 0.013516 seconds 
+  Time since last request: 0.000151 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Pimiento.prefab
+  artifactKey: Guid(b317c7abba3a2cf42b7a1ccd0cac10e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Pimiento.prefab using Guid(b317c7abba3a2cf42b7a1ccd0cac10e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ecb2544ccfd9474d3157991eee283b6') in 0.012591 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000152 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Metallic.mat
-  artifactKey: Guid(476441ca46b449b41a7c4f01af4a157d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Metallic.mat using Guid(476441ca46b449b41a7c4f01af4a157d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab032b7c9eb00b2fd787c28ccdd48e43') in 0.011941 seconds 
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Lechuga.prefab
+  artifactKey: Guid(4fa0b118601a73b408f7dd43384bd15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Lechuga.prefab using Guid(4fa0b118601a73b408f7dd43384bd15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fda721a44921cfee090ccd41e4c184d') in 0.008898 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000450 seconds.
+  Time since last request: 0.000159 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/estacionVerdura.fbx
+  artifactKey: Guid(7ec9ed18fcc9850478a5787f2e4ebc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/estacionVerdura.fbx using Guid(7ec9ed18fcc9850478a5787f2e4ebc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '609f24f263c44098f9146b744f0565b1') in 0.009471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.576566 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/bandejaVerdura (1).fbx
+  artifactKey: Guid(6ca4aaef9330f614ea8b9e974e6263ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/bandejaVerdura (1).fbx using Guid(6ca4aaef9330f614ea8b9e974e6263ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b906c234ec6895f0ab55c406496c29bf') in 0.009988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/estacionVerduraSinVitrina (1).fbx
+  artifactKey: Guid(ee1c33a05ca075e428f8188b804f79c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/estacionVerduraSinVitrina (1).fbx using Guid(ee1c33a05ca075e428f8188b804f79c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '837b0adedc4cce5eb8228bdba69328a3') in 0.010353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Rejilla.jpg
+  artifactKey: Guid(42279280a56a8804b9dc9de68841a4cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Rejilla.jpg using Guid(42279280a56a8804b9dc9de68841a4cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3f2fea8ebc8d022c65eafacd210b82e') in 0.013987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/RejillaFuego.jpg
+  artifactKey: Guid(b30b8243630b6c64f8a267d280210aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/RejillaFuego.jpg using Guid(b30b8243630b6c64f8a267d280210aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84085054f3aff5aca7922d5f82dd0136') in 0.010207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Fuego.mat
+  artifactKey: Guid(f04e4b0f96e8ac944ba84e7bab886ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Fuego.mat using Guid(f04e4b0f96e8ac944ba84e7bab886ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b0019d5dd02ee6c0e2bf697e5907064') in 0.021137 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/RejillaR.JPG
+  artifactKey: Guid(b66959daac37dc547be41c0631a3896c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/RejillaR.JPG using Guid(b66959daac37dc547be41c0631a3896c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32c1d0f0c458d1bb719c945c013bad1d') in 0.010536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Rejilla.mat
+  artifactKey: Guid(84a46d5e681c09340bdc6d29c9c70bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Rejilla.mat using Guid(84a46d5e681c09340bdc6d29c9c70bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d3fd8c82b12f44056bc6d77e1ce573c') in 0.008779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/estacion_Carne 1.fbx
+  artifactKey: Guid(6ffcd9ef49299df4aba63359bf815dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/estacion_Carne 1.fbx using Guid(6ffcd9ef49299df4aba63359bf815dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd70cc4a2153d61decb2f891a54e7f917') in 0.032726 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/estacion_salsa.fbx
+  artifactKey: Guid(c10fe00511a20c448ad7564155904e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/estacion_salsa.fbx using Guid(c10fe00511a20c448ad7564155904e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22bf485f3257ccc98e581daf8a825916') in 0.015514 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/MesaCocina.fbx
+  artifactKey: Guid(98b6b5b59764adf489e61a7460ad4f8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/MesaCocina.fbx using Guid(98b6b5b59764adf489e61a7460ad4f8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60d6066a8782a2782a71ba54a821893b') in 0.011152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/vitrinaVerdura (1).fbx
+  artifactKey: Guid(e071c70dc093e5d4e882e6f85ccc242d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/vitrinaVerdura (1).fbx using Guid(e071c70dc093e5d4e882e6f85ccc242d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36ebe911f1516f93227ce6e2e8da6133') in 0.008646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.734223 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Captura.PNG
+  artifactKey: Guid(2deb5042e4533924795e37f41cbe5c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Captura.PNG using Guid(2deb5042e4533924795e37f41cbe5c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30f2958406c576aba7c2412e8ed3d8fd') in 0.008273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 60.145838 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Captura.PNG
+  artifactKey: Guid(2deb5042e4533924795e37f41cbe5c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Captura.PNG using Guid(2deb5042e4533924795e37f41cbe5c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeff96ba27295236b15457ee41391000') in 0.009642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.523477 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Salsas/BoteSalsaf.fbx
+  artifactKey: Guid(0ab04366289944a4ca64336e40406054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Salsas/BoteSalsaf.fbx using Guid(0ab04366289944a4ca64336e40406054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e6e650f962b4c2e4424e31db7473a06') in 0.022615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.416880 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials
+  artifactKey: Guid(03c2a57e9f0d7984bb433d284b4eb640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials using Guid(03c2a57e9f0d7984bb433d284b4eb640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed9dbd4a6e59c72736eb8cf0949ee017') in 0.002146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.051205 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/01 - Default.mat
+  artifactKey: Guid(3daaa768c56958d4d87c9da5325e2cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/01 - Default.mat using Guid(3daaa768c56958d4d87c9da5325e2cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48f712db487f4e78166d8491bea0d8e5') in 0.006693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/estacionVerduraSinVitrina (1).fbx
+  artifactKey: Guid(8eabe34381f4316458fab0473e1cfe09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/estacionVerduraSinVitrina (1).fbx using Guid(8eabe34381f4316458fab0473e1cfe09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '441526394d649d0aa0207e5709597ddf') in 0.010653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
   path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Mtalic.png
   artifactKey: Guid(10d4daab0a0dfc0449a9c54aa30e6029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Mtalic.png using Guid(10d4daab0a0dfc0449a9c54aa30e6029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa2f6caef9bcf405efdcf956a7ff103') in 0.027464 seconds 
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Mtalic.png using Guid(10d4daab0a0dfc0449a9c54aa30e6029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91132b0a426fc73664cfe65c6e654007') in 0.008160 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/vitrinaVerdura (1).fbx
+  artifactKey: Guid(dace8f67aa92e6f4a964b026177b057d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/vitrinaVerdura (1).fbx using Guid(dace8f67aa92e6f4a964b026177b057d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a601ade11d7ca2dc07a36f443be4c3d') in 0.009925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Bandeja.fbx
+  artifactKey: Guid(38078ca02a85a9347a9329dd0598cbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Bandeja.fbx using Guid(38078ca02a85a9347a9329dd0598cbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c45003d4b357b8568c08b4f159f8e82') in 0.013442 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000153 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/vitrinaVerdura (1).fbx
-  artifactKey: Guid(dace8f67aa92e6f4a964b026177b057d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/vitrinaVerdura (1).fbx using Guid(dace8f67aa92e6f4a964b026177b057d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ebe98f103bc41b35a37dd006bce3926') in 0.016346 seconds 
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Metallic.mat
+  artifactKey: Guid(476441ca46b449b41a7c4f01af4a157d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Materials/Metallic.mat using Guid(476441ca46b449b41a7c4f01af4a157d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cac8a1760874078d5c69ccdd03db53b3') in 0.009823 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003116 seconds.
+Registered in 0.002872 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.927 seconds
+- Completed reload, in  1.015 seconds
 Domain Reload Profiling:
-	ReloadAssembly (927ms)
-		BeginReloadAssembly (111ms)
+	ReloadAssembly (1015ms)
+		BeginReloadAssembly (113ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (759ms)
-			LoadAssemblies (87ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (844ms)
+			LoadAssemblies (97ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (238ms)
+			SetupTypeCache (299ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (312ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (302ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (79ms)
-				ProcessInitializeOnLoadAttributes (211ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (208ms)
 				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1772 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 84.6 MB.
 System memory in use after: 84.7 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2297.
-Total: 2.248200 ms (FindLiveObjects: 0.139200 ms CreateObjectMapping: 0.066900 ms MarkObjects: 1.997200 ms  DeleteObjects: 0.021300 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2300.
+Total: 2.464200 ms (FindLiveObjects: 0.166700 ms CreateObjectMapping: 0.098600 ms MarkObjects: 2.176500 ms  DeleteObjects: 0.021700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -326,40 +370,4 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 314.093363 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/estacion_Carne 1.fbx
-  artifactKey: Guid(6ffcd9ef49299df4aba63359bf815dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/estacion_Carne 1.fbx using Guid(6ffcd9ef49299df4aba63359bf815dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd76cae9ea5e1c0c13d685850a748da3f') in 0.110730 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 250.164751 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Rejilla.mat
-  artifactKey: Guid(84a46d5e681c09340bdc6d29c9c70bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Rejilla.mat using Guid(84a46d5e681c09340bdc6d29c9c70bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5bc0d98f6fe39028b98c144925fd8fe') in 0.013454 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.790791 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Rejilla.jpg
-  artifactKey: Guid(42279280a56a8804b9dc9de68841a4cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Rejilla.jpg using Guid(42279280a56a8804b9dc9de68841a4cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce1f2ddba4858f7462ef23df40e139a3') in 0.015719 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 109.944588 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/RejillaFuego.jpg
-  artifactKey: Guid(b30b8243630b6c64f8a267d280210aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/RejillaFuego.jpg using Guid(b30b8243630b6c64f8a267d280210aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5436b0199a30fe42083023e21eff3fbf') in 0.013500 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.069888 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Fuego.mat
-  artifactKey: Guid(f04e4b0f96e8ac944ba84e7bab886ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Fuego.mat using Guid(f04e4b0f96e8ac944ba84e7bab886ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc8a179e5766dcabd1f4aad1249402c7') in 0.011794 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 258.747015 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/RejillaR.JPG
-  artifactKey: Guid(b66959daac37dc547be41c0631a3896c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/RejillaR.JPG using Guid(b66959daac37dc547be41c0631a3896c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1127397fe5fc5c31cef16bbfe9ec27c9') in 0.019305 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
