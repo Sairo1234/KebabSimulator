@@ -11,21 +11,15 @@ public class Dialogo : MonoBehaviour
     public void mostrarDialogo()
     {
         this.gameObject.GetComponent<PacienciaCola>().enabled = false;
-        StartCoroutine(timerDialogo());
-       
+        PanelDialogo.SetActive(true);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Mov>().enabled = false;
     }
 
     public void ocultarDialogo()
     {
         PanelDialogo.SetActive(false);
-        
-    }
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Mov>().enabled = true;
 
-    IEnumerator timerDialogo()
-    {
-        yield return new WaitForSeconds(1);
-        PanelDialogo.SetActive(true);
     }
-    
 
 }
