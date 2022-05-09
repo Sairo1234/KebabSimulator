@@ -15,11 +15,11 @@ C:/Users/maria/OneDrive/Documentos/GitHub/KebabSimulator/Kebab Simulator
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60599
+62385
 Successfully changed project path to: C:/Users/maria/OneDrive/Documentos/GitHub/KebabSimulator/Kebab Simulator
 C:/Users/maria/OneDrive/Documentos/GitHub/KebabSimulator/Kebab Simulator
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 43.04 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 32.71 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
@@ -35,76 +35,76 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56812
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56076
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002512 seconds.
+Registered in 0.002647 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 33.73 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 32.63 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.558 seconds
+- Completed reload, in  0.538 seconds
 Domain Reload Profiling:
-	ReloadAssembly (558ms)
-		BeginReloadAssembly (67ms)
+	ReloadAssembly (539ms)
+		BeginReloadAssembly (60ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (424ms)
-			LoadAssemblies (64ms)
+		EndReloadAssembly (412ms)
+			LoadAssemblies (58ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (136ms)
+			SetupTypeCache (134ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (160ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (154ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (34ms)
+				RefreshPlugins (33ms)
 				BeforeProcessingInitializeOnLoad (16ms)
-				ProcessInitializeOnLoadAttributes (79ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
+				ProcessInitializeOnLoadAttributes (76ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003038 seconds.
+Registered in 0.003178 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.985 seconds
+- Completed reload, in  0.961 seconds
 Domain Reload Profiling:
-	ReloadAssembly (986ms)
-		BeginReloadAssembly (151ms)
+	ReloadAssembly (961ms)
+		BeginReloadAssembly (138ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (775ms)
-			LoadAssemblies (91ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (766ms)
+			LoadAssemblies (86ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (240ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (317ms)
+			SetupTypeCache (238ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (315ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (84ms)
+				BeforeProcessingInitializeOnLoad (83ms)
 				ProcessInitializeOnLoadAttributes (211ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -113,202 +113,14 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1810 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 84.1 MB.
-System memory in use after: 84.2 MB.
+System memory in use before: 84.4 MB.
+System memory in use after: 84.5 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2247.
-Total: 2.544600 ms (FindLiveObjects: 0.115500 ms CreateObjectMapping: 0.059600 ms MarkObjects: 2.322300 ms  DeleteObjects: 0.046400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/papelera_con_textura.fbx
-  artifactKey: Guid(36c5e6c1d081a34438ca062d4f7e787d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/papelera_con_textura.fbx using Guid(36c5e6c1d081a34438ca062d4f7e787d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ae19787d90dd1cb98b3580aaa2dfd76') in 0.157571 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 30.615221 seconds.
-  path: Assets/_MiProyecto/Mapa/Modelos/PapeleraF.fbx
-  artifactKey: Guid(837a5a21d91c0a04f9b036ff58dd2c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Mapa/Modelos/PapeleraF.fbx using Guid(837a5a21d91c0a04f9b036ff58dd2c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0731bc2196dbeeced7c92066a0e9a6d8') in 0.045923 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/_MiProyecto/Mapa/Modelos/puertaAlmacen.fbx
-  artifactKey: Guid(18e9d9fefec35ad4fac36f078d639d4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Mapa/Modelos/puertaAlmacen.fbx using Guid(18e9d9fefec35ad4fac36f078d639d4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcc30f1592e5157ce72e1d9a0a6a3945') in 0.041398 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Assets/_MiProyecto/Mapa/Modelos/plato.fbx
-  artifactKey: Guid(5e26da8629e893f498659578dd2697c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Mapa/Modelos/plato.fbx using Guid(5e26da8629e893f498659578dd2697c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41b78309da880d498a38bde680a30f75') in 0.023769 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.563027 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Camello.prefab
-  artifactKey: Guid(2df176ee7cff5284ea6330a42542f54a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Camello.prefab using Guid(2df176ee7cff5284ea6330a42542f54a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd27988afde657001e47bcf17a09544a7') in 0.036357 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Cordero.prefab
-  artifactKey: Guid(8ced8ce8a2d14b249a4b99ea22d64c50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Cordero.prefab using Guid(8ced8ce8a2d14b249a4b99ea22d64c50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd65c02a31fb9f5a1a542794094b7b862') in 0.018520 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000330 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab
-  artifactKey: Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Falafel.prefab using Guid(eeb3232aa0fa50445991e5c3f14b3f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6591aa176236236c5e2514de6195b28d') in 0.024568 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Pollo.prefab
-  artifactKey: Guid(5810b7457eb21dc4c9a0e438904a1a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Pollo.prefab using Guid(5810b7457eb21dc4c9a0e438904a1a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '284997477e62bdee8cc76ade71a6b40e') in 0.028374 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Ternera.prefab
-  artifactKey: Guid(9b90049ce6180a14db669ff7d774f8cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Carnes/Rollo Ternera.prefab using Guid(9b90049ce6180a14db669ff7d774f8cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd74283d2cc3a74bb2f498341ce14ed5f') in 0.016481 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.269740 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Kebab.prefab
-  artifactKey: Guid(4e8aebb8f516b20409898919946c6f91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Kebab.prefab using Guid(4e8aebb8f516b20409898919946c6f91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ee1ceee63455105875e9375c9170f6c') in 0.017795 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.572339 seconds.
-  path: Assets/_MiProyecto/Mapa/Materiales/PuertaAlmacen.mat
-  artifactKey: Guid(2f9e748b0d3202a4293a1c913564e051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Mapa/Materiales/PuertaAlmacen.mat using Guid(2f9e748b0d3202a4293a1c913564e051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c4ef5567e0185080474537e4212404d') in 0.012358 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000195 seconds.
-  path: Assets/_MiProyecto/Mapa/Materiales/SueloGreyBoxing.mat
-  artifactKey: Guid(fb6c941a3217cd24e9c01e7ccb0e9522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Mapa/Materiales/SueloGreyBoxing.mat using Guid(fb6c941a3217cd24e9c01e7ccb0e9522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4047ddbc492d247bded5cd21ac880bb7') in 0.012139 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/_MiProyecto/Mapa/Materiales/tex_papelera.png
-  artifactKey: Guid(bd9ef7b245fa8f44eaf3e6af57277580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Mapa/Materiales/tex_papelera.png using Guid(bd9ef7b245fa8f44eaf3e6af57277580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2b7fc710d7e6ad999908c5a7d5d8e8a') in 0.032967 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 31.286951 seconds.
-  path: Assets/_MiProyecto/Mapa/FX
-  artifactKey: Guid(80fab34a571e21549a197df249e51bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Mapa/FX using Guid(80fab34a571e21549a197df249e51bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4c9d530644b38a62b3f00da64c8aded') in 0.006038 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 66.857932 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Brocoli.prefab
-  artifactKey: Guid(7db507bf71487ae4190ab3f456ecb12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Brocoli.prefab using Guid(7db507bf71487ae4190ab3f456ecb12c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '805d19b1d2fbf55dfea5e26733a69b0d') in 0.023275 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Cebolla Blanca.prefab
-  artifactKey: Guid(682e32b52ab8f3f42b8ae141ab72c474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Cebolla Blanca.prefab using Guid(682e32b52ab8f3f42b8ae141ab72c474) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97b4c31362c62defb2d352737b3d08d0') in 0.018391 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Tomate.prefab
-  artifactKey: Guid(dea3d768664205d4cb758337649a444e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Tomate.prefab using Guid(dea3d768664205d4cb758337649a444e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0bfdd6855fbcf84cb845cb306d92e7d') in 0.023377 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Col.prefab
-  artifactKey: Guid(9ffe737c6d98a49439ecdf9d1a94edfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Col.prefab using Guid(9ffe737c6d98a49439ecdf9d1a94edfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c19ba589191d1fc4795959a99c27fe5') in 0.015621 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Pepino.prefab
-  artifactKey: Guid(c6a9f7ac28f95aa418707782de25d2d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Pepino.prefab using Guid(c6a9f7ac28f95aa418707782de25d2d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cbb986b9874b3c1e7de9f0eac464e55') in 0.016865 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Pimiento.prefab
-  artifactKey: Guid(b317c7abba3a2cf42b7a1ccd0cac10e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Pimiento.prefab using Guid(b317c7abba3a2cf42b7a1ccd0cac10e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe4bce8ec7ef999e27d8f11b68addd60') in 0.018177 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Lechuga.prefab
-  artifactKey: Guid(4fa0b118601a73b408f7dd43384bd15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/Lechuga.prefab using Guid(4fa0b118601a73b408f7dd43384bd15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8093b50bbc4e7dbb2edccf87ea8a6893') in 0.024642 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/_MiProyecto/Personajes/Prefabs/Cliente.prefab
-  artifactKey: Guid(4b423665de9398a46a50e0fe6651b757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Prefabs/Cliente.prefab using Guid(4b423665de9398a46a50e0fe6651b757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3571942e5e56a90ce4643c39bf23b03') in 0.059833 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002923 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.934 seconds
-Domain Reload Profiling:
-	ReloadAssembly (934ms)
-		BeginReloadAssembly (111ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (764ms)
-			LoadAssemblies (90ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (244ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (304ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (79ms)
-				ProcessInitializeOnLoadAttributes (203ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1773 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 85.5 MB.
-System memory in use after: 85.6 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2297.
-Total: 2.246100 ms (FindLiveObjects: 0.125400 ms CreateObjectMapping: 0.057600 ms MarkObjects: 2.016800 ms  DeleteObjects: 0.045600 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2248.
+Total: 2.247300 ms (FindLiveObjects: 0.115600 ms CreateObjectMapping: 0.056900 ms MarkObjects: 2.026800 ms  DeleteObjects: 0.047400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -322,89 +134,37 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 890.251545 seconds.
-  path: Assets/_MiProyecto/UI/Sprites/favorito.png
-  artifactKey: Guid(1217765f5fd80a84a98ff51919447d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/UI/Sprites/favorito.png using Guid(1217765f5fd80a84a98ff51919447d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55debbaf46b653bb4a53ddb84ed9af58') in 0.053538 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/_MiProyecto/UI/Sprites/kabuk_symbol.png
-  artifactKey: Guid(92913e8211a03734cb0c05ce86f2d23d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/UI/Sprites/kabuk_symbol.png using Guid(92913e8211a03734cb0c05ce86f2d23d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70b81dbfe85eab66806330372ef02785') in 0.016510 seconds 
+  path: Assets/_MiProyecto/Mapa/Materiales/Materials
+  artifactKey: Guid(8a5c21baa624b634fb0b8fc98e9b3281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Mapa/Materiales/Materials using Guid(8a5c21baa624b634fb0b8fc98e9b3281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c50a26069d50da016e14bf64fa8578') in 0.007827 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000178 seconds.
-  path: Assets/_MiProyecto/UI/Sprites/undefined - Imgur.png
-  artifactKey: Guid(04dda5ccf92fd4c46bc9bb63318ddf8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/UI/Sprites/undefined - Imgur.png using Guid(04dda5ccf92fd4c46bc9bb63318ddf8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e47866a474f855f5f8a53ef46391ad') in 0.014807 seconds 
+  path: Assets/_MiProyecto/Mapa/Materiales/Materials/tex_papelera.mat
+  artifactKey: Guid(aa1506e65ce6df34e9cb35af6340f82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Mapa/Materiales/Materials/tex_papelera.mat using Guid(aa1506e65ce6df34e9cb35af6340f82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64912ca11c6f17790b44abd589e522fd') in 0.091612 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.911898 seconds.
-  path: Assets/_MiProyecto/UI/Sprites/kabuk_plateado.png
-  artifactKey: Guid(1f59acde813a9e34196aa9a5106d54e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/UI/Sprites/kabuk_plateado.png using Guid(1f59acde813a9e34196aa9a5106d54e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd820adcf8b333824db95f0dcc04f222') in 0.030260 seconds 
+  Time since last request: 10.964422 seconds.
+  path: Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/lechuga.fbx
+  artifactKey: Guid(31fca40b6ce460b4d9025c381cc09688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Items/Prefabs/Ingredientes/Verduras/lechuga.fbx using Guid(31fca40b6ce460b4d9025c381cc09688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd3698d1ddfe7d339fd1a96d225af677') in 0.064356 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.667379 seconds.
-  path: Assets/_MiProyecto/UI/Sprites/kabuk_plateado.png
-  artifactKey: Guid(1f59acde813a9e34196aa9a5106d54e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/UI/Sprites/kabuk_plateado.png using Guid(1f59acde813a9e34196aa9a5106d54e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a9370c14beb12f0ecde40020abe80d6') in 0.017567 seconds 
+  Time since last request: 7.648071 seconds.
+  path: Assets/_MiProyecto/Mapa/Materiales
+  artifactKey: Guid(51f9946669e318e448cef08fef31e2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Mapa/Materiales using Guid(51f9946669e318e448cef08fef31e2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0d27bd3360e4a02714ec5b8fcf22fac') in 0.005037 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003043 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.027 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1027ms)
-		BeginReloadAssembly (121ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (843ms)
-			LoadAssemblies (101ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (274ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (333ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (86ms)
-				ProcessInitializeOnLoadAttributes (223ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1773 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 85.5 MB.
-System memory in use after: 85.6 MB.
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2307.
-Total: 2.692900 ms (FindLiveObjects: 0.258900 ms CreateObjectMapping: 0.123300 ms MarkObjects: 2.283800 ms  DeleteObjects: 0.025900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 19.583524 seconds.
+  path: Assets/_MiProyecto/Mapa/Materiales/Cristal.mat
+  artifactKey: Guid(3d2e19191ad785a4882c2e31fb022523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Mapa/Materiales/Cristal.mat using Guid(3d2e19191ad785a4882c2e31fb022523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2b94bc763ea91626445c1d4567e4f27') in 0.013461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 132.302064 seconds.
+  path: Assets/_MiProyecto/Mapa/Materiales/Cristal.mat
+  artifactKey: Guid(3d2e19191ad785a4882c2e31fb022523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Mapa/Materiales/Cristal.mat using Guid(3d2e19191ad785a4882c2e31fb022523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b97967f6b9d15e1e3fc242233229573') in 0.021465 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
