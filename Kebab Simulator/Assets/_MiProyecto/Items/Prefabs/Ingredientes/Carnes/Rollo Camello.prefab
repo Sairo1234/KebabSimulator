@@ -398,6 +398,7 @@ Transform:
   m_Children:
   - {fileID: 1621480843725817137}
   - {fileID: 6635253190342740279}
+  - {fileID: 3572309661136104188}
   m_Father: {fileID: 3600192276597136793}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -546,12 +547,24 @@ MonoBehaviour:
   - Camello
   - Dinosaurio
   - Rata
-  costesMejoras: []
-  costesCompras: []
+  DesbloqueoCompra: 000000000000000000000000
+  DesbloqueoMejora: 000000000000000000000000
+  costesMejoras:
+  - 0
+  - 0
+  - 0
+  costesCompras:
+  - 0
+  - 0
+  - 0
+  precioEntrega:
+  - 0
+  - 0
+  - 0
   modelosMejorasIngredientes:
   - {fileID: 2146942207759785867}
   - {fileID: 6295741129800831885}
-  - {fileID: 0}
+  - {fileID: 6339622077556651550}
 --- !u!1 &7917830365741806609
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,6 +789,89 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6712617909936628038, guid: 5b213d69696868b4faf72724dfd93f97, type: 3}
   m_PrefabInstance: {fileID: 754059776356971211}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1064288111219341656
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1802686569292420269}
+    m_Modifications:
+    - target: {fileID: 4563968108415472548, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563968108415472548, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563968108415472548, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563968108415472548, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563968108415472548, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563968108415472548, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.391
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563968108415472548, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563968108415472548, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563968108415472548, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563968108415472548, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563968108415472548, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563968108415472548, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563968108415472548, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563968108415472548, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431070814524313414, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_Name
+      value: carnePolloJaulaModelo
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431070814524313414, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+--- !u!4 &3572309661136104188 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4563968108415472548, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+  m_PrefabInstance: {fileID: 1064288111219341656}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6339622077556651550 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6431070814524313414, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+  m_PrefabInstance: {fileID: 1064288111219341656}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5455316728579824893
 PrefabInstance:

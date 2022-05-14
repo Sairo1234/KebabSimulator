@@ -11,7 +11,12 @@ public class Carne : ScriptableObject
     public string nombre;
     public string tipo;
     public int nivel;
-    public int nivelDesbloqueoMejora;
+    public bool especial;
+    public bool estaDesbloqueado;
+
+    [Header("Niveles de desbloqueo")]
+    public int DesbloqueoMejora;
+    public int DesbloqueoCompra;
 
     [Header("Costes")]
     public float costeCompra;
