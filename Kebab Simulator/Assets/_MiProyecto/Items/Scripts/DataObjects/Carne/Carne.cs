@@ -7,7 +7,14 @@ using UnityEngine;
 
 public class Carne : ScriptableObject
 {
+    [Header("Propiedades Carne")]
     public string nombre;
     public string tipo;
-    //public float coste;
+    public int nivel;
+    public int nivelDesbloqueoMejora;
+
+    [Header("Costes")]
+    public float costeCompra;
+    public float costeMejora;
+    public float precioEntrega;
 }
