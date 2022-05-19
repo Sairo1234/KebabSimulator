@@ -12,7 +12,7 @@ public class ReputacionDinero : MonoBehaviour
     public float Reputacion = 0;
     public Image BarraReputacion;
     public Text texto_Nivel;
-    int Nivel = 1;
+    public int Nivel = 1;
 
     //----------------------------------------------------------------------------------//
     //----------------------------------- DINERO --------------------------------------//
