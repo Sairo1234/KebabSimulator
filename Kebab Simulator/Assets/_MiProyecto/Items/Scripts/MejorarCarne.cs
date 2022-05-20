@@ -109,7 +109,7 @@ public class MejorarCarne : MonoBehaviour
 
     public void comprobarDesbloqueoMejora()
     {
-        if (ingredienteCarne.DesbloqueoMejora == nivelJugador && ingredienteCarne.nivel<2)
+        if (ingredienteCarne.DesbloqueoMejora <= nivelJugador && ingredienteCarne.nivel<2)
         {
             botonMejoraIngrediente.interactable = true;
         }

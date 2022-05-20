@@ -21,7 +21,7 @@ public class DesbloquearCarne : MonoBehaviour
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
 
-    private void Update()
+    private void Start()
     {
         nivelJugador = jugador.GetComponent<ReputacionDinero>().Nivel;
         desbloquearIngrediente();
@@ -29,7 +29,7 @@ public class DesbloquearCarne : MonoBehaviour
 
     public void desbloquearIngrediente()
     {
-        if(nivelJugador == ingredienteCarne.DesbloqueoCompra)
+        if(nivelJugador >= ingredienteCarne.DesbloqueoCompra)
         {
             ingredienteCarne.estaDesbloqueado = true;
             botonComprarIngrediente.interactable = true;

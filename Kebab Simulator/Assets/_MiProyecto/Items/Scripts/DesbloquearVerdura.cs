@@ -21,7 +21,7 @@ public class DesbloquearVerdura : MonoBehaviour
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
 
-    private void Update()
+    private void Start()
     {
         nivelJugador = jugador.GetComponent<ReputacionDinero>().Nivel;
         desbloquearIngrediente();
@@ -29,7 +29,7 @@ public class DesbloquearVerdura : MonoBehaviour
 
     public void desbloquearIngrediente()
     {
-        if (nivelJugador == ingredienteVerdura.DesbloqueoCompra)
+        if (nivelJugador >= ingredienteVerdura.DesbloqueoCompra)
         {
             ingredienteVerdura.estaDesbloqueado = true;
             botonComprarIngrediente.interactable = true;

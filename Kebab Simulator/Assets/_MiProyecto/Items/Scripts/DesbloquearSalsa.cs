@@ -21,7 +21,7 @@ public class DesbloquearSalsa : MonoBehaviour
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
 
-    private void Update()
+    private void Start()
     {
         nivelJugador = jugador.GetComponent<ReputacionDinero>().Nivel;
         desbloquearIngrediente();
@@ -29,7 +29,7 @@ public class DesbloquearSalsa : MonoBehaviour
 
     public void desbloquearIngrediente()
     {
-        if (nivelJugador == ingredienteSalsa.DesbloqueoCompra)
+        if (nivelJugador >= ingredienteSalsa.DesbloqueoCompra)
         {
             ingredienteSalsa.estaDesbloqueado = true;
             botonComprarIngrediente.interactable = true;

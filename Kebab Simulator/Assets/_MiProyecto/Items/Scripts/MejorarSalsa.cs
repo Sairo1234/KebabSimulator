@@ -109,7 +109,7 @@ public class MejorarSalsa : MonoBehaviour
 
     public void comprobarDesbloqueoMejora()
     {
-        if (ingredienteSalsa.DesbloqueoMejora == nivelJugador && ingredienteSalsa.nivel < 2)
+        if (ingredienteSalsa.DesbloqueoMejora <= nivelJugador && ingredienteSalsa.nivel < 2)
         {
                 botonMejoraIngrediente.interactable = true;
          }

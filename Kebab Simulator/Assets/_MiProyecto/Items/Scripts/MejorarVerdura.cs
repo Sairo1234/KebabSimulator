@@ -109,7 +109,7 @@ public class MejorarVerdura : MonoBehaviour
 
         public void comprobarDesbloqueoMejora()
         {
-            if (ingredienteVerdura.DesbloqueoMejora == nivelJugador && ingredienteVerdura.nivel < 2)
+            if (ingredienteVerdura.DesbloqueoMejora <= nivelJugador && ingredienteVerdura.nivel < 2)
             {
                 botonMejoraIngrediente.interactable = true;
             }
