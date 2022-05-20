@@ -11,8 +11,11 @@ public class Carne : ScriptableObject
     public string nombre;
     public string tipo;
     public int nivel;
+    public int unidadesAlmacen;
+    public int capacidadMaxIngrediente;
     public bool especial;
     public bool estaDesbloqueado;
+    public bool estaComprado;
 
     [Header("Niveles de desbloqueo")]
     public int DesbloqueoMejora;
@@ -20,6 +23,7 @@ public class Carne : ScriptableObject
 
     [Header("Costes")]
     public float costeCompra;
+    public float costeCompraUnidades;
     public float costeMejora;
-    public float precioEntrega;
+    public float precioVenta;
 }

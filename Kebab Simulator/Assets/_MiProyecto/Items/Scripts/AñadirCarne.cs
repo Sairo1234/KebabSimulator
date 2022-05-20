@@ -16,7 +16,7 @@ public class AñadirCarne : MonoBehaviour
     public Carne IngredienteData;
 
     [Header("Cantidad ingrediente")]
-    public int cantidad = 10;
+    public int cantidad;
 
     private GameObject kebabEnPreparacion;
 
@@ -25,6 +25,7 @@ public class AñadirCarne : MonoBehaviour
 
     private void Start()
     {
+        cantidad = IngredienteData.capacidadMaxIngrediente;
         puntoSpawn = GameObject.FindGameObjectWithTag("SpawnKebab").transform;
     }
 

@@ -1,0 +1,73 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class SelectIngredienteSalsa : MonoBehaviour
+{
+    ///----------------------------------------------------------------------------------------//
+    //--------------------------------------- ATRIBUTOS -------------------------------------//
+
+    [Header("Ingrediente de Salsa")]
+    public GameObject prefabIngredienteSalsaAlmacen;
+    public Salsa ingredienteSalsaAlmacen;
+
+    [Header("Boton almacen")]
+    public Button BotonReabastecer; //Boton de reabstecer
+    public Sprite[] backgroundsBotones; //Imagenes para el boton
+
+    //----------------------------------------------------------------------------------------//
+    //----------------------------------------- MÉTODOS --------------------------------------//
+
+    public void seleccionarIngrediente()
+    {
+        switch (ingredienteSalsaAlmacen.nivel)
+        {
+            case 0:
+                if (prefabIngredienteSalsaAlmacen.GetComponent<AñadirSalsa>().cantidad < 5)
+                {
+                    if (!BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Contains(this.gameObject))
+                    {
+                        BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Add(this.gameObject);
+                        this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[0];
+                    }
+                    else
+                    {
+                        BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Remove(this.gameObject);
+                        this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[1];
+                    }
+                }
+                break;
+            case 1:
+                if (prefabIngredienteSalsaAlmacen.GetComponent<AñadirSalsa>().cantidad <= ingredienteSalsaAlmacen.capacidadMaxIngrediente / 2)
+                {
+                    if (!BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Contains(this.gameObject))
+                    {
+                        BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Add(this.gameObject);
+                        this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[0];
+                    }
+                    else
+                    {
+                        BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Remove(this.gameObject);
+                        this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[1];
+                    }
+                }
+                break;
+            case 2:
+                if (prefabIngredienteSalsaAlmacen.GetComponent<AñadirSalsa>().cantidad <= ingredienteSalsaAlmacen.capacidadMaxIngrediente / 2)
+                {
+                    if (!BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Contains(this.gameObject))
+                    {
+                        BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Add(this.gameObject);
+                        this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[0];
+                    }
+                    else
+                    {
+                        BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Remove(this.gameObject);
+                        this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[1];
+                    }
+                }
+                break;
+        }
+    }
+}

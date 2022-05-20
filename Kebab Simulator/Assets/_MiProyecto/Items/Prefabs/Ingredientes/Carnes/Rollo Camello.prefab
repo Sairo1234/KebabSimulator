@@ -414,10 +414,10 @@ GameObject:
   - component: {fileID: 4754923153325417540}
   - component: {fileID: 4206907453647841587}
   - component: {fileID: 3852765877265937259}
+  - component: {fileID: 8366687587008841937}
   - component: {fileID: 3867944186017212310}
   - component: {fileID: 5354777015407034031}
   - component: {fileID: 2250394660195253782}
-  - component: {fileID: 6731981274313796246}
   m_Layer: 0
   m_Name: Rollo Camello
   m_TagString: Ingrediente
@@ -484,6 +484,20 @@ MonoBehaviour:
   modeloKebab: {fileID: 811135289909184618, guid: 4e8aebb8f516b20409898919946c6f91, type: 3}
   IngredienteData: {fileID: 11400000, guid: 5e845d63393e61f42add624dc637209a, type: 2}
   cantidad: 5
+--- !u!114 &8366687587008841937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6935970787815767500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf43d2c85e996e4ca132fa95479c6ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredienteCarneAlmacen: {fileID: 0}
+  unidadesAlmacen: 0
 --- !u!114 &3867944186017212310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,41 +544,6 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &6731981274313796246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6935970787815767500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92b2fea37e50ea146ba40804645ccf70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredienteCarne: {fileID: 11400000, guid: 5e845d63393e61f42add624dc637209a, type: 2}
-  nombresMejoras:
-  - Camello
-  - Dinosaurio
-  - Rata
-  DesbloqueoCompra: 000000000000000000000000
-  DesbloqueoMejora: 000000000000000000000000
-  costesMejoras:
-  - 0
-  - 0
-  - 0
-  costesCompras:
-  - 0
-  - 0
-  - 0
-  precioEntrega:
-  - 0
-  - 0
-  - 0
-  modelosMejorasIngredientes:
-  - {fileID: 2146942207759785867}
-  - {fileID: 6295741129800831885}
-  - {fileID: 6339622077556651550}
 --- !u!1 &7917830365741806609
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,11 +764,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6225050832166124540, guid: 5b213d69696868b4faf72724dfd93f97, type: 3}
   m_PrefabInstance: {fileID: 754059776356971211}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6295741129800831885 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6712617909936628038, guid: 5b213d69696868b4faf72724dfd93f97, type: 3}
-  m_PrefabInstance: {fileID: 754059776356971211}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1064288111219341656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -868,11 +842,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4563968108415472548, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
   m_PrefabInstance: {fileID: 1064288111219341656}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6339622077556651550 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6431070814524313414, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
-  m_PrefabInstance: {fileID: 1064288111219341656}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5455316728579824893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -949,11 +918,6 @@ PrefabInstance:
 --- !u!4 &1621480843725817137 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6716421297584200140, guid: cff581a72557afe468e62b0e03f99466, type: 3}
-  m_PrefabInstance: {fileID: 5455316728579824893}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2146942207759785867 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6232512639221597046, guid: cff581a72557afe468e62b0e03f99466, type: 3}
   m_PrefabInstance: {fileID: 5455316728579824893}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6379004729509549260
