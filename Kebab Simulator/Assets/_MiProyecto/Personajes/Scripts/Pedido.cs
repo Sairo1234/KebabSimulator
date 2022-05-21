@@ -13,6 +13,11 @@ public class Pedido : MonoBehaviour
     public List<Verdura> ingredientesVerdura = new List<Verdura>();
     public List<Salsa> ingredientesSalsa = new List<Salsa>();
 
+    [Header("Desbloqueados")]
+    public List<Carne> ingredientesCarneComprados = new List<Carne>();
+    public List<Verdura> ingredientesVerduraComprados = new List<Verdura>();
+    public List<Salsa> ingredientesSalsaComprados = new List<Salsa>();
+
     [Header("Pedido")]
     public Carne carnePedido;
     public Verdura verduraPedido;
@@ -36,9 +41,37 @@ public class Pedido : MonoBehaviour
 
     private void pedidoAleatorio()
     {
-        carnePedido = ingredientesCarne[Random.Range(0 , ingredientesCarne.Count-1)];
-        verduraPedido = ingredientesVerdura[Random.Range(0, ingredientesVerdura.Count - 1)];
-        salsaPedido = ingredientesSalsa[Random.Range(0, ingredientesSalsa.Count - 1)];
+        selectingredientesComprados();
+        carnePedido = ingredientesCarneComprados[Random.Range(0, ingredientesCarneComprados.Count - 1)];
+        verduraPedido = ingredientesVerduraComprados[Random.Range(0, ingredientesVerduraComprados.Count - 1)];
+        salsaPedido = ingredientesSalsaComprados[Random.Range(0, ingredientesSalsaComprados.Count - 1)];
+    }
+
+    public void selectingredientesComprados()
+    {
+        for (int i = 0; i <= ingredientesCarne.Count - 1; i++)
+        {
+            if (ingredientesCarne[i].estaComprado == true)
+            {
+                ingredientesCarneComprados.Add(ingredientesCarne[i]);
+            }
+        }
+
+        for (int i = 0; i <= ingredientesVerdura.Count - 1; i++)
+        {
+            if (ingredientesVerdura[i].estaComprado == true)
+            {
+                ingredientesVerduraComprados.Add(ingredientesVerdura[i]);
+            }
+        }
+
+        for (int i = 0; i <= ingredientesSalsa.Count - 1; i++)
+        {
+            if (ingredientesSalsa[i].estaComprado == true)
+            {
+                ingredientesSalsaComprados.Add(ingredientesSalsa[i]);
+            }
+        }
     }
 
     //--------------------------------------------------------------------------//
