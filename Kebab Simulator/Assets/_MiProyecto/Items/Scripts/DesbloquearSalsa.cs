@@ -29,7 +29,7 @@ public class DesbloquearSalsa : MonoBehaviour
 
     public void desbloquearIngrediente()
     {
-        if (nivelJugador >= ingredienteSalsa.DesbloqueoCompra)
+        if (nivelJugador >= ingredienteSalsa.DesbloqueoCompra && ingredienteSalsa.estaDesbloqueado == false)
         {
             ingredienteSalsa.estaDesbloqueado = true;
             botonComprarIngrediente.interactable = true;

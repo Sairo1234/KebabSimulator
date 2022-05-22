@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public GameObject jugador;
     public Transform puntoSpawn;
     public GameObject panel;
+    public GameObject HUDprincipal;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,12 +47,14 @@ public class GameManager : MonoBehaviour
         if (clientesContador == clientesMax && clientesEnPantalla == 0)
         {
             panel.SetActive(true);
+            HUDprincipal.SetActive(false);
         }
     }
     public void nuevoDia()
     {
         //puntoDespawn.GetComponent<DespawnCliente>().clientesDespawneados = 0;
         panel.SetActive(false);
+        HUDprincipal.SetActive(true);
         numDia++;
         clientesContador = 0;
         spawnCliente();
