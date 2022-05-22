@@ -12,6 +12,7 @@ public class SalidaCliente : MonoBehaviour
     NavMeshAgent cliente;
     private GameObject jugador;
 
+    public Animator animatorCliente;
 
     void Start()
     {
@@ -24,6 +25,7 @@ public class SalidaCliente : MonoBehaviour
 
     public void salir()
     {
+        animatorCliente.SetBool("Andando", true);
         this.transform.parent.gameObject.transform.DetachChildren();
         this.gameObject.GetComponent<EntradaCliente>().enabled = false;
         cliente.SetDestination(TransformSalida.position);

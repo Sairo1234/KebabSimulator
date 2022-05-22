@@ -242,6 +242,8 @@ GameObject:
   - component: {fileID: 1402884280921104603}
   - component: {fileID: 5603496587600881446}
   - component: {fileID: 8769228208628197043}
+  - component: {fileID: 4852160771776485488}
+  - component: {fileID: 7388489294942890870}
   - component: {fileID: 1402884280921104599}
   - component: {fileID: 7585809538391732915}
   - component: {fileID: 5766092248570923868}
@@ -250,9 +252,9 @@ GameObject:
   - component: {fileID: 4294474657929182885}
   - component: {fileID: 1402884280921104593}
   - component: {fileID: 1402884280921104596}
-  - component: {fileID: 4852160771776485488}
   - component: {fileID: 930737514916704757}
   - component: {fileID: 7785704178795657403}
+  - component: {fileID: 1405949903340851109}
   m_Layer: 0
   m_Name: Cliente
   m_TagString: Cliente
@@ -343,6 +345,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 50bf4d1b949d2764aa8fd343ccd44f18, type: 2}
   - {fileID: 11400000, guid: 2811773e6f167e349accad7150d02d6f, type: 2}
   - {fileID: 11400000, guid: 8d8c9ddadf2157e469dc064c9ad17850, type: 2}
+  ingredientesCarneComprados: []
+  ingredientesVerduraComprados: []
+  ingredientesSalsaComprados: []
   carnePedido: {fileID: 0}
   verduraPedido: {fileID: 0}
   salsaPedido: {fileID: 0}
@@ -363,6 +368,33 @@ MonoBehaviour:
   texto_carne: {fileID: 3288535936673404881}
   texto_verdura: {fileID: 2258306372327946291}
   texto_salsa: {fileID: 3912236576526091970}
+--- !u!114 &4852160771776485488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402884280921104595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85bb64e502161245b9c9c830fdf55b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ModelosClientes:
+  - {fileID: 9351918580818998, guid: 370dfc38e156b4c47bb2ec2298e52289, type: 3}
+--- !u!114 &7388489294942890870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402884280921104595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40cd069b3fd3010438d38b2992dde9cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!114 &1402884280921104599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,6 +409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transformsCola: []
   gameObjectsCola: []
+  animatorCliente: {fileID: 0}
 --- !u!114 &7585809538391732915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,6 +435,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f58cff04c0a782841bab08ebfd733127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animatorJugador: {fileID: 0}
+  animacionJugador: Interactuando
   tagGameObject: PosicionAtender
   funcionScript: mostrarDialogo
 --- !u!114 &6347311122984949518
@@ -474,33 +509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TransformSalida: {fileID: 0}
---- !u!114 &4852160771776485488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1402884280921104595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d85bb64e502161245b9c9c830fdf55b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ModelosClientes:
-  - {fileID: 919132149155446097, guid: 08d4a99ece57d88479e3b9e85b26eebb, type: 3}
-  - {fileID: 919132149155446097, guid: bce38ddbf096e1b40bd671932caf1611, type: 3}
-  - {fileID: 919132149155446097, guid: 7aaec75c28d5e7a49a7474e82113ca96, type: 3}
-  - {fileID: 919132149155446097, guid: a974a02a4a5332e4ab79d2a76e7ede61, type: 3}
-  - {fileID: 919132149155446097, guid: 70ce9d99183847a49ad9ded9bea55c24, type: 3}
-  - {fileID: 919132149155446097, guid: 04e0890fcbf413f43a93470f5a31d389, type: 3}
-  - {fileID: 919132149155446097, guid: eef1e01bd06502a479c6c9f9088ed7f0, type: 3}
-  - {fileID: 919132149155446097, guid: b8fbcc7d587fcb945962b7b84d653a01, type: 3}
-  - {fileID: 919132149155446097, guid: fcd417d06d38a51409637d3daa76f27f, type: 3}
-  - {fileID: 919132149155446097, guid: 07b90fcbf4884354382497bd04b20f1d, type: 3}
-  - {fileID: 919132149155446097, guid: 24b2254743ceab24d856b028ef847037, type: 3}
-  - {fileID: 919132149155446097, guid: 9a4394804d5e11b4ebeb752a0f70d1cb, type: 3}
-  - {fileID: 919132149155446097, guid: 53c60ba908d68044095f9b7926090199, type: 3}
-  - {fileID: 919132149155446097, guid: d025af73878272e4f92d4fdb559a3b65, type: 3}
+  animatorCliente: {fileID: 0}
 --- !u!114 &930737514916704757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,6 +540,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8b9a94d999a2f242a61ebf394802b61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1405949903340851109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402884280921104595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6becb12f875b68a4893fe29f173c6240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.9730428
+      value: 0.10875557
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 0
+    m_RotationOrder: 4
 --- !u!1 &1688397466484129638
 GameObject:
   m_ObjectHideFlags: 0

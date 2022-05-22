@@ -20,6 +20,7 @@ public class ClienteAleatorio : MonoBehaviour
 
     public void seleccionarModeloAleatorio()
     {
-        Instantiate(ModelosClientes[Random.RandomRange(0, ModelosClientes.Length - 1)], this.gameObject.transform);
+        GameObject cliente = Instantiate(ModelosClientes[Random.RandomRange(0, ModelosClientes.Length - 1)], this.gameObject.transform);
+        cliente.name = "clienteModelo";
     }
 }

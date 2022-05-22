@@ -11,7 +11,10 @@ public class EntradaCliente : MonoBehaviour
 
     NavMeshAgent agent;
 
+    public Animator animatorCliente;
+
     private bool yaEsPrimero = true;
+
 
     void Start()
     {
@@ -32,8 +35,6 @@ public class EntradaCliente : MonoBehaviour
     private void Update()
     {
         consultarCola();
-        //Debug.Log(Vector3.Distance(this.gameObject.transform.position, GameObject.Find("Cola1").transform.position));
-
     }
 
     public void consultarCola()
@@ -44,6 +45,16 @@ public class EntradaCliente : MonoBehaviour
             {
                 agent.SetDestination(transformsCola[i - 1].position);
                 this.gameObject.transform.SetParent(transformsCola[i - 1]);
+                if (animatorCliente != null)
+                {
+                    animatorCliente.SetBool("Andando", true);
+                }
+
+            }
+
+            if (Vector3.Distance(this.gameObject.transform.position, transformsCola[i - 1].position) < 0.6)
+            {
+                animatorCliente.SetBool("Andando", false);
             }
 
 
