@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44390503, g: 0.49328196, b: 0.57277185, a: 1}
+  m_IndirectSpecularColor: {r: 0.4439055, g: 0.49328232, b: 0.57277316, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -28029,7 +28029,7 @@ PrefabInstance:
       objectReference: {fileID: 1900196658}
     - target: {fileID: -8006277184338164368, guid: 9b90049ce6180a14db669ff7d774f8cd, type: 3}
       propertyPath: animacionJugador
-      value: CogePlato
+      value: Interactuando
       objectReference: {fileID: 0}
     - target: {fileID: 2716752057330268772, guid: 9b90049ce6180a14db669ff7d774f8cd, type: 3}
       propertyPath: cantidad
@@ -30678,6 +30678,7 @@ GameObject:
   - component: {fileID: 1086387573}
   - component: {fileID: 1086387578}
   - component: {fileID: 1086387577}
+  - component: {fileID: 1086387579}
   - component: {fileID: 1086387576}
   - component: {fileID: 1086387575}
   - component: {fileID: 1086387574}
@@ -30792,6 +30793,19 @@ MonoBehaviour:
   - {fileID: 1753512934}
   - {fileID: 1212945484}
   - {fileID: 1908003060}
+--- !u!114 &1086387579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086387572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18be83aa8441db74aa7920cee11e8cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnKebab: {fileID: 1541703864}
 --- !u!1 &1090075957
 GameObject:
   m_ObjectHideFlags: 0
@@ -37733,7 +37747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animatorJugador: {fileID: 1900196658}
-  animacionJugador: Interactuando
+  animacionJugador: DejaPlato
   tagGameObject: PosicionBasura
   funcionScript: eliminarKebab
 --- !u!1 &1216622841

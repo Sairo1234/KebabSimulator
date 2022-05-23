@@ -19,8 +19,10 @@ public class EntregarKebab : MonoBehaviour
     //ENTREGAR KEBAB
     private GameObject kebabParaEntregar;
 
-
-    private void Start()
+    [Header("Animator Jugador")]
+    public Animator animatorJugador;
+    
+     private void Start()
     {
         cliente = this.gameObject;
         jugador = GameObject.FindGameObjectWithTag("Player");
@@ -38,6 +40,11 @@ public class EntregarKebab : MonoBehaviour
             comprobarDistacia();
         }
 
+        if (animatorJugador == null)
+        {
+            animatorJugador = GameObject.FindGameObjectWithTag("ModeloJugador").GetComponent<Animator>();
+        }
+
 
     }
     private void OnMouseDown()
@@ -53,6 +60,7 @@ public class EntregarKebab : MonoBehaviour
     public void entregarKebab()
     {
         Destroy(kebabParaEntregar);
+        animatorJugador.SetTrigger("DejaPlato");
         Debug.Log("Se ha tirado el kebab");
 
     }
