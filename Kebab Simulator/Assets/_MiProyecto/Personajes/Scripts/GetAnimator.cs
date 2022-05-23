@@ -14,6 +14,7 @@ public class GetAnimator : MonoBehaviour
             animator = this.gameObject.transform.GetChild(2).gameObject.GetComponent<Animator>();
             this.gameObject.GetComponent<EntradaCliente>().animatorCliente=animator;
             this.gameObject.GetComponent<SalidaCliente>().animatorCliente = animator;
+            this.gameObject.GetComponent<PacienciaCola>().animatorCliente = animator;
         }
     }
 }
