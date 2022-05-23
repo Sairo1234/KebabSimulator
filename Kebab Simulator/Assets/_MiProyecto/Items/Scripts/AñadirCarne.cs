@@ -18,9 +18,6 @@ public class AñadirCarne : MonoBehaviour
     [Header("Cantidad ingrediente")]
     public int cantidad;
 
-    [Header("AnimatorJugador")]
-    public Animator animatorJugador;
-
     private GameObject kebabEnPreparacion;
 
     //----------------------------------------------------------------------------------------//
@@ -34,15 +31,16 @@ public class AñadirCarne : MonoBehaviour
 
     public void asignarKebab()
     {
+       
         if (puntoSpawn.childCount == 0)
         {
-            StartCoroutine(realizarAnimacion());
-            
+            StartCoroutine(jugadorSinKebab());
         }
-        else
+        else if(puntoSpawn.childCount > 0)
         {
             kebabEnPreparacion = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
             Debug.Log("Ya hay un kebab");
+            anyadirCarne();
         }
     }
 
@@ -55,8 +53,6 @@ public class AñadirCarne : MonoBehaviour
 
     public void anyadirCarne()
     {
-        asignarKebab();
-
         if (kebabEnPreparacion.GetComponent<Kebab>().contieneCarne() == false)
         {
             kebabEnPreparacion.GetComponent<Kebab>().carne = IngredienteData;
@@ -69,10 +65,11 @@ public class AñadirCarne : MonoBehaviour
         }
     }
 
-    IEnumerator realizarAnimacion()
+    IEnumerator jugadorSinKebab()
     {
         yield return new WaitForSeconds(4);
         spawnKebabEnPlato();
+        anyadirCarne();
     }
 
 }

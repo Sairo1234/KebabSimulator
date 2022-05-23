@@ -32,12 +32,13 @@ public class AñadirVerdura : MonoBehaviour
     {
         if (puntoSpawn.childCount == 0)
         {
-            spawnKebabEnPlato();
+            StartCoroutine(jugadorSinKebab());
         }
         else
         {
             kebabEnPreparacion = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
             Debug.Log("Ya hay un kebab");
+            anyadirVerdura();
         }
     }
 
@@ -51,7 +52,6 @@ public class AñadirVerdura : MonoBehaviour
 
     public void anyadirVerdura()
     {
-        asignarKebab();
 
         if (kebabEnPreparacion.GetComponent<Kebab>().contieneVerdura() == false)
         {
@@ -63,5 +63,12 @@ public class AñadirVerdura : MonoBehaviour
         {
             Debug.Log("El Kebab ya tiene verdura");
         }
+    }
+
+    IEnumerator jugadorSinKebab()
+    {
+        yield return new WaitForSeconds(4);
+        spawnKebabEnPlato();
+        anyadirVerdura();
     }
 }

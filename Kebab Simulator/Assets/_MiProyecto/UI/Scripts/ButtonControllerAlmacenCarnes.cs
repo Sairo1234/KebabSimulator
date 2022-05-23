@@ -11,6 +11,10 @@ public class ButtonControllerAlmacenCarnes : MonoBehaviour
     [Header("Ingrediente de Carne")]
     public Carne ingredienteCarne;
 
+    [Header("Textos boton")]
+    public Text textoCantidadAlmacen;
+    public Text textoCantidadCocina;
+
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
 
@@ -24,6 +28,8 @@ public class ButtonControllerAlmacenCarnes : MonoBehaviour
         if (ingredienteCarne.estaComprado == true)
         {
             this.gameObject.GetComponent<Button>().interactable = true;
+            //textoCantidadAlmacen;
+
         }
     }
 
