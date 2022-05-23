@@ -7,7 +7,15 @@ public class Dialogo : MonoBehaviour
 {
     //Cuadro de diálogo
     public GameObject PanelDialogo;
-   
+
+    //Animacion Jugador
+    Animator animatorJugador;
+
+    private void Start()
+    {
+        animatorJugador = GameObject.FindGameObjectWithTag("ModeloJugador").GetComponent<Animator>();
+    }
+
     public void mostrarDialogo()
     {
         this.gameObject.GetComponent<PacienciaCola>().enabled = false;
@@ -19,7 +27,7 @@ public class Dialogo : MonoBehaviour
     {
         PanelDialogo.SetActive(false);
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Mov>().enabled = true;
-
+        animatorJugador.SetTrigger("GuardarNota");
     }
 
 }

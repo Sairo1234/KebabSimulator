@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44390503, g: 0.49328196, b: 0.57277185, a: 1}
+  m_IndirectSpecularColor: {r: 0.4439052, g: 0.49328214, b: 0.5727726, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1149,7 +1149,7 @@ PrefabInstance:
     - target: {fileID: 3387486026284335825, guid: 682e32b52ab8f3f42b8ae141ab72c474, type: 3}
       propertyPath: animatorJugador
       value: 
-      objectReference: {fileID: 617803687}
+      objectReference: {fileID: 1900196658}
     - target: {fileID: 3387486026284335825, guid: 682e32b52ab8f3f42b8ae141ab72c474, type: 3}
       propertyPath: animacionJugador
       value: Interactuando
@@ -1547,67 +1547,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62988739}
   m_CullTransparentMesh: 1
---- !u!1001 &76366714
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1440286348}
-    m_Modifications:
-    - target: {fileID: 5962109771616783446, guid: ecd6ac7bddb57b34a8a740d0e89ed519, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5962109771616783446, guid: ecd6ac7bddb57b34a8a740d0e89ed519, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5962109771616783446, guid: ecd6ac7bddb57b34a8a740d0e89ed519, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5962109771616783446, guid: ecd6ac7bddb57b34a8a740d0e89ed519, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5962109771616783446, guid: ecd6ac7bddb57b34a8a740d0e89ed519, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5962109771616783446, guid: ecd6ac7bddb57b34a8a740d0e89ed519, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5962109771616783446, guid: ecd6ac7bddb57b34a8a740d0e89ed519, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5962109771616783446, guid: ecd6ac7bddb57b34a8a740d0e89ed519, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5962109771616783446, guid: ecd6ac7bddb57b34a8a740d0e89ed519, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5962109771616783446, guid: ecd6ac7bddb57b34a8a740d0e89ed519, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5962109771616783446, guid: ecd6ac7bddb57b34a8a740d0e89ed519, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6482504585803650796, guid: ecd6ac7bddb57b34a8a740d0e89ed519, type: 3}
-      propertyPath: m_Name
-      value: jugador
-      objectReference: {fileID: 0}
-    - target: {fileID: 6482504585803650796, guid: ecd6ac7bddb57b34a8a740d0e89ed519, type: 3}
-      propertyPath: m_TagString
-      value: ModeloJugador
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ecd6ac7bddb57b34a8a740d0e89ed519, type: 3}
 --- !u!1 &80185844
 GameObject:
   m_ObjectHideFlags: 0
@@ -4738,7 +4677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f58cff04c0a782841bab08ebfd733127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animatorJugador: {fileID: 617803687}
+  animatorJugador: {fileID: 1900196658}
   animacionJugador: Interactuando
   tagGameObject: PosicionAlmacen
   funcionScript: mostrarAlmacenHUD
@@ -7799,7 +7738,7 @@ PrefabInstance:
     - target: {fileID: -5129628832869141820, guid: df2afeca7c8cf9846a42c73fccfe1009, type: 3}
       propertyPath: animatorJugador
       value: 
-      objectReference: {fileID: 617803687}
+      objectReference: {fileID: 1900196658}
     - target: {fileID: -5129628832869141820, guid: df2afeca7c8cf9846a42c73fccfe1009, type: 3}
       propertyPath: animacionJugador
       value: Interactuando
@@ -10462,7 +10401,7 @@ PrefabInstance:
     - target: {fileID: 2978030968622267023, guid: dea3d768664205d4cb758337649a444e, type: 3}
       propertyPath: animatorJugador
       value: 
-      objectReference: {fileID: 617803687}
+      objectReference: {fileID: 1900196658}
     - target: {fileID: 2978030968622267023, guid: dea3d768664205d4cb758337649a444e, type: 3}
       propertyPath: animacionJugador
       value: Interactuando
@@ -17314,7 +17253,7 @@ PrefabInstance:
     - target: {fileID: 5626276481306830960, guid: eeb3232aa0fa50445991e5c3f14b3f51, type: 3}
       propertyPath: animatorJugador
       value: 
-      objectReference: {fileID: 617803687}
+      objectReference: {fileID: 1900196658}
     - target: {fileID: 5626276481306830960, guid: eeb3232aa0fa50445991e5c3f14b3f51, type: 3}
       propertyPath: animacionJugador
       value: Interactuando
@@ -17891,35 +17830,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616901437}
   m_CullTransparentMesh: 1
---- !u!1 &617803685 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6482504585803650796, guid: ecd6ac7bddb57b34a8a740d0e89ed519, type: 3}
-  m_PrefabInstance: {fileID: 76366714}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &617803686 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5962109771616783446, guid: ecd6ac7bddb57b34a8a740d0e89ed519, type: 3}
-  m_PrefabInstance: {fileID: 76366714}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &617803687
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 617803685}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c2d4258071b9d654cb9f04fae8d48bc9, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &621088774
 GameObject:
   m_ObjectHideFlags: 0
@@ -19899,7 +19809,7 @@ PrefabInstance:
     - target: {fileID: 3816937987919749484, guid: a8d3a8af5c641eb4da81e757474b8dfe, type: 3}
       propertyPath: animatorJugador
       value: 
-      objectReference: {fileID: 617803687}
+      objectReference: {fileID: 1900196658}
     - target: {fileID: 3816937987919749484, guid: a8d3a8af5c641eb4da81e757474b8dfe, type: 3}
       propertyPath: animacionJugador
       value: Interactuando
@@ -21651,7 +21561,7 @@ PrefabInstance:
     - target: {fileID: 9126629175121395711, guid: 5810b7457eb21dc4c9a0e438904a1a64, type: 3}
       propertyPath: animatorJugador
       value: 
-      objectReference: {fileID: 617803687}
+      objectReference: {fileID: 1900196658}
     - target: {fileID: 9126629175121395711, guid: 5810b7457eb21dc4c9a0e438904a1a64, type: 3}
       propertyPath: animacionJugador
       value: Interactuando
@@ -22764,7 +22674,7 @@ PrefabInstance:
     - target: {fileID: 6237606111373483132, guid: 7db507bf71487ae4190ab3f456ecb12c, type: 3}
       propertyPath: animatorJugador
       value: 
-      objectReference: {fileID: 617803687}
+      objectReference: {fileID: 1900196658}
     - target: {fileID: 6237606111373483132, guid: 7db507bf71487ae4190ab3f456ecb12c, type: 3}
       propertyPath: animacionJugador
       value: Interactuando
@@ -28841,6 +28751,67 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879934896}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &882067543
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1440286348}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: a1c7ac0231393d14999b451d49b0116c, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a1c7ac0231393d14999b451d49b0116c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a1c7ac0231393d14999b451d49b0116c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a1c7ac0231393d14999b451d49b0116c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a1c7ac0231393d14999b451d49b0116c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a1c7ac0231393d14999b451d49b0116c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a1c7ac0231393d14999b451d49b0116c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a1c7ac0231393d14999b451d49b0116c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a1c7ac0231393d14999b451d49b0116c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a1c7ac0231393d14999b451d49b0116c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a1c7ac0231393d14999b451d49b0116c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a1c7ac0231393d14999b451d49b0116c, type: 3}
+      propertyPath: m_Name
+      value: jugador
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a1c7ac0231393d14999b451d49b0116c, type: 3}
+      propertyPath: m_TagString
+      value: ModeloJugador
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a1c7ac0231393d14999b451d49b0116c, type: 3}
 --- !u!1 &884536708
 GameObject:
   m_ObjectHideFlags: 0
@@ -30056,7 +30027,7 @@ PrefabInstance:
     - target: {fileID: 4206907453647841587, guid: 2df176ee7cff5284ea6330a42542f54a, type: 3}
       propertyPath: animatorJugador
       value: 
-      objectReference: {fileID: 617803687}
+      objectReference: {fileID: 1900196658}
     - target: {fileID: 4206907453647841587, guid: 2df176ee7cff5284ea6330a42542f54a, type: 3}
       propertyPath: animacionJugador
       value: Interactuando
@@ -30247,7 +30218,7 @@ PrefabInstance:
     - target: {fileID: -8006277184338164368, guid: 9b90049ce6180a14db669ff7d774f8cd, type: 3}
       propertyPath: animatorJugador
       value: 
-      objectReference: {fileID: 617803687}
+      objectReference: {fileID: 1900196658}
     - target: {fileID: -8006277184338164368, guid: 9b90049ce6180a14db669ff7d774f8cd, type: 3}
       propertyPath: animacionJugador
       value: Interactuando
@@ -33365,7 +33336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f58cff04c0a782841bab08ebfd733127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animatorJugador: {fileID: 617803687}
+  animatorJugador: {fileID: 1900196658}
   animacionJugador: Interactuando
   tagGameObject: MesaPunto
   funcionScript: dejarKebab
@@ -33690,7 +33661,7 @@ PrefabInstance:
     - target: {fileID: -2049180216013771954, guid: b317c7abba3a2cf42b7a1ccd0cac10e1, type: 3}
       propertyPath: animatorJugador
       value: 
-      objectReference: {fileID: 617803687}
+      objectReference: {fileID: 1900196658}
     - target: {fileID: -2049180216013771954, guid: b317c7abba3a2cf42b7a1ccd0cac10e1, type: 3}
       propertyPath: animacionJugador
       value: Interactuando
@@ -39330,7 +39301,7 @@ PrefabInstance:
     - target: {fileID: -7482523560801788961, guid: dfc9491bc5a87f4448d29ab06e4f0992, type: 3}
       propertyPath: animatorJugador
       value: 
-      objectReference: {fileID: 617803687}
+      objectReference: {fileID: 1900196658}
     - target: {fileID: -7482523560801788961, guid: dfc9491bc5a87f4448d29ab06e4f0992, type: 3}
       propertyPath: animacionJugador
       value: Interactuando
@@ -40681,7 +40652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f58cff04c0a782841bab08ebfd733127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animatorJugador: {fileID: 617803687}
+  animatorJugador: {fileID: 1900196658}
   animacionJugador: Interactuando
   tagGameObject: PosicionBasura
   funcionScript: eliminarKebab
@@ -43109,7 +43080,7 @@ PrefabInstance:
     - target: {fileID: 2467886251793836687, guid: 4fa0b118601a73b408f7dd43384bd15d, type: 3}
       propertyPath: animatorJugador
       value: 
-      objectReference: {fileID: 617803687}
+      objectReference: {fileID: 1900196658}
     - target: {fileID: 2467886251793836687, guid: 4fa0b118601a73b408f7dd43384bd15d, type: 3}
       propertyPath: animacionJugador
       value: Interactuando
@@ -46101,7 +46072,7 @@ Transform:
   m_LocalPosition: {x: -0.93, y: 0, z: -1.235}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 617803686}
+  - {fileID: 1900196659}
   - {fileID: 1221212012}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -46121,7 +46092,7 @@ MonoBehaviour:
   whatCanBeClickedOn:
     serializedVersion: 2
     m_Bits: 64
-  animator: {fileID: 617803687}
+  animator: {fileID: 1900196658}
   puntoDestino: {x: 0, y: 0, z: 0}
   estaMoviendose: 0
 --- !u!195 &1440286350
@@ -48821,7 +48792,7 @@ PrefabInstance:
     - target: {fileID: -3969299026813353357, guid: 8ced8ce8a2d14b249a4b99ea22d64c50, type: 3}
       propertyPath: animatorJugador
       value: 
-      objectReference: {fileID: 617803687}
+      objectReference: {fileID: 1900196658}
     - target: {fileID: -3969299026813353357, guid: 8ced8ce8a2d14b249a4b99ea22d64c50, type: 3}
       propertyPath: animacionJugador
       value: Interactuando
@@ -49314,7 +49285,7 @@ PrefabInstance:
     - target: {fileID: -1588584650804656500, guid: 01c6c256fae1d5b4796528d034d05ab6, type: 3}
       propertyPath: animatorJugador
       value: 
-      objectReference: {fileID: 617803687}
+      objectReference: {fileID: 1900196658}
     - target: {fileID: -1588584650804656500, guid: 01c6c256fae1d5b4796528d034d05ab6, type: 3}
       propertyPath: animacionJugador
       value: Interactuando
@@ -49649,6 +49620,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1541383163}
   m_CullTransparentMesh: 1
+--- !u!1 &1541703863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1541703864}
+  m_Layer: 0
+  m_Name: PuntoSpawnKebab
+  m_TagString: SpawnKebab
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1541703864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541703863}
+  m_LocalRotation: {x: -0.64048034, y: 0.37646407, z: 0.30142248, w: 0.5976658}
+  m_LocalPosition: {x: -0.107, y: -0.011, z: -0.601}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1657057238}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: -97.005, y: -31.593018, z: 88.994}
 --- !u!1 &1545238571
 GameObject:
   m_ObjectHideFlags: 0
@@ -52246,6 +52247,11 @@ CanvasRenderer:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6295741129800831885, guid: 2df176ee7cff5284ea6330a42542f54a, type: 3}
   m_PrefabInstance: {fileID: 958638220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1657057238 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 490155723280975031, guid: a1c7ac0231393d14999b451d49b0116c, type: 3}
+  m_PrefabInstance: {fileID: 882067543}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1659239805
 GameObject:
@@ -61159,6 +61165,35 @@ Transform:
   m_Father: {fileID: 1590392730}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1900196657 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a1c7ac0231393d14999b451d49b0116c, type: 3}
+  m_PrefabInstance: {fileID: 882067543}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1900196658
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900196657}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c2d4258071b9d654cb9f04fae8d48bc9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &1900196659 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a1c7ac0231393d14999b451d49b0116c, type: 3}
+  m_PrefabInstance: {fileID: 882067543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1905043100
 GameObject:
   m_ObjectHideFlags: 0
@@ -61562,7 +61597,7 @@ PrefabInstance:
     - target: {fileID: -9111668688357136486, guid: c6a9f7ac28f95aa418707782de25d2d2, type: 3}
       propertyPath: animatorJugador
       value: 
-      objectReference: {fileID: 617803687}
+      objectReference: {fileID: 1900196658}
     - target: {fileID: -9111668688357136486, guid: c6a9f7ac28f95aa418707782de25d2d2, type: 3}
       propertyPath: animacionJugador
       value: Interactuando
@@ -62220,7 +62255,7 @@ PrefabInstance:
     - target: {fileID: 6252351858199064229, guid: 952027db8c50b3746ab2321336f2de2c, type: 3}
       propertyPath: animatorJugador
       value: 
-      objectReference: {fileID: 617803687}
+      objectReference: {fileID: 1900196658}
     - target: {fileID: 6252351858199064229, guid: 952027db8c50b3746ab2321336f2de2c, type: 3}
       propertyPath: animacionJugador
       value: Interactuando
@@ -64466,7 +64501,7 @@ PrefabInstance:
     - target: {fileID: -3827928011876351859, guid: 9ffe737c6d98a49439ecdf9d1a94edfe, type: 3}
       propertyPath: animatorJugador
       value: 
-      objectReference: {fileID: 617803687}
+      objectReference: {fileID: 1900196658}
     - target: {fileID: -3827928011876351859, guid: 9ffe737c6d98a49439ecdf9d1a94edfe, type: 3}
       propertyPath: animacionJugador
       value: Interactuando
