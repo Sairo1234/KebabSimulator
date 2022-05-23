@@ -18,6 +18,9 @@ public class AñadirCarne : MonoBehaviour
     [Header("Cantidad ingrediente")]
     public int cantidad;
 
+    [Header("AnimatorJugador")]
+    public Animator animatorJugador;
+
     private GameObject kebabEnPreparacion;
 
     //----------------------------------------------------------------------------------------//
@@ -33,7 +36,8 @@ public class AñadirCarne : MonoBehaviour
     {
         if (puntoSpawn.childCount == 0)
         {
-            spawnKebabEnPlato();
+            StartCoroutine(realizarAnimacion());
+            
         }
         else
         {
@@ -44,9 +48,8 @@ public class AñadirCarne : MonoBehaviour
 
     public void spawnKebabEnPlato()
     {
-        GameObject NuevoKebabEnPreparacion = Instantiate(modeloKebab, puntoSpawn);
-        NuevoKebabEnPreparacion.tag = "KebabEnPreparacion";
-        kebabEnPreparacion = NuevoKebabEnPreparacion;
+        kebabEnPreparacion = Instantiate(modeloKebab, puntoSpawn);
+        kebabEnPreparacion.tag = "KebabEnPreparacion";
         Debug.Log("Kebab spawneado");
     }
 
@@ -65,5 +68,11 @@ public class AñadirCarne : MonoBehaviour
             Debug.Log("El Kebab ya tiene carne");
         }
     }
-   
+
+    IEnumerator realizarAnimacion()
+    {
+        yield return new WaitForSeconds(4);
+        spawnKebabEnPlato();
+    }
+
 }
