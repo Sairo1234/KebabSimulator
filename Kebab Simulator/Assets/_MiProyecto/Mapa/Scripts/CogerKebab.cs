@@ -20,6 +20,9 @@ public class CogerKebab : MonoBehaviour
     private GameObject kebab;
     private bool estaDesplazandose = false;
 
+    //Animacion CogerKebab
+    public Animator animatorJugador;
+
 
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
@@ -29,7 +32,7 @@ public class CogerKebab : MonoBehaviour
         kebab = this.gameObject;
         jugador = GameObject.FindGameObjectWithTag("Player").GetComponent<NavMeshAgent>();
         destinoMesa = GameObject.FindGameObjectWithTag("MesaPunto").transform;
-
+        animatorJugador = GameObject.FindGameObjectWithTag("ModeloJugador").GetComponent<Animator>();
     }
 
     void OnMouseDown()
@@ -75,6 +78,7 @@ public class CogerKebab : MonoBehaviour
         if (puntoSpawnKebab.childCount == 0)
         {
             Destroy(this.gameObject);
+            animatorJugador.SetTrigger("CogePlatoMesa");
             GameObject KebabEnJugador = Instantiate(kebabParaCoger, puntoSpawnKebab);
             KebabEnJugador.tag = "KebabEnPreparacion";
             KebabEnJugador.GetComponent<OutlineDeObjeto>().enabled = true;
