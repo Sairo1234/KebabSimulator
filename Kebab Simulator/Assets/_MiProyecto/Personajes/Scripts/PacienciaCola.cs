@@ -8,16 +8,16 @@ public class PacienciaCola : MonoBehaviour
 
     [Header("Animator Cliente")]
     public Animator animatorCliente;
-    public bool activado = false;
+    private bool aunNoSeHaQuejado = true;
 
     void Update()
     {
         
-        if(timeRemaining>=20 && timeRemaining<=21)
+        if(aunNoSeHaQuejado && timeRemaining<=20)
         {
             animatorCliente.SetTrigger("Impaciente");
             timeRemaining -= Time.deltaTime;
-            activado = true;
+            aunNoSeHaQuejado = false;
             
         }
         else if (timeRemaining > 0)

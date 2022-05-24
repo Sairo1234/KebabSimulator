@@ -36,7 +36,7 @@ public class SalidaCliente : MonoBehaviour
 
     public void rechazoPedido()
     {
-        jugador.GetComponent<ReputacionDinero>().TakeReputacion(-25);
+        jugador.GetComponent<ReputacionDinero>().TakeReputacion(-10);
     }
 
 

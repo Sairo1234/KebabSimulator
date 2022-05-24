@@ -22,6 +22,9 @@ public class EntregarKebab : MonoBehaviour
     [Header("Animator Jugador")]
     public Animator animatorJugador;
 
+    [Header("Animator Cliente")]
+    public Animator animatorCliente;
+
     private void Start()
     {
         cliente = this.gameObject;
@@ -29,9 +32,7 @@ public class EntregarKebab : MonoBehaviour
 
         destinoCliente = GameObject.FindGameObjectWithTag("EntregaC").transform;
         destinoJugador = GameObject.FindGameObjectWithTag("EntregaJ").transform;
-
-
-
+        
     }
     private void Update()
     {
@@ -61,6 +62,7 @@ public class EntregarKebab : MonoBehaviour
     {
         Destroy(kebabParaEntregar);
         animatorJugador.SetTrigger("DejaPlato");
+        animatorCliente.SetTrigger("Coger");
         Debug.Log("Se ha tirado el kebab");
 
     }
@@ -74,9 +76,10 @@ public class EntregarKebab : MonoBehaviour
             estanDesplazandose = false;
             entregarKebab();
             cliente.GetComponent<PacienciaEspera>().enabled = false;
-            jugador.GetComponent<ReputacionDinero>().TakeReputacion(20);
-            jugador.GetComponent<ReputacionDinero>().TakeDinero(5);
-            cliente.GetComponent<SalidaCliente>().salir();
+            jugador.GetComponent<ReputacionDinero>().TakeReputacion(100);
+            jugador.GetComponent<ReputacionDinero>().TakeDinero(100);
+            StartCoroutine(SeVa());
+            
         }
 
     }
@@ -111,5 +114,11 @@ public class EntregarKebab : MonoBehaviour
             Debug.Log("Mal kebab");
         }
 
+    }
+    IEnumerator SeVa()
+    {
+      
+        yield return new WaitForSeconds(2);
+        cliente.GetComponent<SalidaCliente>().salir();
     }
 }

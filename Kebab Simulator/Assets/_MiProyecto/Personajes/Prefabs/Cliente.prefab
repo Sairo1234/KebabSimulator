@@ -382,7 +382,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ModelosClientes:
-  - {fileID: 9351918580818998, guid: 370dfc38e156b4c47bb2ec2298e52289, type: 3}
+  - {fileID: 3480488178715933445, guid: f191d7c323e3edc45a082af508a4f9f0, type: 3}
+  - {fileID: 2399664983841859599, guid: 5afead6460702dd49bbc558b5e490c6b, type: 3}
+  - {fileID: 3160235970203613493, guid: b2f1721ec7032a848ad315e0811452a1, type: 3}
 --- !u!114 &7388489294942890870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -424,6 +426,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeRemaining: 60
+  animatorCliente: {fileID: 0}
+  activado: 0
 --- !u!114 &5766092248570923868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -510,6 +514,7 @@ MonoBehaviour:
   destinoJugador: {fileID: 0}
   cliente: {fileID: 1402884280921104595}
   jugador: {fileID: 0}
+  animatorJugador: {fileID: 0}
 --- !u!114 &1402884280921104596
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -14,9 +14,14 @@ public class EsperaCliente : MonoBehaviour
 
     private bool esta = true;
 
+    [Header("Animator Cliente")]
+    public Animator animatorCliente;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        animatorCliente.SetBool("Andando", true);
         agent = GetComponent<NavMeshAgent>();
 
         //Busqueda de los Transform Cola
@@ -57,7 +62,7 @@ public class EsperaCliente : MonoBehaviour
         {
             agent.transform.LookAt(Pared.transform);
             esta = false;
-
+            animatorCliente.SetBool("Andando", false);
         }
     }
 }
