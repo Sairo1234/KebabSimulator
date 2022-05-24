@@ -24,7 +24,8 @@ public class SelectIngredienteCarne : MonoBehaviour
         switch (ingredienteCarneAlmacen.nivel)
         {
             case 0:
-                if (prefabIngredienteCarneAlmacen.GetComponent<AñadirCarne>().cantidad < 5)
+                if (prefabIngredienteCarneAlmacen.GetComponent<AñadirCarne>().cantidad < 5 &&
+                    ingredienteCarneAlmacen.unidadesAlmacen >= ingredienteCarneAlmacen.capacidadMaxIngrediente - prefabIngredienteCarneAlmacen.gameObject.GetComponent<AñadirCarne>().cantidad)
                 {
                     if (!BotonReabastecer.gameObject.GetComponent<ReabastecerCarne>().botonesSelecionadosIngredientesCarne.Contains(this.gameObject))
                     {
@@ -39,7 +40,8 @@ public class SelectIngredienteCarne : MonoBehaviour
                 }
                 break;
             case 1:
-                if (prefabIngredienteCarneAlmacen.GetComponent<AñadirCarne>().cantidad <= ingredienteCarneAlmacen.capacidadMaxIngrediente / 2)
+                if (prefabIngredienteCarneAlmacen.GetComponent<AñadirCarne>().cantidad <= ingredienteCarneAlmacen.capacidadMaxIngrediente / 2 && 
+                    ingredienteCarneAlmacen.unidadesAlmacen >= ingredienteCarneAlmacen.capacidadMaxIngrediente - prefabIngredienteCarneAlmacen.gameObject.GetComponent<AñadirCarne>().cantidad)
                 {
                     if (!BotonReabastecer.gameObject.GetComponent<ReabastecerCarne>().botonesSelecionadosIngredientesCarne.Contains(this.gameObject))
                     {
@@ -54,7 +56,8 @@ public class SelectIngredienteCarne : MonoBehaviour
                 }
                 break;
             case 2:
-                if (prefabIngredienteCarneAlmacen.GetComponent<AñadirCarne>().cantidad <= ingredienteCarneAlmacen.capacidadMaxIngrediente / 2)
+                if (prefabIngredienteCarneAlmacen.GetComponent<AñadirCarne>().cantidad <= ingredienteCarneAlmacen.capacidadMaxIngrediente / 2 &&
+                    ingredienteCarneAlmacen.unidadesAlmacen >= ingredienteCarneAlmacen.capacidadMaxIngrediente - prefabIngredienteCarneAlmacen.gameObject.GetComponent<AñadirCarne>().cantidad)
                 {
                     if (!BotonReabastecer.gameObject.GetComponent<ReabastecerCarne>().botonesSelecionadosIngredientesCarne.Contains(this.gameObject))
                     {

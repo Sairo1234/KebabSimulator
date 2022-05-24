@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class ReabastecerCarne : MonoBehaviour
 {
     //----------------------------------------------------------------------------------------//
@@ -11,8 +12,10 @@ public class ReabastecerCarne : MonoBehaviour
     [Header("Ingredientes selecionados ")]
     public List<GameObject> botonesSelecionadosIngredientesCarne = new List<GameObject>();
 
+
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
+
 
     public void reabastecerIngredienteCarne()
     {
@@ -29,6 +32,7 @@ public class ReabastecerCarne : MonoBehaviour
             BotonIngrediente.GetComponent<Image>().sprite = BotonIngrediente.GetComponent<SelectIngredienteCarne>().backgroundsBotones[1];
         }
 
+        //Limpiar Botones
         botonesSelecionadosIngredientesCarne.Clear();
 
     }

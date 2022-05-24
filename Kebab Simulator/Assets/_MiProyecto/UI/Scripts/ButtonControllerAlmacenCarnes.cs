@@ -10,10 +10,12 @@ public class ButtonControllerAlmacenCarnes : MonoBehaviour
 
     [Header("Ingrediente de Carne")]
     public Carne ingredienteCarne;
+    public GameObject prefabIngrediente;
 
     [Header("Textos boton")]
     public Text textoCantidadAlmacen;
     public Text textoCantidadCocina;
+    public Text headerNombreIngrediente;
 
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
@@ -25,10 +27,15 @@ public class ButtonControllerAlmacenCarnes : MonoBehaviour
 
     public void comprobarCompraIngrediente()
     {
+        headerNombreIngrediente.text = ingredienteCarne.nombre;
         if (ingredienteCarne.estaComprado == true)
         {
             this.gameObject.GetComponent<Button>().interactable = true;
-            //textoCantidadAlmacen;
+            textoCantidadCocina.gameObject.SetActive(true);
+            textoCantidadAlmacen.gameObject.SetActive(true);
+            textoCantidadAlmacen.text = "Almacén: " + ingredienteCarne.unidadesAlmacen.ToString();
+            textoCantidadCocina.text = "Cocina: " + prefabIngrediente.GetComponent<AñadirCarne>().cantidad + "/" +
+                ingredienteCarne.capacidadMaxIngrediente.ToString();
 
         }
     }

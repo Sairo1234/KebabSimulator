@@ -70,7 +70,7 @@ public class DesplazamientoPunto : MonoBehaviour
             
             gameObjectAsignado.SendMessage(funcionScript, null);
             jugador.GetComponent<Player_Mov>().enabled = true;
-            
+
         }
     }
 }

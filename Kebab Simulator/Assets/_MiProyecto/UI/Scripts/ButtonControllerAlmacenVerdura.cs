@@ -10,6 +10,12 @@ public class ButtonControllerAlmacenVerdura : MonoBehaviour
 
     [Header("Ingrediente de Verdura")]
     public Verdura ingredienteVerdura;
+    public GameObject prefabIngrediente;
+
+    [Header("Textos boton")]
+    public Text textoCantidadAlmacen;
+    public Text textoCantidadCocina;
+    public Text headerNombreIngrediente;
 
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
@@ -21,9 +27,20 @@ public class ButtonControllerAlmacenVerdura : MonoBehaviour
 
     public void comprobarCompraIngrediente()
     {
+        headerNombreIngrediente.text = ingredienteVerdura.nombre;
         if (ingredienteVerdura.estaComprado == true)
         {
-            this.gameObject.GetComponent<Button>().interactable = true;
+            headerNombreIngrediente.text = ingredienteVerdura.nombre;
+            if (ingredienteVerdura.estaComprado == true)
+            {
+                this.gameObject.GetComponent<Button>().interactable = true;
+                textoCantidadCocina.gameObject.SetActive(true);
+                textoCantidadAlmacen.gameObject.SetActive(true);
+                textoCantidadAlmacen.text = "Almacén: " + ingredienteVerdura.unidadesAlmacen.ToString();
+                textoCantidadCocina.text = "Cocina: " + prefabIngrediente.GetComponent<AñadirVerdura>().cantidad + "/" +
+                    ingredienteVerdura.capacidadMaxIngrediente.ToString();
+
+            }
         }
     }
 }

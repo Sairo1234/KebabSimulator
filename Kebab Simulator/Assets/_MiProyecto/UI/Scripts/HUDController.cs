@@ -47,7 +47,7 @@ public class HUDController : MonoBehaviour
         //jugador.GetComponent<Player_Mov>().enabled = false;
     }
 
-    public void ocultarAlmacenHUD()
+    public void ocultarHUD()
     {
         HUDPrincipal.SetActive(true);
         HUDSecundario.SetActive(false);
