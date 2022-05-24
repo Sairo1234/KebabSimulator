@@ -190,6 +190,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f58cff04c0a782841bab08ebfd733127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animatorJugador: {fileID: 0}
+  animacionJugador: 
   tagGameObject: PosicionCarne
   funcionScript: anyadirCarne
 --- !u!114 &7056657918744873023
@@ -753,6 +755,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7910015426940171887}
     m_Modifications:
+    - target: {fileID: 2861937288755734868, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0445727
+      objectReference: {fileID: 0}
+    - target: {fileID: 2861937288755734868, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0445727
+      objectReference: {fileID: 0}
+    - target: {fileID: 2861937288755734868, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0445727
+      objectReference: {fileID: 0}
+    - target: {fileID: 2861937288755734868, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.296
+      objectReference: {fileID: 0}
+    - target: {fileID: 2861937288755734868, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.099
+      objectReference: {fileID: 0}
+    - target: {fileID: 2861937288755734868, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.279
+      objectReference: {fileID: 0}
+    - target: {fileID: 3241593794227516398, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4563968108415472548, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -797,9 +827,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4995373730580470265, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6431070814524313414, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
       propertyPath: m_Name
       value: carnePolloJaulaModelo
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431070814524313414, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
@@ -808,3 +846,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4563968108415472548, guid: fce16bbce0aa91b4f9172fe60231344a, type: 3}
   m_PrefabInstance: {fileID: 1403162681361990363}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7221354829678799630
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3183888625728901503}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: dfe225a8ccb06a04a857731db0ce7d9a, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfe225a8ccb06a04a857731db0ce7d9a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.92
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfe225a8ccb06a04a857731db0ce7d9a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.92
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfe225a8ccb06a04a857731db0ce7d9a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.92
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfe225a8ccb06a04a857731db0ce7d9a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.236
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfe225a8ccb06a04a857731db0ce7d9a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.128
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfe225a8ccb06a04a857731db0ce7d9a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.042
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfe225a8ccb06a04a857731db0ce7d9a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfe225a8ccb06a04a857731db0ce7d9a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfe225a8ccb06a04a857731db0ce7d9a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfe225a8ccb06a04a857731db0ce7d9a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfe225a8ccb06a04a857731db0ce7d9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfe225a8ccb06a04a857731db0ce7d9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfe225a8ccb06a04a857731db0ce7d9a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dfe225a8ccb06a04a857731db0ce7d9a, type: 3}
+      propertyPath: m_Name
+      value: carneLoro
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dfe225a8ccb06a04a857731db0ce7d9a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dfe225a8ccb06a04a857731db0ce7d9a, type: 3}
