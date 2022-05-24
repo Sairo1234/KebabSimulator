@@ -17,6 +17,8 @@ public class AñadirCarne : MonoBehaviour
 
     [Header("Cantidad ingrediente")]
     public int cantidad;
+    [Header("Particulas carne")]
+    public GameObject particulasCarne;
 
     private GameObject kebabEnPreparacion;
 
@@ -50,13 +52,19 @@ public class AñadirCarne : MonoBehaviour
         kebabEnPreparacion.tag = "KebabEnPreparacion";
         Debug.Log("Kebab spawneado");
     }
+    public void desactivarefecto()
+    {
+        particulasCarne.SetActive(false);
 
+    }
     public void anyadirCarne()
     {
         if (kebabEnPreparacion.GetComponent<Kebab>().contieneCarne() == false)
         {
             kebabEnPreparacion.GetComponent<Kebab>().carne = IngredienteData;
             cantidad--;
+            particulasCarne.SetActive(true);
+            Invoke("desactivarefecto", 2);
             Debug.Log("Se ha añadido carne al Kebab");
         }
         else

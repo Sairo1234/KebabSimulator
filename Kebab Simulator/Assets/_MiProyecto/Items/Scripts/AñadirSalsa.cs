@@ -18,6 +18,9 @@ public class AñadirSalsa : MonoBehaviour
     [Header("Cantidad ingrediente")]
     public int cantidad = 10;
 
+    [Header("Particulas salsa")]
+    public GameObject particulasSalsa;
+
     private GameObject kebabEnPreparacion;
 
     //----------------------------------------------------------------------------------------//
@@ -49,7 +52,11 @@ public class AñadirSalsa : MonoBehaviour
         kebabEnPreparacion = NuevoKebabEnPreparacion;
         Debug.Log("Kebab spawneado");
     }
+    public void desactivarefecto()
+    {
+        particulasSalsa.SetActive(false);
 
+    }
     public void anyadirSalsa()
     {
 
@@ -57,6 +64,8 @@ public class AñadirSalsa : MonoBehaviour
         {
             kebabEnPreparacion.GetComponent<Kebab>().salsa = IngredienteData;
             cantidad--;
+            particulasSalsa.SetActive(true);
+            Invoke("desactivarefecto", 2);
             Debug.Log("Se ha añadido salsa al Kebab");
         }
         else
