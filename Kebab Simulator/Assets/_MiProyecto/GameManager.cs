@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
         if (clientesContador == clientesMax && clientesEnPantalla == 0)
         {
             panel.SetActive(true);
+            Time.timeScale = 0;
             HUDprincipal.SetActive(false);
         }
     }
@@ -55,6 +56,7 @@ public class GameManager : MonoBehaviour
         //puntoDespawn.GetComponent<DespawnCliente>().clientesDespawneados = 0;
         panel.SetActive(false);
         HUDprincipal.SetActive(true);
+        Time.timeScale = 1;
         numDia++;
         clientesContador = 0;
         spawnCliente();
