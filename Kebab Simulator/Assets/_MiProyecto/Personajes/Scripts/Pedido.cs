@@ -42,9 +42,9 @@ public class Pedido : MonoBehaviour
     private void pedidoAleatorio()
     {
         selectingredientesComprados();
-        carnePedido = ingredientesCarneComprados[Random.Range(0, ingredientesCarneComprados.Count - 1)];
-        verduraPedido = ingredientesVerduraComprados[Random.Range(0, ingredientesVerduraComprados.Count - 1)];
-        salsaPedido = ingredientesSalsaComprados[Random.Range(0, ingredientesSalsaComprados.Count - 1)];
+        carnePedido = ingredientesCarneComprados[Random.Range(0, ingredientesCarneComprados.Count)];
+        verduraPedido = ingredientesVerduraComprados[Random.Range(0, ingredientesVerduraComprados.Count)];
+        salsaPedido = ingredientesSalsaComprados[Random.Range(0, ingredientesSalsaComprados.Count)];
     }
 
     public void selectingredientesComprados()
