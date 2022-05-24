@@ -36,7 +36,7 @@ public class ComprarUnidadesCarne : MonoBehaviour
             if (dineroJugador >= ingredienteCarne.costeCompraUnidades)
             {
                 jugador.GetComponent<ReputacionDinero>().TakeDinero(-ingredienteCarne.costeCompraUnidades);
-                ingredienteCarne.unidadesAlmacen=+5;
+                ingredienteCarne.unidadesAlmacen= ingredienteCarne.unidadesAlmacen  + 5;
             }
         }
     }

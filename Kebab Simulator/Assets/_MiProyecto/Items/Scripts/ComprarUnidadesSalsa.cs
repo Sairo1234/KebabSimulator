@@ -36,7 +36,7 @@ public class ComprarUnidadesSalsa : MonoBehaviour
             if (dineroJugador >= ingredienteSalsa.costeCompraUnidades)
             {
                 jugador.GetComponent<ReputacionDinero>().TakeDinero(-ingredienteSalsa.costeCompraUnidades);
-                ingredienteSalsa.unidadesAlmacen = +5;
+                ingredienteSalsa.unidadesAlmacen = ingredienteSalsa.unidadesAlmacen + 5;
             }
         }
     }
