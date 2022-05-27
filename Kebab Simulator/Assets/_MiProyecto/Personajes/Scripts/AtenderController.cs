@@ -5,24 +5,29 @@ using UnityEngine;
 public class AtenderController : MonoBehaviour
 {
     public Transform spawnKebab;
-    // Update is called once per frame
-    private void Start()
-    {
-        spawnKebab = GameObject.FindGameObjectWithTag("SpawnKebab").transform;
-    }
+    
     void Update()
     {
-        ComprobarMano();
+            ComprobarMano();
     }
+
     public void ComprobarMano()
     {
-        if (spawnKebab.childCount > 0)
+        if (this.gameObject.transform.GetChildCount() != 0)
         {
-            this.gameObject.GetComponent<DesplazamientoPunto>().enabled = false;
+            if (Vector3.Distance(this.gameObject.transform.position, this.gameObject.transform.GetChild(0).transform.position) < 0.6)
+            {
+                if (spawnKebab.childCount > 0)
+                {
+                    this.gameObject.transform.GetChild(0).GetComponent<DesplazamientoPunto>().enabled = false;
+                }
+                else if (spawnKebab.childCount == 0)
+                {
+                    this.gameObject.transform.GetChild(0).GetComponent<DesplazamientoPunto>().enabled = true;
+                }
+            }
         }
-        else if (spawnKebab.childCount == 0)
-        {
-            this.gameObject.GetComponent<DesplazamientoPunto>().enabled = true;
-        }
+        
+        
     }
 }

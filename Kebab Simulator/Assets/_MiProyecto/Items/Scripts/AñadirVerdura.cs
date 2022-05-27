@@ -18,6 +18,10 @@ public class AñadirVerdura : MonoBehaviour
     [Header("Cantidad ingrediente")]
     public int cantidad = 10;
 
+    //Desplazamiento
+    [Header("Desplazamiento")]
+    public GameObject gameManager;
+
     private GameObject kebabEnPreparacion;
 
     //----------------------------------------------------------------------------------------//
@@ -37,7 +41,6 @@ public class AñadirVerdura : MonoBehaviour
         else
         {
             kebabEnPreparacion = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
-            Debug.Log("Ya hay un kebab");
             anyadirVerdura();
         }
     }
@@ -47,7 +50,6 @@ public class AñadirVerdura : MonoBehaviour
         GameObject NuevoKebabEnPreparacion = Instantiate(modeloKebab, puntoSpawn);
         NuevoKebabEnPreparacion.tag = "KebabEnPreparacion";
         kebabEnPreparacion = NuevoKebabEnPreparacion;
-        Debug.Log("Kebab spawneado");
     }
 
     public void anyadirVerdura()
@@ -57,11 +59,13 @@ public class AñadirVerdura : MonoBehaviour
         {
             kebabEnPreparacion.GetComponent<Kebab>().verdura = IngredienteData;
             cantidad--;
-            Debug.Log("Se ha añadido verdura al Kebab");
+            gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
+            this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
         }
         else
         {
-            Debug.Log("El Kebab ya tiene verdura");
+            gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
+            this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
         }
     }
 

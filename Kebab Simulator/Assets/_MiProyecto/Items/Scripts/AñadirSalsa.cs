@@ -21,6 +21,10 @@ public class AñadirSalsa : MonoBehaviour
     [Header("Particulas salsa")]
     public GameObject particulasSalsa;
 
+    //Desplazamiento
+    [Header("Desplazamiento")]
+    public GameObject gameManager;
+
     private GameObject kebabEnPreparacion;
 
     //----------------------------------------------------------------------------------------//
@@ -40,7 +44,6 @@ public class AñadirSalsa : MonoBehaviour
         else
         {
             kebabEnPreparacion = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
-            Debug.Log("Ya hay un kebab");
             anyadirSalsa();
         }
     }
@@ -50,7 +53,6 @@ public class AñadirSalsa : MonoBehaviour
         GameObject NuevoKebabEnPreparacion = Instantiate(modeloKebab, puntoSpawn);
         NuevoKebabEnPreparacion.tag = "KebabEnPreparacion";
         kebabEnPreparacion = NuevoKebabEnPreparacion;
-        Debug.Log("Kebab spawneado");
     }
     public void desactivarefecto()
     {
@@ -64,13 +66,15 @@ public class AñadirSalsa : MonoBehaviour
         {
             kebabEnPreparacion.GetComponent<Kebab>().salsa = IngredienteData;
             cantidad--;
+            gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
+            this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
             particulasSalsa.SetActive(true);
             Invoke("desactivarefecto", 2);
-            Debug.Log("Se ha añadido salsa al Kebab");
         }
         else
         {
-            Debug.Log("El Kebab ya tiene salsa");
+            gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
+            this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
         }
     }
 

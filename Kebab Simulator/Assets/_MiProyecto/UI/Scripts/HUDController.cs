@@ -19,6 +19,10 @@ public class HUDController : MonoBehaviour
 
     private GameObject jugador;
 
+    //Desplazamiento
+    [Header("Desplazamiento")]
+    public GameObject gameManager;
+
 
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
@@ -28,13 +32,13 @@ public class HUDController : MonoBehaviour
         jugador = GameObject.FindGameObjectWithTag("Player");
     }
 
-    private void Update()
+   /* private void Update()
     {
        if(HUDSecundario.active)
         {
-            jugador.GetComponent<Player_Mov>().enabled = false;
+            gameManager.GetComponent<DesplazamientoController>().desactivarDesplazamientoPunto();
         }
-    }
+    }*/
 
     //--------------------------------------------------------------------------//
     //------------------------------ HUD Principal -----------------------------//
@@ -43,15 +47,13 @@ public class HUDController : MonoBehaviour
     {
         HUDPrincipal.SetActive(false);
         HUDSecundario.SetActive(true);
-        
-        //jugador.GetComponent<Player_Mov>().enabled = false;
     }
 
     public void ocultarHUD()
     {
         HUDPrincipal.SetActive(true);
         HUDSecundario.SetActive(false);
-        jugador.GetComponent<Player_Mov>().enabled = true;
+        gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
     }
 
 

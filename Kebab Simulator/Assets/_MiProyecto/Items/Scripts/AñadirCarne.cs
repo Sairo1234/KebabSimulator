@@ -7,18 +7,25 @@ public class AñadirCarne : MonoBehaviour
     //----------------------------------------------------------------------------------------//
     //--------------------------------------- ATRIBUTOS -------------------------------------//
 
-    //SPAWN DEL KEBAB
+    //Sapwn Kebab
     [Header("Spawn Kebab")]
     public GameObject modeloKebab;
     private Transform puntoSpawn;
 
+    //Ingrediente
     [Header("Ingrediente")]
     public Carne IngredienteData;
 
+    //Cantidad
     [Header("Cantidad ingrediente")]
     public int cantidad;
+
     [Header("Particulas carne")]
     public GameObject particulasCarne;
+
+    //Desplazamiento
+    [Header("Desplazamiento")]
+    public GameObject gameManager;
 
     private GameObject kebabEnPreparacion;
 
@@ -41,7 +48,6 @@ public class AñadirCarne : MonoBehaviour
         else if(puntoSpawn.childCount > 0)
         {
             kebabEnPreparacion = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
-            Debug.Log("Ya hay un kebab");
             anyadirCarne();
         }
     }
@@ -50,7 +56,6 @@ public class AñadirCarne : MonoBehaviour
     {
         kebabEnPreparacion = Instantiate(modeloKebab, puntoSpawn);
         kebabEnPreparacion.tag = "KebabEnPreparacion";
-        Debug.Log("Kebab spawneado");
     }
     public void desactivarefecto()
     {
@@ -65,11 +70,13 @@ public class AñadirCarne : MonoBehaviour
             cantidad--;
             particulasCarne.SetActive(true);
             Invoke("desactivarefecto", 2);
-            Debug.Log("Se ha añadido carne al Kebab");
+            gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
+            this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
         }
         else
         {
-            Debug.Log("El Kebab ya tiene carne");
+            gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
+            this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
         }
     }
 

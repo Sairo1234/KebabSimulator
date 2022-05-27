@@ -15,6 +15,10 @@ public class DejarKebab : MonoBehaviour
     //Kebab que se va a dejar
     private GameObject kebabParaDejar;
 
+    //Desplazamiento
+    [Header("Desplazamiento")]
+    public GameObject gameManager;
+
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
 
@@ -72,11 +76,14 @@ public class DejarKebab : MonoBehaviour
             if (kebabParaDejar != null)
             {
                 colocarKebabEnMesa();
+                gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
+                this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
             }
         }
         else
         {
-            Debug.Log("La mesa esta llena");
+            gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
+            this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
         }
     }
 }

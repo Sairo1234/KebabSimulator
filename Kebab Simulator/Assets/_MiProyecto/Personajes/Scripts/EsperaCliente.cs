@@ -17,10 +17,15 @@ public class EsperaCliente : MonoBehaviour
     [Header("Animator Cliente")]
     public Animator animatorCliente;
 
+    //Desplazamiento
+    [Header("Desplazamiento")]
+    public GameObject gameManager;
 
-    // Start is called before the first frame update
+
     void Start()
     {
+        gameManager = GameObject.FindGameObjectWithTag("GameManager");
+        this.gameObject.GetComponent<DesplazamientoPunto>().enabled = false;
         animatorCliente.SetBool("Andando", true);
         agent = GetComponent<NavMeshAgent>();
 
@@ -44,9 +49,12 @@ public class EsperaCliente : MonoBehaviour
             }
 
         }
+
+        //EliminarCliente de desplazamientoController
+        gameManager.GetComponent<DesplazamientoController>().objetosDesplazamiento.Remove(this.gameObject);
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
 

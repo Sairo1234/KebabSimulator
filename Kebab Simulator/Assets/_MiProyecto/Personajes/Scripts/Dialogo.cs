@@ -11,8 +11,14 @@ public class Dialogo : MonoBehaviour
     //Animacion Jugador
     Animator animatorJugador;
 
+    //Desplazamiento
+    [Header("Desplazamiento")]
+    public GameObject gameManager;
+
+
     private void Start()
     {
+        gameManager = GameObject.FindGameObjectWithTag("GameManager");
         animatorJugador = GameObject.FindGameObjectWithTag("ModeloJugador").GetComponent<Animator>();
     }
 
@@ -20,7 +26,6 @@ public class Dialogo : MonoBehaviour
     {
         this.gameObject.GetComponent<PacienciaCola>().enabled = false;
         PanelDialogo.SetActive(true);
-        GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Mov>().enabled = false;
     }
 
     public void ocultarDialogo()
@@ -28,6 +33,7 @@ public class Dialogo : MonoBehaviour
         PanelDialogo.SetActive(false);
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Mov>().enabled = true;
         animatorJugador.SetTrigger("GuardarNota");
+        gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
     }
 
 }

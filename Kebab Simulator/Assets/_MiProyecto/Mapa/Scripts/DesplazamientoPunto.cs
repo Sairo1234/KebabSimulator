@@ -13,6 +13,7 @@ public class DesplazamientoPunto : MonoBehaviour
     private GameObject gameObjectAsignado;
     private Transform destino;
     private bool estaDesplazandose = false;
+    public bool estaJugadorUsandoObjeto = false;
 
     [Header("Animator Jugador")]
     public Animator animatorJugador;
@@ -24,10 +25,13 @@ public class DesplazamientoPunto : MonoBehaviour
     [Header("Funcion a realizar")]
     public string funcionScript;
 
+    [Header("GameManager")]
+    public GameObject gameManager;
 
 
     private void Start()
     {
+        gameManager = GameObject.FindGameObjectWithTag("GameManager");
         jugador = GameObject.FindGameObjectWithTag("Player").GetComponent<NavMeshAgent>();
         gameObjectAsignado = this.gameObject;
         GameObject GameObjectdestino = GameObject.FindGameObjectWithTag(tagGameObject);
@@ -51,9 +55,10 @@ public class DesplazamientoPunto : MonoBehaviour
     {
         if (this.enabled)
         {
-            jugador.GetComponent<Player_Mov>().enabled = false;
             jugador.SetDestination(destino.position);
             estaDesplazandose = true;
+            estaJugadorUsandoObjeto = true;
+            gameManager.GetComponent<DesplazamientoController>().desactivarDesplazamientoPunto();
             animatorJugador.SetBool("Andando", true);
         }
     }
@@ -65,12 +70,8 @@ public class DesplazamientoPunto : MonoBehaviour
             jugador.transform.LookAt(gameObjectAsignado.transform);
             estaDesplazandose = false;
             animatorJugador.SetBool("Andando", false);
-            
             animatorJugador.SetTrigger(animacionJugador);
-            
             gameObjectAsignado.SendMessage(funcionScript, null);
-            jugador.GetComponent<Player_Mov>().enabled = true;
-
         }
     }
 }
