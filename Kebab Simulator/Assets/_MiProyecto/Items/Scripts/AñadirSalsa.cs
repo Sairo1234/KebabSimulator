@@ -44,7 +44,7 @@ public class AñadirSalsa : MonoBehaviour
         else
         {
             kebabEnPreparacion = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
-            anyadirSalsa();
+            StartCoroutine(jugadorConKebab());
         }
     }
 
@@ -54,6 +54,7 @@ public class AñadirSalsa : MonoBehaviour
         NuevoKebabEnPreparacion.tag = "KebabEnPreparacion";
         kebabEnPreparacion = NuevoKebabEnPreparacion;
     }
+
     public void desactivarefecto()
     {
         particulasSalsa.SetActive(false);
@@ -68,6 +69,7 @@ public class AñadirSalsa : MonoBehaviour
             cantidad--;
             gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
+            this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorHaciendoAccion = false;
             particulasSalsa.SetActive(true);
             Invoke("desactivarefecto", 2);
         }
@@ -75,6 +77,7 @@ public class AñadirSalsa : MonoBehaviour
         {
             gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
+            this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorHaciendoAccion = false;
         }
     }
 
@@ -82,6 +85,11 @@ public class AñadirSalsa : MonoBehaviour
     {
         yield return new WaitForSeconds(4);
         spawnKebabEnPlato();
+        anyadirSalsa();
+    }
+    IEnumerator jugadorConKebab()
+    {
+        yield return new WaitForSeconds(4);
         anyadirSalsa();
     }
 }

@@ -27,14 +27,23 @@ public class EliminarKebab : MonoBehaviour
             kebabParaTirar = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
             Destroy(kebabParaTirar);
             animatorBasura.SetTrigger("AbrirBasura");
-            gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
-            Debug.Log("Se ha tirado el kebab");
+            StartCoroutine(activarDesplazamientoPunto());
+
         }
         else
         {
             gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
-            Debug.Log("No hay ningun kebab para tirar");
+            this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
+            this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorHaciendoAccion = false;
         }
+    }
+
+    IEnumerator activarDesplazamientoPunto()
+    {
+        yield return new WaitForSeconds(1);
+        gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
+        this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
+        this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorHaciendoAccion = false;
     }
 }
 

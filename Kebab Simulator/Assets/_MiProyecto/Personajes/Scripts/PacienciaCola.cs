@@ -22,7 +22,10 @@ public class PacienciaCola : MonoBehaviour
         }
         else if (timeRemaining > 0)
         {
-            timeRemaining -= Time.deltaTime;
+            if(this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto == false)
+            {
+                timeRemaining -= Time.deltaTime;
+            }
         }
         else
         {

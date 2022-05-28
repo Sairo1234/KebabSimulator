@@ -76,14 +76,22 @@ public class DejarKebab : MonoBehaviour
             if (kebabParaDejar != null)
             {
                 colocarKebabEnMesa();
-                gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
-                this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
+                StartCoroutine(activarDesplazamientoPunto());
             }
         }
         else
         {
             gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
+            this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorHaciendoAccion = false;
         }
+    }
+
+    IEnumerator activarDesplazamientoPunto()
+    {
+        yield return new WaitForSeconds(2);
+        gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
+        this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
+        this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorHaciendoAccion = false;
     }
 }

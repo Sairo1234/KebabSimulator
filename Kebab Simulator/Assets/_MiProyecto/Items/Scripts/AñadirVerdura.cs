@@ -41,7 +41,7 @@ public class AñadirVerdura : MonoBehaviour
         else
         {
             kebabEnPreparacion = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
-            anyadirVerdura();
+            StartCoroutine(jugadorConKebab());
         }
     }
 
@@ -61,11 +61,13 @@ public class AñadirVerdura : MonoBehaviour
             cantidad--;
             gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
+            this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorHaciendoAccion = false;
         }
         else
         {
             gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
+            this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorHaciendoAccion = false;
         }
     }
 
@@ -73,6 +75,12 @@ public class AñadirVerdura : MonoBehaviour
     {
         yield return new WaitForSeconds(4);
         spawnKebabEnPlato();
+        anyadirVerdura();
+    }
+
+    IEnumerator jugadorConKebab()
+    {
+        yield return new WaitForSeconds(4);
         anyadirVerdura();
     }
 }

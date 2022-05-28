@@ -566,7 +566,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 21311706}
         m_TargetAssemblyTypeName: ComprarUnidadesVerdura, Assembly-CSharp
-        m_MethodName: comprobarUnidadesVerdura
+        m_MethodName: anyadirUnidadesVerdura
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1193,6 +1193,10 @@ PrefabInstance:
       value: 0.00000006277612
       objectReference: {fileID: 0}
     - target: {fileID: 3387486026284335825, guid: 682e32b52ab8f3f42b8ae141ab72c474, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
+    - target: {fileID: 3387486026284335825, guid: 682e32b52ab8f3f42b8ae141ab72c474, type: 3}
       propertyPath: funcionScript
       value: asignarKebab
       objectReference: {fileID: 0}
@@ -1280,6 +1284,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7542855512305144752, guid: 682e32b52ab8f3f42b8ae141ab72c474, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 682e32b52ab8f3f42b8ae141ab72c474, type: 3}
 --- !u!1 &47466710 stripped
@@ -4749,6 +4757,7 @@ GameObject:
   - component: {fileID: 191850443}
   - component: {fileID: 191850448}
   - component: {fileID: 191850447}
+  - component: {fileID: 191850449}
   - component: {fileID: 191850446}
   - component: {fileID: 191850445}
   - component: {fileID: 191850444}
@@ -4836,6 +4845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   estaJugadorUsandoObjeto: 0
+  estaJugadorHaciendoAccion: 0
   animatorJugador: {fileID: 1900196658}
   animacionJugador: 
   tagGameObject: PosicionAlmacen
@@ -4854,6 +4864,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.39393282, y: 3.2532036, z: 1.9062092}
   m_Center: {x: -0.3030336, y: 1.1266018, z: -0.33986485}
+--- !u!114 &191850449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191850442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 375163d75c5c0384587948eeecae2a08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnKebab: {fileID: 1541703864}
 --- !u!1 &195907235
 GameObject:
   m_ObjectHideFlags: 0
@@ -6819,8 +6842,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2024237479}
   m_HandleRect: {fileID: 2024237478}
   m_Direction: 0
-  m_Value: -0.00000043596555
-  m_Size: 0.62526774
+  m_Value: -0.0000005231587
+  m_Size: 0.4664635
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7565,7 +7588,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1324354690}
   m_Direction: 0
   m_Value: -0.000000107709106
-  m_Size: 0.14054601
+  m_Size: 0.15254238
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7790,6 +7813,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1858825725}
     m_Modifications:
     - target: {fileID: -5129628832869141820, guid: df2afeca7c8cf9846a42c73fccfe1009, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
+    - target: {fileID: -5129628832869141820, guid: df2afeca7c8cf9846a42c73fccfe1009, type: 3}
       propertyPath: funcionScript
       value: asignarKebab
       objectReference: {fileID: 0}
@@ -7877,6 +7904,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.11
       objectReference: {fileID: 0}
+    - target: {fileID: 8060864525631784635, guid: df2afeca7c8cf9846a42c73fccfe1009, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
     - target: {fileID: 8060864525631784635, guid: df2afeca7c8cf9846a42c73fccfe1009, type: 3}
       propertyPath: particulasSalsa
       value: 
@@ -11911,6 +11942,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1244548483}
     m_Modifications:
+    - target: {fileID: 1567773397566445900, guid: dea3d768664205d4cb758337649a444e, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
+    - target: {fileID: 2978030968622267023, guid: dea3d768664205d4cb758337649a444e, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
     - target: {fileID: 2978030968622267023, guid: dea3d768664205d4cb758337649a444e, type: 3}
       propertyPath: funcionScript
       value: asignarKebab
@@ -17359,6 +17398,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: eaa862b6884ef9d4c882fbfa1308efd6, type: 2}
     - target: {fileID: 3816937987919749484, guid: a8d3a8af5c641eb4da81e757474b8dfe, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
+    - target: {fileID: 3816937987919749484, guid: a8d3a8af5c641eb4da81e757474b8dfe, type: 3}
       propertyPath: funcionScript
       value: asignarKebab
       objectReference: {fileID: 0}
@@ -17378,6 +17421,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4310132257764697009, guid: a8d3a8af5c641eb4da81e757474b8dfe, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
     - target: {fileID: 5873653286838872289, guid: a8d3a8af5c641eb4da81e757474b8dfe, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -20570,6 +20617,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3071620800016594513, guid: 7db507bf71487ae4190ab3f456ecb12c, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
     - target: {fileID: 3846181396577675362, guid: 7db507bf71487ae4190ab3f456ecb12c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -20610,6 +20661,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6237606111373483132, guid: 7db507bf71487ae4190ab3f456ecb12c, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
     - target: {fileID: 6237606111373483132, guid: 7db507bf71487ae4190ab3f456ecb12c, type: 3}
       propertyPath: funcionScript
       value: asignarKebab
@@ -26523,6 +26578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   estaJugadorUsandoObjeto: 0
+  estaJugadorHaciendoAccion: 0
   animatorJugador: {fileID: 1900196658}
   animacionJugador: DejaPlatoMesa
   tagGameObject: MesaPunto
@@ -26987,6 +27043,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1244548483}
     m_Modifications:
     - target: {fileID: -2049180216013771954, guid: b317c7abba3a2cf42b7a1ccd0cac10e1, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
+    - target: {fileID: -2049180216013771954, guid: b317c7abba3a2cf42b7a1ccd0cac10e1, type: 3}
       propertyPath: funcionScript
       value: asignarKebab
       objectReference: {fileID: 0}
@@ -27010,6 +27070,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1365528906230157543, guid: b317c7abba3a2cf42b7a1ccd0cac10e1, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
     - target: {fileID: 2962834944751065440, guid: b317c7abba3a2cf42b7a1ccd0cac10e1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.098
@@ -27768,6 +27832,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1244548483}
     m_Modifications:
     - target: {fileID: -7482523560801788961, guid: dfc9491bc5a87f4448d29ab06e4f0992, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
+    - target: {fileID: -7482523560801788961, guid: dfc9491bc5a87f4448d29ab06e4f0992, type: 3}
       propertyPath: funcionScript
       value: asignarKebab
       objectReference: {fileID: 0}
@@ -27779,6 +27847,10 @@ PrefabInstance:
       propertyPath: animacionJugador
       value: Interactuando
       objectReference: {fileID: 0}
+    - target: {fileID: -5265334925969846471, guid: dfc9491bc5a87f4448d29ab06e4f0992, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
     - target: {fileID: 4031883180850480796, guid: dfc9491bc5a87f4448d29ab06e4f0992, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -29129,7 +29201,7 @@ MonoBehaviour:
   kebabParaTirar: {fileID: 0}
   LocalizacionKebab: {fileID: 1541703864}
   animatorBasura: {fileID: 888405337}
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 1240847596}
 --- !u!114 &1216622677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29143,6 +29215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   estaJugadorUsandoObjeto: 0
+  estaJugadorHaciendoAccion: 0
   animatorJugador: {fileID: 1900196658}
   animacionJugador: DejaPlato
   tagGameObject: PosicionBasura
@@ -31987,6 +32060,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lechuga
       objectReference: {fileID: 0}
+    - target: {fileID: 2254841635778405562, guid: 4fa0b118601a73b408f7dd43384bd15d, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
     - target: {fileID: 2254841635778405563, guid: 4fa0b118601a73b408f7dd43384bd15d, type: 3}
       propertyPath: m_Size.x
       value: 0.5142166
@@ -32007,6 +32084,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.000000060740525
       objectReference: {fileID: 0}
+    - target: {fileID: 2467886251793836687, guid: 4fa0b118601a73b408f7dd43384bd15d, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
     - target: {fileID: 2467886251793836687, guid: 4fa0b118601a73b408f7dd43384bd15d, type: 3}
       propertyPath: funcionScript
       value: asignarKebab
@@ -32259,7 +32340,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.14054601, y: 1}
+  m_AnchorMax: {x: 0.15254238, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -34868,6 +34949,8 @@ GameObject:
   - component: {fileID: 1440286352}
   - component: {fileID: 1440286351}
   - component: {fileID: 1440286353}
+  - component: {fileID: 1440286355}
+  - component: {fileID: 1440286354}
   m_Layer: 0
   m_Name: Jugador
   m_TagString: Player
@@ -34918,10 +35001,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 5
+  m_Acceleration: 200
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 500
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -34998,6 +35081,36 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 0
     m_RotationOrder: 4
+--- !u!114 &1440286354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440286347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b9a94d999a2f242a61ebf394802b61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1440286355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440286347}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1441873249
 GameObject:
   m_ObjectHideFlags: 0
@@ -37967,6 +38080,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 245330214}
     m_Modifications:
     - target: {fileID: -1588584650804656500, guid: 01c6c256fae1d5b4796528d034d05ab6, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
+    - target: {fileID: -1588584650804656500, guid: 01c6c256fae1d5b4796528d034d05ab6, type: 3}
       propertyPath: funcionScript
       value: asignarKebab
       objectReference: {fileID: 0}
@@ -37986,6 +38103,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3249005481384169981, guid: 01c6c256fae1d5b4796528d034d05ab6, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
     - target: {fileID: 3249005481384169982, guid: 01c6c256fae1d5b4796528d034d05ab6, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -45955,6 +46076,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1244548483}
     m_Modifications:
     - target: {fileID: -9111668688357136486, guid: c6a9f7ac28f95aa418707782de25d2d2, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
+    - target: {fileID: -9111668688357136486, guid: c6a9f7ac28f95aa418707782de25d2d2, type: 3}
       propertyPath: funcionScript
       value: asignarKebab
       objectReference: {fileID: 0}
@@ -46002,6 +46127,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.0430742
       objectReference: {fileID: 0}
+    - target: {fileID: 1625245843774425013, guid: c6a9f7ac28f95aa418707782de25d2d2, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
     - target: {fileID: 5484757269040039681, guid: c6a9f7ac28f95aa418707782de25d2d2, type: 3}
       propertyPath: m_Name
       value: Pepino
@@ -46361,6 +46490,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1510739021020232352, guid: 952027db8c50b3746ab2321336f2de2c, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
     - target: {fileID: 2759347494517316314, guid: 952027db8c50b3746ab2321336f2de2c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
@@ -46433,6 +46566,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6252351858199064229, guid: 952027db8c50b3746ab2321336f2de2c, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
     - target: {fileID: 6252351858199064229, guid: 952027db8c50b3746ab2321336f2de2c, type: 3}
       propertyPath: funcionScript
       value: asignarKebab
@@ -48518,6 +48655,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1244548483}
     m_Modifications:
     - target: {fileID: -3827928011876351859, guid: 9ffe737c6d98a49439ecdf9d1a94edfe, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
+    - target: {fileID: -3827928011876351859, guid: 9ffe737c6d98a49439ecdf9d1a94edfe, type: 3}
       propertyPath: funcionScript
       value: asignarKebab
       objectReference: {fileID: 0}
@@ -48573,6 +48714,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7337962948159605073, guid: 9ffe737c6d98a49439ecdf9d1a94edfe, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1240847596}
     - target: {fileID: 7855146684896135104, guid: 9ffe737c6d98a49439ecdf9d1a94edfe, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -49067,7 +49212,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.62526774, y: 1}
+  m_AnchorMax: {x: 0.4664635, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}

@@ -29,6 +29,14 @@ public class DesplazamientoController : MonoBehaviour
     public void desactivarDesplazamientoPunto()
     {
         jugador.GetComponent<Player_Mov>().enabled = false;
+        puntoColaCero.GetComponent<AtenderController>().enabled = false;
+        objetosDesplazamiento[2].GetComponent<AlmacenControllers>().enabled = false;
+
+        for (int i=0; i <= 1; i++)
+        {
+            objetosDesplazamiento[i].GetComponent<KebabManoController>().enabled = false;
+        }
+
         foreach (GameObject objeto in objetosDesplazamiento)
         {
             if (objeto.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto == false)
@@ -41,6 +49,15 @@ public class DesplazamientoController : MonoBehaviour
     public void activaDesplazamientoPunto()
     {
         jugador.GetComponent<Player_Mov>().enabled = true;
+        puntoColaCero.GetComponent<AtenderController>().enabled = true;
+
+        objetosDesplazamiento[2].GetComponent<AlmacenControllers>().enabled = true;
+
+        for (int i = 0; i <= 1; i++)
+        {
+            objetosDesplazamiento[i].GetComponent<KebabManoController>().enabled = true;
+        }
+
         foreach (GameObject objeto in objetosDesplazamiento)
         {
             if (objeto.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto == false)

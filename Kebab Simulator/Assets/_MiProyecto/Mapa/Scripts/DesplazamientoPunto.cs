@@ -14,6 +14,7 @@ public class DesplazamientoPunto : MonoBehaviour
     private Transform destino;
     private bool estaDesplazandose = false;
     public bool estaJugadorUsandoObjeto = false;
+    public bool estaJugadorHaciendoAccion = false;
 
     [Header("Animator Jugador")]
     public Animator animatorJugador;
@@ -53,11 +54,12 @@ public class DesplazamientoPunto : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (this.enabled)
+        if (this.enabled && estaJugadorHaciendoAccion == false)
         {
             jugador.SetDestination(destino.position);
             estaDesplazandose = true;
             estaJugadorUsandoObjeto = true;
+            estaJugadorHaciendoAccion = true;
             gameManager.GetComponent<DesplazamientoController>().desactivarDesplazamientoPunto();
             animatorJugador.SetBool("Andando", true);
         }
@@ -65,13 +67,21 @@ public class DesplazamientoPunto : MonoBehaviour
 
     private void comprobarDistacia()
     {
-        if (jugador.remainingDistance == 0)
+        if (jugador.remainingDistance == 0 && estaDesplazandose == true)
         {
             jugador.transform.LookAt(gameObjectAsignado.transform);
             estaDesplazandose = false;
             animatorJugador.SetBool("Andando", false);
             animatorJugador.SetTrigger(animacionJugador);
-            gameObjectAsignado.SendMessage(funcionScript, null);
+            if (estaJugadorHaciendoAccion == true)
+            {
+                gameObjectAsignado.SendMessage(funcionScript, null);
+            }
+           /* else
+            {
+                gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
+                this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
+            }*/
         }
     }
 }

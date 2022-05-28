@@ -48,6 +48,10 @@ public class ComprarUnidadesVerdura : MonoBehaviour
             botonComprarUnidades.interactable = false;
             botonComprarUnidades.GetComponentInChildren<Text>().text = "Max";
         }
+        else if (dineroJugador <= ingredienteVerdura.costeCompraUnidades)
+        {
+            botonComprarUnidades.interactable = false;
+        }
         else
         {
             botonComprarUnidades.interactable = true;

@@ -14,8 +14,13 @@ public class SalidaCliente : MonoBehaviour
 
     public Animator animatorCliente;
 
+    //Desplazamiento
+    [Header("Desplazamiento")]
+    public GameObject gameManager;
+
     void Start()
     {
+        gameManager = GameObject.FindGameObjectWithTag("GameManager");
         cliente = GetComponent<NavMeshAgent>();
         GameObject GameObjectsalida = GameObject.FindGameObjectWithTag("Salida");
         TransformSalida = GameObjectsalida.transform;
@@ -28,8 +33,13 @@ public class SalidaCliente : MonoBehaviour
         animatorCliente.SetBool("Andando", true);
         this.transform.parent.gameObject.transform.DetachChildren();
         this.gameObject.GetComponent<EntradaCliente>().enabled = false;
+        this.gameObject.GetComponent<EntregarKebab>().enabled = false;
         cliente.SetDestination(TransformSalida.position);
         estaDesplazandose = true;
+        //this.gameObject.transform.GetChild(2).GetComponent<OutlineDeObjeto>().enabled = false;
+
+        //EliminarCliente de desplazamientoController
+        gameManager.GetComponent<DesplazamientoController>().objetosDesplazamiento.Remove(this.gameObject);
 
 
     }

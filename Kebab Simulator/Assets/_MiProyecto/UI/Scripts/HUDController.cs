@@ -54,6 +54,8 @@ public class HUDController : MonoBehaviour
         HUDPrincipal.SetActive(true);
         HUDSecundario.SetActive(false);
         gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
+        this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
+        this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorHaciendoAccion = false;
     }
 
 
