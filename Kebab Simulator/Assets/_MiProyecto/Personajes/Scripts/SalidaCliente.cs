@@ -30,6 +30,7 @@ public class SalidaCliente : MonoBehaviour
 
     public void salir()
     {
+        this.gameObject.tag = "ClienteSaliendo";
         animatorCliente.SetBool("Andando", true);
         this.transform.parent.gameObject.transform.DetachChildren();
         this.gameObject.GetComponent<EntradaCliente>().enabled = false;

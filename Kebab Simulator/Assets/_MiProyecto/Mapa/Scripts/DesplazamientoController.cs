@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class DesplazamientoController : MonoBehaviour
 {
-    [Header("Objetos con Desplazamiento Punto")]
+    [Header("Objetos con Desplazamiento")]
     public List<GameObject> objetosDesplazamiento = new List<GameObject>();
     public GameObject[] kebabsMesa;
+    public GameObject[] clientesEsperando;
 
     [Header("Cola 0")]
     public GameObject puntoColaCero;
@@ -18,6 +19,7 @@ public class DesplazamientoController : MonoBehaviour
     {
         comprobarCliente();
         comprobarKebabsMesa();
+        comprobarClientesEspera();
     }
 
     public void comprobarCliente()
@@ -26,6 +28,11 @@ public class DesplazamientoController : MonoBehaviour
         {
             objetosDesplazamiento.Add(puntoColaCero.transform.GetChild(0).gameObject);
         }
+    }
+
+    public void comprobarClientesEspera()
+    {
+        clientesEsperando = GameObject.FindGameObjectsWithTag("ClienteEsperando");
     }
 
     public void comprobarKebabsMesa()
@@ -51,12 +58,18 @@ public class DesplazamientoController : MonoBehaviour
                 objeto.GetComponent<DesplazamientoPunto>().enabled = false;
             }
         }
-
         foreach (GameObject kebabEnMesa in kebabsMesa)
         {
             if (kebabEnMesa.GetComponent<CogerKebab>().estaJugadorUsandoObjeto == false)
             {
                 kebabEnMesa.GetComponent<CogerKebab>().enabled = false;
+            }
+        }
+        foreach (GameObject clienteEsperando in clientesEsperando)
+        {
+            if (clienteEsperando.GetComponent<EntregarKebab>().estaJugadorUsandoObjeto == false)
+            {
+                clienteEsperando.GetComponent<EntregarKebab>().enabled = false;
             }
         }
     }
@@ -80,12 +93,18 @@ public class DesplazamientoController : MonoBehaviour
                 objeto.GetComponent<DesplazamientoPunto>().enabled = true;
             }
         }
-
         foreach (GameObject kebabEnMesa in kebabsMesa)
         {
             if (kebabEnMesa.GetComponent<CogerKebab>().estaJugadorUsandoObjeto == false)
             {
                 kebabEnMesa.GetComponent<CogerKebab>().enabled = true;
+            }
+        }
+        foreach (GameObject clienteEsperando in clientesEsperando)
+        {
+            if (clienteEsperando.GetComponent<EntregarKebab>().estaJugadorUsandoObjeto == false)
+            {
+                clienteEsperando.GetComponent<EntregarKebab>().enabled = true;
             }
         }
     }

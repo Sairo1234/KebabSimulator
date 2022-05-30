@@ -57,7 +57,6 @@ public class EsperaCliente : MonoBehaviour
     
     void Update()
     {
-
         if (esta == true)
         {
             comprobarDistacia();
@@ -70,6 +69,7 @@ public class EsperaCliente : MonoBehaviour
         {
             agent.transform.LookAt(Pared.transform);
             esta = false;
+            this.gameObject.tag = "ClienteEsperando";
             animatorCliente.SetBool("Andando", false);
         }
     }
