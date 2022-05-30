@@ -61,8 +61,6 @@ public class EntradaCliente : MonoBehaviour
         }
         if (Vector3.Distance(this.gameObject.transform.position, GameObject.Find("Cola0").transform.position) < 1 && yaEsPrimero)
         {
-            this.gameObject.GetComponent<DesplazamientoPunto>().enabled = true;
-            this.gameObject.GetComponent<OutlineDeObjeto>().enabled = true;
             yaEsPrimero = false;
         }
     }

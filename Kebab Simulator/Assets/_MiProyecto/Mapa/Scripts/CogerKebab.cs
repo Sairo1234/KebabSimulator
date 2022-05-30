@@ -19,9 +19,14 @@ public class CogerKebab : MonoBehaviour
     private NavMeshAgent jugador;
     private GameObject kebab;
     private bool estaDesplazandose = false;
+    public bool estaJugadorUsandoObjeto = false;
+    public bool estaJugadorHaciendoAccion = false;
 
     //Animacion CogerKebab
     public Animator animatorJugador;
+
+    //GameManager
+    private GameObject gameManager;
 
 
     //----------------------------------------------------------------------------------------//
@@ -33,15 +38,20 @@ public class CogerKebab : MonoBehaviour
         jugador = GameObject.FindGameObjectWithTag("Player").GetComponent<NavMeshAgent>();
         destinoMesa = GameObject.FindGameObjectWithTag("MesaPunto").transform;
         animatorJugador = GameObject.FindGameObjectWithTag("ModeloJugador").GetComponent<Animator>();
+        gameManager = GameObject.FindGameObjectWithTag("GameManager");
+        puntoSpawnKebab = GameObject.FindGameObjectWithTag("SpawnKebab").transform;
     }
 
     void OnMouseDown()
     {
-        if (this.enabled)
+        if (this.enabled && puntoSpawnKebab.childCount == 0)
         {
             jugador.GetComponent<Player_Mov>().enabled = false;
             jugador.SetDestination(destinoMesa.position);
             estaDesplazandose = true;
+            estaJugadorUsandoObjeto = true;
+            estaJugadorHaciendoAccion = true;
+            gameManager.GetComponent<DesplazamientoController>().desactivarDesplazamientoPunto();
         }
     }
 
@@ -63,8 +73,9 @@ public class CogerKebab : MonoBehaviour
         {
             jugador.transform.LookAt(kebab.transform);
             estaDesplazandose = false;
+            estaJugadorUsandoObjeto = false;
+            estaJugadorHaciendoAccion = false;
             colocarKebabEnJugador();
-            jugador.GetComponent<Player_Mov>().enabled = true;
         }
     }
 
@@ -74,28 +85,21 @@ public class CogerKebab : MonoBehaviour
     public void colocarKebabEnJugador()
     {
         kebabParaCoger = this.gameObject;
-        buscarSpawnKebab();
-        if (puntoSpawnKebab.childCount == 0)
-        {
-            Destroy(this.gameObject);
-            animatorJugador.SetTrigger("CogePlatoMesa");
-            GameObject KebabEnJugador = Instantiate(kebabParaCoger, puntoSpawnKebab);
-            KebabEnJugador.tag = "KebabEnPreparacion";
-            KebabEnJugador.GetComponent<OutlineDeObjeto>().enabled = true;
-            KebabEnJugador.GetComponent<CogerKebab>().enabled = false;
-            KebabEnJugador.GetComponent<MostrarIngredientesKebab>().enabled = true;
-        }
-        else
-        {
-            Debug.Log("Tienes un kebab en la mano");
-        }
+        animatorJugador.SetTrigger("CogePlatoMesa");
+        StartCoroutine(spawnKebabMesa());
 
     }
 
-    public void buscarSpawnKebab()
+    IEnumerator spawnKebabMesa()
     {
-        GameObject SpawnKebab = GameObject.FindGameObjectWithTag("SpawnKebab");
-        puntoSpawnKebab = SpawnKebab.transform;
+        yield return new WaitForSeconds(1.5f);
+        GameObject KebabEnJugador = Instantiate(kebabParaCoger, puntoSpawnKebab);
+        Destroy(this.gameObject);
+        KebabEnJugador.tag = "KebabEnPreparacion";
+        KebabEnJugador.GetComponent<OutlineDeObjeto>().enabled = true;
+        KebabEnJugador.GetComponent<CogerKebab>().enabled = false;
+        KebabEnJugador.GetComponent<MostrarIngredientesKebab>().enabled = true;
+        gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
     }
 
 }

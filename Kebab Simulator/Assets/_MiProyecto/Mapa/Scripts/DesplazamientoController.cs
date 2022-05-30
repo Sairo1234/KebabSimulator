@@ -6,6 +6,7 @@ public class DesplazamientoController : MonoBehaviour
 {
     [Header("Objetos con Desplazamiento Punto")]
     public List<GameObject> objetosDesplazamiento = new List<GameObject>();
+    public GameObject[] kebabsMesa;
 
     [Header("Cola 0")]
     public GameObject puntoColaCero;
@@ -16,6 +17,7 @@ public class DesplazamientoController : MonoBehaviour
     void Update()
     {
         comprobarCliente();
+        comprobarKebabsMesa();
     }
 
     public void comprobarCliente()
@@ -24,6 +26,11 @@ public class DesplazamientoController : MonoBehaviour
         {
             objetosDesplazamiento.Add(puntoColaCero.transform.GetChild(0).gameObject);
         }
+    }
+
+    public void comprobarKebabsMesa()
+    {
+        kebabsMesa = GameObject.FindGameObjectsWithTag("KebabEnMesa");
     }
 
     public void desactivarDesplazamientoPunto()
@@ -42,6 +49,14 @@ public class DesplazamientoController : MonoBehaviour
             if (objeto.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto == false)
             {
                 objeto.GetComponent<DesplazamientoPunto>().enabled = false;
+            }
+        }
+
+        foreach (GameObject kebabEnMesa in kebabsMesa)
+        {
+            if (kebabEnMesa.GetComponent<CogerKebab>().estaJugadorUsandoObjeto == false)
+            {
+                kebabEnMesa.GetComponent<CogerKebab>().enabled = false;
             }
         }
     }
@@ -63,6 +78,14 @@ public class DesplazamientoController : MonoBehaviour
             if (objeto.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto == false)
             {
                 objeto.GetComponent<DesplazamientoPunto>().enabled = true;
+            }
+        }
+
+        foreach (GameObject kebabEnMesa in kebabsMesa)
+        {
+            if (kebabEnMesa.GetComponent<CogerKebab>().estaJugadorUsandoObjeto == false)
+            {
+                kebabEnMesa.GetComponent<CogerKebab>().enabled = true;
             }
         }
     }
