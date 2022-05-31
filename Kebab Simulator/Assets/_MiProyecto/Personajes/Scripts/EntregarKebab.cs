@@ -13,12 +13,14 @@ public class EntregarKebab : MonoBehaviour
     public Transform destinoJugador;
     public GameObject cliente;
     public GameObject jugador;
-    private bool estanDesplazandose = false;
+    //private bool estanDesplazandose = false;
+    public bool estaDesplazandoseJugador = false;
+    public bool estaDesplazandoseCliente = false;
     public bool estaJugadorUsandoObjeto = false;
     public bool estaJugadorHaciendoAccion = false;
 
     //Entregar kebab
-    private GameObject kebabParaEntregar;
+    public GameObject kebabParaEntregar;
 
     //Animaciones
     [Header("Animator")]
@@ -40,14 +42,20 @@ public class EntregarKebab : MonoBehaviour
 
         destinoCliente = GameObject.FindGameObjectWithTag("EntregaC").transform;
         destinoJugador = GameObject.FindGameObjectWithTag("EntregaJ").transform;
-        
+
     }
 
     private void Update()
     {
-        if (estanDesplazandose)
+        
+        if (estaDesplazandoseJugador == true)
         {
-            comprobarDistacia();
+            comprobarDistaciaJugador();
+        }
+
+        if (estaDesplazandoseCliente == true)
+        {
+            comprobarDistaciaCliente();
         }
 
         if (animatorJugador == null)
@@ -55,19 +63,84 @@ public class EntregarKebab : MonoBehaviour
             animatorJugador = GameObject.FindGameObjectWithTag("ModeloJugador").GetComponent<Animator>();
         }
 
-
     }
+
     private void OnMouseDown()
     {
-        if (this.enabled)
+        asignarKebab();
+        if (this.enabled && kebabParaEntregar != null)
         {
-            this.gameObject.GetComponent<MostrarPedido>().enabled=false;
-            comprobarPedido();
+            //Desactivar mostrar pedido
+            this.gameObject.GetComponent<MostrarPedido>().enabled = false;
+            this.gameObject.transform.GetChild(1).gameObject.SetActive(false);
+
+            //Desactivar paciencia espera
+            cliente.GetComponent<PacienciaEspera>().enabled = false;
+
+            desplazamientoEntregar();
         }
     }
 
     //-----------------------------------------------------------------------//
     //-------------------------- Entrega de kebab  --------------------------//
+
+    private void comprobarPedido()
+    {
+        Pedido pedidoCliente = cliente.GetComponent<Pedido>();
+
+        //Comprobar ingredredintes
+        int contadorigredientesBien = 0;
+        if (kebabParaEntregar.GetComponent<Kebab>().carne == pedidoCliente.carnePedido)
+        {
+            contadorigredientesBien++;
+        }
+
+        if (kebabParaEntregar.GetComponent<Kebab>().verdura == pedidoCliente.verduraPedido)
+        {
+            contadorigredientesBien++;
+        }
+
+        if (kebabParaEntregar.GetComponent<Kebab>().salsa == pedidoCliente.salsaPedido)
+        {
+            contadorigredientesBien++;
+        }
+
+        //Casos posibles de entrega
+        switch (contadorigredientesBien)
+        {
+            case 0:
+                entregarKebab();
+                //Dinero y reputación obtenida
+                jugador.GetComponent<ReputacionDinero>().TakeReputacion(5);
+                jugador.GetComponent<ReputacionDinero>().TakeDinero(5);
+                Debug.Log("Caso0");
+                break;
+            case 1:
+                entregarKebab();
+                //Dinero y reputación obtenida
+                jugador.GetComponent<ReputacionDinero>().TakeReputacion(25);
+                jugador.GetComponent<ReputacionDinero>().TakeDinero(25);
+                Debug.Log("Caso1");
+                break;
+            case 2:
+                entregarKebab();
+                //Dinero y reputación obtenida
+                jugador.GetComponent<ReputacionDinero>().TakeReputacion(50);
+                jugador.GetComponent<ReputacionDinero>().TakeDinero(50);
+                Debug.Log("Caso2");
+                break;
+            case 3:
+                entregarKebab();
+                //Dinero y reputación obtenida
+                jugador.GetComponent<ReputacionDinero>().TakeReputacion(100);
+                jugador.GetComponent<ReputacionDinero>().TakeDinero(100);
+                Debug.Log("Caso3");
+                break;
+        }
+
+        contadorigredientesBien = 0;
+
+    }
 
     public void entregarKebab()
     {
@@ -78,35 +151,13 @@ public class EntregarKebab : MonoBehaviour
 
     private void asignarKebab()
     {
-        kebabParaEntregar = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
-    }
-
-    private void comprobarPedido()
-    {
-        Pedido pedidoCliente = cliente.GetComponent<Pedido>();
-        asignarKebab();
-
         try
         {
-            if (kebabParaEntregar.GetComponent<Kebab>().carne == pedidoCliente.carnePedido &&
-                kebabParaEntregar.GetComponent<Kebab>().verdura == pedidoCliente.verduraPedido &&
-                kebabParaEntregar.GetComponent<Kebab>().salsa == pedidoCliente.salsaPedido)
-            {
-                jugador.GetComponent<NavMeshAgent>().SetDestination(destinoJugador.position);
-                cliente.GetComponent<NavMeshAgent>().SetDestination(destinoCliente.position);
-
-                //Desplazamiento
-                estanDesplazandose = true;
-                estaJugadorUsandoObjeto = true;
-                estaJugadorHaciendoAccion = true;
-
-                //Desactivar desplazamiento de otros scripts
-                gameManager.GetComponent<DesplazamientoController>().desactivarDesplazamientoPunto();
-            }
+            kebabParaEntregar = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
         }
         catch
         {
-            Debug.Log("El kebab esta incorrecto");
+            //Poner animacion de que no puede entregar kebab
         }
 
     }
@@ -114,32 +165,53 @@ public class EntregarKebab : MonoBehaviour
     //-----------------------------------------------------------------------//
     //-------------------------- Dezplazamiento  ----------------------------//
 
-    private void comprobarDistacia()
+    public void desplazamientoEntregar()
     {
-        if (jugador.GetComponent<NavMeshAgent>().remainingDistance == 0 && cliente.GetComponent<NavMeshAgent>().remainingDistance == 0)
+        jugador.GetComponent<NavMeshAgent>().SetDestination(destinoJugador.position);
+
+        //Desplazamiento
+        estaDesplazandoseJugador = true;
+        estaJugadorUsandoObjeto = true;
+        estaJugadorHaciendoAccion = true;
+
+        //Desactivar desplazamiento de otros scripts
+        gameManager.GetComponent<DesplazamientoController>().desactivarDesplazamientoPunto();
+    }
+
+    private void comprobarDistaciaJugador()
+    {
+        if (Vector3.Distance(jugador.transform.position, destinoJugador.position) < 1)
+        {
+            cliente.GetComponent<NavMeshAgent>().SetDestination(destinoCliente.position);
+            estaDesplazandoseJugador = false;
+            estaDesplazandoseCliente = true;
+
+            //Sonido de campanita de llamar cliente
+        }
+    }
+
+    private void comprobarDistaciaCliente()
+    {
+        
+        if (Vector3.Distance(cliente.transform.position, destinoCliente.position) < 1)
         {
             //Mirar en la direccion correcta
             jugador.transform.LookAt(cliente.transform);
             cliente.transform.LookAt(jugador.transform);
 
             //Desplazamiento
-            estanDesplazandose = false;
+            estaDesplazandoseCliente = false;
             estaJugadorUsandoObjeto = false;
             estaJugadorHaciendoAccion = false;
 
             //Accion que realiza
-            entregarKebab();
+            comprobarPedido();
 
-            //Dinero y reputación obtenida
-            jugador.GetComponent<ReputacionDinero>().TakeReputacion(100);
-            jugador.GetComponent<ReputacionDinero>().TakeDinero(100);
-            cliente.GetComponent<PacienciaEspera>().enabled = false;
+            //Salida del cliente
             StartCoroutine(SeVa());
         }
-
     }
 
-   
     IEnumerator SeVa()
     {
         yield return new WaitForSeconds(2);
@@ -147,7 +219,7 @@ public class EntregarKebab : MonoBehaviour
         //Activar desplazamiento de otros scripts
         gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
         this.gameObject.GetComponent<EntregarKebab>().enabled = false;
-        
+
         cliente.GetComponent<SalidaCliente>().salir();
     }
 }
