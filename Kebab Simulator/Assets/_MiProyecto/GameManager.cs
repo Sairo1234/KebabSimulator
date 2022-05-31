@@ -5,60 +5,74 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject pantallaPausa;
+    //----------------------------------------------------------------------------------------//
+    //--------------------------------------- ATRIBUTOS -------------------------------------//
 
-    int numDia = 1;
+    //Pantallas
+    [Header("Pantallas")]
+    public GameObject pantallaPausa;
+    public GameObject HUDprincipal;
+    public GameObject pantallaDiaTerminado;
+    public GameObject pantallaTienda;
+
+    [Header("Datos Clientes")]
     public int clientesContador = 0;
     public int clientesMax = 0;
     public int clientesEnPantalla = 0;
     public float next_spawn_time;
     public float intervalo;
+
+    [Header("Datos Generales")]
+    int numDia = 1;
+    bool haTerminadoDia = false;
+
+    [Header("GameObjects de la escena")]
     public GameObject cliente;
     public GameObject jugador;
     public Transform puntoSpawn;
-    public GameObject panel;
-    public GameObject HUDprincipal;
-    // Start is called before the first frame update
+
+
+    //----------------------------------------------------------------------------------------//
+    //----------------------------------------- MÉTODOS --------------------------------------//
+
     void Start()
     {
         nuevoDia();
-
-        //increment next_spawn_time
         next_spawn_time += siguienteSpawn();
-
     }
 
-    // Update is called once per frame
     void Update()
     {
         Pausa();
 
         if (Time.time > next_spawn_time && clientesContador < clientesMax)
         {
-            //do stuff here (like instantiate)
             spawnCliente();
-
-            //increment next_spawn_time
             next_spawn_time += siguienteSpawn();
         }
 
-        clientesEnPantalla = GameObject.FindGameObjectsWithTag("Cliente").Length;
+        //clientesEnPantalla = GameObject.FindGameObjectsWithTag("Cliente").Length; 
+        contadorClientesEnPantalla();
 
-        if (clientesContador == clientesMax && clientesEnPantalla == 0)
+        if (clientesContador == clientesMax && clientesEnPantalla == 0 && haTerminadoDia == false)
         {
-            panel.SetActive(true);
-            Time.timeScale = 0;
-            HUDprincipal.SetActive(false);
+            haTerminadoDia = true;
+            TerminarDia();
         }
     }
+
+    //------------------------------------------------------------------------------------------------//
+    //---------------------------------------- Gestion de Dias ---------------------------------------//
+
     public void nuevoDia()
     {
         //puntoDespawn.GetComponent<DespawnCliente>().clientesDespawneados = 0;
-        panel.SetActive(false);
+        pantallaTienda.SetActive(false);
         HUDprincipal.SetActive(true);
-        Time.timeScale = 1;
+        reanudarTiempo();
         numDia++;
         clientesContador = 0;
+        haTerminadoDia = false;
         spawnCliente();
         switch (jugador.GetComponent<ReputacionDinero>().Nivel)
         {
@@ -95,14 +109,29 @@ public class GameManager : MonoBehaviour
             case 10:
                 clientesMax = 20;
                 break;
-
         }
 
     }
+
+    public void TerminarDia()
+    {
+        //Desactivar movimiento
+        jugador.GetComponent<Player_Mov>().enabled = false;
+        jugador.transform.GetChild(0).GetComponent<Animator>().SetBool("Andando", false);
+        GetComponent<DesplazamientoController>().desactivarDesplazamientoPunto();
+
+        //Mostrar pantallas
+        pantallaDiaTerminado.SetActive(true);
+        StartCoroutine(Tienda());
+
+    }
+
+    //------------------------------------------------------------------------------------------------//
+    //-------------------------------------- Gestion de Clientes -------------------------------------//
+
     public void spawnCliente()
     {
         Instantiate(cliente, puntoSpawn.transform);
-
         clientesContador++;
     }
 
@@ -150,25 +179,66 @@ public class GameManager : MonoBehaviour
         return intervalo;
     }
 
+    public void contadorClientesEnPantalla()
+    {
+        int numClientesCola = GameObject.FindGameObjectsWithTag("Cliente").Length;
+        int numClientesEspera = GameObject.FindGameObjectsWithTag("ClienteEsperando").Length;
+        int numClientesSaliendo = GameObject.FindGameObjectsWithTag("ClienteSaliendo").Length;
+        clientesEnPantalla = numClientesCola + numClientesEspera + numClientesSaliendo;
+    }
+
+    //------------------------------------------------------------------------------------------------//
+    //------------------------------------- Gestion de Pantallas -------------------------------------//
+
     public void Pausa()
     {
         if (Input.GetKeyUp(KeyCode.Backspace))
         {
             pantallaPausa.SetActive(true);
-            Time.timeScale = 0;
+            pararTiempo();
 
+            //Desctivar desplazamiento
+            jugador.GetComponent<Player_Mov>().enabled = false;
+            GetComponent<DesplazamientoController>().desactivarDesplazamientoPunto();
         }
     }
 
     public void Continuar()
     {
         pantallaPausa.SetActive(false);
-        Time.timeScale = 1;
+        reanudarTiempo();
     }
 
     public void volverInicio()
     {
         SceneManager.LoadScene("MainMenu");
-        Time.timeScale = 1;
+        reanudarTiempo();
     }
+
+    IEnumerator Tienda()
+    {
+        yield return new WaitForSeconds(4);
+        pararTiempo();
+        pantallaDiaTerminado.SetActive(false);
+        pantallaTienda.SetActive(true);
+        HUDprincipal.SetActive(false);
+    }
+
+    //------------------------------------------------------------------------------------------------//
+    //------------------------------------- Gestion de Tiempo ----------------------------------------//
+
+    private void pararTiempo()
+    {
+        Time.timeScale = 0;
+    }
+
+    private void reanudarTiempo()
+    {
+        Time.timeScale = 1;
+        jugador.GetComponent<Player_Mov>().enabled = true;
+        GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
+    }
+
+    //----------------------------------------------------------------------------------------//
+    //----------------------------------------------------------------------------------------//
 }

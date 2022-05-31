@@ -61,7 +61,7 @@ public class SalidaCliente : MonoBehaviour
 
     private void comprobarDistacia()
     {
-        if (cliente.remainingDistance == 0)
+        if (Vector3.Distance(this.gameObject.transform.position , TransformSalida.position) < 0.5)
         {
             estaDesplazandose = false;
             Destroy(this.gameObject);
