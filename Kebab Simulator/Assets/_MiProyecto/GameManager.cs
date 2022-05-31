@@ -217,7 +217,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator Tienda()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(5.5f);
         pararTiempo();
         pantallaDiaTerminado.SetActive(false);
         pantallaTienda.SetActive(true);
