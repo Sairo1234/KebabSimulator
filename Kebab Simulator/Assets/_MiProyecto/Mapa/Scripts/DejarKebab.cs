@@ -70,21 +70,22 @@ public class DejarKebab : MonoBehaviour
 
     public void dejarKebab()
     {
-        if (maximaCapacidadMesa() == false)
+        buscarKebabParaDejar();
+        if (kebabParaDejar != null)
         {
-            buscarKebabParaDejar();
-            if (kebabParaDejar != null)
-            {
-                colocarKebabEnMesa();
-                StartCoroutine(activarDesplazamientoPunto());
-            }
+            colocarKebabEnMesa();
+            StartCoroutine(activarDesplazamientoPunto());
+        }
+        /*if (maximaCapacidadMesa() == false)
+        {
+            
         }
         else
         {
             gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorHaciendoAccion = false;
-        }
+        }*/
     }
 
     IEnumerator activarDesplazamientoPunto()

@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KebabManoController : MonoBehaviour
+public class BasuraController : MonoBehaviour
 {
-
+    [Header("Spawn Kebab")]
     public Transform spawnKebab;
-    
+
     void Update()
     {
         ComprobarMano();
@@ -26,4 +26,3 @@ public class KebabManoController : MonoBehaviour
         }
     }
 }
-

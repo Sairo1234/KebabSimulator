@@ -44,12 +44,10 @@ public class DesplazamientoController : MonoBehaviour
     {
         jugador.GetComponent<Player_Mov>().enabled = false;
         puntoColaCero.GetComponent<AtenderController>().enabled = false;
-        objetosDesplazamiento[2].GetComponent<AlmacenControllers>().enabled = false;
 
-        for (int i=0; i <= 1; i++)
-        {
-            objetosDesplazamiento[i].GetComponent<KebabManoController>().enabled = false;
-        }
+        objetosDesplazamiento[0].GetComponent<BasuraController>().enabled = false;
+        objetosDesplazamiento[1].GetComponent<MesaController>().enabled = false;
+        objetosDesplazamiento[2].GetComponent<AlmacenControllers>().enabled = false;
 
         foreach (GameObject objeto in objetosDesplazamiento)
         {
@@ -79,12 +77,9 @@ public class DesplazamientoController : MonoBehaviour
         jugador.GetComponent<Player_Mov>().enabled = true;
         puntoColaCero.GetComponent<AtenderController>().enabled = true;
 
+        objetosDesplazamiento[0].GetComponent<BasuraController>().enabled = true;
+        objetosDesplazamiento[1].GetComponent<MesaController>().enabled = true;
         objetosDesplazamiento[2].GetComponent<AlmacenControllers>().enabled = true;
-
-        for (int i = 0; i <= 1; i++)
-        {
-            objetosDesplazamiento[i].GetComponent<KebabManoController>().enabled = true;
-        }
 
         foreach (GameObject objeto in objetosDesplazamiento)
         {
