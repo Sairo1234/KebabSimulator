@@ -48,7 +48,7 @@ public class MesaController : MonoBehaviour
         
         for(int i=0; i <= EspaciosMesaKebab.Count - 1;i++)
         {
-            if (EspaciosMesaKebab[i].GetChildCount() == 1)
+            if (EspaciosMesaKebab[i].childCount == 1)
             {
                 espaciosOcupados++;
             }

@@ -24,7 +24,7 @@ public class DesplazamientoController : MonoBehaviour
 
     public void comprobarCliente()
     {
-        if(puntoColaCero.transform.GetChildCount() != 0 && objetosDesplazamiento.Count < 21)
+        if(puntoColaCero.transform.childCount != 0 && objetosDesplazamiento.Count < 21)
         {
             objetosDesplazamiento.Add(puntoColaCero.transform.GetChild(0).gameObject);
         }

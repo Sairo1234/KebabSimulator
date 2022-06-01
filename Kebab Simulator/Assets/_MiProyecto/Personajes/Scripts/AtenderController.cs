@@ -13,7 +13,7 @@ public class AtenderController : MonoBehaviour
 
     public void ComprobarMano()
     {
-        if (this.gameObject.transform.GetChildCount() != 0)
+        if (this.gameObject.transform.childCount != 0)
         {
             if (Vector3.Distance(this.gameObject.transform.position, this.gameObject.transform.GetChild(0).transform.position) < 0.6)
             {

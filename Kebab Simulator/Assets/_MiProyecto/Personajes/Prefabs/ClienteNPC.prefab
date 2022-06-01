@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4020742533739495098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1460729602990073305}
+  - component: {fileID: 1871157452149214263}
+  - component: {fileID: 3485331048335685461}
+  - component: {fileID: 8382844306875191928}
+  - component: {fileID: 7142874166812748580}
+  m_Layer: 0
+  m_Name: ClienteNPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1460729602990073305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4020742533739495098}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &1871157452149214263
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4020742533739495098}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.4
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0.2
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!136 &3485331048335685461
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4020742533739495098}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.90381885
+  m_Height: 3.1357992
+  m_Direction: 1
+  m_Center: {x: -0.054938436, y: 0.57439363, z: -0}
+--- !u!114 &8382844306875191928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4020742533739495098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85bb64e502161245b9c9c830fdf55b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ModelosClientes:
+  - {fileID: 3480488178715933445, guid: f191d7c323e3edc45a082af508a4f9f0, type: 3}
+  - {fileID: 2399664983841859599, guid: 5afead6460702dd49bbc558b5e490c6b, type: 3}
+  - {fileID: 3160235970203613493, guid: b2f1721ec7032a848ad315e0811452a1, type: 3}
+  - {fileID: 6969638928706504216, guid: 12da01a0349f6d64fa6efc86b7811588, type: 3}
+  - {fileID: 8544733095802627136, guid: 7d7c87d3120a55e4497e13c9256a4510, type: 3}
+  - {fileID: 1005309375374668481, guid: 19915e18580372541951f9bc108f6b4b, type: 3}
+  - {fileID: 2471249313134242391, guid: d2df8dc5d05f9264da5a60c2f42d2f76, type: 3}
+  - {fileID: 5089440207287127880, guid: 361505f190c5d2048b1748f6c3b76eb4, type: 3}
+  - {fileID: 4369384878726198801, guid: 3d2a2497b78e3c942bc63b1957cc5de8, type: 3}
+  - {fileID: 2818436213960222888, guid: c15652a0e096a5141be400aa2867af6b, type: 3}
+  - {fileID: 8453525623888473894, guid: 54ee87c76252c1e4ea814f4d7f27af91, type: 3}
+  - {fileID: 3987029157676968605, guid: 6a5dd8922a564c84592968a7a8e2c09c, type: 3}
+  - {fileID: 5523840597003664381, guid: 066cdd7b050cf554b96074a47b482d3e, type: 3}
+  - {fileID: 8765541931278528903, guid: 3892fd0a2d6ef40488ee39e42efbb0c2, type: 3}
+--- !u!114 &7142874166812748580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4020742533739495098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8f7e8b40496d0c41a0542d4824cf612, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listaTransform: []
+  animatorCliente: {fileID: 0}
+  num: 0
