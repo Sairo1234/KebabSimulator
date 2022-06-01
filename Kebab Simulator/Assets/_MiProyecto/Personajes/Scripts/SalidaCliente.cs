@@ -42,12 +42,16 @@ public class SalidaCliente : MonoBehaviour
         //EliminarCliente de desplazamientoController
         gameManager.GetComponent<DesplazamientoController>().objetosDesplazamiento.Remove(this.gameObject);
 
-
     }
 
     public void rechazoPedido()
     {
         jugador.GetComponent<ReputacionDinero>().TakeReputacion(-10);
+    }
+
+    public void haSidoRechazado()
+    {
+        gameManager.GetComponent<GameManager>().clientesRechazados++;
     }
 
 

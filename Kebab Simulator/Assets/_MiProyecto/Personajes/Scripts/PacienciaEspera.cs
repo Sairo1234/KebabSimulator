@@ -10,6 +10,14 @@ public class PacienciaEspera : MonoBehaviour
     public Animator animatorCliente;
     private bool aunNoSeHaQuejado = true;
 
+    [Header("GameManager")]
+    private GameObject gameManager;
+
+    void Start()
+    {
+        gameManager = GameObject.FindGameObjectWithTag("GameManager");
+    }
+
     void Update()
     {
         if (aunNoSeHaQuejado && timeRemaining <= 20)
@@ -27,6 +35,7 @@ public class PacienciaEspera : MonoBehaviour
         {
             this.gameObject.GetComponent<SalidaCliente>().rechazoPedido();
             this.gameObject.GetComponent<SalidaCliente>().salir();
+            gameManager.GetComponent<GameManager>().clientesPerdidos++;
             this.enabled = false;
         }
     }

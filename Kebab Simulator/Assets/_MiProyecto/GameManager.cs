@@ -28,6 +28,11 @@ public class GameManager : MonoBehaviour
 
     [Header("Datos Generales")]
     public int numDia;
+    public int numKebabsPerfectos;
+    public int numKebabsIncorrectos;
+    public int clientesPerdidos;
+    public int clientesRechazados;
+    public int dineroGanado;
     public bool haTerminadoDia = false;
 
     [Header("GameObjects de la escena")]
@@ -75,6 +80,7 @@ public class GameManager : MonoBehaviour
         //puntoDespawn.GetComponent<DespawnCliente>().clientesDespawneados = 0;
 
         pantallaTienda.SetActive(false);
+        resetearInfoDia();
         resetearEscena();
         PantallaNuevoDia();
         reanudarTiempo();
@@ -106,7 +112,7 @@ public class GameManager : MonoBehaviour
         //EliminarKebabs de la mesa
         GameObject[] kebabsMesa = GameObject.FindGameObjectsWithTag("KebabEnMesa");
 
-        foreach(GameObject kebabMesa in kebabsMesa)
+        foreach (GameObject kebabMesa in kebabsMesa)
         {
             Destroy(kebabMesa);
         }
@@ -118,8 +124,16 @@ public class GameManager : MonoBehaviour
             Destroy(kebabEnPreparacion);
             jugador.transform.GetChild(0).GetComponent<Animator>().SetTrigger("DejaPlato");
         }
-        
-       
+
+    }
+
+    public void resetearInfoDia()
+    {
+        numKebabsPerfectos = 0;
+        numKebabsIncorrectos = 0;
+        clientesPerdidos = 0;
+        clientesRechazados = 0;
+        dineroGanado = 0;
     }
 
     //------------------------------------------------------------------------------------------------//

@@ -113,28 +113,36 @@ public class EntregarKebab : MonoBehaviour
                 //Dinero y reputación obtenida
                 jugador.GetComponent<ReputacionDinero>().TakeReputacion(5);
                 jugador.GetComponent<ReputacionDinero>().TakeDinero(5);
-                Debug.Log("Caso0");
+
+                //Info de kebab perfecto
+                gameManager.GetComponent<GameManager>().numKebabsIncorrectos++;
                 break;
             case 1:
                 entregarKebab();
                 //Dinero y reputación obtenida
                 jugador.GetComponent<ReputacionDinero>().TakeReputacion(25);
                 jugador.GetComponent<ReputacionDinero>().TakeDinero(25);
-                Debug.Log("Caso1");
+
+                //Info de kebab perfecto
+                gameManager.GetComponent<GameManager>().numKebabsIncorrectos++;
                 break;
             case 2:
                 entregarKebab();
                 //Dinero y reputación obtenida
                 jugador.GetComponent<ReputacionDinero>().TakeReputacion(50);
                 jugador.GetComponent<ReputacionDinero>().TakeDinero(50);
-                Debug.Log("Caso2");
+
+                //Info de kebab perfecto
+                gameManager.GetComponent<GameManager>().numKebabsIncorrectos++;
                 break;
             case 3:
                 entregarKebab();
                 //Dinero y reputación obtenida
                 jugador.GetComponent<ReputacionDinero>().TakeReputacion(100);
                 jugador.GetComponent<ReputacionDinero>().TakeDinero(100);
-                Debug.Log("Caso3");
+
+                //Info de kebab perfecto
+                gameManager.GetComponent<GameManager>().numKebabsPerfectos++;
                 break;
         }
 
