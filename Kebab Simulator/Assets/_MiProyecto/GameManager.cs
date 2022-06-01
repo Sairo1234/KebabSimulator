@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -16,6 +17,7 @@ public class GameManager : MonoBehaviour
     public GameObject pantallaResumenDia;
     public GameObject pantallaTienda;
 
+    //Datos
     [Header("Datos Clientes")]
     public int clientesContador = 0;
     public int clientesMax = 0;
@@ -31,6 +33,7 @@ public class GameManager : MonoBehaviour
     public GameObject cliente;
     public GameObject jugador;
     public Transform puntoSpawn;
+    public Transform puntoComienzo;
 
 
     //----------------------------------------------------------------------------------------//
@@ -60,6 +63,7 @@ public class GameManager : MonoBehaviour
             haTerminadoDia = true;
             TerminarDia();
         }
+
     }
 
     //------------------------------------------------------------------------------------------------//
@@ -70,6 +74,7 @@ public class GameManager : MonoBehaviour
         //puntoDespawn.GetComponent<DespawnCliente>().clientesDespawneados = 0;
         pantallaTienda.SetActive(false);
         HUDprincipal.SetActive(true);
+        resetearEscena();
         reanudarTiempo();
         numDia++;
         clientesContador = 0;
@@ -124,7 +129,32 @@ public class GameManager : MonoBehaviour
         //Mostrar pantallas
         HUDprincipal.SetActive(false);
         pantallaDiaTerminado.SetActive(true);
-        StartCoroutine(Tienda());
+        StartCoroutine(ResumenDia());
+    }
+
+    public void resetearEscena()
+    {
+        //Resetear Posicion del jugador
+        jugador.GetComponent<NavMeshAgent>().SetDestination(puntoComienzo.position);
+        jugador.transform.LookAt(GameObject.FindGameObjectWithTag("MainCamera").transform);
+
+        //EliminarKebabs de la mesa
+        GameObject[] kebabsMesa = GameObject.FindGameObjectsWithTag("KebabEnMesa");
+
+        foreach(GameObject kebabMesa in kebabsMesa)
+        {
+            Destroy(kebabMesa);
+        }
+
+        //EliminarKebab en mano
+        GameObject kebabEnPreparacion = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
+        if (kebabEnPreparacion != null)
+        {
+            Destroy(kebabEnPreparacion);
+            jugador.transform.GetChild(0).GetComponent<Animator>().SetTrigger("DejaPlato");
+        }
+        
+       
     }
 
     //------------------------------------------------------------------------------------------------//
@@ -216,13 +246,21 @@ public class GameManager : MonoBehaviour
         reanudarTiempo();
     }
 
-    IEnumerator Tienda()
+    IEnumerator ResumenDia()
     {
-        yield return new WaitForSeconds(5.5f);
+        yield return new WaitForSeconds(4);
         //pararTiempo();
         pantallaDiaTerminado.SetActive(false);
         pantallaResumenDia.SetActive(true);
-        //pantallaTienda.SetActive(true);
+    }
+
+    public void Tienda()
+    {
+        pantallaResumenDia.SetActive(false);
+        pantallaTienda.SetActive(true);
+        resetearEscena();
+        jugador.GetComponent<Player_Mov>().enabled = false;
+        GetComponent<DesplazamientoController>().desactivarDesplazamientoPunto();
     }
 
     //------------------------------------------------------------------------------------------------//
