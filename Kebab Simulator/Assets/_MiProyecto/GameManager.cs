@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public GameObject pantallaDiaTerminado;
     public GameObject pantallaResumenDia;
     public GameObject pantallaTienda;
+    public GameObject pantallaDiaNuevo;
 
     //Datos
     [Header("Datos Clientes")]
@@ -26,8 +27,8 @@ public class GameManager : MonoBehaviour
     public float intervalo;
 
     [Header("Datos Generales")]
-    int numDia = 1;
-    bool haTerminadoDia = false;
+    public int numDia;
+    public bool haTerminadoDia = false;
 
     [Header("GameObjects de la escena")]
     public GameObject cliente;
@@ -72,51 +73,15 @@ public class GameManager : MonoBehaviour
     public void nuevoDia()
     {
         //puntoDespawn.GetComponent<DespawnCliente>().clientesDespawneados = 0;
-        pantallaTienda.SetActive(false);
-        HUDprincipal.SetActive(true);
-        resetearEscena();
-        reanudarTiempo();
-        numDia++;
-        clientesContador = 0;
-        haTerminadoDia = false;
-        spawnCliente();
-        switch (jugador.GetComponent<ReputacionDinero>().Nivel)
-        {
-            case 0:
-                clientesMax = 5;
-                break;
-            case 1:
-                clientesMax = 5;
-                break;
-            case 2:
-                clientesMax = 7;
-                break;
-            case 3:
-                clientesMax = 8;
-                break;
-            case 4:
-                clientesMax = 10;
-                break;
-            case 5:
-                clientesMax = 12;
-                break;
-            case 6:
-                clientesMax = 13;
-                break;
-            case 7:
-                clientesMax = 15;
-                break;
-            case 8:
-                clientesMax = 16;
-                break;
-            case 9:
-                clientesMax = 18;
-                break;
-            case 10:
-                clientesMax = 20;
-                break;
-        }
 
+        pantallaTienda.SetActive(false);
+        resetearEscena();
+        PantallaNuevoDia();
+        reanudarTiempo();
+        clientesContador = 0;
+        numDia++;
+        setClientesMax();
+        haTerminadoDia = false;
     }
 
     public void TerminarDia()
@@ -166,6 +131,45 @@ public class GameManager : MonoBehaviour
         clientesContador++;
     }
 
+    public void setClientesMax()
+    {
+        switch (jugador.GetComponent<ReputacionDinero>().Nivel)
+        {
+            case 0:
+                clientesMax = 5;
+                break;
+            case 1:
+                clientesMax = 5;
+                break;
+            case 2:
+                clientesMax = 7;
+                break;
+            case 3:
+                clientesMax = 8;
+                break;
+            case 4:
+                clientesMax = 10;
+                break;
+            case 5:
+                clientesMax = 12;
+                break;
+            case 6:
+                clientesMax = 13;
+                break;
+            case 7:
+                clientesMax = 15;
+                break;
+            case 8:
+                clientesMax = 16;
+                break;
+            case 9:
+                clientesMax = 18;
+                break;
+            case 10:
+                clientesMax = 20;
+                break;
+        }
+    }
 
     public float siguienteSpawn()
     {
@@ -246,6 +250,12 @@ public class GameManager : MonoBehaviour
         reanudarTiempo();
     }
 
+    public void PantallaNuevoDia()
+    {
+        pantallaDiaNuevo.SetActive(true);
+        StartCoroutine(timerNuevoDia());
+    }
+
     IEnumerator ResumenDia()
     {
         yield return new WaitForSeconds(4);
@@ -276,6 +286,14 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         jugador.GetComponent<Player_Mov>().enabled = true;
         GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
+    }
+
+    IEnumerator timerNuevoDia()
+    {
+        yield return new WaitForSeconds(3.5f);
+        HUDprincipal.SetActive(true);
+        pantallaDiaNuevo.SetActive(false);
+        spawnCliente();
     }
 
     //----------------------------------------------------------------------------------------//
