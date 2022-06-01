@@ -10,9 +10,10 @@ public class GameManager : MonoBehaviour
 
     //Pantallas
     [Header("Pantallas")]
-    public GameObject pantallaPausa;
     public GameObject HUDprincipal;
+    public GameObject pantallaPausa;
     public GameObject pantallaDiaTerminado;
+    public GameObject pantallaResumenDia;
     public GameObject pantallaTienda;
 
     [Header("Datos Clientes")]
@@ -121,9 +122,9 @@ public class GameManager : MonoBehaviour
         GetComponent<DesplazamientoController>().desactivarDesplazamientoPunto();
 
         //Mostrar pantallas
+        HUDprincipal.SetActive(false);
         pantallaDiaTerminado.SetActive(true);
         StartCoroutine(Tienda());
-
     }
 
     //------------------------------------------------------------------------------------------------//
@@ -218,10 +219,10 @@ public class GameManager : MonoBehaviour
     IEnumerator Tienda()
     {
         yield return new WaitForSeconds(5.5f);
-        pararTiempo();
+        //pararTiempo();
         pantallaDiaTerminado.SetActive(false);
-        pantallaTienda.SetActive(true);
-        HUDprincipal.SetActive(false);
+        pantallaResumenDia.SetActive(true);
+        //pantallaTienda.SetActive(true);
     }
 
     //------------------------------------------------------------------------------------------------//
