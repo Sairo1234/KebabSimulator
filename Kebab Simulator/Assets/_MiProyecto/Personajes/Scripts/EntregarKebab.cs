@@ -88,21 +88,27 @@ public class EntregarKebab : MonoBehaviour
     {
         Pedido pedidoCliente = cliente.GetComponent<Pedido>();
 
+        //Precio del kebab
+        float precioKebabEntregar = 0;
+
         //Comprobar ingredredintes
         int contadorigredientesBien = 0;
         if (kebabParaEntregar.GetComponent<Kebab>().carne == pedidoCliente.carnePedido)
         {
             contadorigredientesBien++;
+            precioKebabEntregar += kebabParaEntregar.GetComponent<Kebab>().carne.precioVenta;
         }
 
         if (kebabParaEntregar.GetComponent<Kebab>().verdura == pedidoCliente.verduraPedido)
         {
             contadorigredientesBien++;
+            precioKebabEntregar += kebabParaEntregar.GetComponent<Kebab>().verdura.precioVenta;
         }
 
         if (kebabParaEntregar.GetComponent<Kebab>().salsa == pedidoCliente.salsaPedido)
         {
             contadorigredientesBien++;
+            precioKebabEntregar += kebabParaEntregar.GetComponent<Kebab>().salsa.precioVenta;
         }
 
         //Casos posibles de entrega
@@ -112,7 +118,7 @@ public class EntregarKebab : MonoBehaviour
                 entregarKebab();
                 //Dinero y reputación obtenida
                 jugador.GetComponent<ReputacionDinero>().TakeReputacion(5);
-                jugador.GetComponent<ReputacionDinero>().TakeDinero(5);
+                jugador.GetComponent<ReputacionDinero>().TakeDinero(precioKebabEntregar);
 
                 //Info de kebab perfecto
                 gameManager.GetComponent<GameManager>().numKebabsIncorrectos++;
@@ -121,7 +127,7 @@ public class EntregarKebab : MonoBehaviour
                 entregarKebab();
                 //Dinero y reputación obtenida
                 jugador.GetComponent<ReputacionDinero>().TakeReputacion(25);
-                jugador.GetComponent<ReputacionDinero>().TakeDinero(25);
+                jugador.GetComponent<ReputacionDinero>().TakeDinero(precioKebabEntregar);
 
                 //Info de kebab perfecto
                 gameManager.GetComponent<GameManager>().numKebabsIncorrectos++;
@@ -130,7 +136,7 @@ public class EntregarKebab : MonoBehaviour
                 entregarKebab();
                 //Dinero y reputación obtenida
                 jugador.GetComponent<ReputacionDinero>().TakeReputacion(50);
-                jugador.GetComponent<ReputacionDinero>().TakeDinero(50);
+                jugador.GetComponent<ReputacionDinero>().TakeDinero(precioKebabEntregar);
 
                 //Info de kebab perfecto
                 gameManager.GetComponent<GameManager>().numKebabsIncorrectos++;
@@ -139,13 +145,17 @@ public class EntregarKebab : MonoBehaviour
                 entregarKebab();
                 //Dinero y reputación obtenida
                 jugador.GetComponent<ReputacionDinero>().TakeReputacion(100);
-                jugador.GetComponent<ReputacionDinero>().TakeDinero(100);
+                jugador.GetComponent<ReputacionDinero>().TakeDinero(precioKebabEntregar);
 
                 //Info de kebab perfecto
                 gameManager.GetComponent<GameManager>().numKebabsPerfectos++;
                 break;
         }
 
+        //Info de dinero ganado
+        gameManager.GetComponent<GameManager>().dineroGanado += precioKebabEntregar;
+
+        precioKebabEntregar = 0;
         contadorigredientesBien = 0;
 
     }

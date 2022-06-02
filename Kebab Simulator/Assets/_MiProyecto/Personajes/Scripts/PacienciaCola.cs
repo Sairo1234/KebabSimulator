@@ -10,6 +10,14 @@ public class PacienciaCola : MonoBehaviour
     public Animator animatorCliente;
     private bool aunNoSeHaQuejado = true;
 
+    [Header("GameManager")]
+    private GameObject gameManager;
+
+    void Start()
+    {
+        gameManager = GameObject.FindGameObjectWithTag("GameManager");
+    }
+
     void Update()
     {
         
@@ -31,6 +39,7 @@ public class PacienciaCola : MonoBehaviour
         {
             this.gameObject.GetComponent<SalidaCliente>().rechazoPedido();
             this.gameObject.GetComponent<SalidaCliente>().salir();
+            gameManager.GetComponent<GameManager>().clientesPerdidos++;
             this.enabled = false;
         }
     }

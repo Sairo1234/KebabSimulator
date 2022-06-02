@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
     public int numKebabsIncorrectos;
     public int clientesPerdidos;
     public int clientesRechazados;
-    public int dineroGanado;
+    public float dineroGanado;
     public bool haTerminadoDia = false;
 
     [Header("GameObjects de la escena")]
