@@ -79,7 +79,7 @@ public class Pedido : MonoBehaviour
 
     private void mostrarPedidoDialogo()
     {
-        texto_dialogo.text = "Hola, quiero un kebab con " + "<color=#008080ff><b> carne de " + carnePedido.nombre + "</b></color>"
-            + ", <color=#008080ff><b>" + verduraPedido.nombre + "</b></color> y <color=#008080ff><b>salsa " + salsaPedido.nombre + "</b></color>.";
+        texto_dialogo.text = "Hola, quiero un kebab con " + "<color=#9e4539> carne de " + carnePedido.nombre + "</color>"
+            + ", <color=#9e4539>" + verduraPedido.nombre + "</color> y <color=#9e4539>salsa " + salsaPedido.nombre + "</color>.";
     }
 }
