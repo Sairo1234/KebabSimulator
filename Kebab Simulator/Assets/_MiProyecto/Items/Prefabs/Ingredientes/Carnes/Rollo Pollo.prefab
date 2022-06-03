@@ -178,6 +178,8 @@ MonoBehaviour:
   modeloKebab: {fileID: 811135289909184618, guid: 4e8aebb8f516b20409898919946c6f91, type: 3}
   IngredienteData: {fileID: 11400000, guid: 8ba2a9b9540f4c24dadeab3816740e8e, type: 2}
   cantidad: 5
+  particulasCarne: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!114 &9126629175121395711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,10 +192,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f58cff04c0a782841bab08ebfd733127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  estaJugadorUsandoObjeto: 0
+  estaJugadorHaciendoAccion: 0
   animatorJugador: {fileID: 0}
   animacionJugador: 
   tagGameObject: PosicionCarne
   funcionScript: anyadirCarne
+  audioSource: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!114 &7056657918744873023
 MonoBehaviour:
   m_ObjectHideFlags: 0

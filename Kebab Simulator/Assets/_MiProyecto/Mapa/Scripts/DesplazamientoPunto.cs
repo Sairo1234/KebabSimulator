@@ -26,6 +26,9 @@ public class DesplazamientoPunto : MonoBehaviour
     [Header("Funcion a realizar")]
     public string funcionScript;
 
+    [Header("Audio")]
+    public AudioSource audioSource;
+
     [Header("GameManager")]
     public GameObject gameManager;
 
@@ -73,15 +76,20 @@ public class DesplazamientoPunto : MonoBehaviour
             estaDesplazandose = false;
             animatorJugador.SetBool("Andando", false);
             animatorJugador.SetTrigger(animacionJugador);
+            if (audioSource != null)
+            {
+                audioSource.Play();
+            }
+
             if (estaJugadorHaciendoAccion == true)
             {
                 gameObjectAsignado.SendMessage(funcionScript, null);
             }
-           /* else
-            {
-                gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
-                this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
-            }*/
+            /* else
+             {
+                 gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
+                 this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
+             }*/
         }
     }
 }
