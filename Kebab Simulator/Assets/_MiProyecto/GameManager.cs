@@ -21,10 +21,12 @@ public class GameManager : MonoBehaviour
     //Datos
     [Header("Datos Clientes")]
     public int clientesContador = 0;
+    public int clientesContadorSpawn = 0;
     public int clientesMax = 0;
     public int clientesEnPantalla = 0;
     public float next_spawn_time;
     public float intervalo;
+    public GameObject PuertaCollider;
 
     [Header("Datos Generales")]
     public int numDia;
@@ -40,7 +42,8 @@ public class GameManager : MonoBehaviour
     public GameObject jugador;
     public Transform puntoSpawn;
     public Transform puntoComienzo;
-
+    public float Cronometro = 0;
+    public float startTime;
 
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
@@ -54,8 +57,9 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         Pausa();
+        Cronometro = Time.time - startTime;
 
-        if (Time.time > next_spawn_time && clientesContador < clientesMax)
+        if (Cronometro > next_spawn_time && clientesContadorSpawn < clientesMax)
         {
             spawnCliente();
             next_spawn_time += siguienteSpawn();
@@ -64,7 +68,7 @@ public class GameManager : MonoBehaviour
         //clientesEnPantalla = GameObject.FindGameObjectsWithTag("Cliente").Length; 
         contadorClientesEnPantalla();
 
-        if (clientesContador == clientesMax && clientesEnPantalla == 0 && haTerminadoDia == false)
+        if (clientesContador == clientesMax && haTerminadoDia == false)
         {
             haTerminadoDia = true;
             TerminarDia();
@@ -77,8 +81,6 @@ public class GameManager : MonoBehaviour
 
     public void nuevoDia()
     {
-        //puntoDespawn.GetComponent<DespawnCliente>().clientesDespawneados = 0;
-
         pantallaTienda.SetActive(false);
         resetearInfoDia();
         resetearEscena();
@@ -88,6 +90,9 @@ public class GameManager : MonoBehaviour
         numDia++;
         setClientesMax();
         haTerminadoDia = false;
+        startTime = Time.time;
+        PuertaCollider.GetComponent<ContadorClientesPuerta>().contadorClientes = 0;
+        PuertaCollider.GetComponent<ContadorClientesPuerta>().contadorClientesSpawn = 0;
     }
 
     public void TerminarDia()
@@ -142,7 +147,7 @@ public class GameManager : MonoBehaviour
     public void spawnCliente()
     {
         Instantiate(cliente, puntoSpawn.transform);
-        clientesContador++;
+
     }
 
     public void setClientesMax()
@@ -230,10 +235,8 @@ public class GameManager : MonoBehaviour
 
     public void contadorClientesEnPantalla()
     {
-        int numClientesCola = GameObject.FindGameObjectsWithTag("Cliente").Length;
-        int numClientesEspera = GameObject.FindGameObjectsWithTag("ClienteEsperando").Length;
-        int numClientesSaliendo = GameObject.FindGameObjectsWithTag("ClienteSaliendo").Length;
-        clientesEnPantalla = numClientesCola + numClientesEspera + numClientesSaliendo;
+        clientesContador = PuertaCollider.GetComponent<ContadorClientesPuerta>().contadorClientes;
+        clientesContadorSpawn = PuertaCollider.GetComponent<ContadorClientesPuerta>().contadorClientesSpawn;
     }
 
     //------------------------------------------------------------------------------------------------//
