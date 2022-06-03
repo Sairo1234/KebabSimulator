@@ -19,6 +19,9 @@ public class SetInfoResumenDia : MonoBehaviour
     public Text textoClientesRechazados;
     public Text textoDineroGanado;
 
+    [Header("Boton")]
+    public Button botonSiguiente;
+
     [Header("Estrellas")]
     public GameObject estrellaUno;
     public GameObject estrellaDos;
@@ -89,7 +92,7 @@ public class SetInfoResumenDia : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
 
-        if (porcentaje == 0)
+        if (porcentaje > 0)
         {
             estrellaUno.SetActive(true);
             SonidoEstrella.pitch = 1f;
@@ -102,7 +105,7 @@ public class SetInfoResumenDia : MonoBehaviour
     {
         yield return new WaitForSeconds(2.5f);
 
-        if (porcentaje == 0)
+        if (porcentaje > 50)
         {
             estrellaDos.SetActive(true);
             SonidoEstrella.pitch = 1.2f;
@@ -113,12 +116,12 @@ public class SetInfoResumenDia : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
 
-        if (porcentaje == 0)
+        if (porcentaje == 100)
         {
             estrellaTres.SetActive(true);
             SonidoEstrella.pitch = 1.4f;
             SonidoEstrella.Play();
         }
-
+        botonSiguiente.interactable = true;
     }
 }

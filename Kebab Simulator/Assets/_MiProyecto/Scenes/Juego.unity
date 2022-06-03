@@ -33474,7 +33474,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1226044556}
   m_OnClick:
     m_PersistentCalls:
@@ -33483,6 +33483,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: Tienda
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1226044555}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: set_interactable
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -35460,6 +35472,7 @@ MonoBehaviour:
   textoClientesPerdidos: {fileID: 1872176066}
   textoClientesRechazados: {fileID: 882605139}
   textoDineroGanado: {fileID: 1849199959}
+  botonSiguiente: {fileID: 1226044555}
   estrellaUno: {fileID: 230096513}
   estrellaDos: {fileID: 295637673}
   estrellaTres: {fileID: 140688118}
@@ -47522,7 +47535,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 2
+      scalar: 3
       minScalar: 0.3
       maxCurve:
         serializedVersion: 2
