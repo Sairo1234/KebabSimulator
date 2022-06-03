@@ -29,7 +29,7 @@ public class SetInfoResumenDia : MonoBehaviour
     public int numClientesSatisfechos;
     public double porcentaje;
 
-    [Header("AudioSource")]
+    [Header("Audio")]
     public AudioSource SonidoEstrella;
 
 

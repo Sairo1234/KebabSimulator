@@ -8,15 +8,21 @@ public class ReputacionDinero : MonoBehaviour
     //-------------------------------------------------------------------------------------//
     //----------------------------------- REPUTACIÓN --------------------------------------//
 
-    int maxReputacion;
+    [Header("Reputacion")]
+    public int Nivel = 1;
     public float Reputacion = 0;
+    int maxReputacion;
+
+    [Header("GUI Reputacion")]
     public Image BarraReputacion;
     public Text texto_Nivel;
-    public int Nivel = 1;
+    public GameObject GUIsubirNivel;
+
 
     //----------------------------------------------------------------------------------//
     //----------------------------------- DINERO --------------------------------------//
 
+    [Header("Dinero")]
     public Text texto_Dinero;
     public float Dinero = 0;
 
@@ -53,6 +59,7 @@ public class ReputacionDinero : MonoBehaviour
         {
             Nivel++;
             Reputacion = 1;
+            GUIsubirNivel.SetActive(true);
         }
         else if(Reputacion == 0 && Nivel !=0 )
         {
@@ -71,6 +78,8 @@ public class ReputacionDinero : MonoBehaviour
         texto_Nivel.text = Nivel.ToString();
     }
 
+    
+
     //----------------------------------------------------------------------------------//
     //----------------------------------- DINERO --------------------------------------//
 
@@ -83,5 +92,6 @@ public class ReputacionDinero : MonoBehaviour
     {
         texto_Dinero.text = Dinero.ToString();
     }
+
 
 }
