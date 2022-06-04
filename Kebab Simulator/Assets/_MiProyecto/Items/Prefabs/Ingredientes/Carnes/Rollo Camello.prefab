@@ -418,6 +418,7 @@ GameObject:
   - component: {fileID: 3867944186017212310}
   - component: {fileID: 5354777015407034031}
   - component: {fileID: 2250394660195253782}
+  - component: {fileID: -524560708432926867}
   m_Layer: 0
   m_Name: Rollo Camello
   m_TagString: Ingrediente
@@ -467,10 +468,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f58cff04c0a782841bab08ebfd733127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  estaJugadorUsandoObjeto: 0
+  estaJugadorHaciendoAccion: 0
   animatorJugador: {fileID: 0}
   animacionJugador: 
   tagGameObject: PosicionCarne
   funcionScript: anyadirCarne
+  audioSource: {fileID: 0}
+  audioClip:
+  - {fileID: 8300000, guid: 22007eb154463724c80f03ae3d4556c1, type: 3}
+  gameManager: {fileID: 0}
 --- !u!114 &3852765877265937259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,6 +493,8 @@ MonoBehaviour:
   modeloKebab: {fileID: 811135289909184618, guid: 4e8aebb8f516b20409898919946c6f91, type: 3}
   IngredienteData: {fileID: 11400000, guid: 5e845d63393e61f42add624dc637209a, type: 2}
   cantidad: 5
+  particulasCarne: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!114 &8366687587008841937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,6 +554,102 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!82 &-524560708432926867
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6935970787815767500}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &7917830365741806609
 GameObject:
   m_ObjectHideFlags: 0

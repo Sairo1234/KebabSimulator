@@ -25,6 +25,9 @@ public class CogerKebab : MonoBehaviour
     //Animacion CogerKebab
     public Animator animatorJugador;
 
+    [Header("Audio")]
+    public AudioSource audioSource;
+
     //GameManager
     private GameObject gameManager;
 
@@ -40,6 +43,7 @@ public class CogerKebab : MonoBehaviour
         animatorJugador = GameObject.FindGameObjectWithTag("ModeloJugador").GetComponent<Animator>();
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
         puntoSpawnKebab = GameObject.FindGameObjectWithTag("SpawnKebab").transform;
+        audioSource = GetComponent<AudioSource>();
     }
 
     void OnMouseDown()
@@ -65,6 +69,7 @@ public class CogerKebab : MonoBehaviour
         {
             comprobarDistaciaMesa();
         }
+        audioSource.enabled = true;
     }
 
     private void comprobarDistaciaMesa()
@@ -76,6 +81,7 @@ public class CogerKebab : MonoBehaviour
             estaJugadorUsandoObjeto = false;
             estaJugadorHaciendoAccion = false;
             colocarKebabEnJugador();
+
         }
     }
 
@@ -87,6 +93,7 @@ public class CogerKebab : MonoBehaviour
         kebabParaCoger = this.gameObject;
         animatorJugador.SetTrigger("CogePlatoMesa");
         StartCoroutine(spawnKebabMesa());
+
 
     }
 
@@ -100,6 +107,11 @@ public class CogerKebab : MonoBehaviour
         KebabEnJugador.GetComponent<CogerKebab>().enabled = false;
         KebabEnJugador.GetComponent<MostrarIngredientesKebab>().enabled = true;
         gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
+
     }
 
 }

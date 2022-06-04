@@ -28,6 +28,7 @@ public class DesplazamientoPunto : MonoBehaviour
 
     [Header("Audio")]
     public AudioSource audioSource;
+    public AudioClip[] audioClip;
 
     [Header("GameManager")]
     public GameObject gameManager;
@@ -40,6 +41,7 @@ public class DesplazamientoPunto : MonoBehaviour
         gameObjectAsignado = this.gameObject;
         GameObject GameObjectdestino = GameObject.FindGameObjectWithTag(tagGameObject);
         destino = GameObjectdestino.transform;
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -53,6 +55,7 @@ public class DesplazamientoPunto : MonoBehaviour
         {
             animatorJugador = GameObject.FindGameObjectWithTag("ModeloJugador").GetComponent<Animator>();
         }
+
     }
 
     void OnMouseDown()
@@ -76,8 +79,11 @@ public class DesplazamientoPunto : MonoBehaviour
             estaDesplazandose = false;
             animatorJugador.SetBool("Andando", false);
             animatorJugador.SetTrigger(animacionJugador);
+
             if (audioSource != null)
             {
+                int audioRandom = Random.Range(0, audioClip.Length);
+                audioSource.clip = audioClip[audioRandom];
                 audioSource.Play();
             }
 
@@ -93,4 +99,5 @@ public class DesplazamientoPunto : MonoBehaviour
         }
     }
 }
+
 
