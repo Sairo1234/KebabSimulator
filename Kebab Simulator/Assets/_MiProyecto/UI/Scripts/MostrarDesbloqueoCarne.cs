@@ -14,6 +14,7 @@ public class MostrarDesbloqueoCarne : MonoBehaviour
     [Header("Textos")]
     public Text nivelDesbloqueo;
     public Text costeCompra;
+    public Text nombreIngrediente;
 
     ///----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
@@ -25,7 +26,8 @@ public class MostrarDesbloqueoCarne : MonoBehaviour
 
     public void mostrarInformacionDesbloqueo()
     {
-        nivelDesbloqueo.text = "Nivel:" + ingredienteCarne.DesbloqueoCompra.ToString();
-        costeCompra.text = ingredienteCarne.costeCompra.ToString() + " K";
+        nombreIngrediente.text = ingredienteCarne.nombre;
+        nivelDesbloqueo.text = ingredienteCarne.DesbloqueoCompra.ToString();
+        costeCompra.text = ingredienteCarne.costeCompra.ToString();
     }
 }

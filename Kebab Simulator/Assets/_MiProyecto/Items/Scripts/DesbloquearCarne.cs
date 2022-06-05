@@ -18,6 +18,10 @@ public class DesbloquearCarne : MonoBehaviour
     [Header("Boton Compra")]
     public Button botonComprarIngrediente;
 
+    [Header("Animator")]
+    public Animator animatorDesbloqueo;
+    public Animator animatorCandado;
+
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
 
@@ -32,8 +36,25 @@ public class DesbloquearCarne : MonoBehaviour
         if(nivelJugador >= ingredienteCarne.DesbloqueoCompra)
         {
             ingredienteCarne.estaDesbloqueado = true;
-            botonComprarIngrediente.interactable = true;
+            animatorCandado.SetTrigger("Desbloqueado");
+            StartCoroutine(mostrarAnimacionCandado());
         }
     }
 
+
+    //-----------------------------------------------------------------------//
+    //---------------------------Mostrar animacion---------------------------//
+
+    IEnumerator mostrarAnimacionCandado()
+    {
+        yield return new WaitForSeconds(2);
+        animatorDesbloqueo.SetTrigger("Desbloqueado");
+        StartCoroutine(mostrarAnimacion());
+    }
+
+    IEnumerator mostrarAnimacion()
+    {
+        yield return new WaitForSeconds(2);
+        botonComprarIngrediente.interactable = true;
+    }
 }
