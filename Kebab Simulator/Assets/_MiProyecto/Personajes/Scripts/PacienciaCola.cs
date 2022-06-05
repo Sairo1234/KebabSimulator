@@ -13,24 +13,28 @@ public class PacienciaCola : MonoBehaviour
     [Header("GameManager")]
     private GameObject gameManager;
 
+    [Header("Audio")]
+    public GameObject jugador;
+
     void Start()
     {
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
+        jugador = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()
     {
-        
-        if(aunNoSeHaQuejado && timeRemaining<=20)
+
+        if (aunNoSeHaQuejado && timeRemaining <= 20)
         {
             animatorCliente.SetTrigger("Impaciente");
             timeRemaining -= Time.deltaTime;
             aunNoSeHaQuejado = false;
-            
+
         }
         else if (timeRemaining > 0)
         {
-            if(this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto == false)
+            if (this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto == false)
             {
                 timeRemaining -= Time.deltaTime;
             }
@@ -40,6 +44,9 @@ public class PacienciaCola : MonoBehaviour
             this.gameObject.GetComponent<SalidaCliente>().rechazoPedido();
             this.gameObject.GetComponent<SalidaCliente>().salir();
             gameManager.GetComponent<GameManager>().clientesPerdidos++;
+
+            jugador.GetComponent<SonidoJugadorController>().PlayTriste();
+
             this.enabled = false;
         }
     }

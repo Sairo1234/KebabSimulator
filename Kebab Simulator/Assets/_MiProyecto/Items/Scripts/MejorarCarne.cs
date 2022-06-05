@@ -33,6 +33,8 @@ public class MejorarCarne : MonoBehaviour
     //--------------- Boton ---------------//
     [Header("Boton de Mejora")]
     public Button botonMejoraIngrediente;
+    public GameObject[] estadosBotonMejora;
+    public Animator animatorCandado;
 
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
@@ -76,6 +78,8 @@ public class MejorarCarne : MonoBehaviour
 
                 //Bloqueo Boton
                 botonMejoraIngrediente.interactable = false;
+                estadosBotonMejora[0].SetActive(true);
+                estadosBotonMejora[1].SetActive(false);
             }
         }
 
@@ -102,17 +106,41 @@ public class MejorarCarne : MonoBehaviour
 
                 //Bloqueo Boton
                 botonMejoraIngrediente.interactable = false;
-                botonMejoraIngrediente.GetComponentInChildren<Text>().text = "Max";
+                estadosBotonMejora[0].SetActive(false);
+                estadosBotonMejora[1].SetActive(false);
+                estadosBotonMejora[2].SetActive(true);
             }
         }
     }
+
+
+    //--------------------------------------------------------------//
+    //----------------------- ComprobarMejora ----------------------//
 
     public void comprobarDesbloqueoMejora()
     {
         if (ingredienteCarne.DesbloqueoMejora <= nivelJugador && ingredienteCarne.nivel<2)
         {
-            botonMejoraIngrediente.interactable = true;
+            animatorCandado.SetTrigger("Desbloqueado");
+            StartCoroutine(mostrarAnimacionDesbloqueo());
         }
     }
-   
+
+    IEnumerator mostrarAnimacionDesbloqueo()
+    {
+        yield return new WaitForSeconds(2);
+
+        animatorCandado.SetTrigger("Volver");
+        StartCoroutine(cambioEstadoBotonMejora());
+    }
+
+    IEnumerator cambioEstadoBotonMejora()
+    {
+        botonMejoraIngrediente.interactable = true;
+        estadosBotonMejora[0].SetActive(false);
+        estadosBotonMejora[1].SetActive(true);
+        yield return new WaitForSeconds(1);
+
+    }
+
 }

@@ -14,11 +14,17 @@ public class SetInfoButtonsCarne : MonoBehaviour
     [Header("Textos")]
     public Text headerIngrediente;
     public Text cantidadAlmacen;
-    public Text tipoIngrediente;
     public Text nivelMejora;
-    public Text capacidadMax;
     public Text costeUnidades;
     public Text costeMejora;
+
+    [Header("Imagenes")]
+    public Sprite[] backgroundIngrediente;
+    public Sprite[] imagenesIngrediente;
+    public GameObject imagenIngrediente;
+
+    [Header("Jugador")]
+    public GameObject jugador;
 
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
@@ -30,15 +36,35 @@ public class SetInfoButtonsCarne : MonoBehaviour
 
     public void mostrarInformacionDeIngrediente()
     {
+        //Textos
         headerIngrediente.text = ingredienteCarne.nombre;
-        tipoIngrediente.text = "Tipo: " + "<b>" + ingredienteCarne.tipo + "</b>";
-        cantidadAlmacen.text = "<b>" + ingredienteCarne.unidadesAlmacen.ToString() + "</b>" + " Unid. en Almacén";
-        nivelMejora.text = "Mejora: " + "<b> Nivel " + ingredienteCarne.DesbloqueoMejora.ToString() + "</b>";
-        capacidadMax.text = "Capacidad: " + "<b>" + ingredienteCarne.capacidadMaxIngrediente.ToString() + "</b>";
-        costeUnidades.text = "Comprar Und. : " + ingredienteCarne.costeCompraUnidades.ToString() + "K";
-        if (ingredienteCarne.nivel <2)
+        cantidadAlmacen.text = "Almacén: <b>" + ingredienteCarne.unidadesAlmacen.ToString() + "</b>";
+        nivelMejora.text = ingredienteCarne.DesbloqueoMejora.ToString();
+
+        //Precios
+        costeUnidades.text = ingredienteCarne.costeCompraUnidades.ToString();
+        costeMejora.text = ingredienteCarne.costeMejora.ToString();
+
+        actualizarImagenes();
+
+    }
+
+    public void actualizarImagenes()
+    {
+        switch (ingredienteCarne.nivel)
         {
-            costeMejora.text = "Mejorar : " + ingredienteCarne.costeMejora.ToString() + "K";
+            case 0:
+                this.gameObject.GetComponent<Image>().sprite = backgroundIngrediente[0];
+                //imagenIngrediente.GetComponent<Image>().sprite = imagenesIngrediente[0];
+                break;
+            case 1:
+                this.gameObject.GetComponent<Image>().sprite = backgroundIngrediente[1];
+                //imagenIngrediente.GetComponent<Image>().sprite = imagenesIngrediente[1];
+                break;
+            case 2:
+                this.gameObject.GetComponent<Image>().sprite = backgroundIngrediente[2];
+                //imagenIngrediente.GetComponent<Image>().sprite = imagenesIngrediente[2];
+                break;
         }
     }
 }

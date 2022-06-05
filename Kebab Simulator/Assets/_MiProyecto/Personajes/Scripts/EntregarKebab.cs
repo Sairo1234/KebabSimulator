@@ -43,11 +43,12 @@ public class EntregarKebab : MonoBehaviour
         destinoCliente = GameObject.FindGameObjectWithTag("EntregaC").transform;
         destinoJugador = GameObject.FindGameObjectWithTag("EntregaJ").transform;
 
+        jugador.GetComponent<SonidoJugadorController>().PlayContento();
     }
 
     private void Update()
     {
-        
+
         if (estaDesplazandoseJugador == true)
         {
             comprobarDistaciaJugador();
@@ -122,7 +123,11 @@ public class EntregarKebab : MonoBehaviour
 
                 //Info de kebab perfecto
                 gameManager.GetComponent<GameManager>().numKebabsIncorrectos++;
+
+                //Sonido Jugador Triste
+                jugador.GetComponent<SonidoJugadorController>().PlayTriste();
                 break;
+
             case 1:
                 entregarKebab();
                 //Dinero y reputación obtenida
@@ -131,7 +136,11 @@ public class EntregarKebab : MonoBehaviour
 
                 //Info de kebab perfecto
                 gameManager.GetComponent<GameManager>().numKebabsIncorrectos++;
+
+                //Sonido Jugador Triste
+                jugador.GetComponent<SonidoJugadorController>().PlayTriste();
                 break;
+
             case 2:
                 entregarKebab();
                 //Dinero y reputación obtenida
@@ -140,7 +149,11 @@ public class EntregarKebab : MonoBehaviour
 
                 //Info de kebab perfecto
                 gameManager.GetComponent<GameManager>().numKebabsIncorrectos++;
+
+                //Sonido Jugador Triste
+                jugador.GetComponent<SonidoJugadorController>().PlayTriste();
                 break;
+
             case 3:
                 entregarKebab();
                 //Dinero y reputación obtenida
@@ -149,6 +162,9 @@ public class EntregarKebab : MonoBehaviour
 
                 //Info de kebab perfecto
                 gameManager.GetComponent<GameManager>().numKebabsPerfectos++;
+
+                //Sonido Jugador Contento
+                jugador.GetComponent<SonidoJugadorController>().PlayContento();
                 break;
         }
 
@@ -210,7 +226,7 @@ public class EntregarKebab : MonoBehaviour
 
     private void comprobarDistaciaCliente()
     {
-        
+
         if (Vector3.Distance(cliente.transform.position, destinoCliente.position) < 1)
         {
             //Mirar en la direccion correcta

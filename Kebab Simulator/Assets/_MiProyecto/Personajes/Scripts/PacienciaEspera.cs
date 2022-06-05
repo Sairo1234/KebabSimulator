@@ -13,9 +13,13 @@ public class PacienciaEspera : MonoBehaviour
     [Header("GameManager")]
     private GameObject gameManager;
 
+    [Header("Audio")]
+    public GameObject jugador;
+
     void Start()
     {
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
+        jugador = GameObject.FindGameObjectWithTag("Player");
     }
 
     void Update()
@@ -36,6 +40,9 @@ public class PacienciaEspera : MonoBehaviour
             this.gameObject.GetComponent<SalidaCliente>().rechazoPedido();
             this.gameObject.GetComponent<SalidaCliente>().salir();
             gameManager.GetComponent<GameManager>().clientesPerdidos++;
+
+            jugador.GetComponent<SonidoJugadorController>().PlayTriste();
+
             this.enabled = false;
         }
     }

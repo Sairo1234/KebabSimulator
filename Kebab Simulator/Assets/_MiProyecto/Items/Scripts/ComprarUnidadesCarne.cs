@@ -18,6 +18,7 @@ public class ComprarUnidadesCarne : MonoBehaviour
 
     [Header("Boton comprar unidades")]
     public Button botonComprarUnidades;
+    public GameObject[] estadosBotonUnidades;
 
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
@@ -46,11 +47,15 @@ public class ComprarUnidadesCarne : MonoBehaviour
         if (ingredienteCarne.unidadesAlmacen > 99)
         {
             botonComprarUnidades.interactable = false;
-            botonComprarUnidades.GetComponentInChildren<Text>().text = "Max";
+            estadosBotonUnidades[0].SetActive(false);
+            estadosBotonUnidades[1].SetActive(true);
+
         }
         else
         {
             botonComprarUnidades.interactable = true;
+            estadosBotonUnidades[0].SetActive(true);
+            estadosBotonUnidades[1].SetActive(false);
         }
     }
 }
