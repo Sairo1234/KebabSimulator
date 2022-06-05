@@ -55,15 +55,15 @@ public class SetInfoButtonsCarne : MonoBehaviour
         {
             case 0:
                 this.gameObject.GetComponent<Image>().sprite = backgroundIngrediente[0];
-                //imagenIngrediente.GetComponent<Image>().sprite = imagenesIngrediente[0];
+                imagenIngrediente.GetComponent<Image>().sprite = imagenesIngrediente[0];
                 break;
             case 1:
                 this.gameObject.GetComponent<Image>().sprite = backgroundIngrediente[1];
-                //imagenIngrediente.GetComponent<Image>().sprite = imagenesIngrediente[1];
+                imagenIngrediente.GetComponent<Image>().sprite = imagenesIngrediente[1];
                 break;
             case 2:
                 this.gameObject.GetComponent<Image>().sprite = backgroundIngrediente[2];
-                //imagenIngrediente.GetComponent<Image>().sprite = imagenesIngrediente[2];
+                imagenIngrediente.GetComponent<Image>().sprite = imagenesIngrediente[2];
                 break;
         }
     }

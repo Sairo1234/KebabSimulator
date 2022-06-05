@@ -36,6 +36,9 @@ public class MejorarCarne : MonoBehaviour
     public GameObject[] estadosBotonMejora;
     public Animator animatorCandado;
 
+    [Header("Animator")]
+    public Animator animatorMejora;
+
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
 
@@ -48,7 +51,7 @@ public class MejorarCarne : MonoBehaviour
     }
 
 
-   public void MejoraIngrediente()
+    public void MejoraIngrediente()
     {
 
         //Mejora de nivel 1
@@ -77,9 +80,8 @@ public class MejorarCarne : MonoBehaviour
                 ingredienteCarne.costeCompraUnidades = newCostesCompraUnidades[0];
 
                 //Bloqueo Boton
-                botonMejoraIngrediente.interactable = false;
-                estadosBotonMejora[0].SetActive(true);
-                estadosBotonMejora[1].SetActive(false);
+                animatorMejora.SetTrigger("Mejorado");
+                StartCoroutine(cambioImagenMejoraUno());
             }
         }
 
@@ -105,10 +107,8 @@ public class MejorarCarne : MonoBehaviour
                 ingredienteCarne.costeCompraUnidades = newCostesCompraUnidades[0];
 
                 //Bloqueo Boton
-                botonMejoraIngrediente.interactable = false;
-                estadosBotonMejora[0].SetActive(false);
-                estadosBotonMejora[1].SetActive(false);
-                estadosBotonMejora[2].SetActive(true);
+                animatorMejora.SetTrigger("Mejorado");
+                StartCoroutine(cambioImagenMejoraDos());
             }
         }
     }
@@ -119,14 +119,14 @@ public class MejorarCarne : MonoBehaviour
 
     public void comprobarDesbloqueoMejora()
     {
-        if (ingredienteCarne.DesbloqueoMejora <= nivelJugador && ingredienteCarne.nivel<2)
+        if (ingredienteCarne.DesbloqueoMejora <= nivelJugador && ingredienteCarne.nivel < 2)
         {
             animatorCandado.SetTrigger("Desbloqueado");
-            StartCoroutine(mostrarAnimacionDesbloqueo());
+            StartCoroutine(mostrarAnimacionDesbloqueoMejora());
         }
     }
 
-    IEnumerator mostrarAnimacionDesbloqueo()
+    IEnumerator mostrarAnimacionDesbloqueoMejora()
     {
         yield return new WaitForSeconds(2);
 
@@ -143,4 +143,24 @@ public class MejorarCarne : MonoBehaviour
 
     }
 
+    //--------------------------------------------------------------//
+    //----------------------- MejoraAnimacion ----------------------//
+
+    IEnumerator cambioImagenMejoraUno()
+    {
+        yield return new WaitForSeconds(1);
+        botonMejoraIngrediente.interactable = false;
+        estadosBotonMejora[0].SetActive(true);
+        estadosBotonMejora[1].SetActive(false);
+        animatorMejora.SetTrigger("Volver");
+    }
+    IEnumerator cambioImagenMejoraDos()
+    {
+        yield return new WaitForSeconds(1);
+        botonMejoraIngrediente.interactable = false;
+        estadosBotonMejora[0].SetActive(false);
+        estadosBotonMejora[1].SetActive(false);
+        estadosBotonMejora[2].SetActive(true);
+        animatorMejora.SetTrigger("Volver");
+    }
 }
