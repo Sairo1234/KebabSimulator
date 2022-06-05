@@ -23,6 +23,8 @@ public class SonidoJugadorController : MonoBehaviour
         {
             int audioRandom = Random.Range(0, audioClipContento.Length);
             audioSource.clip = audioClipContento[audioRandom];
+
+            audioSource.loop = false;
             audioSource.Play();
         }
     }
@@ -33,6 +35,8 @@ public class SonidoJugadorController : MonoBehaviour
         {
             int audioRandom = Random.Range(0, audioClipFrustrado.Length);
             audioSource.clip = audioClipFrustrado[audioRandom];
+
+            audioSource.loop = false;
             audioSource.Play();
         }
     }
@@ -43,6 +47,8 @@ public class SonidoJugadorController : MonoBehaviour
         {
             int audioRandom = Random.Range(0, audioClipTomandoNota.Length);
             audioSource.clip = audioClipTomandoNota[audioRandom];
+
+            audioSource.loop = true;
             audioSource.Play();
         }
     }
@@ -53,6 +59,8 @@ public class SonidoJugadorController : MonoBehaviour
         {
             int audioRandom = Random.Range(0, audioClipTriste.Length);
             audioSource.clip = audioClipTriste[audioRandom];
+
+            audioSource.loop = false;
             audioSource.Play();
         }
     }

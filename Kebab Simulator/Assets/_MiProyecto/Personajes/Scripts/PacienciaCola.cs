@@ -28,6 +28,7 @@ public class PacienciaCola : MonoBehaviour
         if (aunNoSeHaQuejado && timeRemaining <= 20)
         {
             animatorCliente.SetTrigger("Impaciente");
+            this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayImpaciente();
             timeRemaining -= Time.deltaTime;
             aunNoSeHaQuejado = false;
 
@@ -45,10 +46,17 @@ public class PacienciaCola : MonoBehaviour
             this.gameObject.GetComponent<SalidaCliente>().salir();
             gameManager.GetComponent<GameManager>().clientesPerdidos++;
 
-            jugador.GetComponent<SonidoJugadorController>().PlayTriste();
+            this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayFrustrado();
+            StartCoroutine("JugadorTriste");
 
             this.enabled = false;
         }
     }
+    IEnumerator JugadorTriste()
+    {
+        yield return new WaitForSeconds(1);
+        jugador.GetComponent<SonidoJugadorController>().PlayTriste();
+    }
+
 
 }

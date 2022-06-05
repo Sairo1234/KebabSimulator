@@ -15,16 +15,21 @@ public class Dialogo : MonoBehaviour
     [Header("Desplazamiento")]
     public GameObject gameManager;
 
+    public GameObject jugador;
+
 
     private void Start()
     {
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
         animatorJugador = GameObject.FindGameObjectWithTag("ModeloJugador").GetComponent<Animator>();
+        jugador = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void mostrarDialogo()
     {
         this.gameObject.GetComponent<PacienciaCola>().enabled = false;
+        this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayPidiendo();
+        jugador.gameObject.GetComponent<SonidoJugadorController>().PlayTomandoNota();
         PanelDialogo.SetActive(true);
     }
 

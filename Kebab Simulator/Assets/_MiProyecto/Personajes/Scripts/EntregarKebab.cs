@@ -124,8 +124,11 @@ public class EntregarKebab : MonoBehaviour
                 //Info de kebab perfecto
                 gameManager.GetComponent<GameManager>().numKebabsIncorrectos++;
 
-                //Sonido Jugador Triste
-                jugador.GetComponent<SonidoJugadorController>().PlayTriste();
+                //Sonido Jugador Triste y Cliente Frustado
+                this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayFrustrado();
+                this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayDinero();
+
+                StartCoroutine("JugadorTriste");
                 break;
 
             case 1:
@@ -137,8 +140,10 @@ public class EntregarKebab : MonoBehaviour
                 //Info de kebab perfecto
                 gameManager.GetComponent<GameManager>().numKebabsIncorrectos++;
 
-                //Sonido Jugador Triste
-                jugador.GetComponent<SonidoJugadorController>().PlayTriste();
+                //Sonido Jugador Tristey y Cliente Frustado
+                this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayFrustrado();
+                this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayDinero();
+                StartCoroutine("JugadorTriste");
                 break;
 
             case 2:
@@ -150,8 +155,11 @@ public class EntregarKebab : MonoBehaviour
                 //Info de kebab perfecto
                 gameManager.GetComponent<GameManager>().numKebabsIncorrectos++;
 
-                //Sonido Jugador Triste
-                jugador.GetComponent<SonidoJugadorController>().PlayTriste();
+                //Sonido Jugador Tristey y Cliente Frustado
+                this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayFrustrado();
+                this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayDinero();
+
+                StartCoroutine("JugadorTriste");
                 break;
 
             case 3:
@@ -163,8 +171,11 @@ public class EntregarKebab : MonoBehaviour
                 //Info de kebab perfecto
                 gameManager.GetComponent<GameManager>().numKebabsPerfectos++;
 
-                //Sonido Jugador Contento
-                jugador.GetComponent<SonidoJugadorController>().PlayContento();
+                //Sonido Jugador Contento y Cliente Contento
+                this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayContento();
+                this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayDinero();
+
+                StartCoroutine("JugadorContento");
                 break;
         }
 
@@ -255,5 +266,17 @@ public class EntregarKebab : MonoBehaviour
         this.gameObject.GetComponent<EntregarKebab>().enabled = false;
 
         cliente.GetComponent<SalidaCliente>().salir();
+    }
+
+    IEnumerator JugadorTriste()
+    {
+        yield return new WaitForSeconds(1);
+        jugador.GetComponent<SonidoJugadorController>().PlayTriste();
+    }
+
+    IEnumerator JugadorContento()
+    {
+        yield return new WaitForSeconds(1);
+        jugador.GetComponent<SonidoJugadorController>().PlayContento();
     }
 }
