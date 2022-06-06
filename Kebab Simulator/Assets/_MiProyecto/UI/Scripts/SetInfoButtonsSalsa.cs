@@ -14,11 +14,17 @@ public class SetInfoButtonsSalsa : MonoBehaviour
     [Header("Textos")]
     public Text headerIngrediente;
     public Text cantidadAlmacen;
-    public Text tipoIngrediente;
     public Text nivelMejora;
-    public Text capacidadMax;
     public Text costeUnidades;
     public Text costeMejora;
+
+    [Header("Imagenes")]
+    public Sprite[] backgroundIngrediente;
+    public Sprite[] imagenesIngrediente;
+    public GameObject imagenIngrediente;
+
+    [Header("Jugador")]
+    public GameObject jugador;
 
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
@@ -31,14 +37,32 @@ public class SetInfoButtonsSalsa : MonoBehaviour
     public void mostrarInformacionDeIngrediente()
     {
         headerIngrediente.text = ingredienteSalsa.nombre;
-        tipoIngrediente.text = "Tipo: " + "<b>" + ingredienteSalsa.tipo + "</b>";
-        cantidadAlmacen.text = "<b>" + ingredienteSalsa.unidadesAlmacen.ToString() + "</b>" + " Unid. en Almacén";
-        nivelMejora.text = "Mejora: " + "<b> Nivel " + ingredienteSalsa.DesbloqueoMejora.ToString() + "</b>";
-        capacidadMax.text = "Capacidad: " + "<b>" + ingredienteSalsa.capacidadMaxIngrediente.ToString() + "</b>";
-        costeUnidades.text = "Comprar Und. : " + ingredienteSalsa.costeCompraUnidades.ToString() + "K";
-        if (ingredienteSalsa.nivel < 2)
+        cantidadAlmacen.text = "Almacén: <b> " + ingredienteSalsa.unidadesAlmacen.ToString() + " </b>" ;
+        nivelMejora.text = ingredienteSalsa.DesbloqueoMejora.ToString();
+
+        costeUnidades.text =  ingredienteSalsa.costeCompraUnidades.ToString();
+        costeMejora.text = ingredienteSalsa.costeMejora.ToString();
+
+        StartCoroutine(actualizarImagenes());
+    }
+
+    IEnumerator actualizarImagenes()
+    {
+        yield return new WaitForSeconds(2);
+        switch (ingredienteSalsa.nivel)
         {
-            costeMejora.text = "Mejorar : " + ingredienteSalsa.costeMejora.ToString() + "K";
+            case 0:
+                this.gameObject.GetComponent<Image>().sprite = backgroundIngrediente[0];
+                imagenIngrediente.GetComponent<Image>().sprite = imagenesIngrediente[0];
+                break;
+            case 1:
+                this.gameObject.GetComponent<Image>().sprite = backgroundIngrediente[1];
+                imagenIngrediente.GetComponent<Image>().sprite = imagenesIngrediente[1];
+                break;
+            case 2:
+                this.gameObject.GetComponent<Image>().sprite = backgroundIngrediente[2];
+                imagenIngrediente.GetComponent<Image>().sprite = imagenesIngrediente[2];
+                break;
         }
     }
 }

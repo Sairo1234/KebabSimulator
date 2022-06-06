@@ -18,6 +18,10 @@ public class DesbloquearSalsa : MonoBehaviour
     [Header("Boton Compra")]
     public Button botonComprarIngrediente;
 
+    [Header("Animator")]
+    public Animator animatorDesbloqueo;
+    public Animator animatorCandado;
+
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
 
@@ -32,7 +36,24 @@ public class DesbloquearSalsa : MonoBehaviour
         if (nivelJugador >= ingredienteSalsa.DesbloqueoCompra)
         {
             ingredienteSalsa.estaDesbloqueado = true;
-            botonComprarIngrediente.interactable = true;
+            animatorCandado.SetTrigger("Desbloqueado");
+            StartCoroutine(mostrarAnimacionCandado());
         }
+    }
+
+    //-----------------------------------------------------------------------//
+    //---------------------------Mostrar animacion---------------------------//
+
+    IEnumerator mostrarAnimacionCandado()
+    {
+        yield return new WaitForSeconds(2);
+        animatorDesbloqueo.SetTrigger("Desbloqueado");
+        StartCoroutine(mostrarAnimacion());
+    }
+
+    IEnumerator mostrarAnimacion()
+    {
+        yield return new WaitForSeconds(2);
+        botonComprarIngrediente.interactable = true;
     }
 }
