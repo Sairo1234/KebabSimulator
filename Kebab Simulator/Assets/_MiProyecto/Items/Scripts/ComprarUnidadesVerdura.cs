@@ -18,6 +18,7 @@ public class ComprarUnidadesVerdura : MonoBehaviour
 
     [Header("Boton comprar unidades")]
     public Button botonComprarUnidades;
+    public GameObject[] estadosBotonUnidades;
 
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
@@ -46,15 +47,15 @@ public class ComprarUnidadesVerdura : MonoBehaviour
         if (ingredienteVerdura.unidadesAlmacen > 99)
         {
             botonComprarUnidades.interactable = false;
-            botonComprarUnidades.GetComponentInChildren<Text>().text = "Max";
-        }
-        else if (dineroJugador <= ingredienteVerdura.costeCompraUnidades)
-        {
-            botonComprarUnidades.interactable = false;
+            estadosBotonUnidades[0].SetActive(false);
+            estadosBotonUnidades[1].SetActive(true);
+
         }
         else
         {
             botonComprarUnidades.interactable = true;
+            estadosBotonUnidades[0].SetActive(true);
+            estadosBotonUnidades[1].SetActive(false);
         }
     }
 }

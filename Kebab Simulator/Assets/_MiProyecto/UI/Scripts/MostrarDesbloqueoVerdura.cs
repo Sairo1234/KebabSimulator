@@ -14,6 +14,7 @@ public class MostrarDesbloqueoVerdura : MonoBehaviour
     [Header("Textos")]
     public Text nivelDesbloqueo;
     public Text costeCompra;
+    public Text nombreIngrediente;
 
     ///----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
@@ -25,7 +26,8 @@ public class MostrarDesbloqueoVerdura : MonoBehaviour
 
     public void mostrarInformacionDesbloqueo()
     {
-        nivelDesbloqueo.text = "Nivel:" + ingredienteVerdura.DesbloqueoCompra.ToString();
-        costeCompra.text = ingredienteVerdura.costeCompra.ToString() + " K";
+        nombreIngrediente.text = ingredienteVerdura.nombre;
+        nivelDesbloqueo.text = ingredienteVerdura.DesbloqueoCompra.ToString();
+        costeCompra.text = ingredienteVerdura.costeCompra.ToString();
     }
 }

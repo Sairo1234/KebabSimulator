@@ -33,6 +33,11 @@ public class MejorarVerdura : MonoBehaviour
     //--------------- Boton ---------------//
     [Header("Boton de Mejora")]
     public Button botonMejoraIngrediente;
+    public GameObject[] estadosBotonMejora;
+    public Animator animatorCandado;
+
+    [Header("Animator")]
+    public Animator animatorMejora;
 
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
@@ -75,7 +80,8 @@ public class MejorarVerdura : MonoBehaviour
                 ingredienteVerdura.costeCompraUnidades = newCostesCompraUnidades[0];
 
                 //Bloqueo Boton
-                botonMejoraIngrediente.interactable = false;
+                animatorMejora.SetTrigger("Mejorado");
+                StartCoroutine(cambioImagenMejoraUno());
             }
         }
 
@@ -101,17 +107,57 @@ public class MejorarVerdura : MonoBehaviour
                 ingredienteVerdura.costeCompraUnidades = newCostesCompraUnidades[0];
 
                 //Bloqueo Boton
-                botonMejoraIngrediente.interactable = false;
-                botonMejoraIngrediente.GetComponentInChildren<Text>().text = "Max";
+                animatorMejora.SetTrigger("Mejorado");
+                StartCoroutine(cambioImagenMejoraDos());
             }
         }
     }
 
-        public void comprobarDesbloqueoMejora()
+    public void comprobarDesbloqueoMejora()
+    {
+        if (ingredienteVerdura.DesbloqueoMejora <= nivelJugador && ingredienteVerdura.nivel < 2)
         {
-            if (ingredienteVerdura.DesbloqueoMejora <= nivelJugador && ingredienteVerdura.nivel < 2)
-            {
-                botonMejoraIngrediente.interactable = true;
-            }
+            animatorCandado.SetTrigger("Desbloqueado");
+            StartCoroutine(mostrarAnimacionDesbloqueoMejora());
         }
+    }
+
+
+    IEnumerator mostrarAnimacionDesbloqueoMejora()
+    {
+        yield return new WaitForSeconds(2);
+
+        animatorCandado.SetTrigger("Volver");
+        StartCoroutine(cambioEstadoBotonMejora());
+    }
+
+    IEnumerator cambioEstadoBotonMejora()
+    {
+        botonMejoraIngrediente.interactable = true;
+        estadosBotonMejora[0].SetActive(false);
+        estadosBotonMejora[1].SetActive(true);
+        yield return new WaitForSeconds(1);
+
+    }
+
+    //--------------------------------------------------------------//
+    //----------------------- MejoraAnimacion ----------------------//
+
+    IEnumerator cambioImagenMejoraUno()
+    {
+        yield return new WaitForSeconds(1);
+        botonMejoraIngrediente.interactable = false;
+        estadosBotonMejora[0].SetActive(true);
+        estadosBotonMejora[1].SetActive(false);
+        animatorMejora.SetTrigger("Volver");
+    }
+    IEnumerator cambioImagenMejoraDos()
+    {
+        yield return new WaitForSeconds(1);
+        botonMejoraIngrediente.interactable = false;
+        estadosBotonMejora[0].SetActive(false);
+        estadosBotonMejora[1].SetActive(false);
+        estadosBotonMejora[2].SetActive(true);
+        animatorMejora.SetTrigger("Volver");
+    }
 }

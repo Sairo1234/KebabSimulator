@@ -45,12 +45,13 @@ public class SetInfoButtonsCarne : MonoBehaviour
         costeUnidades.text = ingredienteCarne.costeCompraUnidades.ToString();
         costeMejora.text = ingredienteCarne.costeMejora.ToString();
 
-        actualizarImagenes();
+        StartCoroutine(actualizarImagenes());
 
     }
 
-    public void actualizarImagenes()
+    IEnumerator actualizarImagenes()
     {
+        yield return new WaitForSeconds(2);
         switch (ingredienteCarne.nivel)
         {
             case 0:
