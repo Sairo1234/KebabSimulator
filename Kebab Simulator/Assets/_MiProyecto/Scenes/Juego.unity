@@ -6909,6 +6909,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7542855512305144752, guid: 682e32b52ab8f3f42b8ae141ab72c474, type: 3}
+      propertyPath: cantidad
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7542855512305144752, guid: 682e32b52ab8f3f42b8ae141ab72c474, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1240847596}
@@ -16356,6 +16360,10 @@ PrefabInstance:
       value: 0.11
       objectReference: {fileID: 0}
     - target: {fileID: 8060864525631784635, guid: df2afeca7c8cf9846a42c73fccfe1009, type: 3}
+      propertyPath: cantidad
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060864525631784635, guid: df2afeca7c8cf9846a42c73fccfe1009, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1240847596}
@@ -22428,6 +22436,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1567773397566445900, guid: dea3d768664205d4cb758337649a444e, type: 3}
+      propertyPath: cantidad
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1567773397566445900, guid: dea3d768664205d4cb758337649a444e, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1240847596}
@@ -27042,6 +27054,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2003849432940734251, guid: eeb3232aa0fa50445991e5c3f14b3f51, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421858392584465775, guid: eeb3232aa0fa50445991e5c3f14b3f51, type: 3}
+      propertyPath: cantidad
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3421858392584465775, guid: eeb3232aa0fa50445991e5c3f14b3f51, type: 3}
@@ -31855,6 +31871,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4310132257764697009, guid: a8d3a8af5c641eb4da81e757474b8dfe, type: 3}
+      propertyPath: cantidad
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310132257764697009, guid: a8d3a8af5c641eb4da81e757474b8dfe, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1240847596}
@@ -34661,7 +34681,7 @@ RectTransform:
   m_GameObject: {fileID: 767689767}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.22132, y: 0.22132, z: 0.22132}
   m_Children:
   - {fileID: 2084790341}
   - {fileID: 1594787196}
@@ -34670,7 +34690,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -18.085}
   m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &767689769
@@ -35807,6 +35827,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 484377886872926087, guid: 5810b7457eb21dc4c9a0e438904a1a64, type: 3}
+      propertyPath: cantidad
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484377886872926087, guid: 5810b7457eb21dc4c9a0e438904a1a64, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1240847596}
@@ -35875,6 +35899,7 @@ GameObject:
   - component: {fileID: 791132552}
   - component: {fileID: 791132551}
   - component: {fileID: 791132550}
+  - component: {fileID: 791132553}
   m_Layer: 0
   m_Name: HUD - Bajar nivel
   m_TagString: Untagged
@@ -35963,6 +35988,22 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &791132553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791132548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5e56864d2928c4680aaffdeffac363, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bajarNivel: {fileID: 767689767}
+  nivelPrevio: {fileID: 1280688192}
+  nivelNuevo: {fileID: 1707908808}
+  jugador: {fileID: 1440286347}
 --- !u!1 &796288082
 GameObject:
   m_ObjectHideFlags: 0
@@ -38085,6 +38126,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2937619879324476080, guid: 7db507bf71487ae4190ab3f456ecb12c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3071620800016594513, guid: 7db507bf71487ae4190ab3f456ecb12c, type: 3}
+      propertyPath: cantidad
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3071620800016594513, guid: 7db507bf71487ae4190ab3f456ecb12c, type: 3}
@@ -43719,6 +43764,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3852765877265937259, guid: 2df176ee7cff5284ea6330a42542f54a, type: 3}
+      propertyPath: cantidad
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3852765877265937259, guid: 2df176ee7cff5284ea6330a42542f54a, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1240847596}
@@ -43915,7 +43964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2716752057330268772, guid: 9b90049ce6180a14db669ff7d774f8cd, type: 3}
       propertyPath: cantidad
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2716752057330268772, guid: 9b90049ce6180a14db669ff7d774f8cd, type: 3}
       propertyPath: puntoSpawn
@@ -50245,6 +50294,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1365528906230157543, guid: b317c7abba3a2cf42b7a1ccd0cac10e1, type: 3}
+      propertyPath: cantidad
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1365528906230157543, guid: b317c7abba3a2cf42b7a1ccd0cac10e1, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1240847596}
@@ -51625,6 +51678,10 @@ PrefabInstance:
     - target: {fileID: -7482523560801788961, guid: dfc9491bc5a87f4448d29ab06e4f0992, type: 3}
       propertyPath: animacionJugador
       value: Interactuando
+      objectReference: {fileID: 0}
+    - target: {fileID: -5265334925969846471, guid: dfc9491bc5a87f4448d29ab06e4f0992, type: 3}
+      propertyPath: cantidad
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -5265334925969846471, guid: dfc9491bc5a87f4448d29ab06e4f0992, type: 3}
       propertyPath: gameManager
@@ -58860,6 +58917,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2254841635778405562, guid: 4fa0b118601a73b408f7dd43384bd15d, type: 3}
+      propertyPath: cantidad
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2254841635778405562, guid: 4fa0b118601a73b408f7dd43384bd15d, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1240847596}
@@ -63164,6 +63225,7 @@ MonoBehaviour:
   BarraReputacion: {fileID: 743401270}
   texto_Nivel: {fileID: 920299507}
   GUIsubirNivel: {fileID: 62014956}
+  GUIbajarNivel: {fileID: 791132548}
   texto_Dinero: {fileID: 704779950}
   Dinero: 0
 --- !u!136 &1440286352
@@ -66326,6 +66388,10 @@ PrefabInstance:
       value: Interactuando
       objectReference: {fileID: 0}
     - target: {fileID: 1068487256946223720, guid: 8ced8ce8a2d14b249a4b99ea22d64c50, type: 3}
+      propertyPath: cantidad
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1068487256946223720, guid: 8ced8ce8a2d14b249a4b99ea22d64c50, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1240847596}
@@ -66789,6 +66855,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3249005481384169952, guid: 01c6c256fae1d5b4796528d034d05ab6, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3249005481384169981, guid: 01c6c256fae1d5b4796528d034d05ab6, type: 3}
+      propertyPath: cantidad
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3249005481384169981, guid: 01c6c256fae1d5b4796528d034d05ab6, type: 3}
@@ -86163,6 +86233,10 @@ PrefabInstance:
       value: -0.0430742
       objectReference: {fileID: 0}
     - target: {fileID: 1625245843774425013, guid: c6a9f7ac28f95aa418707782de25d2d2, type: 3}
+      propertyPath: cantidad
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1625245843774425013, guid: c6a9f7ac28f95aa418707782de25d2d2, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1240847596}
@@ -87172,6 +87246,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 736052748285367956, guid: 952027db8c50b3746ab2321336f2de2c, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510739021020232352, guid: 952027db8c50b3746ab2321336f2de2c, type: 3}
+      propertyPath: cantidad
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1510739021020232352, guid: 952027db8c50b3746ab2321336f2de2c, type: 3}
@@ -89832,6 +89910,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6467384134957582528, guid: 9ffe737c6d98a49439ecdf9d1a94edfe, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337962948159605073, guid: 9ffe737c6d98a49439ecdf9d1a94edfe, type: 3}
+      propertyPath: cantidad
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7337962948159605073, guid: 9ffe737c6d98a49439ecdf9d1a94edfe, type: 3}

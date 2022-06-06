@@ -16,7 +16,7 @@ public class AñadirSalsa : MonoBehaviour
     public Salsa IngredienteData;
 
     [Header("Cantidad ingrediente")]
-    public int cantidad = 10;
+    public int cantidad;
 
     [Header("Particulas salsa")]
     public GameObject particulasSalsa;
@@ -32,19 +32,30 @@ public class AñadirSalsa : MonoBehaviour
 
     private void Start()
     {
+        if (IngredienteData.unidadesAlmacen > 0 )
+        {
+            cantidad = 5;
+        }
         puntoSpawn = GameObject.FindGameObjectWithTag("SpawnKebab").transform;
     }
 
     public void asignarKebab()
     {
-        if (puntoSpawn.childCount == 0)
+        if (puntoSpawn.childCount == 0 && cantidad > 0)
         {
             StartCoroutine(jugadorSinKebab());
         }
-        else
+        else if (puntoSpawn.childCount > 0 && cantidad > 0)
         {
             kebabEnPreparacion = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
             StartCoroutine(jugadorConKebab());
+        }
+        else
+        {
+            GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).GetComponent<Animator>().SetTrigger("DejaPlatoMesa");
+            gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
+            this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
+            this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorHaciendoAccion = false;
         }
     }
 

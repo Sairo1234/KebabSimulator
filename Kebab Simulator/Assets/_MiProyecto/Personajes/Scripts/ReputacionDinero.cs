@@ -17,6 +17,7 @@ public class ReputacionDinero : MonoBehaviour
     public Image BarraReputacion;
     public Text texto_Nivel;
     public GameObject GUIsubirNivel;
+    public GameObject GUIbajarNivel;
 
 
     //----------------------------------------------------------------------------------//
@@ -65,6 +66,7 @@ public class ReputacionDinero : MonoBehaviour
         {
             Nivel--;
             Reputacion = 99;
+            GUIbajarNivel.SetActive(true);
         }
         else if(Reputacion == 0 && Nivel == 0)
         {
