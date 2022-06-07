@@ -24,8 +24,13 @@ public class ReputacionDinero : MonoBehaviour
     //----------------------------------- DINERO --------------------------------------//
 
     [Header("Dinero")]
-    public Text texto_Dinero;
     public float Dinero = 0;
+
+    [Header("GUI Dinero")]
+    public Text texto_Dinero;
+    public GameObject GUIGanarDinero;
+    public Text texto_dineroGanado;
+    public Text GUIGastarDinero;
 
     //----Constante----//
     float d = 5;
@@ -62,13 +67,13 @@ public class ReputacionDinero : MonoBehaviour
             Reputacion = 1;
             GUIsubirNivel.SetActive(true);
         }
-        else if(Reputacion == 0 && Nivel !=0 )
+        else if (Reputacion == 0 && Nivel != 0)
         {
             Nivel--;
             Reputacion = 99;
             GUIbajarNivel.SetActive(true);
         }
-        else if(Reputacion == 0 && Nivel == 0)
+        else if (Reputacion == 0 && Nivel == 0)
         {
             Debug.Log("Has perdido");
         }
@@ -80,20 +85,58 @@ public class ReputacionDinero : MonoBehaviour
         texto_Nivel.text = Nivel.ToString();
     }
 
-    
+
 
     //----------------------------------------------------------------------------------//
     //----------------------------------- DINERO --------------------------------------//
 
     public void TakeDinero(float dinero)
     {
+        if (dinero > 0)
+        {
+            MostrarGanarDinero(dinero);
+        }
+        else if (dinero < 0)
+        {
+            MostrarGastarDinero(dinero);
+        }
+
         Dinero += dinero;
     }
 
+    //---------------------------------------------------------------//
+    //-------------------------- GUI DINERO -------------------------//
     void MostrarDinero()
     {
         texto_Dinero.text = Dinero.ToString();
     }
 
+    public void MostrarGanarDinero(float dineroGanado)
+    {
+        texto_dineroGanado.text = "+" + dineroGanado.ToString();
+        GUIGanarDinero.SetActive(true);
+        StartCoroutine(pararAnimacionGanarDinero());
+    }
+
+    IEnumerator pararAnimacionGanarDinero()
+    {
+        yield return new WaitForSeconds(1);
+        GUIGanarDinero.SetActive(false);
+        texto_dineroGanado.text = "-";
+    }
+
+    public void MostrarGastarDinero(float dineroGastado)
+    {
+        GUIGastarDinero.text =  dineroGastado.ToString();
+        GUIGastarDinero.gameObject.SetActive(true);
+        StartCoroutine(pararAnimacionGastarDinero());
+    }
+
+    IEnumerator pararAnimacionGastarDinero()
+    {
+        yield return new WaitForSeconds(1);
+        GUIGastarDinero.gameObject.SetActive(false);
+        GUIGastarDinero.text = "-";
+    }
 
 }
