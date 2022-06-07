@@ -27,10 +27,11 @@ public class Dialogo : MonoBehaviour
 
     public void mostrarDialogo()
     {
+        gameManager.GetComponent<SetTutorial>().PonerTutorialCliente();
         this.gameObject.GetComponent<PacienciaCola>().enabled = false;
         this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayPidiendo();
         jugador.gameObject.GetComponent<SonidoJugadorController>().PlayTomandoNota();
-        PanelDialogo.SetActive(true);
+        StartCoroutine("ponerPanelDialogo");
     }
 
     public void ocultarDialogo()
@@ -42,5 +43,12 @@ public class Dialogo : MonoBehaviour
         this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
         this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorHaciendoAccion = false;
     }
+    //set panel dialogo active a second later
+    IEnumerator ponerPanelDialogo()
+    {
+        yield return new WaitForSeconds(0.01f);
+        GameObject.FindGameObjectWithTag("GameManager").GetComponent<DesplazamientoController>().desactivarDesplazamientoPunto();
 
+        PanelDialogo.SetActive(true);
+    }
 }

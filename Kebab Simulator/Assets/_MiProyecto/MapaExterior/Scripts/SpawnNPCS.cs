@@ -12,18 +12,22 @@ public class SpawnNPCS : MonoBehaviour
 
 
     public float next_spawn_time;
-    public float intervalo;
+
+    public float Cronometro = 0;
+    public float startTime;
 
     // Start is called before the first frame update
     void Start()
     {
+        startTime = Time.time+1;
         spawnCliente();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > next_spawn_time)
+        Cronometro = Time.time - startTime;
+        if (Cronometro > next_spawn_time)
         {
             spawnCliente();
 

@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     //Pantallas
     [Header("Pantallas")]
     public GameObject HUDprincipal;
+    public GameObject HUDTutoriales;
     public GameObject pantallaPausa;
     public GameObject pantallaDiaTerminado;
     public GameObject pantallaResumenDia;
@@ -246,6 +247,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Backspace))
         {
+            HUDprincipal.SetActive(false);
             pantallaPausa.SetActive(true);
             pararTiempo();
 
@@ -257,6 +259,7 @@ public class GameManager : MonoBehaviour
 
     public void Continuar()
     {
+        HUDprincipal.SetActive(true);
         pantallaPausa.SetActive(false);
         reanudarTiempo();
     }
@@ -309,6 +312,7 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(3.5f);
         HUDprincipal.SetActive(true);
+        HUDTutoriales.SetActive(true);
         pantallaDiaNuevo.SetActive(false);
         spawnCliente();
     }

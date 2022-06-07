@@ -11,10 +11,14 @@ public class TutorialController : MonoBehaviour
 
     private int contador = 0;
 
+    public int pararTiempo;
+
     private void Start()
     {
 
-        Time.timeScale = 0;
+        Time.timeScale = pararTiempo;
+
+        GameObject.FindGameObjectWithTag("GameManager").GetComponent<DesplazamientoController>().desactivarDesplazamientoPunto();
 
         listaCanvas = GetComponentsInChildren<Canvas>();
 
@@ -34,6 +38,7 @@ public class TutorialController : MonoBehaviour
                 listaCanvas[contador].enabled = false;
                 contador++;
                 listaCanvas[contador].enabled = true;
+                
             });
         }
 
@@ -43,6 +48,9 @@ public class TutorialController : MonoBehaviour
             this.gameObject.SetActive(false);
 
             Time.timeScale = 1;
+            GameObject.FindGameObjectWithTag("GameManager").GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
+
         });
     }
+
 }
