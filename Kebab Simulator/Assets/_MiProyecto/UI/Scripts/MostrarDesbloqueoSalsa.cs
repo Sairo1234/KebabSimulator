@@ -28,7 +28,7 @@ public class MostrarDesbloqueoSalsa : MonoBehaviour
     public void mostrarInformacionDesbloqueo()
     {
         nombreIngrediente.text = ingredienteSalsa.nombre;
-        nivelDesbloqueo.text = "Nivel:" + ingredienteSalsa.DesbloqueoCompra.ToString();
-        costeCompra.text = ingredienteSalsa.costeCompra.ToString() + " K";
+        nivelDesbloqueo.text = ingredienteSalsa.DesbloqueoCompra.ToString();
+        costeCompra.text = ingredienteSalsa.costeCompra.ToString() ;
     }
 }

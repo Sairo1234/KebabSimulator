@@ -51,6 +51,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+            
         nuevoDia();
         next_spawn_time += siguienteSpawn();
     }
@@ -82,12 +83,15 @@ public class GameManager : MonoBehaviour
 
     public void nuevoDia()
     {
+
+        this.GetComponent<MusicaController>().PlayAmbienteInicio();
         pantallaTienda.SetActive(false);
         resetearInfoDia();
         resetearEscena();
         PantallaNuevoDia();
         reanudarTiempo();
         clientesContador = 0;
+        //this.GetComponent<MusicaController>().PlayMusicaJuego();
         numDia++;
         setClientesMax();
         haTerminadoDia = false;
@@ -272,6 +276,7 @@ public class GameManager : MonoBehaviour
 
     public void PantallaNuevoDia()
     {
+
         pantallaDiaNuevo.SetActive(true);
         StartCoroutine(timerNuevoDia());
     }
@@ -286,6 +291,7 @@ public class GameManager : MonoBehaviour
 
     public void Tienda()
     {
+        this.GetComponent<MusicaController>().PlayMusicaTienda();
         pantallaResumenDia.SetActive(false);
         pantallaTienda.SetActive(true);
         resetearEscena();
@@ -315,6 +321,7 @@ public class GameManager : MonoBehaviour
         HUDTutoriales.SetActive(true);
         pantallaDiaNuevo.SetActive(false);
         spawnCliente();
+        this.GetComponent<MusicaController>().PlayMusicaJuego();
     }
 
     //----------------------------------------------------------------------------------------//
