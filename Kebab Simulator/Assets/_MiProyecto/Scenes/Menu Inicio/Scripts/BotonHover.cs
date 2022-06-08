@@ -20,9 +20,6 @@ public class BotonHover : MonoBehaviour
     public void ExitHover()
     {
         Boton.transform.localScale = new Vector3(1f, 1f, 1f);
-
         Boton.transform.GetChild(0).GetComponent<Text>().color = new Color(50f / 255f, 50f / 255f, 50f / 255f);
-
-
     }
 }

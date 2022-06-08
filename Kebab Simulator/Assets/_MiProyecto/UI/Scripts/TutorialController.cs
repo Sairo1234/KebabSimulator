@@ -13,12 +13,15 @@ public class TutorialController : MonoBehaviour
 
     public int pararTiempo;
 
+    public bool desactivarDesp;
+
     private void Start()
     {
 
         Time.timeScale = pararTiempo;
 
-        GameObject.FindGameObjectWithTag("GameManager").GetComponent<DesplazamientoController>().desactivarDesplazamientoPunto();
+        if (desactivarDesp) GameObject.FindGameObjectWithTag("GameManager").GetComponent<DesplazamientoController>().desactivarDesplazamientoPunto();
+
 
         listaCanvas = GetComponentsInChildren<Canvas>();
 
@@ -48,8 +51,8 @@ public class TutorialController : MonoBehaviour
             this.gameObject.SetActive(false);
 
             Time.timeScale = 1;
-            
-            GameObject.FindGameObjectWithTag("GameManager").GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
+
+            if (desactivarDesp) GameObject.FindGameObjectWithTag("GameManager").GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
 
         });
     }

@@ -18,6 +18,8 @@ public class SetTutorial : MonoBehaviour
     public bool TTiendaNoHaSalido = true;
     public bool TAlmacenNoHaSalido = true;
 
+    [Header("DataInfo")]
+    public DataPlayerInfo infoJugador;
 
     [Header("GameObjects de la escena")]
     public GameObject[] DetonantesTK;
@@ -36,6 +38,7 @@ public class SetTutorial : MonoBehaviour
     }
     private void Update()
     {
+        //guardarTutoriales();
         if (cliente == null)
         {
             cliente = GameObject.FindGameObjectWithTag("Cliente");
@@ -44,6 +47,16 @@ public class SetTutorial : MonoBehaviour
         dialogo = GameObject.FindGameObjectWithTag("Dialogo");
 
     }
+
+    /*public void guardarTutoriales()
+    {
+        infoJugador.TGNoHaSalido = TGNoHaSalido;
+        infoJugador.TCNoHaSalido = TCNoHaSalido;
+        infoJugador.TKNoHaSalido = TKNoHaSalido;
+        infoJugador.TTiendaNoHaSalido = TTiendaNoHaSalido;
+        infoJugador.TAlmacenNoHaSalido = TAlmacenNoHaSalido;
+    }*/
+
 
     public void PonerTutorialCliente()
     {
