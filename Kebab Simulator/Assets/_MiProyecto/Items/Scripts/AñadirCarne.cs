@@ -46,16 +46,24 @@ public class AñadirCarne : MonoBehaviour
 
         if (puntoSpawn.childCount == 0 && cantidad > 0)
         {
+            GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).GetComponent<Animator>().SetTrigger("Interactuando");
             StartCoroutine(jugadorSinKebab());
         }
         else if (puntoSpawn.childCount > 0 && cantidad > 0)
         {
             kebabEnPreparacion = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
+            GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).GetComponent<Animator>().SetTrigger("Interactuando");
             StartCoroutine(jugadorConKebab());
         }
         else
         {
-            GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).GetComponent<Animator>().SetTrigger("DejaPlatoMesa");
+            GameObject jugador = GameObject.FindGameObjectWithTag("Player");
+            jugador.transform.GetChild(0).GetComponent<Animator>().SetTrigger("Nop");
+            jugador.transform.eulerAngles = new Vector3(0, 60, 0);
+
+            jugador.GetComponent<SonidoJugadorController>().PlayFrustrado();
+
+            this.GetComponent<AudioSource>().Stop();
             gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorHaciendoAccion = false;
@@ -64,8 +72,9 @@ public class AñadirCarne : MonoBehaviour
 
     public void spawnKebabEnPlato()
     {
-        kebabEnPreparacion = Instantiate(modeloKebab, puntoSpawn);
-        kebabEnPreparacion.tag = "KebabEnPreparacion";
+        GameObject NuevoKebabEnPreparacion = Instantiate(modeloKebab, puntoSpawn);
+        NuevoKebabEnPreparacion.tag = "KebabEnPreparacion";
+        kebabEnPreparacion = NuevoKebabEnPreparacion;
     }
     public void desactivarefecto()
     {
@@ -78,11 +87,11 @@ public class AñadirCarne : MonoBehaviour
         {
             kebabEnPreparacion.GetComponent<Kebab>().carne = IngredienteData;
             cantidad--;
-            particulasCarne.SetActive(true);
-            Invoke("desactivarefecto", 2);
             gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorHaciendoAccion = false;
+            particulasCarne.SetActive(true);
+            Invoke("desactivarefecto", 2);
         }
         else
         {
@@ -94,14 +103,14 @@ public class AñadirCarne : MonoBehaviour
 
     IEnumerator jugadorSinKebab()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(3);
         spawnKebabEnPlato();
         anyadirCarne();
     }
 
     IEnumerator jugadorConKebab()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(3);
         anyadirCarne();
     }
 

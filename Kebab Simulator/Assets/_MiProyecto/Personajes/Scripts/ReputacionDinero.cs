@@ -10,14 +10,19 @@ public class ReputacionDinero : MonoBehaviour
 
     [Header("Reputacion")]
     public int Nivel = 1;
-    public float Reputacion = 0;
+    public float Reputacion = 25;
     int maxReputacion;
+    public float displayValue;
 
     [Header("GUI Reputacion")]
     public Image BarraReputacion;
     public Text texto_Nivel;
     public GameObject GUIsubirNivel;
     public GameObject GUIbajarNivel;
+    public Gradient gradient;
+
+    public bool cambiandoRep = true;
+    
 
 
     //----------------------------------------------------------------------------------//
@@ -45,16 +50,41 @@ public class ReputacionDinero : MonoBehaviour
         texto_Dinero.text = "0";
     }
 
+    private void Awake()
+    {
+        cambiandoRep = true;
+        init();
+    }
+    void init()
+    {
+
+        if (displayValue != Reputacion)
+        {
+            displayValue = Mathf.MoveTowards(displayValue, Reputacion, 20f * Time.deltaTime);
+            BarraReputacion.fillAmount = displayValue / maxReputacion;
+
+            BarraReputacion.color = gradient.Evaluate(BarraReputacion.fillAmount);
+        }
+    }
+
+
     // Update is called once per frame
     void Update()
     {
         MostrarDinero();
         MostrarReputacion();
+        /*if (cambiandoRep)
+        {
+            MostrarReputacion();
+        }
+        else
+        {
+            MostrarReputacionInstantaneo();
+        }*/
     }
 
     //-------------------------------------------------------------------------------------//
     //----------------------------------- REPUTACIÓN --------------------------------------//
-
     public void TakeReputacion(float reputacion)
     {
 
@@ -63,27 +93,54 @@ public class ReputacionDinero : MonoBehaviour
 
         if (Reputacion >= maxReputacion)
         {
+            
+            cambiandoRep = false;
             Nivel++;
-            Reputacion = 1;
-            GUIsubirNivel.SetActive(true);
+            Reputacion = 15;
+            maxReputacion += 25;
+            GUIsubirNivel.gameObject.SetActive(true);
+           
         }
         else if (Reputacion == 0 && Nivel != 0)
         {
+            
+            cambiandoRep = false;
             Nivel--;
-            Reputacion = 99;
-            GUIbajarNivel.SetActive(true);
+            Reputacion = 75;
+            maxReputacion -= 25;
+            GUIbajarNivel.gameObject.SetActive(true);
+            
         }
         else if (Reputacion == 0 && Nivel == 0)
         {
             Debug.Log("Has perdido");
         }
+        else
+        {
+            cambiandoRep = false;
+        }
+
     }
 
     void MostrarReputacion()
     {
-        BarraReputacion.fillAmount = Reputacion / maxReputacion;
+        if (displayValue != Reputacion)
+        {
+            displayValue = Mathf.MoveTowards(displayValue, Reputacion, 60f * Time.deltaTime);
+            BarraReputacion.fillAmount = displayValue / maxReputacion;
+
+            BarraReputacion.color = gradient.Evaluate(BarraReputacion.fillAmount);
+        }
+        //BarraReputacion.fillAmount = Reputacion / maxReputacion;
         texto_Nivel.text = Nivel.ToString();
     }
+    void MostrarReputacionInstantaneo()
+    {
+        BarraReputacion.fillAmount = Reputacion / maxReputacion;
+        texto_Nivel.text = Nivel.ToString();
+        BarraReputacion.color = gradient.Evaluate(BarraReputacion.fillAmount);
+    }
+
 
 
 
@@ -127,7 +184,7 @@ public class ReputacionDinero : MonoBehaviour
 
     public void MostrarGastarDinero(float dineroGastado)
     {
-        GUIGastarDinero.text =  dineroGastado.ToString();
+        GUIGastarDinero.text = dineroGastado.ToString();
         GUIGastarDinero.gameObject.SetActive(true);
         StartCoroutine(pararAnimacionGastarDinero());
     }

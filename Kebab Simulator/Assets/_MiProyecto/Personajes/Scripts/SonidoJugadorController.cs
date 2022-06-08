@@ -10,6 +10,7 @@ public class SonidoJugadorController : MonoBehaviour
     public AudioClip[] audioClipFrustrado;
     public AudioClip[] audioClipTomandoNota;
     public AudioClip[] audioClipTriste;
+    public AudioClip[] audioClipcampanita;
 
     // Start is called before the first frame update
     void Start()
@@ -59,6 +60,18 @@ public class SonidoJugadorController : MonoBehaviour
         {
             int audioRandom = Random.Range(0, audioClipTriste.Length);
             audioSource.clip = audioClipTriste[audioRandom];
+
+            audioSource.loop = false;
+            audioSource.Play();
+        }
+    }
+
+    public void PLayCampanita()
+    {
+        if (audioSource != null)
+        {
+            int audioRandom = Random.Range(0, audioClipcampanita.Length);
+            audioSource.clip = audioClipcampanita[audioRandom];
 
             audioSource.loop = false;
             audioSource.Play();

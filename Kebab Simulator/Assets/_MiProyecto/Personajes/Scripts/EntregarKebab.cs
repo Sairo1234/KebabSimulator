@@ -118,7 +118,7 @@ public class EntregarKebab : MonoBehaviour
             case 0:
                 entregarKebab();
                 //Dinero y reputación obtenida
-                jugador.GetComponent<ReputacionDinero>().TakeReputacion(5);
+                jugador.GetComponent<ReputacionDinero>().TakeReputacion(-25);
                 jugador.GetComponent<ReputacionDinero>().TakeDinero(precioKebabEntregar);
 
                 //Info de kebab perfecto
@@ -134,7 +134,7 @@ public class EntregarKebab : MonoBehaviour
             case 1:
                 entregarKebab();
                 //Dinero y reputación obtenida
-                jugador.GetComponent<ReputacionDinero>().TakeReputacion(25);
+                jugador.GetComponent<ReputacionDinero>().TakeReputacion(0);
                 jugador.GetComponent<ReputacionDinero>().TakeDinero(precioKebabEntregar);
 
                 //Info de kebab perfecto
@@ -149,7 +149,7 @@ public class EntregarKebab : MonoBehaviour
             case 2:
                 entregarKebab();
                 //Dinero y reputación obtenida
-                jugador.GetComponent<ReputacionDinero>().TakeReputacion(50);
+                jugador.GetComponent<ReputacionDinero>().TakeReputacion(10);
                 jugador.GetComponent<ReputacionDinero>().TakeDinero(precioKebabEntregar);
 
                 //Info de kebab perfecto
@@ -165,7 +165,7 @@ public class EntregarKebab : MonoBehaviour
             case 3:
                 entregarKebab();
                 //Dinero y reputación obtenida
-                jugador.GetComponent<ReputacionDinero>().TakeReputacion(100);
+                jugador.GetComponent<ReputacionDinero>().TakeReputacion(25);
                 jugador.GetComponent<ReputacionDinero>().TakeDinero(precioKebabEntregar);
 
                 //Info de kebab perfecto
@@ -227,6 +227,7 @@ public class EntregarKebab : MonoBehaviour
     {
         if (Vector3.Distance(jugador.transform.position, destinoJugador.position) < 1)
         {
+            jugador.GetComponent<SonidoJugadorController>().PLayCampanita();
             cliente.GetComponent<NavMeshAgent>().SetDestination(destinoCliente.position);
             estaDesplazandoseJugador = false;
             estaDesplazandoseCliente = true;

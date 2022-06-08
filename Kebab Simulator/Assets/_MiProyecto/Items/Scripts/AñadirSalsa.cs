@@ -32,10 +32,11 @@ public class AñadirSalsa : MonoBehaviour
 
     private void Start()
     {
-        if (IngredienteData.unidadesAlmacen > 0 )
+        if (IngredienteData.unidadesAlmacen > 0)
         {
             cantidad = 5;
         }
+
         puntoSpawn = GameObject.FindGameObjectWithTag("SpawnKebab").transform;
     }
 
@@ -43,16 +44,24 @@ public class AñadirSalsa : MonoBehaviour
     {
         if (puntoSpawn.childCount == 0 && cantidad > 0)
         {
+            GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).GetComponent<Animator>().SetTrigger("Interactuando");
             StartCoroutine(jugadorSinKebab());
         }
         else if (puntoSpawn.childCount > 0 && cantidad > 0)
         {
             kebabEnPreparacion = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
+            GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).GetComponent<Animator>().SetTrigger("Interactuando");
             StartCoroutine(jugadorConKebab());
         }
         else
         {
-            GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).GetComponent<Animator>().SetTrigger("DejaPlatoMesa");
+            GameObject jugador = GameObject.FindGameObjectWithTag("Player");
+            jugador.transform.GetChild(0).GetComponent<Animator>().SetTrigger("Nop");
+            jugador.transform.eulerAngles = new Vector3(0, 60, 0);
+
+            jugador.GetComponent<SonidoJugadorController>().PlayFrustrado();
+            
+            this.GetComponent<AudioSource>().Stop();
             gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorHaciendoAccion = false;
@@ -94,13 +103,13 @@ public class AñadirSalsa : MonoBehaviour
 
     IEnumerator jugadorSinKebab()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(3);
         spawnKebabEnPlato();
         anyadirSalsa();
     }
     IEnumerator jugadorConKebab()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(3);
         anyadirSalsa();
     }
 }

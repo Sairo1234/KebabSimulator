@@ -40,16 +40,24 @@ public class AñadirVerdura : MonoBehaviour
     {
         if (puntoSpawn.childCount == 0 && cantidad > 0)
         {
+            GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).GetComponent<Animator>().SetTrigger("Interactuando");
             StartCoroutine(jugadorSinKebab());
         }
-        else if(puntoSpawn.childCount > 0 && cantidad > 0)
+        else if (puntoSpawn.childCount > 0 && cantidad > 0)
         {
             kebabEnPreparacion = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
+            GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).GetComponent<Animator>().SetTrigger("Interactuando");
             StartCoroutine(jugadorConKebab());
         }
-         else
+        else
         {
-            GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).GetComponent<Animator>().SetTrigger("DejaPlatoMesa");
+            GameObject jugador = GameObject.FindGameObjectWithTag("Player");
+            jugador.transform.GetChild(0).GetComponent<Animator>().SetTrigger("Nop");
+            jugador.transform.eulerAngles = new Vector3(0, 60, 0);
+
+            jugador.GetComponent<SonidoJugadorController>().PlayFrustrado();
+
+            this.GetComponent<AudioSource>().Stop();
             gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorHaciendoAccion = false;
@@ -84,14 +92,14 @@ public class AñadirVerdura : MonoBehaviour
 
     IEnumerator jugadorSinKebab()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(3);
         spawnKebabEnPlato();
         anyadirVerdura();
     }
 
     IEnumerator jugadorConKebab()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(3);
         anyadirVerdura();
     }
 }

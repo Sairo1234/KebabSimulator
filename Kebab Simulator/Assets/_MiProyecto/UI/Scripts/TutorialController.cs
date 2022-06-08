@@ -38,7 +38,7 @@ public class TutorialController : MonoBehaviour
                 listaCanvas[contador].enabled = false;
                 contador++;
                 listaCanvas[contador].enabled = true;
-                
+
             });
         }
 
@@ -48,6 +48,7 @@ public class TutorialController : MonoBehaviour
             this.gameObject.SetActive(false);
 
             Time.timeScale = 1;
+            
             GameObject.FindGameObjectWithTag("GameManager").GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
 
         });

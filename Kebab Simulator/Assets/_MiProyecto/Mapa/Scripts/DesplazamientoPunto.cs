@@ -33,6 +33,9 @@ public class DesplazamientoPunto : MonoBehaviour
     [Header("GameManager")]
     public GameObject gameManager;
 
+    
+
+
 
     private void Start()
     {
@@ -43,18 +46,23 @@ public class DesplazamientoPunto : MonoBehaviour
         destino = GameObjectdestino.transform;
         audioSource = GetComponent<AudioSource>();
     }
+   
 
     private void Update()
     {
+        
+
         if (estaDesplazandose == true)
         {
             comprobarDistacia();
         }
 
-        if (animatorJugador == null)
+        try
         {
             animatorJugador = GameObject.FindGameObjectWithTag("ModeloJugador").GetComponent<Animator>();
         }
+        catch { }
+
 
     }
 
@@ -78,7 +86,10 @@ public class DesplazamientoPunto : MonoBehaviour
             jugador.transform.LookAt(gameObjectAsignado.transform);
             estaDesplazandose = false;
             animatorJugador.SetBool("Andando", false);
-            animatorJugador.SetTrigger(animacionJugador);
+            if (animacionJugador != "")
+            {
+                animatorJugador.SetTrigger(animacionJugador);
+            }
 
             if (audioSource != null)
             {
