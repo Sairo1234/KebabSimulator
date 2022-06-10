@@ -29,21 +29,18 @@ public class AñadirVerdura : MonoBehaviour
 
     private void Start()
     {
-        if (IngredienteData.unidadesAlmacen > 0)
-        {
-            cantidad = 5;
-        }
+        cantidad = IngredienteData.unidadesCocina;
         puntoSpawn = GameObject.FindGameObjectWithTag("SpawnKebab").transform;
     }
 
     public void asignarKebab()
     {
-        if (puntoSpawn.childCount == 0 && cantidad > 0)
+        if (puntoSpawn.childCount == 0 && IngredienteData.unidadesCocina > 0)
         {
             GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).GetComponent<Animator>().SetTrigger("Interactuando");
             StartCoroutine(jugadorSinKebab());
         }
-        else if (puntoSpawn.childCount > 0 && cantidad > 0)
+        else if (puntoSpawn.childCount > 0 && IngredienteData.unidadesCocina > 0)
         {
             kebabEnPreparacion = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
             GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).GetComponent<Animator>().SetTrigger("Interactuando");
@@ -78,6 +75,7 @@ public class AñadirVerdura : MonoBehaviour
         {
             kebabEnPreparacion.GetComponent<Kebab>().verdura = IngredienteData;
             cantidad--;
+            IngredienteData.unidadesCocina--;
             gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorHaciendoAccion = false;

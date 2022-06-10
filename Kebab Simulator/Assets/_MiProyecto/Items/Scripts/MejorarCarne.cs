@@ -67,8 +67,10 @@ public class MejorarCarne : MonoBehaviour
                 ingredienteCarne.nivel++;
                 ingredienteCarne.capacidadMaxIngrediente = newCapacidadMaxima[0];
                 prefabIngredienteCarne.GetComponent<AñadirCarne>().cantidad = newCapacidadMaxima[0];
+                ingredienteCarne.unidadesCocina = newCapacidadMaxima[0];
 
-                //Cambio de modelo
+
+               //Cambio de modelo
                 modelosMejorasIngredientes[0].SetActive(false);
                 modelosMejorasIngredientes[1].SetActive(true);
 
@@ -98,6 +100,7 @@ public class MejorarCarne : MonoBehaviour
                 ingredienteCarne.nivel++;
                 ingredienteCarne.capacidadMaxIngrediente = newCapacidadMaxima[1];
                 prefabIngredienteCarne.GetComponent<AñadirCarne>().cantidad = newCapacidadMaxima[1];
+                ingredienteCarne.unidadesCocina = newCapacidadMaxima[1];
 
                 //Cambio de modelo
                 modelosMejorasIngredientes[1].SetActive(false);

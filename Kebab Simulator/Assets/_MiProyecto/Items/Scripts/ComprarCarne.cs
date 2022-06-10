@@ -36,7 +36,7 @@ public class ComprarCarne : MonoBehaviour
             jugador.GetComponent<ReputacionDinero>().TakeDinero(-ingredienteCarne.costeCompra);
 
             ingredienteCarne.estaComprado = true;
-            ingredienteCarne.unidadesAlmacen = ingredienteCarne.capacidadMaxIngrediente;
+            ingredienteCarne.unidadesCocina = ingredienteCarne.capacidadMaxIngrediente;
             prefabIngrediente.SetActive(true);
 
             botonesTiendaIngrediente[0].SetActive(false);

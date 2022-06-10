@@ -46,7 +46,8 @@ public class ResetearIngredientes : MonoBehaviour
     {
         ingredietesCarne[0].nombre = "Ternera";
         ingredietesCarne[0].nivel = 0;
-        ingredietesCarne[0].unidadesAlmacen = 5;
+        ingredietesCarne[0].unidadesCocina = 5;
+        ingredietesCarne[0].unidadesAlmacen = 0;
         ingredietesCarne[0].capacidadMaxIngrediente = 5;
         ingredietesCarne[0].estaDesbloqueado = true;
         ingredietesCarne[0].estaComprado = true;
@@ -62,7 +63,8 @@ public class ResetearIngredientes : MonoBehaviour
     {
         ingredietesCarne[1].nombre = "Pollo en jaula";
         ingredietesCarne[1].nivel = 0;
-        ingredietesCarne[1].unidadesAlmacen = 5;
+        ingredietesCarne[1].unidadesCocina = 5;
+        ingredietesCarne[1].unidadesAlmacen = 0;
         ingredietesCarne[1].capacidadMaxIngrediente = 5;
         ingredietesCarne[1].estaDesbloqueado = true;
         ingredietesCarne[1].estaComprado = true;
@@ -78,6 +80,7 @@ public class ResetearIngredientes : MonoBehaviour
     {
         ingredietesCarne[2].nombre = "Falafel";
         ingredietesCarne[2].nivel = 0;
+        ingredietesCarne[2].unidadesCocina = 5;
         ingredietesCarne[2].unidadesAlmacen = 0;
         ingredietesCarne[2].capacidadMaxIngrediente = 5;
         ingredietesCarne[2].estaDesbloqueado = false;
@@ -94,6 +97,7 @@ public class ResetearIngredientes : MonoBehaviour
     {
         ingredietesCarne[3].nombre = "Cordero";
         ingredietesCarne[3].nivel = 0;
+        ingredietesCarne[3].unidadesCocina = 0;
         ingredietesCarne[3].unidadesAlmacen = 0;
         ingredietesCarne[3].capacidadMaxIngrediente = 5;
         ingredietesCarne[3].estaDesbloqueado = false;
@@ -110,6 +114,7 @@ public class ResetearIngredientes : MonoBehaviour
     {
         ingredietesCarne[4].nombre = "Camello";
         ingredietesCarne[4].nivel = 0;
+        ingredietesCarne[4].unidadesCocina = 0;
         ingredietesCarne[4].unidadesAlmacen = 0;
         ingredietesCarne[4].capacidadMaxIngrediente = 5;
         ingredietesCarne[4].estaDesbloqueado = false;
@@ -129,7 +134,8 @@ public class ResetearIngredientes : MonoBehaviour
     {
         ingredietesSalsa[0].nombre = "Yogurt";
         ingredietesSalsa[0].nivel = 0;
-        ingredietesSalsa[0].unidadesAlmacen = 5;
+        ingredietesSalsa[0].unidadesCocina = 5;
+        ingredietesSalsa[0].unidadesAlmacen = 0;
         ingredietesSalsa[0].capacidadMaxIngrediente = 5;
         ingredietesSalsa[0].estaDesbloqueado = true;
         ingredietesSalsa[0].estaComprado = true;
@@ -145,6 +151,7 @@ public class ResetearIngredientes : MonoBehaviour
     {
         ingredietesSalsa[1].nombre = "Picante";
         ingredietesSalsa[1].nivel = 0;
+        ingredietesSalsa[1].unidadesCocina = 0;
         ingredietesSalsa[1].unidadesAlmacen = 0;
         ingredietesSalsa[1].capacidadMaxIngrediente = 5;
         ingredietesSalsa[1].estaDesbloqueado = false;
@@ -161,6 +168,7 @@ public class ResetearIngredientes : MonoBehaviour
     {
         ingredietesSalsa[2].nombre = "Curry";
         ingredietesSalsa[2].nivel = 0;
+        ingredietesSalsa[2].unidadesCocina = 0;
         ingredietesSalsa[2].unidadesAlmacen = 0;
         ingredietesSalsa[2].capacidadMaxIngrediente = 5;
         ingredietesSalsa[2].estaDesbloqueado = false;
@@ -177,6 +185,7 @@ public class ResetearIngredientes : MonoBehaviour
     {
         ingredietesSalsa[3].nombre = "Deluxe";
         ingredietesSalsa[3].nivel = 0;
+        ingredietesSalsa[3].unidadesCocina = 0;
         ingredietesSalsa[3].unidadesAlmacen = 0;
         ingredietesSalsa[3].capacidadMaxIngrediente = 5;
         ingredietesSalsa[3].estaDesbloqueado = false;
@@ -196,7 +205,8 @@ public class ResetearIngredientes : MonoBehaviour
     {
         ingredietesVerdura[0].nombre = "Tomate";
         ingredietesVerdura[0].nivel = 0;
-        ingredietesVerdura[0].unidadesAlmacen = 5;
+        ingredietesVerdura[0].unidadesCocina = 5;
+        ingredietesVerdura[0].unidadesAlmacen = 0;
         ingredietesVerdura[0].capacidadMaxIngrediente = 5;
         ingredietesVerdura[0].estaDesbloqueado = true;
         ingredietesVerdura[0].estaComprado = true;
@@ -212,7 +222,8 @@ public class ResetearIngredientes : MonoBehaviour
     {
         ingredietesVerdura[1].nombre = "Lechuga";
         ingredietesVerdura[1].nivel = 0;
-        ingredietesVerdura[1].unidadesAlmacen = 5;
+        ingredietesVerdura[1].unidadesCocina = 5;
+        ingredietesVerdura[1].unidadesAlmacen = 0;
         ingredietesVerdura[1].capacidadMaxIngrediente = 5;
         ingredietesVerdura[1].estaDesbloqueado = true;
         ingredietesVerdura[1].estaComprado = true;
@@ -228,7 +239,8 @@ public class ResetearIngredientes : MonoBehaviour
     {
         ingredietesVerdura[2].nombre = "Cebolla Blanca";
         ingredietesVerdura[2].nivel = 0;
-        ingredietesVerdura[2].unidadesAlmacen = 5;
+        ingredietesVerdura[2].unidadesCocina = 5;
+        ingredietesVerdura[2].unidadesAlmacen = 0;
         ingredietesVerdura[2].capacidadMaxIngrediente = 5;
         ingredietesVerdura[2].estaDesbloqueado = true;
         ingredietesVerdura[2].estaComprado = true;
@@ -244,6 +256,7 @@ public class ResetearIngredientes : MonoBehaviour
     {
         ingredietesVerdura[3].nombre = "Maiz";
         ingredietesVerdura[3].nivel = 0;
+        ingredietesVerdura[3].unidadesCocina = 0;
         ingredietesVerdura[3].unidadesAlmacen = 0;
         ingredietesVerdura[3].capacidadMaxIngrediente = 5;
         ingredietesVerdura[3].estaDesbloqueado = false;
@@ -260,6 +273,7 @@ public class ResetearIngredientes : MonoBehaviour
     {
         ingredietesVerdura[4].nombre = "Maiz";
         ingredietesVerdura[4].nivel = 0;
+        ingredietesVerdura[4].unidadesCocina = 0;
         ingredietesVerdura[4].unidadesAlmacen = 0;
         ingredietesVerdura[4].capacidadMaxIngrediente = 5;
         ingredietesVerdura[4].estaDesbloqueado = false;
@@ -276,6 +290,7 @@ public class ResetearIngredientes : MonoBehaviour
     {
         ingredietesVerdura[5].nombre = "Col";
         ingredietesVerdura[5].nivel = 0;
+        ingredietesVerdura[5].unidadesCocina = 0;
         ingredietesVerdura[5].unidadesAlmacen = 0;
         ingredietesVerdura[5].capacidadMaxIngrediente = 5;
         ingredietesVerdura[5].estaDesbloqueado = false;
@@ -292,6 +307,7 @@ public class ResetearIngredientes : MonoBehaviour
     {
         ingredietesVerdura[6].nombre = "Pimiento";
         ingredietesVerdura[6].nivel = 0;
+        ingredietesVerdura[6].unidadesCocina = 0;
         ingredietesVerdura[6].unidadesAlmacen = 0;
         ingredietesVerdura[6].capacidadMaxIngrediente = 5;
         ingredietesVerdura[6].estaDesbloqueado = false;
@@ -308,6 +324,7 @@ public class ResetearIngredientes : MonoBehaviour
     {
         ingredietesVerdura[7].nombre = "Brocoli";
         ingredietesVerdura[7].nivel = 0;
+        ingredietesVerdura[7].unidadesCocina = 0;
         ingredietesVerdura[7].unidadesAlmacen = 0;
         ingredietesVerdura[7].capacidadMaxIngrediente = 5;
         ingredietesVerdura[7].estaDesbloqueado = false;

@@ -67,6 +67,7 @@ public class MejorarVerdura : MonoBehaviour
                 ingredienteVerdura.nivel++;
                 ingredienteVerdura.capacidadMaxIngrediente = newCapacidadMaxima[0];
                 prefabIngredienteVerdura.GetComponent<AñadirVerdura>().cantidad = newCapacidadMaxima[0];
+                ingredienteVerdura.unidadesCocina = newCapacidadMaxima[0];
 
                 //Cambio de modelo
                 modelosMejorasIngredientes[0].SetActive(false);
@@ -98,6 +99,7 @@ public class MejorarVerdura : MonoBehaviour
                 ingredienteVerdura.nivel++;
                 ingredienteVerdura.capacidadMaxIngrediente = newCapacidadMaxima[1];
                 prefabIngredienteVerdura.GetComponent<AñadirVerdura>().cantidad = newCapacidadMaxima[1];
+                ingredienteVerdura.unidadesCocina = newCapacidadMaxima[1];
 
                 //Cambio de modelo
                 modelosMejorasIngredientes[1].SetActive(false);

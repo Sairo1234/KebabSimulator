@@ -11,6 +11,7 @@ public class Salsa : ScriptableObject
     public string nombre;
     public string tipo;
     public int nivel;
+    public int unidadesCocina;
     public int unidadesAlmacen;
     public int capacidadMaxIngrediente;
     public bool especial;

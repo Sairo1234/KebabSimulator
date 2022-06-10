@@ -67,6 +67,7 @@ public class MejorarSalsa : MonoBehaviour
                 ingredienteSalsa.nivel++;
                 ingredienteSalsa.capacidadMaxIngrediente = newCapacidadMaxima[0];
                 prefabIngredienteSalsa.GetComponent<AñadirSalsa>().cantidad = newCapacidadMaxima[0];
+                ingredienteSalsa.unidadesCocina = newCapacidadMaxima[0];
 
                 //Cambio de modelo
                 modelosMejorasIngredientes[0].SetActive(false);
@@ -97,6 +98,7 @@ public class MejorarSalsa : MonoBehaviour
                 ingredienteSalsa.nombre = nombresMejoras[1];
                 ingredienteSalsa.nivel++;
                 ingredienteSalsa.capacidadMaxIngrediente = newCapacidadMaxima[1];
+                ingredienteSalsa.unidadesCocina = newCapacidadMaxima[1];
                 prefabIngredienteSalsa.GetComponent<AñadirSalsa>().cantidad = newCapacidadMaxima[1];
 
                 //Cambio de modelo

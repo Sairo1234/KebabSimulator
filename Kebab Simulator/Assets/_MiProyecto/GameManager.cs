@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-            
+
         nuevoDia();
         next_spawn_time += siguienteSpawn();
     }
@@ -249,7 +249,7 @@ public class GameManager : MonoBehaviour
 
     public void Pausa()
     {
-        if (Input.GetKeyUp(KeyCode.Backspace))
+        if (Input.GetKey(KeyCode.P))
         {
             HUDprincipal.SetActive(false);
             pantallaPausa.SetActive(true);
@@ -259,6 +259,8 @@ public class GameManager : MonoBehaviour
             jugador.GetComponent<Player_Mov>().enabled = false;
             GetComponent<DesplazamientoController>().desactivarDesplazamientoPunto();
         }
+        
+
     }
 
     public void Continuar()
