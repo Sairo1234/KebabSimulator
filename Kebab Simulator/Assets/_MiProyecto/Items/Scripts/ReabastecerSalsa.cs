@@ -26,7 +26,7 @@ public class ReabastecerSalsa : MonoBehaviour
                 BotonIngrediente.gameObject.GetComponent<SelectIngredienteSalsa>().prefabIngredienteSalsaAlmacen.GetComponent<AñadirSalsa>().cantidad++;
                 BotonIngrediente.gameObject.GetComponent<SelectIngredienteSalsa>().ingredienteSalsaAlmacen.unidadesAlmacen--;
             }
-            BotonIngrediente.GetComponent<Image>().sprite = BotonIngrediente.GetComponent<SelectIngredienteSalsa>().backgroundsBotones[1];
+            BotonIngrediente.GetComponent<SelectIngredienteSalsa>().iconoSelecionado.SetActive(false);
         }
 
         botonesSelecionadosIngredientesSalsa.Clear();

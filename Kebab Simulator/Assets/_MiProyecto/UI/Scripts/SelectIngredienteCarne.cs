@@ -14,7 +14,9 @@ public class SelectIngredienteCarne : MonoBehaviour
 
     [Header("Boton almacen")]
     public Button BotonReabastecer; //Boton de reabstecer
-    public Sprite[] backgroundsBotones; //Imagenes para el boton
+
+    [Header("Icono Selecionado")]
+    public GameObject iconoSelecionado; //Imagenes para el boton
 
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
@@ -30,12 +32,14 @@ public class SelectIngredienteCarne : MonoBehaviour
                     if (!BotonReabastecer.gameObject.GetComponent<ReabastecerCarne>().botonesSelecionadosIngredientesCarne.Contains(this.gameObject))
                     {
                         BotonReabastecer.gameObject.GetComponent<ReabastecerCarne>().botonesSelecionadosIngredientesCarne.Add(this.gameObject);
-                        this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[0];
+                        iconoSelecionado.SetActive(true);
+                        //this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[0];
                     }
                     else
                     {
                         BotonReabastecer.gameObject.GetComponent<ReabastecerCarne>().botonesSelecionadosIngredientesCarne.Remove(this.gameObject);
-                        this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[1];
+                        iconoSelecionado.SetActive(false);
+                        //this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[1];
                     }
                 }
                 break;
@@ -46,12 +50,14 @@ public class SelectIngredienteCarne : MonoBehaviour
                     if (!BotonReabastecer.gameObject.GetComponent<ReabastecerCarne>().botonesSelecionadosIngredientesCarne.Contains(this.gameObject))
                     {
                         BotonReabastecer.gameObject.GetComponent<ReabastecerCarne>().botonesSelecionadosIngredientesCarne.Add(this.gameObject);
-                        this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[0];
+                        iconoSelecionado.SetActive(true);
+                        //this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[0];
                     }
                     else
                     {
                         BotonReabastecer.gameObject.GetComponent<ReabastecerCarne>().botonesSelecionadosIngredientesCarne.Remove(this.gameObject);
-                        this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[1];
+                        iconoSelecionado.SetActive(false);
+                        //this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[1];
                     }
                 }
                 break;
@@ -62,12 +68,14 @@ public class SelectIngredienteCarne : MonoBehaviour
                     if (!BotonReabastecer.gameObject.GetComponent<ReabastecerCarne>().botonesSelecionadosIngredientesCarne.Contains(this.gameObject))
                     {
                         BotonReabastecer.gameObject.GetComponent<ReabastecerCarne>().botonesSelecionadosIngredientesCarne.Add(this.gameObject);
-                        this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[0];
+                        iconoSelecionado.SetActive(true);
+                        //this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[0];
                     }
                     else
                     {
                         BotonReabastecer.gameObject.GetComponent<ReabastecerCarne>().botonesSelecionadosIngredientesCarne.Remove(this.gameObject);
-                        this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[1];
+                        iconoSelecionado.SetActive(false);
+                        //this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[1];
                     }
                 }
                 break;

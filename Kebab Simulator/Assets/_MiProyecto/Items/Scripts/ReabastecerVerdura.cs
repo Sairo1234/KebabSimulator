@@ -26,7 +26,7 @@ public class ReabastecerVerdura : MonoBehaviour
                 BotonIngrediente.gameObject.GetComponent<SelectIngredienteVerdura>().prefabIngredienteVerduraAlmacen.GetComponent<AñadirVerdura>().cantidad++;
                 BotonIngrediente.gameObject.GetComponent<SelectIngredienteVerdura>().ingredienteVerduraAlmacen.unidadesAlmacen--;
             }
-            BotonIngrediente.GetComponent<Image>().sprite = BotonIngrediente.GetComponent<SelectIngredienteVerdura>().backgroundsBotones[1];
+            BotonIngrediente.GetComponent<SelectIngredienteVerdura>().iconoSelecionado.SetActive(false);
         }
 
         botonesSelecionadosIngredientesVerdura.Clear();

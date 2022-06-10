@@ -67,7 +67,6 @@ public class HUDController : MonoBehaviour
         SeccionCarne.SetActive(true);
         SeccionVerdura.SetActive(false);
         SeccionSalsa.SetActive(false);
-
     }
 
     //--------------------------------------------------------------------------//

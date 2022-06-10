@@ -29,7 +29,7 @@ public class ReabastecerCarne : MonoBehaviour
                 BotonIngrediente.gameObject.GetComponent<SelectIngredienteCarne>().prefabIngredienteCarneAlmacen.GetComponent<AñadirCarne>().cantidad++;
                 BotonIngrediente.gameObject.GetComponent<SelectIngredienteCarne>().ingredienteCarneAlmacen.unidadesAlmacen--;
             }
-            BotonIngrediente.GetComponent<Image>().sprite = BotonIngrediente.GetComponent<SelectIngredienteCarne>().backgroundsBotones[1];
+            BotonIngrediente.GetComponent<SelectIngredienteCarne>().iconoSelecionado.SetActive(false);
         }
 
         //Limpiar Botones

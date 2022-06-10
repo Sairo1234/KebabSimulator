@@ -14,7 +14,9 @@ public class SelectIngredienteSalsa : MonoBehaviour
 
     [Header("Boton almacen")]
     public Button BotonReabastecer; //Boton de reabstecer
-    public Sprite[] backgroundsBotones; //Imagenes para el boton
+
+    [Header("Icono Selecionado")]
+    public GameObject iconoSelecionado; //Imagenes para el boton
 
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
@@ -30,12 +32,12 @@ public class SelectIngredienteSalsa : MonoBehaviour
                     if (!BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Contains(this.gameObject))
                     {
                         BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Add(this.gameObject);
-                        this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[0];
+                        iconoSelecionado.SetActive(true);
                     }
                     else
                     {
                         BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Remove(this.gameObject);
-                        this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[1];
+                        iconoSelecionado.SetActive(false);
                     }
                 }
                 break;
@@ -46,12 +48,12 @@ public class SelectIngredienteSalsa : MonoBehaviour
                     if (!BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Contains(this.gameObject))
                     {
                         BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Add(this.gameObject);
-                        this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[0];
+                        iconoSelecionado.SetActive(true);
                     }
                     else
                     {
                         BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Remove(this.gameObject);
-                        this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[1];
+                        iconoSelecionado.SetActive(false);
                     }
                 }
                 break;
@@ -62,12 +64,12 @@ public class SelectIngredienteSalsa : MonoBehaviour
                     if (!BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Contains(this.gameObject))
                     {
                         BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Add(this.gameObject);
-                        this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[0];
+                        iconoSelecionado.SetActive(true);
                     }
                     else
                     {
                         BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Remove(this.gameObject);
-                        this.gameObject.GetComponent<Image>().sprite = backgroundsBotones[1];
+                        iconoSelecionado.SetActive(false);
                     }
                 }
                 break;
