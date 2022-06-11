@@ -27,7 +27,7 @@ public class SelectIngredienteSalsa : MonoBehaviour
         {
             case 0:
                 if (prefabIngredienteSalsaAlmacen.GetComponent<AñadirSalsa>().cantidad < 5 &&
-                    ingredienteSalsaAlmacen.unidadesAlmacen <= ingredienteSalsaAlmacen.capacidadMaxIngrediente - prefabIngredienteSalsaAlmacen.gameObject.GetComponent<AñadirSalsa>().cantidad)
+                    ingredienteSalsaAlmacen.unidadesAlmacen >= ingredienteSalsaAlmacen.capacidadMaxIngrediente - prefabIngredienteSalsaAlmacen.gameObject.GetComponent<AñadirSalsa>().cantidad)
                 {
                     if (!BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Contains(this.gameObject))
                     {
@@ -43,7 +43,7 @@ public class SelectIngredienteSalsa : MonoBehaviour
                 break;
             case 1:
                 if (prefabIngredienteSalsaAlmacen.GetComponent<AñadirSalsa>().cantidad <= ingredienteSalsaAlmacen.capacidadMaxIngrediente / 2 &&
-                    ingredienteSalsaAlmacen.unidadesAlmacen <= ingredienteSalsaAlmacen.capacidadMaxIngrediente - prefabIngredienteSalsaAlmacen.gameObject.GetComponent<AñadirSalsa>().cantidad)
+                    ingredienteSalsaAlmacen.unidadesAlmacen >= ingredienteSalsaAlmacen.capacidadMaxIngrediente - prefabIngredienteSalsaAlmacen.gameObject.GetComponent<AñadirSalsa>().cantidad)
                 {
                     if (!BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Contains(this.gameObject))
                     {
@@ -59,7 +59,7 @@ public class SelectIngredienteSalsa : MonoBehaviour
                 break;
             case 2:
                 if (prefabIngredienteSalsaAlmacen.GetComponent<AñadirSalsa>().cantidad <= ingredienteSalsaAlmacen.capacidadMaxIngrediente / 2 &&
-                    ingredienteSalsaAlmacen.unidadesAlmacen <= ingredienteSalsaAlmacen.capacidadMaxIngrediente - prefabIngredienteSalsaAlmacen.gameObject.GetComponent<AñadirSalsa>().cantidad)
+                    ingredienteSalsaAlmacen.unidadesAlmacen >= ingredienteSalsaAlmacen.capacidadMaxIngrediente - prefabIngredienteSalsaAlmacen.gameObject.GetComponent<AñadirSalsa>().cantidad)
                 {
                     if (!BotonReabastecer.gameObject.GetComponent<ReabastecerSalsa>().botonesSelecionadosIngredientesSalsa.Contains(this.gameObject))
                     {

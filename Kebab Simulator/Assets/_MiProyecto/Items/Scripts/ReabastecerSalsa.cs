@@ -24,6 +24,7 @@ public class ReabastecerSalsa : MonoBehaviour
             for (int i = 1; i <= cantidadParaRellenar; i++)
             {
                 BotonIngrediente.gameObject.GetComponent<SelectIngredienteSalsa>().prefabIngredienteSalsaAlmacen.GetComponent<AñadirSalsa>().cantidad++;
+                BotonIngrediente.gameObject.GetComponent<SelectIngredienteSalsa>().ingredienteSalsaAlmacen.unidadesCocina++;
                 BotonIngrediente.gameObject.GetComponent<SelectIngredienteSalsa>().ingredienteSalsaAlmacen.unidadesAlmacen--;
             }
             BotonIngrediente.GetComponent<SelectIngredienteSalsa>().iconoSelecionado.SetActive(false);

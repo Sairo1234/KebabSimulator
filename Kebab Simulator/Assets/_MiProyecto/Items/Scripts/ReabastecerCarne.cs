@@ -27,6 +27,7 @@ public class ReabastecerCarne : MonoBehaviour
             for (int i = 1; i <= cantidadParaRellenar; i++)
             {
                 BotonIngrediente.gameObject.GetComponent<SelectIngredienteCarne>().prefabIngredienteCarneAlmacen.GetComponent<AñadirCarne>().cantidad++;
+                BotonIngrediente.gameObject.GetComponent<SelectIngredienteCarne>().ingredienteCarneAlmacen.unidadesCocina++;
                 BotonIngrediente.gameObject.GetComponent<SelectIngredienteCarne>().ingredienteCarneAlmacen.unidadesAlmacen--;
             }
             BotonIngrediente.GetComponent<SelectIngredienteCarne>().iconoSelecionado.SetActive(false);

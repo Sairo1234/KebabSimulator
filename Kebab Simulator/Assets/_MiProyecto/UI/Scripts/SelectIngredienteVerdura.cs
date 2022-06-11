@@ -27,7 +27,7 @@ public class SelectIngredienteVerdura : MonoBehaviour
         {
             case 0:
                 if (prefabIngredienteVerduraAlmacen.GetComponent<AñadirVerdura>().cantidad < 5 &&
-                    ingredienteVerduraAlmacen.unidadesAlmacen <= ingredienteVerduraAlmacen.capacidadMaxIngrediente - prefabIngredienteVerduraAlmacen.gameObject.GetComponent<AñadirVerdura>().cantidad)
+                    ingredienteVerduraAlmacen.unidadesAlmacen >= ingredienteVerduraAlmacen.capacidadMaxIngrediente - prefabIngredienteVerduraAlmacen.gameObject.GetComponent<AñadirVerdura>().cantidad)
                 {
                     if (!BotonReabastecer.gameObject.GetComponent<ReabastecerVerdura>().botonesSelecionadosIngredientesVerdura.Contains(this.gameObject))
                     {
@@ -43,7 +43,7 @@ public class SelectIngredienteVerdura : MonoBehaviour
                 break;
             case 1:
                 if (prefabIngredienteVerduraAlmacen.GetComponent<AñadirVerdura>().cantidad <= ingredienteVerduraAlmacen.capacidadMaxIngrediente / 2 &&
-                    ingredienteVerduraAlmacen.unidadesAlmacen <= ingredienteVerduraAlmacen.capacidadMaxIngrediente - prefabIngredienteVerduraAlmacen.gameObject.GetComponent<AñadirVerdura>().cantidad)
+                    ingredienteVerduraAlmacen.unidadesAlmacen >= ingredienteVerduraAlmacen.capacidadMaxIngrediente - prefabIngredienteVerduraAlmacen.gameObject.GetComponent<AñadirVerdura>().cantidad)
                 {
                     if (!BotonReabastecer.gameObject.GetComponent<ReabastecerVerdura>().botonesSelecionadosIngredientesVerdura.Contains(this.gameObject))
                     {
@@ -59,7 +59,7 @@ public class SelectIngredienteVerdura : MonoBehaviour
                 break;
             case 2:
                 if (prefabIngredienteVerduraAlmacen.GetComponent<AñadirVerdura>().cantidad <= ingredienteVerduraAlmacen.capacidadMaxIngrediente / 2 &&
-                    ingredienteVerduraAlmacen.unidadesAlmacen <= ingredienteVerduraAlmacen.capacidadMaxIngrediente - prefabIngredienteVerduraAlmacen.gameObject.GetComponent<AñadirVerdura>().cantidad)
+                    ingredienteVerduraAlmacen.unidadesAlmacen >= ingredienteVerduraAlmacen.capacidadMaxIngrediente - prefabIngredienteVerduraAlmacen.gameObject.GetComponent<AñadirVerdura>().cantidad)
                 {
                     if (!BotonReabastecer.gameObject.GetComponent<ReabastecerVerdura>().botonesSelecionadosIngredientesVerdura.Contains(this.gameObject))
                     {

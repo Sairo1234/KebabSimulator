@@ -24,6 +24,7 @@ public class ReabastecerVerdura : MonoBehaviour
             for (int i = 1; i <= cantidadParaRellenar; i++)
             {
                 BotonIngrediente.gameObject.GetComponent<SelectIngredienteVerdura>().prefabIngredienteVerduraAlmacen.GetComponent<AñadirVerdura>().cantidad++;
+                BotonIngrediente.gameObject.GetComponent<SelectIngredienteVerdura>().ingredienteVerduraAlmacen.unidadesCocina++;                
                 BotonIngrediente.gameObject.GetComponent<SelectIngredienteVerdura>().ingredienteVerduraAlmacen.unidadesAlmacen--;
             }
             BotonIngrediente.GetComponent<SelectIngredienteVerdura>().iconoSelecionado.SetActive(false);
