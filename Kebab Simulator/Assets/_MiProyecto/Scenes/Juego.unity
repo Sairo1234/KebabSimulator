@@ -10103,10 +10103,13 @@ MonoBehaviour:
   - {fileID: 587085054}
   - {fileID: 587085055}
   newDesbloqueosMejoraNivelDos: 8
-  newCosteMejoraNivelDos: 15
+  newCosteMejoraNivelDos: 250
   newCostesCompraUnidades:
   - 7
   - 10
+  newPreciosVenta:
+  - 25
+  - 45
   jugador: {fileID: 1440286347}
   dineroJugador: 0
   nivelJugador: 0
@@ -28140,10 +28143,13 @@ MonoBehaviour:
   - {fileID: 1104652767}
   - {fileID: 1104652766}
   newDesbloqueosMejoraNivelDos: 9
-  newCosteMejoraNivelDos: 15
+  newCosteMejoraNivelDos: 300
   newCostesCompraUnidades:
   - 7
   - 10
+  newPreciosVenta:
+  - 40
+  - 50
   jugador: {fileID: 1440286347}
   dineroJugador: 0
   nivelJugador: 0
@@ -30474,8 +30480,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MejorarVerdura, Assembly-CSharp
+      - m_Target: {fileID: 1019391186}
+        m_TargetAssemblyTypeName: MejorarSalsa, Assembly-CSharp
         m_MethodName: MejoraIngrediente
         m_Mode: 1
         m_Arguments:
@@ -38395,10 +38401,13 @@ MonoBehaviour:
   - {fileID: 461570188}
   - {fileID: 461570187}
   newDesbloqueosMejoraNivelDos: 6
-  newCosteMejoraNivelDos: 15
+  newCosteMejoraNivelDos: 140
   newCostesCompraUnidades:
   - 7
   - 10
+  newPreciosVenta:
+  - 20
+  - 35
   jugador: {fileID: 1440286347}
   dineroJugador: 0
   nivelJugador: 0
@@ -52395,8 +52404,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MejorarVerdura, Assembly-CSharp
+      - m_Target: {fileID: 2122329776}
+        m_TargetAssemblyTypeName: MejorarSalsa, Assembly-CSharp
         m_MethodName: MejoraIngrediente
         m_Mode: 1
         m_Arguments:
@@ -56312,10 +56321,13 @@ MonoBehaviour:
   - {fileID: 962987076}
   - {fileID: 962987075}
   newDesbloqueosMejoraNivelDos: 5
-  newCosteMejoraNivelDos: 15
+  newCosteMejoraNivelDos: 100
   newCostesCompraUnidades:
   - 7
   - 10
+  newPreciosVenta:
+  - 15
+  - 30
   jugador: {fileID: 1440286347}
   dineroJugador: 0
   nivelJugador: 0
@@ -58799,15 +58811,21 @@ MonoBehaviour:
   - {fileID: 713654119}
   - {fileID: 713654118}
   newDesbloqueosMejoraNivelDos: 10
-  newCosteMejoraNivelDos: 15
+  newCosteMejoraNivelDos: 350
   newCostesCompraUnidades:
   - 7
   - 10
+  newPreciosVenta:
+  - 50
+  - 65
   jugador: {fileID: 1440286347}
   dineroJugador: 0
   nivelJugador: 0
   botonMejoraIngrediente: {fileID: 537107043}
-  estadosBotonMejora: []
+  estadosBotonMejora:
+  - {fileID: 2066615238}
+  - {fileID: 1417495678}
+  - {fileID: 1262378408}
   animatorCandado: {fileID: 1110841673}
   animatorMejora: {fileID: 1747467667}
 --- !u!114 &1019391187
@@ -58927,15 +58945,21 @@ MonoBehaviour:
   - {fileID: 1940256263}
   - {fileID: 1940256262}
   newDesbloqueosMejoraNivelDos: 7
-  newCosteMejoraNivelDos: 15
+  newCosteMejoraNivelDos: 210
   newCostesCompraUnidades:
   - 7
   - 10
+  newPreciosVenta:
+  - 30
+  - 40
   jugador: {fileID: 1440286347}
   dineroJugador: 0
   nivelJugador: 0
   botonMejoraIngrediente: {fileID: 1960084661}
-  estadosBotonMejora: []
+  estadosBotonMejora:
+  - {fileID: 1504487456}
+  - {fileID: 240527724}
+  - {fileID: 1432819553}
   animatorCandado: {fileID: 1934205325}
   animatorMejora: {fileID: 1603761860}
 --- !u!114 &1022290375
@@ -65157,8 +65181,8 @@ MonoBehaviour:
   ingredienteCarne: {fileID: 11400000, guid: 8ba2a9b9540f4c24dadeab3816740e8e, type: 2}
   modelosIngredientes:
   - {fileID: 789406638}
-  - {fileID: 789406636}
   - {fileID: 789406637}
+  - {fileID: 789406636}
 --- !u!1 &1127439280
 GameObject:
   m_ObjectHideFlags: 0
@@ -65879,10 +65903,13 @@ MonoBehaviour:
   - {fileID: 2015650798}
   - {fileID: 2015650797}
   newDesbloqueosMejoraNivelDos: 8
-  newCosteMejoraNivelDos: 15
+  newCosteMejoraNivelDos: 210
   newCostesCompraUnidades:
   - 7
   - 10
+  newPreciosVenta:
+  - 40
+  - 45
   jugador: {fileID: 1440286347}
   dineroJugador: 0
   nivelJugador: 0
@@ -71203,10 +71230,13 @@ MonoBehaviour:
   - {fileID: 1316067562}
   - {fileID: 1316067561}
   newDesbloqueosMejoraNivelDos: 7
-  newCosteMejoraNivelDos: 15
+  newCosteMejoraNivelDos: 210
   newCostesCompraUnidades:
   - 7
   - 10
+  newPreciosVenta:
+  - 25
+  - 40
   jugador: {fileID: 1440286347}
   dineroJugador: 0
   nivelJugador: 0
@@ -75955,7 +75985,6 @@ GameObject:
   - component: {fileID: 1329933868}
   - component: {fileID: 1329933867}
   - component: {fileID: 1329933865}
-  - component: {fileID: 1329933864}
   - component: {fileID: 1329933866}
   m_Layer: 5
   m_Name: Botones Comprar - Yogurt
@@ -75985,43 +76014,6 @@ RectTransform:
   m_AnchoredPosition: {x: 189, y: 265}
   m_SizeDelta: {x: 376.3, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1329933864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1329933862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3098b6490d19a5749b03099339267781, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingredienteVerdura: {fileID: 11400000, guid: d8037eb35ec3b2b488fa74227950a839, type: 2}
-  prefabIngredienteVerdura: {fileID: 243673587}
-  nombresMejoras:
-  - "C\xE9sped"
-  - Hojas de palmera
-  newCapacidadMaxima: 0a00000014000000
-  modelosMejorasIngredientes:
-  - {fileID: 1316067563}
-  - {fileID: 1316067562}
-  - {fileID: 1316067561}
-  newDesbloqueosMejoraNivelDos: 7
-  newCosteMejoraNivelDos: 15
-  newCostesCompraUnidades:
-  - 7
-  - 10
-  jugador: {fileID: 1440286347}
-  dineroJugador: 0
-  nivelJugador: 0
-  botonMejoraIngrediente: {fileID: 1961332959}
-  estadosBotonMejora:
-  - {fileID: 2144545902}
-  - {fileID: 463979761}
-  - {fileID: 1241804702}
-  animatorCandado: {fileID: 524500200}
-  animatorMejora: {fileID: 1801564876}
 --- !u!114 &1329933865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76064,15 +76056,21 @@ MonoBehaviour:
   - {fileID: 324972319}
   - {fileID: 324972318}
   newDesbloqueosMejoraNivelDos: 6
-  newCosteMejoraNivelDos: 15
+  newCosteMejoraNivelDos: 140
   newCostesCompraUnidades:
   - 7
   - 10
+  newPreciosVenta:
+  - 20
+  - 35
   jugador: {fileID: 1440286347}
   dineroJugador: 0
   nivelJugador: 0
   botonMejoraIngrediente: {fileID: 1961332959}
-  estadosBotonMejora: []
+  estadosBotonMejora:
+  - {fileID: 2144545902}
+  - {fileID: 463979761}
+  - {fileID: 1241804702}
   animatorCandado: {fileID: 524500200}
   animatorMejora: {fileID: 1801564876}
 --- !u!114 &1329933867
@@ -77453,10 +77451,13 @@ MonoBehaviour:
   - {fileID: 47466711}
   - {fileID: 47466710}
   newDesbloqueosMejoraNivelDos: 5
-  newCosteMejoraNivelDos: 15
+  newCosteMejoraNivelDos: 100
   newCostesCompraUnidades:
   - 7
   - 10
+  newPreciosVenta:
+  - 15
+  - 30
   jugador: {fileID: 1440286347}
   dineroJugador: 0
   nivelJugador: 0
@@ -81638,8 +81639,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3d948e003ce5d614daf6bd25936eb852, type: 3}
   imagenesIngrediente:
   - {fileID: 21300000, guid: 3c4a14f5acd5e544585ce29aaa616348, type: 3}
-  - {fileID: 21300000, guid: 3479e2eac83ae2b409a9121746bc0b46, type: 3}
   - {fileID: 21300000, guid: 67ab09ef4e439594183f0fcfd095a4f3, type: 3}
+  - {fileID: 21300000, guid: 3479e2eac83ae2b409a9121746bc0b46, type: 3}
   imagenIngrediente: {fileID: 1437577190}
   jugador: {fileID: 1440286347}
 --- !u!114 &1453431006
@@ -89120,10 +89121,13 @@ MonoBehaviour:
   - {fileID: 1104652767}
   - {fileID: 1104652766}
   newDesbloqueosMejoraNivelDos: 10
-  newCosteMejoraNivelDos: 15
+  newCosteMejoraNivelDos: 350
   newCostesCompraUnidades:
   - 7
   - 10
+  newPreciosVenta:
+  - 50
+  - 65
   jugador: {fileID: 1440286347}
   dineroJugador: 0
   nivelJugador: 0
@@ -94037,10 +94041,13 @@ MonoBehaviour:
   - {fileID: 958638222}
   - {fileID: 958638221}
   newDesbloqueosMejoraNivelDos: 10
-  newCosteMejoraNivelDos: 15
+  newCosteMejoraNivelDos: 350
   newCostesCompraUnidades:
   - 7
   - 10
+  newPreciosVenta:
+  - 50
+  - 65
   jugador: {fileID: 1440286347}
   dineroJugador: 0
   nivelJugador: 0
@@ -101817,10 +101824,13 @@ MonoBehaviour:
   - {fileID: 789406637}
   - {fileID: 789406636}
   newDesbloqueosMejoraNivelDos: 6
-  newCosteMejoraNivelDos: 15
+  newCosteMejoraNivelDos: 140
   newCostesCompraUnidades:
   - 7
   - 10
+  newPreciosVenta:
+  - 20
+  - 35
   jugador: {fileID: 1440286347}
   dineroJugador: 0
   nivelJugador: 0
@@ -106299,10 +106309,13 @@ MonoBehaviour:
   - {fileID: 1521082831}
   - {fileID: 1521082830}
   newDesbloqueosMejoraNivelDos: 9
-  newCosteMejoraNivelDos: 15
+  newCosteMejoraNivelDos: 300
   newCostesCompraUnidades:
   - 7
   - 10
+  newPreciosVenta:
+  - 40
+  - 50
   jugador: {fileID: 1440286347}
   dineroJugador: 0
   nivelJugador: 0
@@ -113465,8 +113478,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MejorarVerdura, Assembly-CSharp
+      - m_Target: {fileID: 1022290374}
+        m_TargetAssemblyTypeName: MejorarSalsa, Assembly-CSharp
         m_MethodName: MejoraIngrediente
         m_Mode: 1
         m_Arguments:
@@ -113842,8 +113855,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1329933864}
-        m_TargetAssemblyTypeName: MejorarVerdura, Assembly-CSharp
+      - m_Target: {fileID: 1329933866}
+        m_TargetAssemblyTypeName: MejorarSalsa, Assembly-CSharp
         m_MethodName: MejoraIngrediente
         m_Mode: 1
         m_Arguments:
@@ -114215,10 +114228,13 @@ MonoBehaviour:
   - {fileID: 1159139950}
   - {fileID: 1159139949}
   newDesbloqueosMejoraNivelDos: 8
-  newCosteMejoraNivelDos: 15
+  newCosteMejoraNivelDos: 250
   newCostesCompraUnidades:
   - 7
   - 10
+  newPreciosVenta:
+  - 25
+  - 45
   jugador: {fileID: 1440286347}
   dineroJugador: 0
   nivelJugador: 0
@@ -118757,10 +118773,13 @@ MonoBehaviour:
   - {fileID: 1921495744}
   - {fileID: 1921495742}
   newDesbloqueosMejoraNivelDos: 9
-  newCosteMejoraNivelDos: 15
+  newCosteMejoraNivelDos: 300
   newCostesCompraUnidades:
   - 7
   - 10
+  newPreciosVenta:
+  - 35
+  - 50
   jugador: {fileID: 1440286347}
   dineroJugador: 0
   nivelJugador: 0
@@ -121657,15 +121676,21 @@ MonoBehaviour:
   - {fileID: 1535867296}
   - {fileID: 1535867295}
   newDesbloqueosMejoraNivelDos: 8
-  newCosteMejoraNivelDos: 15
+  newCosteMejoraNivelDos: 250
   newCostesCompraUnidades:
   - 7
   - 10
+  newPreciosVenta:
+  - 35
+  - 45
   jugador: {fileID: 1440286347}
   dineroJugador: 0
   nivelJugador: 0
   botonMejoraIngrediente: {fileID: 915408200}
-  estadosBotonMejora: []
+  estadosBotonMejora:
+  - {fileID: 1516733738}
+  - {fileID: 1842596977}
+  - {fileID: 1199715735}
   animatorCandado: {fileID: 852204394}
   animatorMejora: {fileID: 1883220666}
 --- !u!114 &2122329777

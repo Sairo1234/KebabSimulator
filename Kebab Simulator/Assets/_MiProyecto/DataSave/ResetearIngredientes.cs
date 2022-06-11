@@ -55,7 +55,7 @@ public class ResetearIngredientes : MonoBehaviour
         ingredietesCarne[0].DesbloqueoMejora = 2;
         ingredietesCarne[0].costeCompra = 0;
         ingredietesCarne[0].costeCompraUnidades = 5;
-        ingredietesCarne[0].costeMejora = 10;
+        ingredietesCarne[0].costeMejora = 30;
         ingredietesCarne[0].precioVenta = 10;
     }
 
@@ -72,7 +72,7 @@ public class ResetearIngredientes : MonoBehaviour
         ingredietesCarne[1].DesbloqueoMejora = 3;
         ingredietesCarne[1].costeCompra = 0;
         ingredietesCarne[1].costeCompraUnidades = 5;
-        ingredietesCarne[1].costeMejora = 10;
+        ingredietesCarne[1].costeMejora = 50;
         ingredietesCarne[1].precioVenta = 10;
     }
 
@@ -87,10 +87,10 @@ public class ResetearIngredientes : MonoBehaviour
         ingredietesCarne[2].estaComprado = false;
         ingredietesCarne[2].DesbloqueoCompra = 2;
         ingredietesCarne[2].DesbloqueoMejora = 4;
-        ingredietesCarne[2].costeCompra = 5;
+        ingredietesCarne[2].costeCompra = 30;
         ingredietesCarne[2].costeCompraUnidades = 5;
-        ingredietesCarne[2].costeMejora = 10;
-        ingredietesCarne[2].precioVenta = 10;
+        ingredietesCarne[2].costeMejora = 75;
+        ingredietesCarne[2].precioVenta = 15;
     }
 
     public void resetearCordero()
@@ -104,10 +104,10 @@ public class ResetearIngredientes : MonoBehaviour
         ingredietesCarne[3].estaComprado = false;
         ingredietesCarne[3].DesbloqueoCompra = 5;
         ingredietesCarne[3].DesbloqueoMejora = 7;
-        ingredietesCarne[3].costeCompra = 5;
+        ingredietesCarne[3].costeCompra = 100;
         ingredietesCarne[3].costeCompraUnidades = 5;
-        ingredietesCarne[3].costeMejora = 10;
-        ingredietesCarne[3].precioVenta = 10;
+        ingredietesCarne[3].costeMejora = 210;
+        ingredietesCarne[3].precioVenta = 30;
     }
 
     public void resetearCamello()
@@ -121,10 +121,10 @@ public class ResetearIngredientes : MonoBehaviour
         ingredietesCarne[4].estaComprado = false;
         ingredietesCarne[4].DesbloqueoCompra = 8;
         ingredietesCarne[4].DesbloqueoMejora = 9;
-        ingredietesCarne[4].costeCompra = 5;
+        ingredietesCarne[4].costeCompra = 250;
         ingredietesCarne[4].costeCompraUnidades = 5;
-        ingredietesCarne[4].costeMejora = 10;
-        ingredietesCarne[4].precioVenta = 10;
+        ingredietesCarne[4].costeMejora = 275;
+        ingredietesCarne[4].precioVenta = 45;
     }
 
     //--------------------------------------------------------------------------------//
@@ -143,7 +143,7 @@ public class ResetearIngredientes : MonoBehaviour
         ingredietesSalsa[0].DesbloqueoMejora = 3;
         ingredietesSalsa[0].costeCompra = 0;
         ingredietesSalsa[0].costeCompraUnidades = 5;
-        ingredietesSalsa[0].costeMejora = 10;
+        ingredietesSalsa[0].costeMejora = 50;
         ingredietesSalsa[0].precioVenta = 10;
     }
 
@@ -158,10 +158,10 @@ public class ResetearIngredientes : MonoBehaviour
         ingredietesSalsa[1].estaComprado = false;
         ingredietesSalsa[1].DesbloqueoCompra = 2;
         ingredietesSalsa[1].DesbloqueoMejora = 5;
-        ingredietesSalsa[1].costeCompra = 5;
+        ingredietesSalsa[1].costeCompra = 30;
         ingredietesSalsa[1].costeCompraUnidades = 5;
-        ingredietesSalsa[1].costeMejora = 10;
-        ingredietesSalsa[1].precioVenta = 10;
+        ingredietesSalsa[1].costeMejora = 100;
+        ingredietesSalsa[1].precioVenta = 15;
     }
 
     public void resetearCurry()
@@ -175,10 +175,10 @@ public class ResetearIngredientes : MonoBehaviour
         ingredietesSalsa[2].estaComprado = false;
         ingredietesSalsa[2].DesbloqueoCompra = 4;
         ingredietesSalsa[2].DesbloqueoMejora = 6;
-        ingredietesSalsa[2].costeCompra = 5;
+        ingredietesSalsa[2].costeCompra = 75;
         ingredietesSalsa[2].costeCompraUnidades = 5;
-        ingredietesSalsa[2].costeMejora = 10;
-        ingredietesSalsa[2].precioVenta = 10;
+        ingredietesSalsa[2].costeMejora = 140;
+        ingredietesSalsa[2].precioVenta = 25;
     }
 
     public void resetearDeluxe()
@@ -192,10 +192,10 @@ public class ResetearIngredientes : MonoBehaviour
         ingredietesSalsa[3].estaComprado = false;
         ingredietesSalsa[3].DesbloqueoCompra = 8;
         ingredietesSalsa[3].DesbloqueoMejora = 9;
-        ingredietesSalsa[3].costeCompra = 5;
+        ingredietesSalsa[3].costeCompra = 250;
         ingredietesSalsa[3].costeCompraUnidades = 5;
-        ingredietesSalsa[3].costeMejora = 10;
-        ingredietesSalsa[3].precioVenta = 10;
+        ingredietesSalsa[3].costeMejora = 300;
+        ingredietesSalsa[3].precioVenta = 45;
     }
 
     //--------------------------------------------------------------------------------//
@@ -214,7 +214,7 @@ public class ResetearIngredientes : MonoBehaviour
         ingredietesVerdura[0].DesbloqueoMejora = 3;
         ingredietesVerdura[0].costeCompra = 0;
         ingredietesVerdura[0].costeCompraUnidades = 5;
-        ingredietesVerdura[0].costeMejora = 10;
+        ingredietesVerdura[0].costeMejora = 50;
         ingredietesVerdura[0].precioVenta = 10;
     }
 
@@ -231,7 +231,7 @@ public class ResetearIngredientes : MonoBehaviour
         ingredietesVerdura[1].DesbloqueoMejora = 4;
         ingredietesVerdura[1].costeCompra = 0;
         ingredietesVerdura[1].costeCompraUnidades = 5;
-        ingredietesVerdura[1].costeMejora = 10;
+        ingredietesVerdura[1].costeMejora = 75;
         ingredietesVerdura[1].precioVenta = 10;
     }
 
@@ -248,7 +248,7 @@ public class ResetearIngredientes : MonoBehaviour
         ingredietesVerdura[2].DesbloqueoMejora = 2;
         ingredietesVerdura[2].costeCompra = 0;
         ingredietesVerdura[2].costeCompraUnidades = 5;
-        ingredietesVerdura[2].costeMejora = 10;
+        ingredietesVerdura[2].costeMejora = 30;
         ingredietesVerdura[2].precioVenta = 10;
     } 
     
@@ -263,15 +263,15 @@ public class ResetearIngredientes : MonoBehaviour
         ingredietesVerdura[3].estaComprado = false;
         ingredietesVerdura[3].DesbloqueoCompra = 3;
         ingredietesVerdura[3].DesbloqueoMejora = 4;
-        ingredietesVerdura[3].costeCompra = 5;
+        ingredietesVerdura[3].costeCompra = 50;
         ingredietesVerdura[3].costeCompraUnidades = 5;
-        ingredietesVerdura[3].costeMejora = 10;
-        ingredietesVerdura[3].precioVenta = 10;
+        ingredietesVerdura[3].costeMejora = 75;
+        ingredietesVerdura[3].precioVenta = 20;
     }
 
     public void resetearPepino()
     {
-        ingredietesVerdura[4].nombre = "Maiz";
+        ingredietesVerdura[4].nombre = "Pepino";
         ingredietesVerdura[4].nivel = 0;
         ingredietesVerdura[4].unidadesCocina = 0;
         ingredietesVerdura[4].unidadesAlmacen = 0;
@@ -280,10 +280,10 @@ public class ResetearIngredientes : MonoBehaviour
         ingredietesVerdura[4].estaComprado = false;
         ingredietesVerdura[4].DesbloqueoCompra = 4;
         ingredietesVerdura[4].DesbloqueoMejora = 6;
-        ingredietesVerdura[4].costeCompra = 5;
+        ingredietesVerdura[4].costeCompra = 75;
         ingredietesVerdura[4].costeCompraUnidades = 5;
-        ingredietesVerdura[4].costeMejora = 10;
-        ingredietesVerdura[4].precioVenta = 10;
+        ingredietesVerdura[4].costeMejora = 140;
+        ingredietesVerdura[4].precioVenta = 25;
     }
 
     public void resetearCol()
@@ -297,10 +297,10 @@ public class ResetearIngredientes : MonoBehaviour
         ingredietesVerdura[5].estaComprado = false;
         ingredietesVerdura[5].DesbloqueoCompra = 5;
         ingredietesVerdura[5].DesbloqueoMejora = 7;
-        ingredietesVerdura[5].costeCompra = 5;
+        ingredietesVerdura[5].costeCompra = 100;
         ingredietesVerdura[5].costeCompraUnidades = 5;
-        ingredietesVerdura[5].costeMejora = 10;
-        ingredietesVerdura[5].precioVenta = 10;
+        ingredietesVerdura[5].costeMejora = 210;
+        ingredietesVerdura[5].precioVenta = 30;
     }
 
     public void resetearPimiento()
@@ -314,10 +314,10 @@ public class ResetearIngredientes : MonoBehaviour
         ingredietesVerdura[6].estaComprado = false;
         ingredietesVerdura[6].DesbloqueoCompra = 6;
         ingredietesVerdura[6].DesbloqueoMejora = 7;
-        ingredietesVerdura[6].costeCompra = 5;
+        ingredietesVerdura[6].costeCompra = 140;
         ingredietesVerdura[6].costeCompraUnidades = 5;
-        ingredietesVerdura[6].costeMejora = 10;
-        ingredietesVerdura[6].precioVenta = 10;
+        ingredietesVerdura[6].costeMejora = 210;
+        ingredietesVerdura[6].precioVenta = 35;
     }
 
     public void resetearBrocoli()
@@ -331,10 +331,10 @@ public class ResetearIngredientes : MonoBehaviour
         ingredietesVerdura[7].estaComprado = false;
         ingredietesVerdura[7].DesbloqueoCompra = 8;
         ingredietesVerdura[7].DesbloqueoMejora = 9;
-        ingredietesVerdura[7].costeCompra = 5;
+        ingredietesVerdura[7].costeCompra = 250;
         ingredietesVerdura[7].costeCompraUnidades = 5;
-        ingredietesVerdura[7].costeMejora = 10;
-        ingredietesVerdura[7].precioVenta = 10;
+        ingredietesVerdura[7].costeMejora = 300;
+        ingredietesVerdura[7].precioVenta = 45;
     }
 }
 

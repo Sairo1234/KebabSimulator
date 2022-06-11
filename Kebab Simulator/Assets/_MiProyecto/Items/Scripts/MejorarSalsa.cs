@@ -23,6 +23,7 @@ public class MejorarSalsa : MonoBehaviour
     [Header("Nuevos costes y precios")]
     public float newCosteMejoraNivelDos;
     public float[] newCostesCompraUnidades;
+    public float[] newPreciosVenta;
 
     //--------------- Jugador ---------------//
     [Header("Jugador")]
@@ -79,6 +80,7 @@ public class MejorarSalsa : MonoBehaviour
                 //Cambio de precios
                 ingredienteSalsa.costeMejora = newCosteMejoraNivelDos;
                 ingredienteSalsa.costeCompraUnidades = newCostesCompraUnidades[0];
+                ingredienteSalsa.precioVenta = newPreciosVenta[0];
 
                 //Bloqueo Boton
                 animatorMejora.SetTrigger("Mejorado");
@@ -106,7 +108,8 @@ public class MejorarSalsa : MonoBehaviour
                 modelosMejorasIngredientes[2].SetActive(true);
 
                 //Cambio de precios
-                ingredienteSalsa.costeCompraUnidades = newCostesCompraUnidades[0];
+                ingredienteSalsa.costeCompraUnidades = newCostesCompraUnidades[1];
+                ingredienteSalsa.precioVenta = newPreciosVenta[1];
 
                 //Bloqueo Boton
                 animatorMejora.SetTrigger("Mejorado");

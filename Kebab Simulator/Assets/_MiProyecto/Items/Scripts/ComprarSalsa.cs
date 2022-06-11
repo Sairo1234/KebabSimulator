@@ -36,7 +36,7 @@ public class ComprarSalsa : MonoBehaviour
             jugador.GetComponent<ReputacionDinero>().TakeDinero(-ingredienteSalsa.costeCompra);
 
             ingredienteSalsa.estaComprado = true;
-            ingredienteSalsa.unidadesAlmacen = ingredienteSalsa.capacidadMaxIngrediente;
+            ingredienteSalsa.unidadesCocina = ingredienteSalsa.capacidadMaxIngrediente;
             prefabIngrediente.SetActive(true);
 
             botonesTiendaIngrediente[0].SetActive(false);

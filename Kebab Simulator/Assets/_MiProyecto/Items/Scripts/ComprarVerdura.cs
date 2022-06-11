@@ -36,7 +36,7 @@ public class ComprarVerdura : MonoBehaviour
             jugador.GetComponent<ReputacionDinero>().TakeDinero(-ingredienteVerdura.costeCompra);
 
             ingredienteVerdura.estaComprado = true;
-            ingredienteVerdura.unidadesAlmacen = ingredienteVerdura.capacidadMaxIngrediente;
+            ingredienteVerdura.unidadesCocina = ingredienteVerdura.capacidadMaxIngrediente;
             prefabIngrediente.SetActive(true);
 
             botonesTiendaIngrediente[0].SetActive(false);

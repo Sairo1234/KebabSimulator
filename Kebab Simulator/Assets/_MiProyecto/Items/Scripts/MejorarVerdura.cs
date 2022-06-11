@@ -23,6 +23,7 @@ public class MejorarVerdura : MonoBehaviour
     [Header("Nuevos costes y precios")]
     public float newCosteMejoraNivelDos;
     public float[] newCostesCompraUnidades;
+    public float[] newPreciosVenta;
 
     //--------------- Jugador ---------------//
     [Header("Jugador")]
@@ -79,6 +80,7 @@ public class MejorarVerdura : MonoBehaviour
                 //Cambio de precios
                 ingredienteVerdura.costeMejora = newCosteMejoraNivelDos;
                 ingredienteVerdura.costeCompraUnidades = newCostesCompraUnidades[0];
+                ingredienteVerdura.precioVenta = newPreciosVenta[0];
 
                 //Bloqueo Boton
                 animatorMejora.SetTrigger("Mejorado");
@@ -106,7 +108,8 @@ public class MejorarVerdura : MonoBehaviour
                 modelosMejorasIngredientes[2].SetActive(true);
 
                 //Cambio de precios
-                ingredienteVerdura.costeCompraUnidades = newCostesCompraUnidades[0];
+                ingredienteVerdura.costeCompraUnidades = newCostesCompraUnidades[1]; 
+                ingredienteVerdura.precioVenta = newPreciosVenta[1];
 
                 //Bloqueo Boton
                 animatorMejora.SetTrigger("Mejorado");

@@ -23,6 +23,7 @@ public class MejorarCarne : MonoBehaviour
     [Header("Nuevos costes y precios")]
     public float newCosteMejoraNivelDos;
     public float[] newCostesCompraUnidades;
+    public float[] newPreciosVenta;
 
     //--------------- Jugador ---------------//
     [Header("Jugador")]
@@ -80,6 +81,7 @@ public class MejorarCarne : MonoBehaviour
                 //Cambio de precios
                 ingredienteCarne.costeMejora = newCosteMejoraNivelDos;
                 ingredienteCarne.costeCompraUnidades = newCostesCompraUnidades[0];
+                ingredienteCarne.precioVenta = newPreciosVenta[0];
 
                 //Bloqueo Boton
                 animatorMejora.SetTrigger("Mejorado");
@@ -107,11 +109,13 @@ public class MejorarCarne : MonoBehaviour
                 modelosMejorasIngredientes[2].SetActive(true);
 
                 //Cambio de precios
-                ingredienteCarne.costeCompraUnidades = newCostesCompraUnidades[0];
+                ingredienteCarne.costeCompraUnidades = newCostesCompraUnidades[1];
+                ingredienteCarne.precioVenta = newPreciosVenta[1];
 
                 //Bloqueo Boton
                 animatorMejora.SetTrigger("Mejorado");
                 StartCoroutine(cambioImagenMejoraDos());
+               
             }
         }
     }
@@ -126,6 +130,19 @@ public class MejorarCarne : MonoBehaviour
         {
             animatorCandado.SetTrigger("Desbloqueado");
             StartCoroutine(mostrarAnimacionDesbloqueoMejora());
+        }
+        else if(ingredienteCarne.nivel > 2)
+        {
+            botonMejoraIngrediente.interactable = false;
+            estadosBotonMejora[0].SetActive(false);
+            estadosBotonMejora[1].SetActive(false);
+            estadosBotonMejora[2].SetActive(true);
+        }
+        else 
+        {
+            botonMejoraIngrediente.interactable = false;
+            estadosBotonMejora[0].SetActive(true);
+            estadosBotonMejora[1].SetActive(false);
         }
     }
 

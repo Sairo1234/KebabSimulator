@@ -96,6 +96,7 @@ public class GameManager : MonoBehaviour
         setClientesMax();
         haTerminadoDia = false;
         startTime = Time.time;
+        next_spawn_time = 0;
         PuertaCollider.GetComponent<ContadorClientesPuerta>().contadorClientes = 0;
         PuertaCollider.GetComponent<ContadorClientesPuerta>().contadorClientesSpawn = 0;
     }
@@ -204,34 +205,34 @@ public class GameManager : MonoBehaviour
                 intervalo = Random.Range(30.0f, 45.0f);
                 break;
             case 1:
-                intervalo = Random.Range(25.0f, 40.0f);
+                intervalo = Random.Range(25.0f, 35.0f);
                 break;
             case 2:
-                intervalo = Random.Range(25.0f, 35.0f);
+                intervalo = Random.Range(22.0f, 30.0f);
                 break;
             case 3:
-                intervalo = Random.Range(20.0f, 35.0f);
+                intervalo = Random.Range(20.0f, 28.0f);
                 break;
             case 4:
-                intervalo = Random.Range(25.0f, 35.0f);
+                intervalo = Random.Range(19.0f, 27.0f);
                 break;
             case 5:
-                intervalo = Random.Range(25.0f, 35.0f);
+                intervalo = Random.Range(18.0f, 25.0f);
                 break;
             case 6:
-                intervalo = Random.Range(25.0f, 35.0f);
+                intervalo = Random.Range(17.0f, 24.0f);
                 break;
             case 7:
-                intervalo = Random.Range(25.0f, 30.0f);
+                intervalo = Random.Range(16.0f, 23.0f);
                 break;
             case 8:
-                intervalo = Random.Range(20.0f, 30.0f);
+                intervalo = Random.Range(15.0f, 22.0f);
                 break;
             case 9:
-                intervalo = Random.Range(25.0f, 30.0f);
+                intervalo = Random.Range(14.0f, 21.0f);
                 break;
             case 10:
-                intervalo = Random.Range(20.0f, 25.0f);
+                intervalo = Random.Range(13.0f, 20.0f);
                 break;
 
         }
