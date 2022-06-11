@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        Pausa();
+
         Cronometro = Time.time - startTime;
 
         if (Cronometro > next_spawn_time && clientesContadorSpawn < clientesMax)
@@ -249,18 +249,13 @@ public class GameManager : MonoBehaviour
 
     public void Pausa()
     {
-        if (Input.GetKey(KeyCode.P))
-        {
-            HUDprincipal.SetActive(false);
-            pantallaPausa.SetActive(true);
-            pararTiempo();
+        HUDprincipal.SetActive(false);
+        pantallaPausa.SetActive(true);
+        pararTiempo();
 
-            //Desctivar desplazamiento
-            jugador.GetComponent<Player_Mov>().enabled = false;
-            GetComponent<DesplazamientoController>().desactivarDesplazamientoPunto();
-        }
-        
-
+        //Desctivar desplazamiento
+        jugador.GetComponent<Player_Mov>().enabled = false;
+        GetComponent<DesplazamientoController>().desactivarDesplazamientoPunto();
     }
 
     public void Continuar()
