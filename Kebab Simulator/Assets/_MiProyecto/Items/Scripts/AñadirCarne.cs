@@ -36,6 +36,7 @@ public class AñadirCarne : MonoBehaviour
     {
         cantidad = IngredienteData.unidadesCocina;
         puntoSpawn = GameObject.FindGameObjectWithTag("SpawnKebab").transform;
+        particulasCarne = transform.GetChild(0).gameObject;
     }
 
     public void asignarKebab()
@@ -45,12 +46,15 @@ public class AñadirCarne : MonoBehaviour
         {
             GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).GetComponent<Animator>().SetTrigger("Interactuando");
             StartCoroutine(jugadorSinKebab());
+            activarEfecto();
         }
         else if (puntoSpawn.childCount > 0 && IngredienteData.unidadesCocina > 0)
         {
             kebabEnPreparacion = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
             GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).GetComponent<Animator>().SetTrigger("Interactuando");
             StartCoroutine(jugadorConKebab());
+            activarEfecto();
+
         }
         else
         {
@@ -73,11 +77,7 @@ public class AñadirCarne : MonoBehaviour
         NuevoKebabEnPreparacion.tag = "KebabEnPreparacion";
         kebabEnPreparacion = NuevoKebabEnPreparacion;
     }
-    public void desactivarefecto()
-    {
-        particulasCarne.SetActive(false);
-
-    }
+    
     public void anyadirCarne()
     {
         if (kebabEnPreparacion.GetComponent<Kebab>().contieneCarne() == false)
@@ -88,8 +88,7 @@ public class AñadirCarne : MonoBehaviour
             gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorHaciendoAccion = false;
-            particulasCarne.SetActive(true);
-            Invoke("desactivarefecto", 2);
+            
         }
         else
         {
@@ -112,4 +111,18 @@ public class AñadirCarne : MonoBehaviour
         anyadirCarne();
     }
 
+    public void activarEfecto()
+    {
+        if (particulasCarne != null)
+        {
+            particulasCarne.SetActive(true);
+            Invoke("desactivarEfecto", 1);
+        }
+
+    }
+
+    public void desactivarEfecto()
+    {
+        particulasCarne.SetActive(false);
+    }
 }
