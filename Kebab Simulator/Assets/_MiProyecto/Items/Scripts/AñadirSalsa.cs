@@ -34,6 +34,7 @@ public class AñadirSalsa : MonoBehaviour
     {
         cantidad = IngredienteData.unidadesCocina;
         puntoSpawn = GameObject.FindGameObjectWithTag("SpawnKebab").transform;
+        particulasSalsa = transform.GetChild(2).gameObject;
     }
 
     public void asignarKebab()
@@ -42,12 +43,14 @@ public class AñadirSalsa : MonoBehaviour
         {
             GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).GetComponent<Animator>().SetTrigger("Interactuando");
             StartCoroutine(jugadorSinKebab());
+            activarEfecto();
         }
         else if (puntoSpawn.childCount > 0 && IngredienteData.unidadesCocina > 0)
         {
             kebabEnPreparacion = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
             GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).GetComponent<Animator>().SetTrigger("Interactuando");
             StartCoroutine(jugadorConKebab());
+            activarEfecto();
         }
         else
         {
@@ -56,7 +59,7 @@ public class AñadirSalsa : MonoBehaviour
             jugador.transform.eulerAngles = new Vector3(0, 60, 0);
 
             jugador.GetComponent<SonidoJugadorController>().PlayFrustrado();
-            
+
             this.GetComponent<AudioSource>().Stop();
             gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
@@ -87,8 +90,7 @@ public class AñadirSalsa : MonoBehaviour
             gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
             this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorHaciendoAccion = false;
-            particulasSalsa.SetActive(true);
-            Invoke("desactivarefecto", 2);
+           
         }
         else
         {
@@ -108,5 +110,20 @@ public class AñadirSalsa : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         anyadirSalsa();
+    }
+
+    public void activarEfecto()
+    {
+        if (particulasSalsa != null)
+        {
+            particulasSalsa.SetActive(true);
+            Invoke("desactivarEfecto", 1);
+        }
+
+    }
+
+    public void desactivarEfecto()
+    {
+        particulasSalsa.SetActive(false);
     }
 }
