@@ -18,6 +18,9 @@ public class AñadirVerdura : MonoBehaviour
     [Header("Cantidad ingrediente")]
     public int cantidad;
 
+    [Header("Particulas verdura")]
+    public GameObject particulasVerdura;
+    
     //Desplazamiento
     [Header("Desplazamiento")]
     public GameObject gameManager;
@@ -31,6 +34,7 @@ public class AñadirVerdura : MonoBehaviour
     {
         cantidad = IngredienteData.unidadesCocina;
         puntoSpawn = GameObject.FindGameObjectWithTag("SpawnKebab").transform;
+        particulasVerdura = transform.GetChild(0).gameObject;
     }
 
     public void asignarKebab()
@@ -39,12 +43,14 @@ public class AñadirVerdura : MonoBehaviour
         {
             GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).GetComponent<Animator>().SetTrigger("Interactuando");
             StartCoroutine(jugadorSinKebab());
+            activarEfecto();
         }
         else if (puntoSpawn.childCount > 0 && IngredienteData.unidadesCocina > 0)
         {
             kebabEnPreparacion = GameObject.FindGameObjectWithTag("KebabEnPreparacion");
             GameObject.FindGameObjectWithTag("Player").transform.GetChild(0).GetComponent<Animator>().SetTrigger("Interactuando");
             StartCoroutine(jugadorConKebab());
+            activarEfecto();
         }
         else
         {
@@ -99,5 +105,20 @@ public class AñadirVerdura : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         anyadirVerdura();
+    }
+
+    public void activarEfecto()
+    {
+        if (particulasVerdura != null)
+        {
+            particulasVerdura.SetActive(true);
+            Invoke("desactivarEfecto", 1);
+        }
+
+    }
+
+    public void desactivarEfecto()
+    {
+        particulasVerdura.SetActive(false);
     }
 }
