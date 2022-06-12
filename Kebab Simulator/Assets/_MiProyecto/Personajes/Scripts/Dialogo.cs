@@ -10,6 +10,7 @@ public class Dialogo : MonoBehaviour
 
     //Animacion Jugador
     Animator animatorJugador;
+    Animator animatorCliente;
 
     //Desplazamiento
     [Header("Desplazamiento")]
@@ -22,11 +23,13 @@ public class Dialogo : MonoBehaviour
     {
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
         animatorJugador = GameObject.FindGameObjectWithTag("ModeloJugador").GetComponent<Animator>();
+        animatorCliente = this.transform.GetComponentInChildren<Animator>();
         jugador = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void mostrarDialogo()
     {
+        animatorCliente.SetTrigger("Pedir");
         gameManager.GetComponent<SetTutorial>().PonerTutorialCliente();
         this.gameObject.GetComponent<PacienciaCola>().enabled = false;
         this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayPidiendo();
@@ -38,6 +41,7 @@ public class Dialogo : MonoBehaviour
     {
         PanelDialogo.SetActive(false);
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Mov>().enabled = true;
+        animatorCliente.SetTrigger("PararPedir");        
         animatorJugador.SetTrigger("GuardarNota");
         gameManager.GetComponent<DesplazamientoController>().activaDesplazamientoPunto();
         this.gameObject.GetComponent<DesplazamientoPunto>().estaJugadorUsandoObjeto = false;
