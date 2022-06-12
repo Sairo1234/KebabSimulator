@@ -125,6 +125,19 @@ public class MejorarSalsa : MonoBehaviour
             animatorCandado.SetTrigger("Desbloqueado");
             StartCoroutine(mostrarAnimacionDesbloqueoMejora());
         }
+        else if (ingredienteSalsa.nivel == 2)
+        {
+            botonMejoraIngrediente.interactable = false;
+            estadosBotonMejora[0].SetActive(false);
+            estadosBotonMejora[1].SetActive(false);
+            estadosBotonMejora[2].SetActive(true);
+        }
+        else
+        {
+            botonMejoraIngrediente.interactable = false;
+            estadosBotonMejora[0].SetActive(true);
+            estadosBotonMejora[1].SetActive(false);
+        }
     }
 
     IEnumerator mostrarAnimacionDesbloqueoMejora()
