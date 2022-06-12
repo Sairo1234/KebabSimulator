@@ -113,6 +113,7 @@ Transform:
   - {fileID: 2725036308065287697}
   - {fileID: 3846181396577675362}
   - {fileID: 4673876165549582541}
+  - {fileID: 8303774464772364009}
   - {fileID: 2432693100316199424}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -500,7 +501,7 @@ RectTransform:
   m_Children:
   - {fileID: 6709090206819428666}
   m_Father: {fileID: 2937619879324476080}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 66.556, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -898,6 +899,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 38078ca02a85a9347a9329dd0598cbcd, type: 3}
       propertyPath: m_Name
       value: BandejaBrocoli
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 38078ca02a85a9347a9329dd0598cbcd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38078ca02a85a9347a9329dd0598cbcd, type: 3}
@@ -1388,6 +1393,96 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52f41f691111133409be9440f03ce06f, type: 3}
+--- !u!1001 &8410005682174701826
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2937619879324476080}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.378
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.369
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4046327384636492856, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1d70ef2d8d1597948b25564cbe6b95cb, type: 2}
+    - target: {fileID: -1443911680791203163, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1d70ef2d8d1597948b25564cbe6b95cb, type: 2}
+    - target: {fileID: 919132149155446097, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+      propertyPath: m_Name
+      value: BandejaCactus1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1433270387214708521, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1d70ef2d8d1597948b25564cbe6b95cb, type: 2}
+    - target: {fileID: 6036729187381531232, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1d70ef2d8d1597948b25564cbe6b95cb, type: 2}
+    - target: {fileID: 7991001199545717853, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: eed73fd93cd8d0d489f994b3e837d75c, type: 2}
+    - target: {fileID: 8424073627695423409, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 476441ca46b449b41a7c4f01af4a157d, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+--- !u!4 &8303774464772364009 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 17ff8594a025d464abc30f041956c489, type: 3}
+  m_PrefabInstance: {fileID: 8410005682174701826}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8939636235240085285
 PrefabInstance:
   m_ObjectHideFlags: 0
