@@ -55,4 +55,6 @@ public class Dialogo : MonoBehaviour
 
         PanelDialogo.SetActive(true);
     }
+
+    
 }

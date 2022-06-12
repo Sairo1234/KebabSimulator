@@ -42,6 +42,7 @@ public class PacienciaEspera : MonoBehaviour
             this.gameObject.GetComponent<SalidaCliente>().salir();
             gameManager.GetComponent<GameManager>().clientesPerdidos++;
 
+            this.GetComponent<MostrarEmociones>().MostrarKebabMalo();
             this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayFrustrado();
             StartCoroutine("JugadorTriste");
 

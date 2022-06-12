@@ -128,6 +128,7 @@ public class EntregarKebab : MonoBehaviour
                 this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayFrustrado();
                 this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayDinero();
 
+                this.GetComponent<MostrarEmociones>().MostrarKebabMalo();
                 StartCoroutine("JugadorTriste");
                 break;
 
@@ -143,6 +144,8 @@ public class EntregarKebab : MonoBehaviour
                 //Sonido Jugador Tristey y Cliente Frustado
                 this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayFrustrado();
                 this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayDinero();
+
+                this.GetComponent<MostrarEmociones>().MostrarKebabMalo();
                 StartCoroutine("JugadorTriste");
                 break;
 
@@ -159,6 +162,7 @@ public class EntregarKebab : MonoBehaviour
                 this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayFrustrado();
                 this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayDinero();
 
+                this.GetComponent<MostrarEmociones>().MostrarKebabMalo();
                 StartCoroutine("JugadorTriste");
                 break;
 
@@ -175,6 +179,7 @@ public class EntregarKebab : MonoBehaviour
                 this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayContento();
                 this.gameObject.GetComponentInChildren<SonidoClienteController>().PlayDinero();
 
+                this.GetComponent<MostrarEmociones>().MostrarKebabPerfecto();
                 StartCoroutine("JugadorContento");
                 break;
         }
