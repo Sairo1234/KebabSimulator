@@ -15,11 +15,11 @@ C:/Users/minel/KebabSimulator/KebabSimulator/Kebab Simulator
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56521
+63792
 Successfully changed project path to: C:/Users/minel/KebabSimulator/KebabSimulator/Kebab Simulator
 C:/Users/minel/KebabSimulator/KebabSimulator/Kebab Simulator
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 38.75 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 38.05 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
 [Subsystems] Discovering subsystems at path E:/Unity/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
@@ -35,72 +35,72 @@ Initialize mono
 Mono path[0] = 'E:/Unity/2020.3.30f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Unity/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'E:/Unity/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56592
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56552
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Unity/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001002 seconds.
+Registered in 0.001111 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 36.08 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 41.24 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.495 seconds
+- Completed reload, in  0.609 seconds
 Domain Reload Profiling:
-	ReloadAssembly (495ms)
-		BeginReloadAssembly (52ms)
+	ReloadAssembly (609ms)
+		BeginReloadAssembly (91ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (385ms)
-			LoadAssemblies (52ms)
+		EndReloadAssembly (458ms)
+			LoadAssemblies (90ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (129ms)
+			SetupTypeCache (131ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (145ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (169ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (36ms)
+				RefreshPlugins (41ms)
 				BeforeProcessingInitializeOnLoad (12ms)
-				ProcessInitializeOnLoadAttributes (70ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
+				ProcessInitializeOnLoadAttributes (87ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003021 seconds.
+Registered in 0.003046 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.943 seconds
+- Completed reload, in  1.095 seconds
 Domain Reload Profiling:
-	ReloadAssembly (943ms)
+	ReloadAssembly (1096ms)
 		BeginReloadAssembly (131ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (764ms)
-			LoadAssemblies (78ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (915ms)
+			LoadAssemblies (101ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (273ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (288ms)
+			SetupTypeCache (380ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (268ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (73ms)
-				ProcessInitializeOnLoadAttributes (201ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (186ms)
 				ProcessInitializeOnLoadMethodAttributes (7ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
@@ -109,15 +109,15 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.19 seconds
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1889 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.2 MB.
-System memory in use after: 86.3 MB.
+System memory in use before: 86.5 MB.
+System memory in use after: 86.6 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2325.
-Total: 2.680300 ms (FindLiveObjects: 0.143600 ms CreateObjectMapping: 0.074200 ms MarkObjects: 2.400400 ms  DeleteObjects: 0.060800 ms)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 2328.
+Total: 2.415300 ms (FindLiveObjects: 0.147900 ms CreateObjectMapping: 0.069000 ms MarkObjects: 2.138000 ms  DeleteObjects: 0.059400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,396 +131,192 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/_MiProyecto/Scenes/Juego.unity
-  artifactKey: Guid(e66fdb135ee892e41890e41034f5802f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Scenes/Juego.unity using Guid(e66fdb135ee892e41890e41034f5802f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1343535acdf78452a1029cde8df3853b') in 0.017933 seconds 
+  path: Assets/_MiProyecto/Personajes/Animations/Clientes
+  artifactKey: Guid(c156b502c72db1f4c8198211ca6d7612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Animations/Clientes using Guid(c156b502c72db1f4c8198211ca6d7612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e78eb2e33acf43e4926c4c32ca95e57') in 0.007943 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/_MiProyecto/Scenes
-  artifactKey: Guid(060fabe7a761c464dbcdd72cb737d8d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Scenes using Guid(060fabe7a761c464dbcdd72cb737d8d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2372dee90f9be3bb664441c6c6d6f320') in 0.008472 seconds 
+  Time since last request: 5.555890 seconds.
+  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer5
+  artifactKey: Guid(edf227453233dcc4886f84e87751f4f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer5 using Guid(edf227453233dcc4886f84e87751f4f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1bfda76a8e353784be09ea1f4fca9c7') in 0.007255 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.334566 seconds.
-  path: Assets/_MiProyecto/Personajes/Animations/AnimatorCliente/Final
-  artifactKey: Guid(84fd30520d27d984d823606e99f41428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Animations/AnimatorCliente/Final using Guid(84fd30520d27d984d823606e99f41428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c539723d049fddc08d27732d507e5099') in 0.007038 seconds 
+  Time since last request: 23.082697 seconds.
+  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer4
+  artifactKey: Guid(bd064c88efad8d444be0035d972e397a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer4 using Guid(bd064c88efad8d444be0035d972e397a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '272fe34697280db0fff181d0a86df737') in 0.009938 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.639470 seconds.
-  path: Assets/_MiProyecto/Personajes/Animations/Jugador/jugador.fbx
-  artifactKey: Guid(a1c7ac0231393d14999b451d49b0116c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Animations/Jugador/jugador.fbx using Guid(a1c7ac0231393d14999b451d49b0116c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dea04a0e2dced36b2b161345275283ff') in 0.832351 seconds 
+  Time since last request: 0.217100 seconds.
+  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer4/CM4Completo.fbx
+  artifactKey: Guid(df3705fe55a6ab744bd42a29142710c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer4/CM4Completo.fbx using Guid(df3705fe55a6ab744bd42a29142710c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2546763e0c28847e3eee3e3a3cd11add') in 0.229101 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/_MiProyecto/Personajes/Animations/Jugador/PuntoSpawnKebab.prefab
-  artifactKey: Guid(167032b1647e540458c8ac5866b421f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Animations/Jugador/PuntoSpawnKebab.prefab using Guid(167032b1647e540458c8ac5866b421f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d476ab5570068556198f600dc51f248') in 0.009794 seconds 
+  Time since last request: 8.139608 seconds.
+  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer4/Mujer4Anim.controller
+  artifactKey: Guid(aefa2bd1072c60c4f8d4d13f560a3081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer4/Mujer4Anim.controller using Guid(aefa2bd1072c60c4f8d4d13f560a3081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebd6b4b9395f547d2877e92c5e5e203c') in 0.018932 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.494717 seconds.
-  path: Assets/_MiProyecto/Personajes/Animations/JugadorFinal/jugador.fbx
-  artifactKey: Guid(ead18ae498e0fe54388ee5c494f85552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Animations/JugadorFinal/jugador.fbx using Guid(ead18ae498e0fe54388ee5c494f85552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa6cf69b535488983cb3dddcd89a98c3') in 0.141423 seconds 
+  Time since last request: 1.219468 seconds.
+  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer4/Mujer4Anim 1.controller
+  artifactKey: Guid(a623f4193da170f4986327a176065889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer4/Mujer4Anim 1.controller using Guid(a623f4193da170f4986327a176065889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63aef8d29da9d83541fe7cc302a44339') in 0.015449 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.311122 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/CH1Completo.prefab
-  artifactKey: Guid(2dfcdc43fe9211d42bcd59150a218047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/CH1Completo.prefab using Guid(2dfcdc43fe9211d42bcd59150a218047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '215caf501339ad74f83fefc65996d2dc') in 0.089558 seconds 
+  Time since last request: 5.273321 seconds.
+  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer5/CM5Completo.fbx
+  artifactKey: Guid(781128ca5397fee4aa9dad755d910fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer5/CM5Completo.fbx using Guid(781128ca5397fee4aa9dad755d910fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51c5eefd9ced99167f609befea5ef6ff') in 0.126745 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/CM4Completo.prefab
-  artifactKey: Guid(7c6a880e0ea5df64aa5acbe915dabc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/CM4Completo.prefab using Guid(7c6a880e0ea5df64aa5acbe915dabc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03ac2e8096dc2f3766eef271fabe6770') in 0.028234 seconds 
+  Time since last request: 8.754251 seconds.
+  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer5/Mujer5Anim.controller
+  artifactKey: Guid(a623f4193da170f4986327a176065889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer5/Mujer5Anim.controller using Guid(a623f4193da170f4986327a176065889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbe9a7b2aaca675560c1ce4a754fe13d') in 0.017183 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000137 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/CM2Completo.prefab
-  artifactKey: Guid(252e2c2c2b281a54cb2a8d4a20b00275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/CM2Completo.prefab using Guid(252e2c2c2b281a54cb2a8d4a20b00275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '235881c0440150fc093e4028d37ee9bb') in 0.030361 seconds 
+  Time since last request: 135.751807 seconds.
+  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer5/CM5Completo.fbx
+  artifactKey: Guid(781128ca5397fee4aa9dad755d910fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer5/CM5Completo.fbx using Guid(781128ca5397fee4aa9dad755d910fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39103e860d269bacb1c99759fd5afa6a') in 0.241426 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000158 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/CM7Completo.prefab
-  artifactKey: Guid(12cec17f5fa8adb4895a4c491f5e6436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/CM7Completo.prefab using Guid(12cec17f5fa8adb4895a4c491f5e6436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db6a5289bc4ba2754398480d72b59e8e') in 0.025908 seconds 
+  Time since last request: 108.384325 seconds.
+  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer5/Andar.anim
+  artifactKey: Guid(6c860a9bff67feb4fa3ca5a44aa63c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer5/Andar.anim using Guid(6c860a9bff67feb4fa3ca5a44aa63c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcc7c1094a1f191d4f92043377efedc2') in 0.006263 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/CH2Completo.prefab
-  artifactKey: Guid(82b4150f0c8682f4680cc66ed022cf06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/CH2Completo.prefab using Guid(82b4150f0c8682f4680cc66ed022cf06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc758304389abd80342e3e30c390a704') in 0.026884 seconds 
+  Time since last request: 8.753223 seconds.
+  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer5/Comer.anim
+  artifactKey: Guid(eb54c503e08cd6f458d25405f5955bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer5/Comer.anim using Guid(eb54c503e08cd6f458d25405f5955bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d04a5068597abfde125aa38e8e5ee30') in 0.004075 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/CM1Completo.prefab
-  artifactKey: Guid(ffccd7eb9bb1a4348a2f398549bff3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/CM1Completo.prefab using Guid(ffccd7eb9bb1a4348a2f398549bff3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3caefe9c95fd782154acd9526558db68') in 0.031370 seconds 
+  Time since last request: 3.810993 seconds.
+  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer5/Idle.anim
+  artifactKey: Guid(8b9f5f479e2847f48870f3c54bba0711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer5/Idle.anim using Guid(8b9f5f479e2847f48870f3c54bba0711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '616a16ec84bbf5715bf0d76378f889ec') in 0.003742 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000132 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/CH3Completo.prefab
-  artifactKey: Guid(b4674022a83dd1a439d6f10ef540ec1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/CH3Completo.prefab using Guid(b4674022a83dd1a439d6f10ef540ec1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f3c0caaf14c56c648687a3dd461a6b4') in 0.031030 seconds 
+  Time since last request: 5.033958 seconds.
+  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer5/Pedir.anim
+  artifactKey: Guid(1ee3189145035f946bd59f834c6e57f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer5/Pedir.anim using Guid(1ee3189145035f946bd59f834c6e57f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ef59de2c628986d616d7f1f616a0f78') in 0.008212 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.699440 seconds.
+  Time since last request: 17.484930 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab
+  artifactKey: Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab using Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e38329750ebdf288d136d755e3b9c82') in 0.012379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2027.943046 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab
+  artifactKey: Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab using Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0e1f876a8f7f986f5d704e3130d947f') in 0.033774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.439100 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab
+  artifactKey: Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab using Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82dac499d683650f02c74e6a13b0cb47') in 0.010351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.850920 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab
+  artifactKey: Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab using Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38867c9a3efd1f6a76b8ec77eadb277e') in 0.021014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.523344 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab
+  artifactKey: Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab using Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a893115ff21541c761090ab8ab1b07d1') in 0.022708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.696802 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab
+  artifactKey: Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab using Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8801b81715352079bede9ac208fd0c2') in 0.031707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.132768 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab
+  artifactKey: Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab using Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f8b44693c94576327fafe8a587cd211') in 0.025991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.292805 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab
+  artifactKey: Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab using Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa56bbb56b130a5eeefcfa7aaa89c6e6') in 0.024976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.943030 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab
+  artifactKey: Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab using Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b41d6985612d236f40e62b40a53277e0') in 0.027103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.387315 seconds.
   path: Assets/_MiProyecto/Personajes/Prefabs/Cliente.prefab
   artifactKey: Guid(4b423665de9398a46a50e0fe6651b757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Prefabs/Cliente.prefab using Guid(4b423665de9398a46a50e0fe6651b757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'effd7f8696b2d8e51db65337bb92d26d') in 0.061897 seconds 
+Start importing Assets/_MiProyecto/Personajes/Prefabs/Cliente.prefab using Guid(4b423665de9398a46a50e0fe6651b757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39e072b9be16189fa149b100d0544105') in 0.036865 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/_MiProyecto/Personajes/Prefabs/ClienteNPC.prefab
-  artifactKey: Guid(62e62d168f46d3f4ca4772007b8495f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Prefabs/ClienteNPC.prefab using Guid(62e62d168f46d3f4ca4772007b8495f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71c0ad16eeb4b007e405b367f364196d') in 0.036729 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 105.616060 seconds.
-  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales
-  artifactKey: Guid(b721e71bcfa6aa94e9d564ccf11bfd6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales using Guid(b721e71bcfa6aa94e9d564ccf11bfd6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38f7a1723fee54faaa8618d9d833f03d') in 0.008228 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.508366 seconds.
-  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre3
-  artifactKey: Guid(3e9ec2f65cb0bf047a7ee24acb1dcc23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre3 using Guid(3e9ec2f65cb0bf047a7ee24acb1dcc23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77e89c9085e25c4fdd47df704cd474f0') in 0.006363 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.041731 seconds.
-  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre3/CH3Completo.fbx
-  artifactKey: Guid(ef557a95b48f7ff4ca26952900c3d203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre3/CH3Completo.fbx using Guid(ef557a95b48f7ff4ca26952900c3d203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12a6a6fb1367c62c27d3c9f36b4f4358') in 0.152108 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.009871 seconds.
-  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre4
-  artifactKey: Guid(a62f12ca20442254fa472f35abb067ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre4 using Guid(a62f12ca20442254fa472f35abb067ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '653a84b2a7e2f0737602d58a83fd0ea3') in 0.005782 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.709358 seconds.
-  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre4/CH4Completo.fbx
-  artifactKey: Guid(8e765aaa3f8aaeb48815c5bc2597be0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre4/CH4Completo.fbx using Guid(8e765aaa3f8aaeb48815c5bc2597be0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afa15b339fe69acbdc71ffb457848d46') in 0.136200 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.355894 seconds.
-  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre3/Hombre3Anim.controller
-  artifactKey: Guid(2dae3e6800731694f85b6a5304637aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre3/Hombre3Anim.controller using Guid(2dae3e6800731694f85b6a5304637aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeeafbfd4251c97f8034486658304b79') in 0.022818 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.056819 seconds.
-  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre3/Hombre3Anim 1.controller
-  artifactKey: Guid(891094677b12394429a2b941919f8a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre3/Hombre3Anim 1.controller using Guid(891094677b12394429a2b941919f8a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ed9d9d2ebac3cfe473f8bf457842d33') in 0.021295 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.637104 seconds.
-  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre4/Hombre4Anim.controller
-  artifactKey: Guid(2dae3e6800731694f85b6a5304637aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre4/Hombre4Anim.controller using Guid(2dae3e6800731694f85b6a5304637aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c75b8b63b4765acce6fa916cd92f67a6') in 0.022272 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 130.419996 seconds.
-  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre4/CH4Completo.fbx
-  artifactKey: Guid(8e765aaa3f8aaeb48815c5bc2597be0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre4/CH4Completo.fbx using Guid(8e765aaa3f8aaeb48815c5bc2597be0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5775b049b38ec2f45a710b7f228976c1') in 0.150189 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.886696 seconds.
-  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre4/Reloj.anim
-  artifactKey: Guid(aab3eeb0388e23f4db2aa6ec383c1cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre4/Reloj.anim using Guid(aab3eeb0388e23f4db2aa6ec383c1cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9edded451e09c1ec1264a1d4c8c19f01') in 0.009125 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.020953 seconds.
-  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre4/Andar.anim
-  artifactKey: Guid(20589926ec49d4f488807ebacb46547b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre4/Andar.anim using Guid(20589926ec49d4f488807ebacb46547b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd540c20c2cd867a670850291ccb7177f') in 0.007086 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.843878 seconds.
-  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre4/Comer.anim
-  artifactKey: Guid(e8755eafe103ee54db621d73818393a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre4/Comer.anim using Guid(e8755eafe103ee54db621d73818393a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68aa8808a3b417cc35f30f95e8be9d7c') in 0.007088 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.629489 seconds.
-  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre4/Idle.anim
-  artifactKey: Guid(7626627072760dd41b0335f7a56ac78b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre4/Idle.anim using Guid(7626627072760dd41b0335f7a56ac78b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cd700b222ff62429c59a482345402c1') in 0.006935 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.137594 seconds.
-  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre4/Pedir.anim
-  artifactKey: Guid(4edab3f27b789e2438e6648adf9004cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre4/Pedir.anim using Guid(4edab3f27b789e2438e6648adf9004cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f47573515e773d34e52c459fa6ee4f0a') in 0.007718 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 64.158530 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab
-  artifactKey: Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab using Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2faab8c9adac9dcd77abfffc39848cf4') in 0.013329 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.992510 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/Viejos
-  artifactKey: Guid(e83ebc9e9d9d30542a501018f0d73616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/Viejos using Guid(e83ebc9e9d9d30542a501018f0d73616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e7dc0f5c0eca4eea94cd114413821c4') in 0.006029 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.038631 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/Viejos/Hombre1Completo.prefab
-  artifactKey: Guid(f191d7c323e3edc45a082af508a4f9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/Viejos/Hombre1Completo.prefab using Guid(f191d7c323e3edc45a082af508a4f9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b44c1dfd73d04e0355b238024136f4a') in 0.015140 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/Viejos/Mujer4Completo.prefab
-  artifactKey: Guid(c15652a0e096a5141be400aa2867af6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/Viejos/Mujer4Completo.prefab using Guid(c15652a0e096a5141be400aa2867af6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dbe4db72ce9e3ffbbf09b3f86a45a3c') in 0.015429 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/Viejos/Mujer2Completo.prefab
-  artifactKey: Guid(361505f190c5d2048b1748f6c3b76eb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/Viejos/Mujer2Completo.prefab using Guid(361505f190c5d2048b1748f6c3b76eb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a3d0a6b3883610d8d933fc604c1b6c7') in 0.016533 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/Viejos/Hombre2Completo.prefab
-  artifactKey: Guid(5afead6460702dd49bbc558b5e490c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/Viejos/Hombre2Completo.prefab using Guid(5afead6460702dd49bbc558b5e490c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82ea8e85f748c6b7d1e0577379f9bf76') in 0.019020 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/Viejos/Mujer5Completa.prefab
-  artifactKey: Guid(54ee87c76252c1e4ea814f4d7f27af91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/Viejos/Mujer5Completa.prefab using Guid(54ee87c76252c1e4ea814f4d7f27af91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '356042dd8f8f4bdd8e15d38c247614e1') in 0.016766 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/Viejos/Mujer3Completa.prefab
-  artifactKey: Guid(3d2a2497b78e3c942bc63b1957cc5de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/Viejos/Mujer3Completa.prefab using Guid(3d2a2497b78e3c942bc63b1957cc5de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84680e07e0cf24858f2491dc6ef05f65') in 0.016893 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/Viejos/Hombre5Completo.prefab
-  artifactKey: Guid(7d7c87d3120a55e4497e13c9256a4510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/Viejos/Hombre5Completo.prefab using Guid(7d7c87d3120a55e4497e13c9256a4510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfa7dcb2d089269984b8d14011f50ad3') in 0.016461 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/Viejos/Hombre4Completo.prefab
-  artifactKey: Guid(12da01a0349f6d64fa6efc86b7811588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/Viejos/Hombre4Completo.prefab using Guid(12da01a0349f6d64fa6efc86b7811588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '708f308152c4ebb051befb3a3352ccc0') in 0.017554 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/Viejos/Mujer6Completa.prefab
-  artifactKey: Guid(6a5dd8922a564c84592968a7a8e2c09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/Viejos/Mujer6Completa.prefab using Guid(6a5dd8922a564c84592968a7a8e2c09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c7b9bda6b3d2fc27eaeb9f7fb513951') in 0.016844 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/Viejos/Mujer7Completa.prefab
-  artifactKey: Guid(066cdd7b050cf554b96074a47b482d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/Viejos/Mujer7Completa.prefab using Guid(066cdd7b050cf554b96074a47b482d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fe3a3d909a565a3b98715fd9c1688f4') in 0.015869 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/Viejos/Mujer1Completo.prefab
-  artifactKey: Guid(d2df8dc5d05f9264da5a60c2f42d2f76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/Viejos/Mujer1Completo.prefab using Guid(d2df8dc5d05f9264da5a60c2f42d2f76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83bd8d35e39c0c498dfba62fdfc0a5ef') in 0.016146 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/Viejos/Hombre3Completo.prefab
-  artifactKey: Guid(b2f1721ec7032a848ad315e0811452a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/Viejos/Hombre3Completo.prefab using Guid(b2f1721ec7032a848ad315e0811452a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6258c06b2821e062234eff5e4abc50d4') in 0.016587 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/Viejos/Hombre6Completo.prefab
-  artifactKey: Guid(19915e18580372541951f9bc108f6b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/Viejos/Hombre6Completo.prefab using Guid(19915e18580372541951f9bc108f6b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6caeb95e0c25163a504b3555897ee5ef') in 0.016769 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/Viejos/Mujer8Completo.prefab
-  artifactKey: Guid(3892fd0a2d6ef40488ee39e42efbb0c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/Viejos/Mujer8Completo.prefab using Guid(3892fd0a2d6ef40488ee39e42efbb0c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d45500100b115c8403b4425252879ed') in 0.015445 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 37.743201 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab
-  artifactKey: Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab using Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52009b672753d281a54c1c8c7f248065') in 0.012403 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.984324 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab
-  artifactKey: Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab using Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e5f9a22b1e167259c00ed25c67e2e5f') in 0.011010 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.295995 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab
-  artifactKey: Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab using Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2b5b4d33495ef85bb9c62f763b88562') in 0.023912 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.467276 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab
-  artifactKey: Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab using Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0d81b659e7ed8feadc616f0b0d875d9') in 0.026483 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.231782 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab
-  artifactKey: Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab using Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de506e834743544904d403ffa9a0d9a3') in 0.025919 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.979999 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab
-  artifactKey: Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab using Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92d17de8a3cb7d94aa977906d57326ad') in 0.031134 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.704342 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab
-  artifactKey: Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab using Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd6ed899ff9de0213f9456326362cb5e') in 0.031346 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.805621 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab
-  artifactKey: Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab using Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3baa0b222112ccc05de554d7c5daa0d8') in 0.034942 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.198251 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab
-  artifactKey: Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab using Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2c008f0ea62b435b2ae89425c6a0580') in 0.029569 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.032426 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab
-  artifactKey: Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab using Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb0cc8631ec690c40e1f13450631491a') in 0.027442 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.281234 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab
-  artifactKey: Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab using Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd877faf29ed7d4719e17158246734062') in 0.027030 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 55.512849 seconds.
+  Time since last request: 7.348029 seconds.
   path: Assets/_MiProyecto/Personajes/Prefabs/Cliente.prefab
   artifactKey: Guid(4b423665de9398a46a50e0fe6651b757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Prefabs/Cliente.prefab using Guid(4b423665de9398a46a50e0fe6651b757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39e072b9be16189fa149b100d0544105') in 0.013125 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.539495 seconds.
-  path: Assets/_MiProyecto/Personajes/Prefabs/Cliente.prefab
-  artifactKey: Guid(4b423665de9398a46a50e0fe6651b757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Prefabs/Cliente.prefab using Guid(4b423665de9398a46a50e0fe6651b757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2108f4d6dfce39ccc944d17c46943d93') in 0.017403 seconds 
+Start importing Assets/_MiProyecto/Personajes/Prefabs/Cliente.prefab using Guid(4b423665de9398a46a50e0fe6651b757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56a1af8a5e0d030be62aac9e8451ae05') in 0.020295 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002927 seconds.
+Registered in 0.003905 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.831 seconds
+- Completed reload, in  0.932 seconds
 Domain Reload Profiling:
-	ReloadAssembly (831ms)
-		BeginReloadAssembly (103ms)
+	ReloadAssembly (933ms)
+		BeginReloadAssembly (121ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (675ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (763ms)
 			LoadAssemblies (80ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (230ms)
+			SetupTypeCache (251ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (252ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (321ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (63ms)
-				ProcessInitializeOnLoadAttributes (175ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (233ms)
 				ProcessInitializeOnLoadMethodAttributes (7ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1852 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.0 MB.
-System memory in use after: 88.1 MB.
+System memory in use before: 87.3 MB.
+System memory in use after: 87.4 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2372.
-Total: 2.348600 ms (FindLiveObjects: 0.141400 ms CreateObjectMapping: 0.060700 ms MarkObjects: 2.120100 ms  DeleteObjects: 0.025600 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2375.
+Total: 2.275000 ms (FindLiveObjects: 0.136200 ms CreateObjectMapping: 0.061300 ms MarkObjects: 2.050200 ms  DeleteObjects: 0.026500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -534,141 +330,479 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 69.024992 seconds.
+  Time since last request: 74.974609 seconds.
   path: Assets/_MiProyecto/Personajes/Prefabs/Cliente.prefab
   artifactKey: Guid(4b423665de9398a46a50e0fe6651b757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Prefabs/Cliente.prefab using Guid(4b423665de9398a46a50e0fe6651b757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d1ebeceae433a4834b1e9a3696ccfc8') in 0.089992 seconds 
+Start importing Assets/_MiProyecto/Personajes/Prefabs/Cliente.prefab using Guid(4b423665de9398a46a50e0fe6651b757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5397737d560c88f19fb9943a0532706') in 0.098616 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.152111 seconds.
+  Time since last request: 12.919853 seconds.
   path: Assets/_MiProyecto/Personajes/Prefabs/ClienteNPC.prefab
   artifactKey: Guid(62e62d168f46d3f4ca4772007b8495f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Prefabs/ClienteNPC.prefab using Guid(62e62d168f46d3f4ca4772007b8495f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2192d0664eea17085056f6c91e4a89cf') in 0.004525 seconds 
+Start importing Assets/_MiProyecto/Personajes/Prefabs/ClienteNPC.prefab using Guid(62e62d168f46d3f4ca4772007b8495f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2192d0664eea17085056f6c91e4a89cf') in 0.009061 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.074215 seconds.
+  Time since last request: 6.764595 seconds.
   path: Assets/_MiProyecto/Personajes/Prefabs/ClienteNPC.prefab
   artifactKey: Guid(62e62d168f46d3f4ca4772007b8495f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Prefabs/ClienteNPC.prefab using Guid(62e62d168f46d3f4ca4772007b8495f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3beb38626f3089a939fc19845d0ac892') in 0.034618 seconds 
+Start importing Assets/_MiProyecto/Personajes/Prefabs/ClienteNPC.prefab using Guid(62e62d168f46d3f4ca4772007b8495f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4de37303d7852cde82559366c3243422') in 0.035476 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003433 seconds.
+Registered in 0.003803 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.817 seconds
+- Completed reload, in  0.914 seconds
 Domain Reload Profiling:
-	ReloadAssembly (818ms)
+	ReloadAssembly (915ms)
+		BeginReloadAssembly (92ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (775ms)
+			LoadAssemblies (117ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (286ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (258ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (180ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1852 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.4 MB.
+System memory in use after: 87.5 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2377.
+Total: 3.127800 ms (FindLiveObjects: 0.135400 ms CreateObjectMapping: 0.060700 ms MarkObjects: 2.772700 ms  DeleteObjects: 0.157700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 10.374224 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CM4Completo.prefab
+  artifactKey: Guid(7c6a880e0ea5df64aa5acbe915dabc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CM4Completo.prefab using Guid(7c6a880e0ea5df64aa5acbe915dabc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '412708aa106319301a97b9d77d44be7a') in 0.076375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.726228 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab
+  artifactKey: Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab using Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88c5da23709cf14e21ad6c0e6751f16f') in 0.024689 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004175 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.849 seconds
+Domain Reload Profiling:
+	ReloadAssembly (849ms)
+		BeginReloadAssembly (100ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (689ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (239ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (261ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (185ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1852 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.4 MB.
+System memory in use after: 87.5 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2380.
+Total: 2.219000 ms (FindLiveObjects: 0.131200 ms CreateObjectMapping: 0.057900 ms MarkObjects: 2.007100 ms  DeleteObjects: 0.022200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003768 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.837 seconds
+Domain Reload Profiling:
+	ReloadAssembly (837ms)
+		BeginReloadAssembly (96ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (692ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (239ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (257ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (178ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1852 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.4 MB.
+System memory in use after: 87.5 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2382.
+Total: 2.274800 ms (FindLiveObjects: 0.128000 ms CreateObjectMapping: 0.053000 ms MarkObjects: 2.075700 ms  DeleteObjects: 0.017400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 98.703518 seconds.
+  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer7/CM7Completo.fbx
+  artifactKey: Guid(843c383f6e65e214788469ba374f245e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer7/CM7Completo.fbx using Guid(843c383f6e65e214788469ba374f245e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71335c20bc6c970699293d04ec3ec950') in 0.216775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.285674 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CM7Completo.prefab
+  artifactKey: Guid(12cec17f5fa8adb4895a4c491f5e6436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CM7Completo.prefab using Guid(12cec17f5fa8adb4895a4c491f5e6436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '286a8e15c5f12e5f89b1cb0d07690c47') in 0.029694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.703054 seconds.
+  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer7/Mujer7Anim.controller
+  artifactKey: Guid(40c701f535fc8a54aafa9ebe86a62953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Mujer7/Mujer7Anim.controller using Guid(40c701f535fc8a54aafa9ebe86a62953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccf935f369b0d9430273d523ed11ee8a') in 0.018664 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003142 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.884 seconds
+Domain Reload Profiling:
+	ReloadAssembly (884ms)
+		BeginReloadAssembly (96ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (740ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (302ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (249ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (174ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1852 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.5 MB.
+System memory in use after: 87.7 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2385.
+Total: 2.345600 ms (FindLiveObjects: 0.138200 ms CreateObjectMapping: 0.073600 ms MarkObjects: 2.109100 ms  DeleteObjects: 0.023600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 138.461866 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab
+  artifactKey: Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CH4Completo.prefab using Guid(7783bb42f7ed1ea4ea4012b29b9d8690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb0cc8631ec690c40e1f13450631491a') in 0.062423 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003358 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.851 seconds
+Domain Reload Profiling:
+	ReloadAssembly (851ms)
+		BeginReloadAssembly (95ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (702ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (238ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (265ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (188ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1852 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.6 MB.
+System memory in use after: 87.7 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2388.
+Total: 2.331300 ms (FindLiveObjects: 0.138400 ms CreateObjectMapping: 0.060700 ms MarkObjects: 2.108900 ms  DeleteObjects: 0.022300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 134.003763 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CH2Completo.prefab
+  artifactKey: Guid(82b4150f0c8682f4680cc66ed022cf06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CH2Completo.prefab using Guid(82b4150f0c8682f4680cc66ed022cf06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7368c1f7da1557324554152e8c018b2') in 0.065462 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.472912 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CH3Completo.prefab
+  artifactKey: Guid(b4674022a83dd1a439d6f10ef540ec1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CH3Completo.prefab using Guid(b4674022a83dd1a439d6f10ef540ec1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df1e22b9d6704810eca1cefc74f72b86') in 0.033164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.263236 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CM1Completo.prefab
+  artifactKey: Guid(ffccd7eb9bb1a4348a2f398549bff3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CM1Completo.prefab using Guid(ffccd7eb9bb1a4348a2f398549bff3f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1991bc50db72c9306dbc2a8bce204c5') in 0.030046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.141116 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CM2Completo.prefab
+  artifactKey: Guid(252e2c2c2b281a54cb2a8d4a20b00275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CM2Completo.prefab using Guid(252e2c2c2b281a54cb2a8d4a20b00275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71b90ab56413096099b2cf9e6365e4f7') in 0.028315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.014753 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CM7Completo.prefab
+  artifactKey: Guid(12cec17f5fa8adb4895a4c491f5e6436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CM7Completo.prefab using Guid(12cec17f5fa8adb4895a4c491f5e6436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22853e39f3fe818ed6d99c05ae77a569') in 0.027335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.032388 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab
+  artifactKey: Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CM5Completo.prefab using Guid(7ad1467023d8f79438a3c1f684dad2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02df4c2d32f0847acb881bdcc2c71d62') in 0.026744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.415503 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CM4Completo.prefab
+  artifactKey: Guid(7c6a880e0ea5df64aa5acbe915dabc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CM4Completo.prefab using Guid(7c6a880e0ea5df64aa5acbe915dabc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12537a32dd4e4683d649885a1101ef2a') in 0.022149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.071538 seconds.
+  path: Assets/_MiProyecto/Personajes/Sonidos/Clientes/126816-Antique_cash_register_lever_and_bell_x2.mp3.mp3
+  artifactKey: Guid(0000d60244c0a804192ee8786b4f241e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Sonidos/Clientes/126816-Antique_cash_register_lever_and_bell_x2.mp3.mp3 using Guid(0000d60244c0a804192ee8786b4f241e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b51006f9d12a71c9a9997db35fa1247') in 0.067038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/_MiProyecto/UI/Sonidos/BajarNivel.wav
+  artifactKey: Guid(ac07ed5b6465e334f8f24bb89700b079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/UI/Sonidos/BajarNivel.wav using Guid(ac07ed5b6465e334f8f24bb89700b079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '824f22553029a1e606bf7c38fcc37a82') in 0.014803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/_MiProyecto/Mapa/Sonido/Campanita/383148-Bike-Bell_Ding-Single-01-01.mp3.mp3
+  artifactKey: Guid(a4b94008f301c964d929b5d68b546f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Mapa/Sonido/Campanita/383148-Bike-Bell_Ding-Single-01-01.mp3.mp3 using Guid(a4b94008f301c964d929b5d68b546f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21a4d31165484add29812e0b0033a0b5') in 0.016211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/_MiProyecto/Mapa/Sonido/Basura/Basura2.wav
+  artifactKey: Guid(fb2f12ace54e900419742e7888a2a4ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Mapa/Sonido/Basura/Basura2.wav using Guid(fb2f12ace54e900419742e7888a2a4ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddecd29e30d8dfb4003c98e8712d1f6c') in 0.011098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/_MiProyecto/Mapa/Sonido/Puerta/CampanaPuerta.wav
+  artifactKey: Guid(08895ffeac8365941acafd412563f16f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Mapa/Sonido/Puerta/CampanaPuerta.wav using Guid(08895ffeac8365941acafd412563f16f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba7bb51f270a02a62b7944f790d9eb97') in 0.014139 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/_MiProyecto/Mapa/Sonido/Canyas/Canyas1D.wav
+  artifactKey: Guid(24ea79eb81073d548a91daa613529b3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Mapa/Sonido/Canyas/Canyas1D.wav using Guid(24ea79eb81073d548a91daa613529b3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f6686e75c4c3b78c1ae9a464662417d') in 0.012203 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/_MiProyecto/Mapa/Sonido/Basura/Basura1.wav
+  artifactKey: Guid(172187d489a0dcb44a29f404a740d913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Mapa/Sonido/Basura/Basura1.wav using Guid(172187d489a0dcb44a29f404a740d913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2b35eb537ead5e9ef5ae5a4e2261f44') in 0.012211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/_MiProyecto/Mapa/Sonido/Canyas/Canyas1DD.wav
+  artifactKey: Guid(4417f4a5aacbfbf43b4cfc4e7b671734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Mapa/Sonido/Canyas/Canyas1DD.wav using Guid(4417f4a5aacbfbf43b4cfc4e7b671734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49d399553437b921042e4da797d2489e') in 0.010707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.833191 seconds.
+  path: Assets/_MiProyecto/Personajes/Modelos/CM4Completo.prefab
+  artifactKey: Guid(7c6a880e0ea5df64aa5acbe915dabc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_MiProyecto/Personajes/Modelos/CM4Completo.prefab using Guid(7c6a880e0ea5df64aa5acbe915dabc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa53fd78e4cd7b8e79a13b5a616a7a82') in 0.025352 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003003 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.894 seconds
+Domain Reload Profiling:
+	ReloadAssembly (894ms)
 		BeginReloadAssembly (99ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (667ms)
-			LoadAssemblies (77ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (229ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (253ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (63ms)
-				ProcessInitializeOnLoadAttributes (177ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1852 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.0 MB.
-System memory in use after: 88.1 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2374.
-Total: 2.241600 ms (FindLiveObjects: 0.136900 ms CreateObjectMapping: 0.063900 ms MarkObjects: 2.019300 ms  DeleteObjects: 0.020800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 38.645242 seconds.
-  path: Assets/_MiProyecto/Personajes/Modelos/CH3Completo.prefab
-  artifactKey: Guid(b4674022a83dd1a439d6f10ef540ec1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Modelos/CH3Completo.prefab using Guid(b4674022a83dd1a439d6f10ef540ec1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34b7f675f1b7a9415ba92f1ba769b87d') in 0.069557 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.603760 seconds.
-  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre2/CH2Completo.fbx
-  artifactKey: Guid(6e4e4ca36df7da645b63758d1290f1f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre2/CH2Completo.fbx using Guid(6e4e4ca36df7da645b63758d1290f1f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee20ad3574bb11c02256dc7aefc0a17e') in 0.147600 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.362010 seconds.
-  path: Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre3/Hombre3Anim.controller
-  artifactKey: Guid(891094677b12394429a2b941919f8a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_MiProyecto/Personajes/Animations/ClientesFinales/Hombre3/Hombre3Anim.controller using Guid(891094677b12394429a2b941919f8a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eed5e4a290131bd63f26b309fe18650c') in 0.019775 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002877 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.843 seconds
-Domain Reload Profiling:
-	ReloadAssembly (843ms)
-		BeginReloadAssembly (93ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (702ms)
-			LoadAssemblies (79ms)
+		EndReloadAssembly (742ms)
+			LoadAssemblies (83ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (254ms)
+			SetupTypeCache (232ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (253ms)
+			SetupLoadedEditorAssemblies (309ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (175ms)
-				ProcessInitializeOnLoadMethodAttributes (7ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (219ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.97 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1852 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.1 MB.
-System memory in use after: 88.2 MB.
+System memory in use before: 87.7 MB.
+System memory in use after: 87.8 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2377.
-Total: 2.472800 ms (FindLiveObjects: 0.136700 ms CreateObjectMapping: 0.067200 ms MarkObjects: 2.247700 ms  DeleteObjects: 0.020400 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2393.
+Total: 4.540100 ms (FindLiveObjects: 0.252900 ms CreateObjectMapping: 0.158100 ms MarkObjects: 4.091400 ms  DeleteObjects: 0.036600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
