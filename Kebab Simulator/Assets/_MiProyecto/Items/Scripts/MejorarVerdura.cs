@@ -58,7 +58,7 @@ public class MejorarVerdura : MonoBehaviour
         //Mejora de nivel 1
         if (ingredienteVerdura.nivel == 0)
         {
-            if (dineroJugador >= ingredienteVerdura.costeCompra)
+            if (dineroJugador >= ingredienteVerdura.costeMejora)
             {
                 //Comprar de mejora
                 jugador.GetComponent<ReputacionDinero>().TakeDinero(-ingredienteVerdura.costeMejora);
@@ -91,7 +91,7 @@ public class MejorarVerdura : MonoBehaviour
         //Mejora de nivel 2
         else if (ingredienteVerdura.nivel == 1)
         {
-            if (dineroJugador >= ingredienteVerdura.costeCompra)
+            if (dineroJugador >= ingredienteVerdura.costeMejora)
             {
                 //Comprar de mejora
                 jugador.GetComponent<ReputacionDinero>().TakeDinero(-ingredienteVerdura.costeMejora);

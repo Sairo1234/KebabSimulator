@@ -58,7 +58,7 @@ public class MejorarSalsa : MonoBehaviour
         //Mejora de nivel 1
         if (ingredienteSalsa.nivel == 0)
         {
-            if (dineroJugador >= ingredienteSalsa.costeCompra)
+            if (dineroJugador >= ingredienteSalsa.costeMejora)
             {
                 //Comprar de mejora
                 jugador.GetComponent<ReputacionDinero>().TakeDinero(-ingredienteSalsa.costeMejora);
@@ -91,7 +91,7 @@ public class MejorarSalsa : MonoBehaviour
         //Mejora de nivel 2
         else if (ingredienteSalsa.nivel == 1)
         {
-            if (dineroJugador >= ingredienteSalsa.costeCompra)
+            if (dineroJugador >= ingredienteSalsa.costeMejora)
             {
                 //Comprar de mejora
                 jugador.GetComponent<ReputacionDinero>().TakeDinero(-ingredienteSalsa.costeMejora);

@@ -58,7 +58,7 @@ public class MejorarCarne : MonoBehaviour
         //Mejora de nivel 1
         if (ingredienteCarne.nivel == 0)
         {
-            if (dineroJugador >= ingredienteCarne.costeCompra)
+            if (dineroJugador >= ingredienteCarne.costeMejora)
             {
                 //Comprar de mejora
                 jugador.GetComponent<ReputacionDinero>().TakeDinero(-ingredienteCarne.costeMejora);
@@ -92,7 +92,7 @@ public class MejorarCarne : MonoBehaviour
         //Mejora de nivel 2
         else if (ingredienteCarne.nivel == 1)
         {
-            if (dineroJugador >= ingredienteCarne.costeCompra)
+            if (dineroJugador >= ingredienteCarne.costeMejora)
             {
                 //Comprar de mejora
                 jugador.GetComponent<ReputacionDinero>().TakeDinero(-ingredienteCarne.costeMejora);

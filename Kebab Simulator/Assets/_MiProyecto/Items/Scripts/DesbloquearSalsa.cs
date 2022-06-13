@@ -22,13 +22,18 @@ public class DesbloquearSalsa : MonoBehaviour
     public Animator animatorDesbloqueo;
     public Animator animatorCandado;
 
+    private bool haSidoDesbloqueado = false;
+
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
 
-    private void Start()
+    private void OnEnable()
     {
-        nivelJugador = jugador.GetComponent<ReputacionDinero>().Nivel;
-        desbloquearIngrediente();
+        if (haSidoDesbloqueado == false)
+        {
+            nivelJugador = jugador.GetComponent<ReputacionDinero>().Nivel;
+            desbloquearIngrediente();
+        }
     }
 
     public void desbloquearIngrediente()
@@ -37,6 +42,7 @@ public class DesbloquearSalsa : MonoBehaviour
         {
             ingredienteSalsa.estaDesbloqueado = true;
             animatorCandado.SetTrigger("Desbloqueado");
+            haSidoDesbloqueado = true;
             StartCoroutine(mostrarAnimacionCandado());
         }
     }
