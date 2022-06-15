@@ -22,7 +22,7 @@ public class DesbloquearCarne : MonoBehaviour
     public Animator animatorDesbloqueo;
     public Animator animatorCandado;
 
-    private bool haSidoDesbloqueado = false;
+    public bool haSidoDesbloqueado = false;
 
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
@@ -34,7 +34,6 @@ public class DesbloquearCarne : MonoBehaviour
             nivelJugador = jugador.GetComponent<ReputacionDinero>().Nivel;
             desbloquearIngrediente();
         }
-        
     }
 
     public void desbloquearIngrediente()

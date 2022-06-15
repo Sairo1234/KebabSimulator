@@ -22,8 +22,8 @@ public class DesbloquearVerdura : MonoBehaviour
     public Animator animatorDesbloqueo;
     public Animator animatorCandado;
 
-    private bool haSidoDesbloqueado = false;
-    
+    public bool haSidoDesbloqueado = false;
+
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
 

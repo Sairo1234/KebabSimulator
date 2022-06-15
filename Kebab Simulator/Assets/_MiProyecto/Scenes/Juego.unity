@@ -7844,7 +7844,7 @@ RectTransform:
   m_Children:
   - {fileID: 502314352}
   m_Father: {fileID: 1027956045}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -10032,6 +10032,7 @@ MonoBehaviour:
   botonComprarIngrediente: {fileID: 1371944286}
   animatorDesbloqueo: {fileID: 1371944284}
   animatorCandado: {fileID: 2063311947}
+  haSidoDesbloqueado: 0
 --- !u!114 &130195052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15495,7 +15496,7 @@ RectTransform:
   - {fileID: 959095048}
   - {fileID: 2017513938}
   m_Father: {fileID: 1027956045}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 68.25, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -23708,7 +23709,7 @@ RectTransform:
   m_Children:
   - {fileID: 1753379518}
   m_Father: {fileID: 1027956045}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -27289,7 +27290,7 @@ RectTransform:
   - {fileID: 657772374}
   - {fileID: 1672708676}
   m_Father: {fileID: 1027956045}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -27932,6 +27933,7 @@ MonoBehaviour:
   botonComprarIngrediente: {fileID: 2034252664}
   animatorDesbloqueo: {fileID: 2034252662}
   animatorCandado: {fileID: 879718051}
+  haSidoDesbloqueado: 0
 --- !u!114 &491084201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38148,6 +38150,7 @@ MonoBehaviour:
   botonComprarIngrediente: {fileID: 1819743050}
   animatorDesbloqueo: {fileID: 1819743048}
   animatorCandado: {fileID: 1839518820}
+  haSidoDesbloqueado: 0
 --- !u!114 &688005669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44682,7 +44685,7 @@ RectTransform:
   m_Children:
   - {fileID: 767689768}
   m_Father: {fileID: 1027956045}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -48134,7 +48137,7 @@ RectTransform:
   m_Children:
   - {fileID: 1801121928}
   m_Father: {fileID: 1027956045}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -54663,6 +54666,16 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 38.4}
   m_SizeDelta: {x: -60, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &960062964 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1216541380612917748, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+  m_PrefabInstance: {fileID: 1887344801}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &960062965 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+  m_PrefabInstance: {fileID: 1887344801}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &962987074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55840,6 +55853,7 @@ MonoBehaviour:
   botonComprarIngrediente: {fileID: 390055369}
   animatorDesbloqueo: {fileID: 390055372}
   animatorCandado: {fileID: 69862213}
+  haSidoDesbloqueado: 0
 --- !u!1 &973212497
 GameObject:
   m_ObjectHideFlags: 0
@@ -58371,6 +58385,7 @@ MonoBehaviour:
   botonComprarIngrediente: {fileID: 1397087974}
   animatorDesbloqueo: {fileID: 1397087972}
   animatorCandado: {fileID: 615837526}
+  haSidoDesbloqueado: 0
 --- !u!114 &1019391188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58505,6 +58520,7 @@ MonoBehaviour:
   botonComprarIngrediente: {fileID: 732835444}
   animatorDesbloqueo: {fileID: 732835442}
   animatorCandado: {fileID: 124122842}
+  haSidoDesbloqueado: 0
 --- !u!114 &1022290376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58733,6 +58749,7 @@ Transform:
   m_Children:
   - {fileID: 754798383}
   - {fileID: 1600376394}
+  - {fileID: 960062965}
   - {fileID: 1079979973}
   - {fileID: 62014957}
   - {fileID: 791132549}
@@ -62079,7 +62096,7 @@ RectTransform:
   m_Children:
   - {fileID: 102416727}
   m_Father: {fileID: 1027956045}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -65079,6 +65096,7 @@ MonoBehaviour:
   botonComprarIngrediente: {fileID: 1954466156}
   animatorDesbloqueo: {fileID: 1954466154}
   animatorCandado: {fileID: 674966212}
+  haSidoDesbloqueado: 0
 --- !u!114 &1152461040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70542,6 +70560,7 @@ MonoBehaviour:
   botonComprarIngrediente: {fileID: 1338521600}
   animatorDesbloqueo: {fileID: 1338521598}
   animatorCandado: {fileID: 807358361}
+  haSidoDesbloqueado: 0
 --- !u!114 &1234287192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70696,7 +70715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HUDprincipal: {fileID: 1600376393}
   HUDTutoriales: {fileID: 244555084}
-  pantallaPausa: {fileID: 0}
+  pantallaPausa: {fileID: 960062964}
   pantallaDiaTerminado: {fileID: 1976751413}
   pantallaResumenDia: {fileID: 1281030915}
   pantallaTienda: {fileID: 481552481}
@@ -73088,7 +73107,7 @@ RectTransform:
   m_Children:
   - {fileID: 1492473040}
   m_Father: {fileID: 1027956045}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -75306,6 +75325,7 @@ MonoBehaviour:
   botonComprarIngrediente: {fileID: 965420393}
   animatorDesbloqueo: {fileID: 965420391}
   animatorCandado: {fileID: 1400953160}
+  haSidoDesbloqueado: 0
 --- !u!114 &1329933868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76705,6 +76725,7 @@ MonoBehaviour:
   botonComprarIngrediente: {fileID: 1214846962}
   animatorDesbloqueo: {fileID: 1214846960}
   animatorCandado: {fileID: 1538034071}
+  haSidoDesbloqueado: 0
 --- !u!114 &1368504571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88289,6 +88310,7 @@ MonoBehaviour:
   botonComprarIngrediente: {fileID: 606751739}
   animatorDesbloqueo: {fileID: 606751737}
   animatorCandado: {fileID: 735265150}
+  haSidoDesbloqueado: 0
 --- !u!114 &1587850984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88983,7 +89005,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1600376394
 RectTransform:
   m_ObjectHideFlags: 0
@@ -93071,6 +93093,7 @@ MonoBehaviour:
   botonComprarIngrediente: {fileID: 505765657}
   animatorDesbloqueo: {fileID: 505765655}
   animatorCandado: {fileID: 1522262583}
+  haSidoDesbloqueado: 0
 --- !u!114 &1683156560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100331,6 +100354,7 @@ MonoBehaviour:
   botonComprarIngrediente: {fileID: 1891519913}
   animatorDesbloqueo: {fileID: 1891519911}
   animatorCandado: {fileID: 174848994}
+  haSidoDesbloqueado: 0
 --- !u!114 &1736369398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104881,6 +104905,7 @@ MonoBehaviour:
   botonComprarIngrediente: {fileID: 904170710}
   animatorDesbloqueo: {fileID: 904170708}
   animatorCandado: {fileID: 1308695175}
+  haSidoDesbloqueado: 0
 --- !u!114 &1826445011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107909,6 +107934,119 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885436640}
   m_CullTransparentMesh: 1
+--- !u!1001 &1887344801
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1027956045}
+    m_Modifications:
+    - target: {fileID: 1216541380509421377, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1240847599}
+    - target: {fileID: 1216541380509421377, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: volverInicio
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380583297159, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1240847599}
+    - target: {fileID: 1216541380583297159, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Continuar
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917748, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_Name
+      value: PANTALLA - Pausa
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.5100002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.26600003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216541380612917752, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 510d2bc150b0824479dc3be175f59baa, type: 3}
 --- !u!1 &1887450040
 GameObject:
   m_ObjectHideFlags: 0
@@ -112995,6 +113133,7 @@ MonoBehaviour:
   botonComprarIngrediente: {fileID: 825161785}
   animatorDesbloqueo: {fileID: 825161783}
   animatorCandado: {fileID: 691161052}
+  haSidoDesbloqueado: 0
 --- !u!114 &1967886564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113374,7 +113513,7 @@ RectTransform:
   m_Children:
   - {fileID: 1468270162}
   m_Father: {fileID: 1027956045}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -117660,6 +117799,7 @@ MonoBehaviour:
   botonComprarIngrediente: {fileID: 1946458116}
   animatorDesbloqueo: {fileID: 1946458114}
   animatorCandado: {fileID: 639805512}
+  haSidoDesbloqueado: 0
 --- !u!114 &2052828706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118556,7 +118696,7 @@ RectTransform:
   m_Children:
   - {fileID: 1922806261}
   m_Father: {fileID: 1027956045}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -120544,6 +120684,7 @@ MonoBehaviour:
   botonComprarIngrediente: {fileID: 274132895}
   animatorDesbloqueo: {fileID: 274132893}
   animatorCandado: {fileID: 1792651380}
+  haSidoDesbloqueado: 0
 --- !u!114 &2122329778
 MonoBehaviour:
   m_ObjectHideFlags: 0

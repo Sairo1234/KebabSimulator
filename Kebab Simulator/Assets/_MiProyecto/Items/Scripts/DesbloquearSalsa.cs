@@ -22,7 +22,7 @@ public class DesbloquearSalsa : MonoBehaviour
     public Animator animatorDesbloqueo;
     public Animator animatorCandado;
 
-    private bool haSidoDesbloqueado = false;
+    public bool haSidoDesbloqueado = false;
 
     //----------------------------------------------------------------------------------------//
     //----------------------------------------- MÉTODOS --------------------------------------//
@@ -41,8 +41,8 @@ public class DesbloquearSalsa : MonoBehaviour
         if (nivelJugador >= ingredienteSalsa.DesbloqueoCompra)
         {
             ingredienteSalsa.estaDesbloqueado = true;
-            animatorCandado.SetTrigger("Desbloqueado");
             haSidoDesbloqueado = true;
+            animatorCandado.SetTrigger("Desbloqueado");
             StartCoroutine(mostrarAnimacionCandado());
         }
     }
